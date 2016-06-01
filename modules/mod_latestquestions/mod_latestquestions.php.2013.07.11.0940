@@ -1,0 +1,73 @@
+<?php
+
+
+//don't allow other scripts to grab and execute our file
+defined('_JEXEC') or die('Direct Access to this location is not allowed.');
+
+
+$db = JFactory::getDbo();
+$query = "SELECT `id`,`question` FROM #__questions ORDER BY `utc_n_ask_date` DESC LIMIT 0,3;";
+$db->setQuery($query);
+$questions = $db->loadObjectList();
+
+$question_list = "<ol>";
+foreach($questions as $k => $qo)
+{
+	$question_url = pass_question_id_return_question_url_mod_latestquestions($qo->id);
+	$question_list .= "<li><a href='$question_url'>" . htmlspecialchars($qo->question) . "</a></li>";
+}
+$question_list .= "</ol>";
+
+?>
+<div>If you need some help, submit your question to our Community!</div>
+<div>We guarantee a response within 60 minutes (8am - 9pm EST, Monday - Friday)</div>
+<div style='margin:15px 0px;'><a class='btn btn-primary' href='/support/community-support/ask-a-question'>Ask a Question!</a></div>
+<strong>Recent Questions</strong><br />
+<? echo $question_list; ?>
+<div class='browse_other_questions'><a href='/support/community-support'>Browse other questions</a></div>
+
+
+
+
+
+
+<?
+
+
+
+
+
+
+function pass_question_id_return_question_url_mod_latestquestions($id)
+{
+        if( ! is_numeric($id) )
+                JError::raiseError( 404, 'Question not found' );
+
+        $db = JFactory::getDbo();
+
+        // grab category information
+        $query = "
+SELECT `q`.`question_alias`, `qc`.*
+FROM #__question_categories qc, #__questions q
+WHERE   `q`.`id` = $id AND
+        `q`.`category_id` = `qc`.`id`
+        ";
+        $db->setQuery($query);
+        $category_info = $db->loadObjectList();
+
+        if( $category_info[0]->parent_id == 0 )
+                return JURI::base() . "community-support/" . $category_info[0]->alias . "/" . $category_info[0]->question_alias;
+
+        $query = "SELECT `alias` FROM #__question_categories WHERE `id` = " . $category_info[0]->parent_id . ";";
+        $db->setQuery($query);
+        $parent_category_info = $db->loadObjectList();
+
+        return JURI::base() . "community-support/" . $parent_category_info[0]->alias . "/" . $category_info[0]->alias . "/" . $category_info[0]->question_alias;
+}
+
+
+
+
+
+
+?>

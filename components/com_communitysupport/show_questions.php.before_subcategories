@@ -1,0 +1,117 @@
+<?
+
+// No direct access to this file
+defined('_JEXEC') or die('Restricted access');
+
+
+
+
+
+
+// grab the category information, like id,parent_id,title,and alias
+$category_alias = addslashes($exploded_url[count($exploded_url)-1]);
+$query = "SELECT * FROM #__question_categories WHERE `alias` = '$category_alias';";
+$db->setQuery($query);
+$category_info = $db->loadObjectList();
+
+
+
+
+
+
+// -----------------------------------------------------------------------
+// create all the pagination info
+// -----------------------------------------------------------------------
+// PAGINATION: How many questions should we show?
+$limit = 10;
+$session = JFactory::getSession();
+$session_pagination_limit = $session->get('session_pagination_limit');
+if( is_numeric($session_pagination_limit) )
+        $limit = $session_pagination_limit;
+
+if( is_numeric($_POST['limit']) )
+{
+        $limit = $_POST['limit'];
+        $session->set('session_pagination_limit',$limit);
+}
+// SORT BY
+$sort_by = "hits";
+$session_pagination_sort_by = $session->get('session_pagination_sort_by');
+$sort_by_array = array("number_of_answers","utc_n_ask_date","hits");
+if( in_array($session_pagination_sort_by,$sort_by_array) )
+        $sort_by = $session_pagination_sort_by;
+if( in_array($_POST['sort'],$sort_by_array) )
+{
+        $sort_by = $_POST['sort'];
+        $session->set('session_pagination_sort_by',$sort_by);
+}
+// PAGINATION: What question do we start with?
+$start = 1;
+if( is_numeric($_GET['limitstart']) )
+        $start = $_GET['limitstart'];
+// PAGINATION: How many total questions are there?
+$query = "SELECT count(`id`) as 'total_questions' FROM #__questions WHERE `url` LIKE '" . addslashes($exploded_url[3]) . "/%'";
+$db->setQuery($query);
+$results = $db->loadObjectList();
+$total_number_of_questions = $results[0]->total_questions;
+// PAGINATION: How many pages are there?
+$total_pages = ceil($total_number_of_questions / $limit);
+// PAGINATION: What page are we one?
+$current_page = ceil($start / $limit);
+$pagination_nav = create_pagination_navigation($start,$limit,$current_page,$total_pages,$total_number_of_questions);
+$display_button = create_display_button($limit,$sort_by);
+
+
+
+
+
+
+// $query = "SELECT count(`answer`.`id`) as 'number_of_answers', `question`.`hits`, `question`.`id`,`question`.`question`,`question`.`utc_n_ask_date`,`question`.`url` FROM #__questions as `question`, #__answers as `answer` WHERE `question`.`url` LIKE '" . addslashes($exploded_url[3]) . "/%' AND `question`.`id` = `answer`.`question_id` ORDER BY `question`.`hits` DESC;";
+if($sort_by == "hits" || $sort_by == "utc_n_ask_date"){$order_by = "`question`.`$sort_by`";}
+else{$order_by = "`number_of_answers`";}
+$query = "SELECT
+	count(`answer`.`id`) as 'number_of_answers',
+	`question`.`hits`,
+	`question`.`id`,
+	`question`.`question`,
+	`question`.`utc_n_ask_date`,
+	`question`.`url`
+FROM
+	`#__questions` as `question`
+LEFT JOIN `#__answers` as `answer` ON `question`.`id` = `answer`.`question_id`
+WHERE
+	`question`.`url` LIKE '" . addslashes($exploded_url[3]) . "/%'
+GROUP BY `question`.`id`
+ORDER BY $order_by DESC
+LIMIT " . ($start - 1) . ",$limit
+";
+$db->setQuery($query);
+$question_list = $db->loadObjectList();
+
+
+
+
+
+
+if($question_list)
+	$echo_question_list = create_table_of_questions($question_list,$start);
+
+
+
+
+
+
+echo "
+<form method='post'>
+        $display_button
+        $echo_question_list
+        $pagination_nav
+</form>
+";
+
+
+
+
+
+
+?>

@@ -1,0 +1,949 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+
+
+
+
+
+
+
+
+
+
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=960">
+
+
+		  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="keywords" content="login troubleshoot cPanel username password enflatecpanel 2082 2083" />
+  <meta name="author" content="Brad Markle" />
+  <meta name="description" content="Learn how to login to cPanel, troubleshoot various issues with logging in and where to login to cPanel." />
+  <title>cPanel Login | InMotion Hosting</title>
+  <link rel="stylesheet" href="/support/templates/supportcentertemplate/css/minified.css?v=201310310826" type="text/css" />
+  <script src="/support/templates/supportcentertemplate/js/combined.js?v=201308261043" type="text/javascript"></script>
+  <script type="text/javascript">
+window.addEvent('domready', function() {
+			$$('.hasTip').each(function(el) {
+				var title = el.get('title');
+				if (title) {
+					var parts = title.split('::', 2);
+					el.store('tip:title', parts[0]);
+					el.store('tip:text', parts[1]);
+				}
+			});
+			var JTooltips = new Tips($$('.hasTip'), { maxTitleChars: 50, fixed: false});
+		});
+  </script>
+
+
+
+		
+
+
+
+	<script type="text/javascript">
+		(function() {
+			var config = {
+				kitId: 'tkh8ukm',
+				scriptTimeout: 3000
+			};
+			var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
+		})();
+	</script>
+
+
+
+
+
+
+	<!-- GA Code - www.inmotionhosting.com -->
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-1501988-1']);
+		_gaq.push(['_setCustomVar', 5, 'Author', 'none', 3]);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+
+
+
+
+
+
+	
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1501988-19']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+		
+
+
+
+
+		<script type="text/javascript">
+                var launchChat = function() {
+                        window.open('https://chatwithourteam.com/licence/1001/open_chat.cgi?lang=ei&params=IMH%20IMH%20IMH%20-%20INMOTION%20HOSTING%20-%20IMH%20IMH%20IMH&groups=0', 'newwindow', 'width=600, height=600');
+
+			_gaq.push(['_setAccount', 'UA-1501988-19']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '216.54.31.86']);
+
+			_gaq.push(['_setAccount', 'UA-1501988-1']);
+                        _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
+			_gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '216.54.31.86']);
+						trackAnchorClickSC("trackAnchorClickChatSC");
+                }
+        </script>
+	
+
+
+
+
+
+	<link rel="shortcut icon" href="/img/imh_favicon.ico" type="image/x-icon" />
+
+
+
+
+
+
+			<script type="text/javascript">
+			jQuery('#search_in_header').live('submit', searchSubmit);
+			function searchSubmit(e) {
+				var txt = document.forms["search_in_header"].getElementById("mod-search-searchword").value;
+				txt = txt.replace("httpd.conf","httpdconf");
+				document.forms["search_in_header"].getElementById("mod-search-searchword").value = txt;
+			}
+		</script>
+	
+
+
+
+
+
+	
+
+
+
+
+
+</head>
+<body>
+
+<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+
+  <div id="skip">
+    <a href="#main">Skip to Main Content</a>
+    <a href="#nav">Skip to Navigation</a>
+    </div>
+  
+<header role="banner">
+        <div class="container">
+            <div class="row" style='position:relative;'>
+                <a href="/" class="span3"><img src="/img/logo-imh.png" alt="InMotion Hosting" /></a>
+                <div name='chathoverfaq' id='chathoverfaq' style='float:left; position:absolute; left:255px; top:20px; width:400px; border:url(/img/pattern.gif); z-index:10000; display:none;' class='sc_rc white_box'>
+			<h1 style='color:#c52228; font-size:24px;'>Need help?</h1>
+			<p>No problem, just click chat. A few of the more common questions asked about this page are listed below (click each one for the answer!)</p>
+			<ul>
+				<li><a href=''>I cannot log into cPanel</a></li>
+				<li><a href=''>How do I change my cPanel username?</a></li>
+				<li><a href=''>What is my cPanel password?</a></li>
+			</ul>
+		</div>
+		<div class="span6 offset3">
+			<ul class="nav nav-pills nav-pills-contact pull-right">
+				<li class="pull-right sales-label">Questions? Contact Support:</li>
+				<li class="no-margin clear"><a class="no-margin chat" onclick="launchChat();return false;" onMouseOver="jQuery('#chathoverfaq').fadeIn('fast');"><i class="icon-chat"></i> Support Chat</a></li>
+				<li class="nav-pills-no-link no-margin"><i class="icon-phone"></i> 888.321.HOST(4678)</li>
+			</ul>
+		</div>
+            </div>
+        </div>
+    </header>
+    <nav id="nav" class="navbar navbar-static-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <ul class="nav ico">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Web Hosting</a>
+                        <ul class="dropdown-menu">
+                        <li ><a href="/business-hosting">
+                            <i class="dd icon-business"></i>Business Hosting</a></li>
+                        <li ><a href="/vps-hosting">
+                            <i class="dd icon-vps"></i>VPS Hosting</a></li>
+                        <li ><a href="/dedicated-servers">
+                            <i class="dd icon-dedi"></i>Dedicated Servers</a></li>
+			<li ><a href="/reseller-hosting"><i class="dd icon-reseller"></i>Reseller Hosting</a></li>
+			<li ><a href="/managed-hosting">Managed Hosting</a></li>
+                        <li ><a href="/premier-support">Premier Support &trade;</a></li>
+                        </ul>
+                    </li><!-- /.dropdown -->
+                    <li ><a href="/domains">Domains</a></li>
+                    <li ><a href="/webdesign">Web Design</a></li>
+                    <li ><a href="/site-hosting-tools">Site Hosting Tools</a></li>
+                    <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Meet Us</a>
+                        <ul class="dropdown-menu">
+                            <li ><a href="/meet-us">Meet Us</a></li>
+                            <li ><a href="/about-us">About Us</a></li>
+                            <li><a href="/partners-and-awards">Awards &amp; Partners</a></li>
+                            <li><a href="http://www.inmotionhosting.com/blog">Blog</a></li>
+                            <li><a href="http://www.inmotionhosting.com/employment">We're Hiring</a></li>
+                            <li><a href="/contact">Contact Us</a></li>
+                        </ul>
+                    </li><!-- /.dropdown -->
+			<li class="amp-login"><a href="https://secure1.inmotionhosting.com/index/login"><i class="icon-amp-login"></i>AMP Login</a></li>
+			<li class="support-center active"><a href="http://www.inmotionhosting.com/support"><i class="icon-support-center"></i>Support Center</a></li>
+                </ul><!-- /.nav -->
+            </div>
+        </div>
+    </nav>
+  
+    <div id="main" role="main" style='background:#f9f9f9;'>
+
+	<div style="background:url('/img/rednoise.gif');">
+		<div class='sc_header_logo'>
+			<img src='/support/templates/supportcentertemplate/images/logo.png' style='float:left; margin-left:-138px;' usemap='sclogo' />
+			<map name='sclogo'><area shape='rect' coords='135,20,430,60' href='/support' alt='InMotion Hosting Support Center'></map>
+			<form action="/support/search" method="get" class="form-inline red_header_dsf" id="search_in_header" name="search_in_header">
+	 		<input name="searchword" id="mod-search-searchword" maxlength="80"  class="inputbox search-query" type="text" size="20" value="How may we help?"  onblur="if (this.value=='') this.value='How may we help?';" onfocus="if (this.value=='How may we help?') this.value='';" /> <button class="button btn btn-info" onclick="this.form.searchword.focus();" style='display:inline-block; width:80px; border-radius:3px; height:32px; line-height:22px; margin:0px;'>Search</button>
+			 </form>
+		</div>
+	</div>
+
+	<div style='background:#f3f3f3;'>
+		<div style='width:910px; margin:0px; margin-left:auto; margin-right:auto; position:relative;'>
+			
+<div id="menuWrap">
+  <div id="menuWrapInner" class="container_12 clearfix">
+  <div id="menu" class="width"> 
+    <!--Begin Menu-->
+    <ul id="menu">
+<li class='home_item bc_with_dd' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'><a href='/support/' itemprop='url'><span itemprop='title'>Support Center<span></a><div class='dropdown_2columns'>
+<div class='col_1'>
+	<h2>Knowledge<br />Base</h2>
+	<ul>
+		<li><a href='/support/website'>Website</a></li>
+		<li><a href='/support/email'>Email</a></li>
+		<li><a href='/support/domain-names'>Domain Names</a></li>
+		<li><a href='/support/billing'>Billing</a></li>
+	</ul>
+</div>
+
+<div class='col_1'>
+	<a href='/support/community-support'><h2>Community Support</h2></a>
+	<ul>
+		<li><a href='/support/community-support'>Browse Questions</a></li>
+                <li><a href='/support/community-support/ask-a-question'>Ask a Question</a></li>
+                <li><a href='http://forum.inmotionhosting.com'>Forums</a></li>
+	</ul>
+</div>
+</div></li><li class='bc_arrow'>&gt;&gt;</li><li class='bc_with_dd' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'><a href='/support/edu' itemprop='url'><span itemprop='title'>Education Channels<span></a><div class='dropdown_3columns'>
+<div class='col_3'>
+        <a href='/support/edu'><h2>Education Channels</h2></a>
+</div>
+<div class='col_1'>
+        <ul>
+		<li><a href='/support/edu/cpanel'>cPanel</a></li>
+		<li><a href='/support/edu/dokuwiki'>DokuWiki</a></li>
+		<li><a href='/support/edu/drupal-7'>Drupal 7</a></li>
+		<li><a href='/support/edu/drupal-8'>Drupal 8</a></li>
+                <li><a href='/support/edu/everything-email'>Everything Email</a></li>
+		<li><a href='/support/edu/joomla-25'>Joomla 2.5</a></li>
+		<li><a href='/support/edu/joomla-3'>Joomla 3.1</a></li>
+		<li><a href='/support/edu/magento'>Magento 1.6</a></li>
+		<li><a href='/support/edu/mambo'>Mambo</a></li>			
+        </ul>
+</div>
+<div class='col_1'>
+        <ul>
+                <li><a href='/support/edu/mediawiki'>MediaWiki</a></li>
+		<li><a href='/support/edu/moodle'>Moodle</a></li>
+		<li><a href='/support/edu/movable-type'>Movable Type</a></li>
+		<li><a href='/support/edu/opencart'>OpenCart</a></li>
+		<li><a href='/support/edu/oscommerce'>osCommerce</a></li>
+		<li><a href='/support/edu/php-fusion'>PHP-Fusion</a></li>
+		<li><a href='/support/edu/php-nuke'>PHP-Nuke</a></li>
+		<li><a href='/support/edu/phpbb'>phpBB</a></li>
+		<li><a href='/support/edu/phplist'>phpList</a></li>
+        </ul>
+</div>
+<div class='col_1'>
+        <ul>
+		<li><a href='/support/edu/premium-website-builder'>Premium Website Builder</a></li>
+                <li><a href='/support/edu/prestashop-15'>PrestaShop 1.5</a></li>
+                <li><a href='/support/edu/smf'>SMF</a></li>
+                <li><a href='/support/edu/tiki-wiki'>Tiki Wiki</a></li>
+                <li><a href='/support/edu/whm'>Web Hosting Manager</a></li>
+		<li><a href='/support/edu/website-design'>Website Design</a></li>
+                <li><a href='/support/edu/wordpress'>WordPress</a></li>
+	</ul>
+</div>
+</div></li><li class='bc_arrow'>&gt;&gt;</li><li class='bc_with_dd' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'><a href='/support/edu/cpanel' itemprop='url'><span itemprop='title'>cPanel<span></a><div class='dropdown_4columns'><h2>cPanel Education Channel</h2><div class='col_2'><h3>100 Level Classes</h3><div><a href='/support/edu/cpanel/getting-started-cpanel'>101: Getting Started in cPanel</a></div><div><a href='/support/edu/cpanel/cpanel-fantastico'>102: Fantastico de Luxe</a></div><div><a href='/support/edu/cpanel/softaculous'>103: Using Softaculous</a></div></div><div class='col_2'><h3>200 Level Classes</h3><div><a href='/support/edu/cpanel/cpanel-email'>201: Using Email</a></div><div><a href='/support/edu/cpanel/cpanel-file-manager'>202: Managing your Files in cPanel</a></div><div><a href='/support/edu/cpanel/cpanel-manage-domains'>203: Managing your Domains in cPanel</a></div></div></div></li><li class='bc_arrow'>&gt;&gt;</li><li class='bc_with_dd' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'><a href='/support/edu/cpanel/getting-started-cpanel' itemprop='url'><span itemprop='title'>101: Getting Started in cPanel<span></a><div class='dropdown_3columns'><h2> Getting Started in cPanel</h2><div class='col_3'><div>1. <a style='display:inline;' href='/support/edu/cpanel/getting-started-cpanel/what-is-cpanel'>What is cPanel?</a></div><div>2. <a style='display:inline;' href='/support/edu/cpanel/getting-started-cpanel/how-to-log-into-cpanel'>cPanel Login</a></div><div>3. <a style='display:inline;' href='/support/edu/cpanel/getting-started-cpanel/cpanel-layout'>The cPanel Layout</a></div><div>4. <a style='display:inline;' href='/support/edu/cpanel/getting-started-cpanel/change-password'>How to Change your cPanel Password</a></div><div>5. <a style='display:inline;' href='/support/edu/cpanel/getting-started-cpanel/how-to-find-server-specifications-in-cpanel-stats'>How to find server specifications in cPanel stats</a></div><div>6. <a style='display:inline;' href='/support/edu/cpanel/getting-started-cpanel/how-to-view-your-php-version-in-cpanel'>How to View Your PHP Version in cPanel</a></div><div>7. <a style='display:inline;' href='/support/edu/cpanel/getting-started-cpanel/using-cpanel-video-tutorials'>Using the cPanel Video Tutorials</a></div></div></div></li><li class='bc_arrow'>&gt;&gt;</li><li class='bc_no_dd' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'><span itemprop='title'>cPanel Login</span></li>			</ul>
+		</div>
+	</div>
+</div>
+
+		</div>
+	</div>
+
+
+
+
+
+
+	
+
+
+
+
+
+	<div style='width:910px; margin:0px; padding:30px 0px 30px 0px; margin-left:auto; margin-right:auto;'>
+
+		<div style='width:675px; margin:0px; padding:0px; float:left;'>
+
+	                       	
+			
+			
+<div id="system-message-container">
+<div id="system-message">
+</div>
+</div>
+			<div class="item-page">
+							<div class="btn-group pull-right">
+				<a class="btn dropdown-toggle" data-toggle="dropdown" href="#"> <i class="icon-cog"></i> <span class="caret"></span> </a>
+								<ul class="dropdown-menu actions">
+																					<li class="edit-icon"> <a href="/support/?task=article.edit&amp;a_id=970&amp;return=aHR0cDovL3d3dy5pbm1vdGlvbmhvc3RpbmcuY29tL3N1cHBvcnQvZWR1L2NwYW5lbC9nZXR0aW5nLXN0YXJ0ZWQtY3BhbmVsL2hvdy10by1sb2ctaW50by1jcGFuZWw=" ><span class="hasTip icon-edit tip" title="Edit Article :: Published&lt;br /&gt;Friday, 02 September 2011&lt;br /&gt;Written by Brad Markle"></span>&#160;Edit&#160;</a> </li>
+									</ul>
+			</div>
+			
+		<div class="page-header">
+				<h1>
+															cPanel Login									</h1>
+			
+																
+				
+					<div style='font-size:12px; color:#aaa; margin-bottom:-10px; padding-top:5px;'>
+							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Written by <a href='https://plus.google.com/102670474114655224886'>Brad Markle</a></div>
+							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Views:</span> 119,111</div>
+							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Published:</span> Sep 2, 2011</div>
+						<div style='float:left;'><span style='color:#606060;'>Last Modified:</span> Sep 19, 2013</div>		<div style='clear:both;'></div>
+						</div>
+						</div>
+	
+	
+		
+
+	
+
+								<div class="in_this_tutorial">
+  <h2>In this tutorial:</h2>
+  <button type="button" class="btn btn-primary" onclick="trackAnchorClickSC('video');">How do I login?</button>
+  <button type="button" class="btn btn-danger" onclick="trackAnchorClickSC('cpanel-login-issues');">I can't login!</button>
+</div>
+
+<p>This tutorial will review the two different ways you can login to cPanel, <a href='#access-via-amp'>via AMP</a> and <a href='#access-cpanel-directly'>via a direct login URL</a>. We also have a <a href='#video'>video tutorial</a> that will walk you through both of the options. The second part of this guide reviews <a href='#cpanel-login-issues'>the common reasons why you may have trouble logging in</a>.</p>
+
+<a name="video"></a>
+<h2>Video Tutorial</h2>
+<p>In the video below, we'll show you how to login to cPanel via AMP as well as the direct method of going to yourdomain.com/cpanel</p>
+<iframe width='675' height='315' src='https://www.youtube.com/embed/P7fVGeE3gDU' frameborder='0' allowfullscreen style='margin-bottom:15px;'></iframe>
+<div style='clear:both;'></div>
+
+<a name="access-via-amp"></a>
+<h2>Option #1 - Access cPanel from within AMP</h2>
+<p>Accessing cPanel from within AMP is a very straightforward process:</p>
+<ol class="article_list">
+<li><a class="std_ss" href="/support/images/stories/cpanel/login/login-1-amp-link.png"><img style="float: right; margin: 0px 0px 15px 15px;"  alt="Account Management Panel Link" src="/support/images/stories/cpanel/login/login-1-amp-link.png" width="100" /></a><a href="/support/website/how-to/how-to-log-into-amp">Log into AMP</a>.<br style="clear: both;" />
+</li>
+<li><a class="std_ss" href="/support/images/stories/cpanel/login/login-2-control-panel.png"><img style="float: right; margin: 0px 0px 15px 15px;"  alt="Work in control panel link" src="/support/images/stories/cpanel/login/login-2-control-panel.png" width="100" /></a>Click the <strong>Work in Control Panels</strong> link (under the <em>Control Panel</em>) header.<br style="clear: both;" />
+</li>
+<li><a class="std_ss" href="/support/images/stories/cpanel/login/log-into-cpanel-via-amp.gif"><img style="float: right; margin: 0px 0px 15px 15px;"  alt="AMP cPanel login link" src="/support/images/stories/cpanel/login/log-into-cpanel-via-amp.gif" width="100" /></a>Click <strong>cPanel Login</strong> under the account you would like to log into.<br style="clear: both;" />
+</li>
+</ol>
+
+<a name="access-cpanel-directly"></a>
+<h2>Option #2 - Access cPanel through your browser address bar</h2>
+<ol class="article_list">
+<li>
+  <p>Visit the the following URL to get to your cPanel login:</p>
+  <p class='white_box'>YourDomain.com/cpanel</p>
+  <p class="alert" style="color:red"><strong>Note!</strong> Replace the term <em>YourDomain.com</em> with your actual domain name.</p>
+</li>
+<li><a class="std_ss" href="/support/images/stories/cpanel/login/login-4-login-prompt.png"><img style="float: right; margin: 0px 0px 15px 15px;" src="/support/images/stories/cpanel/login/login-4-login-prompt.png" alt="cPanel login prompt"  width="100" /></a>Type in your <strong>cPanel username</strong> and <strong>password</strong>. Your cPanel Username can be found in your <a target="_blank" title="Click here for info on your cPanel username " href="/support/website/how-to/viewing-account-technicial-information-in-amp">technical details in AMP</a>. If you do not know your password, you can reset it by following the instructions <a href="/support/website/cpanel/resetting-cpanel-password-amp">here</a>.<br style="clear: both;" />
+</li>
+</ol>
+
+<a name="cpanel-login-issues"></a>
+<h2>Troubleshooting cPanel Login Issues</h2>
+  <a name="reset-cpanel-password"></a>
+<h3>I want to reset my cPanel password</h3>
+<p>To reset your password, please see our tutorial on <a href="/support/website/cpanel/resetting-cpanel-password-amp">resetting your cPanel password using AMP</a>.</p>
+  <a name="not-prompted-for-username"></a>
+  <h3>I am not prompted to login with a Username and Password when attempting to login</h3>
+<p>If you are not prompted for a username / password when visiting yourdomain.com/cpanel, your domain name may have been just registered and not working yet due to <a href="/support/domain-names/dns-nameserver-changes/domain-names-dns-changes">propagation</a>, your domain may not be <a href="/support/domain-names/dns-nameserver-changes/domain-names-registrar-transfer-versus-nameserver-change">pointing to our servers</a>, or you're using an internet connection in which the cPanel ports (2082 / 2083) are blocked. Usually trying one of the following will resolve these issues:</p>
+<ol>
+<li>
+  <p>Use <strong>cpanel.your-domain.com</strong> instead of <strong>your-domain.com/cpanel</strong>.</p>
+  <p><em>(This uses the cPanel proxy, which accesses cPanel over the standard port 80 vs. 2082 / 2083)</em></p></li>
+  <li>Use your <a href="/support/website/how-to/using-your-temporary-url">temporary cPanel URL</a>, such as biz###.inmotionhosting.com/cpanel.</li>
+</ol>
+  <a name="wrong-username"></a>
+  <h3>I am entering a username and password, but they are not being accepted</h3>
+<p>If your username and password are not being accepted when logging into cPanel, it could be either of these issues:</p>
+<ul class="article_list">
+<li>Make sure you are using the correct cPanel URL.<br /> <span style="background-color: lightgoldenrodyellow;">(Refer to the directions above under '<em>I am not prompted for a username and password</em>')</span></li>
+<li>Make sure your username is entered all lower case, and your password is case-sensitive.<br /> <span style="background-color: lightgoldenrodyellow;">(For example,&nbsp;<strong>password</strong> is different from&nbsp;<strong>PassWord</strong>)</span></li>
+<li>You are using the incorrect password. Don't worry, this is very common.<br /> <span style="background-color: lightgoldenrodyellow;">(If you forgot your cPanel password, you can <a href="/support/website/cpanel/resetting-cpanel-password-amp">reset your cPanel password via AMP</a>).</span></li>
+</ul>
+
+<h3>I do not have a hosting account, I have a domain only account</h3>
+<p>If you have a domain name only account, you do not have a cPanel to login to. If you would like, you can <a href="/support/website/general-server-setup/upgrade-downgrade-hosting-plan">upgrade your account to include hosting</a>.</p>
+
+
+<h2>Web Hosting</h2>
+<p>If you are unsure about what cPanel is and how it makes hosting easier for you, read our article about <a href="http://www.inmotionhosting.com/cpanel-hosting/cpanel-web-hosting.html">cPanel web hosting</a> to see the popular features.</p>
+<p>Please check the next article on <a target="_blank" href="/support/edu/cpanel/getting-started-cpanel/cpanel-layout" title="Click here to view the next article">The cPanel Layout</a>. If you missed our previous article, please see the <a href="/support/edu/cpanel/getting-started-cpanel/what-is-cpanel" title="Click here to view the previous article" target="_blank">What is cPanel?</a> tutorial. For more information on this course please visit <a target="_blank" href="/support/edu/cpanel/getting-started-cpanel" title="Click here to view the courses">Getting Started in cPanel</a>.</p>
+ 
+	
+						 </div>
+
+	
+
+
+
+
+
+
+	<a name='like_this_article'></a>
+		<div style='text-align:right; margin:30px -22px 0px 0px;'>
+			<span style='padding-right:15px;'>Like this Article?</span>
+			<iframe src='//www.facebook.com/plugins/like.php?href=http://www.inmotionhosting.com/support/edu/cpanel/getting-started-cpanel/how-to-log-into-cpanel&amp;send=false&amp;layout=button_count&amp;width=100&amp;show_faces=false&amp;font=verdana&amp;colorscheme=light&amp;action=like&amp;height=21&amp;appId=209145459223160' scrolling='no' frameborder='0' style='border:none; overflow:hidden; width:100px; height:21px;' allowTransparency='true'></iframe>
+			
+<div class='g-plusone' data-size='medium' data-href='http://www.inmotionhosting.com/support/edu/cpanel/getting-started-cpanel/how-to-log-into-cpanel'></div>
+<script type='text/javascript'>
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+			<a href='https://twitter.com/share' class='twitter-share-button' data-via='inmotionhosting'>Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='//platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','twitter-wjs');</script>
+		</div>
+	  <div class='white_box' style="background: #92222c; margin: 20px 0px;">
+                                        <div style='float:left; width:210px; margin-right:15px; text-align:left; border:1px solid #92222c;'>
+                                                <div>&laquo; Prev</div>
+                                                <a href='/support/edu/cpanel/getting-started-cpanel/what-is-cpanel' style='color:#fff;'>What is cPanel?</a>
+                                        </div>
+                                        <div style='float:right; width:210px; text-align:right; border: 1px solid #92222c;'>
+                                                <div>Next &raquo;</div>
+                                                <a href='/support/edu/cpanel/getting-started-cpanel/cpanel-layout' style='color:#fff;'>The cPanel Layout</a>
+                                        </div>
+                                        <div style='float:left; width:210px; text-align:center; border:1px solid #92222c;'>
+                                                <div style='font-size:14px; font-weight:bold;'>Category</div>
+                                                <a href='/support/edu/cpanel/getting-started-cpanel' style='color:#fff;'>101: Getting Started in cPanel</a>
+                                        </div>
+                                        <div style='clear:both;'></div>
+                                </div>
+                        	<div style='margin:100px 0px;'>
+			<div style='border:1px solid #000; background:#ddd; padding:4px;'>Admin Tools</div>
+			
+				<form style='margin:10px 0px; border:1px solid #000; background:#ddd; padding:4px;' method='post'>
+					<h2 style='color:red;'>Edit</h2>
+					<input type='hidden' name='unexpected_query_id' id='unexpected_query_id' value='16' />
+					<textarea name='unexpected_query_query' id='unexpected_query_query' style='width:98%; height:75px; font-size:11px; display:block;'>=can get cpanel=log in cpanel=access cpanel=cpanel address=cpanle not see=</textarea>
+					<input type='text' name='unexpected_query_url' id='unexpected_query_url' value='/support/edu/cpanel/getting-started-cpanel/how-to-log-into-cpanel' style='width:100%; display:block;' />
+					<input type='text' name='unexpected_query_title' id='unexpected_query_title' value='How To Log Into cPanel' style='width:100%; display:block;' />
+					<textarea name='unexpected_query_description' id='unexpected_query_description' style='width:98%; display:block;'>Here, we&#039;ll teach you how to log into cPanel.</textarea>
+					<input type='submit' name='admin_tools_uq_action' id='admin_tools_uq_action' value='edit' />
+				</form>
+			
+				<form style='margin:10px 0px; border:1px solid #000; background:#ddd; padding:4px;' method='post'>
+					<h2 style='color:red;'>Edit</h2>
+					<input type='hidden' name='unexpected_query_id' id='unexpected_query_id' value='83' />
+					<textarea name='unexpected_query_query' id='unexpected_query_query' style='width:98%; height:75px; font-size:11px; display:block;'>=use cpanel=</textarea>
+					<input type='text' name='unexpected_query_url' id='unexpected_query_url' value='/support/edu/cpanel/getting-started-cpanel/how-to-log-into-cpanel' style='width:100%; display:block;' />
+					<input type='text' name='unexpected_query_title' id='unexpected_query_title' value=' cPanel Login ' style='width:100%; display:block;' />
+					<textarea name='unexpected_query_description' id='unexpected_query_description' style='width:98%; display:block;'>Learn how to login to cPanel, troubleshoot various issues with logging in and where to login to cPanel.</textarea>
+					<input type='submit' name='admin_tools_uq_action' id='admin_tools_uq_action' value='edit' />
+				</form>
+			
+			
+                                <form style='margin:10px 0px; border:1px solid #000; background:#ddd; padding:4px;' method='post'>
+					<h2 style='color:red;'>Add new</h2>
+                                        <textarea name='unexpected_query_query' id='unexpected_query_query' style='width:98%; height:75px; font-size:11px; display:block;'></textarea>
+                                        <input type='text' name='unexpected_query_url' id='unexpected_query_url' value='/support/edu/cpanel/getting-started-cpanel/how-to-log-into-cpanel' style='width:100%; display:block;' />
+                                        <input type='text' name='unexpected_query_title' id='unexpected_query_title' value='cPanel Login' style='width:100%; display:block;' />
+                                        <textarea name='unexpected_query_description' id='unexpected_query_description' style='width:98%; display:block;'>Learn how to login to cPanel, troubleshoot various issues with logging in and where to login to cPanel.</textarea>
+                                        <input type='submit' name='admin_tools_uq_action' id='admin_tools_uq_action' value='new' />
+                                </form>
+                        
+		</div>
+	
+	<div style='clear:both;'></div>
+
+
+<a name='post_a_comment'></a>
+<div class='main_comment_submission_div' style='margin-top:20px;'>
+	<h3>Post a Comment</h3>
+
+	<form method='post'>
+		<textarea name='new_comment' id='new_comment' style='height:75px;'></textarea>
+		<input type='hidden' name='sc_task' id='sc_task' value='add_comment' />
+		<input type='hidden' name='object_group' id='object_group' value='com_content' />
+		<input type='hidden' name='object_id' id='object_id' value='970' />
+		<input type='submit' value='Submit Comment' class='btn btn-info' style='display:inline;' />
+	</form>
+
+	<div style='border-bottom:1px dotted #bbb; margin-bottom:15px;'></div>
+
+	<div class='small_full_gear_grey'>
+		<a onClick="jQuery('#comment_notifications_form').slideToggle('slow');" style='cursor:pointer;'>
+			Email Notifications
+		</a>
+	</div>
+
+	<form method='post' name='comment_notifications_form' id='comment_notifications_form' style='display:none;'>
+		<div style='margin:10px 0px 5px 0px;'>Would you like to receive email notifications whenever there is a new comment on this page?</div>
+		<input type='radio' name='get_new_comment_notifications' id='get_new_comment_notifications' value='yes' checked >Yes<br />
+		<input type='radio' name='get_new_comment_notifications' id='get_new_comment_notifications' value='no'  > No<br />
+		<input type='submit' name='update' value='Update' class='btn btn-info' style='display:inline;margin-top:10px;' />
+		<input type='hidden' name='user_id' id='user_id' value='314177563' />
+		<input type='hidden' name='article_id' id='article_id' value='970' />
+		<input type='hidden' name='sc_task' id='sc_task' value='change_new_comment_notifications' />
+	</form>
+</div>
+
+		</div>
+		
+		<div style='width:220px; margin:0px; float:right;'>
+			        		<div class="moduletable">
+					<form action="/support/" method="post" id="login-form" class="form-vertical">
+	<div class="login-greeting"><h3>
+	Hi <a href='/support/community-support/users/BradM'>BradM</a>,	</h3></div>
+	<div class="logout-button">
+		<input type="submit" name="Submit" class="btn btn-primary" value="Log out" />
+		<input type="hidden" name="option" value="com_users" />
+		<input type="hidden" name="task" value="user.logout" />
+		<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZjYXRpZD0xMzImaWQ9OTcwJnZpZXc9YXJ0aWNsZSZJdGVtaWQ9MTAx" />
+		<input type="hidden" name="d731ae26372b67496102eaec788ba927" value="1" />	</div>
+</form>
+		</div>
+			<div class="moduletable">
+					
+		<a href='/support/edu/cpanel/getting-started-cpanel'><h3 style='border-bottom:1px solid #bbb; margin-bottom:10px; padding-bottom:2px; font-size:16px; line-height:17px;'> Getting Started in cPanel</h3></a>
+		<table>  <tr >
+                        <td valign='top'>1.</td>
+                        <td><a href='/support/edu/cpanel/getting-started-cpanel/what-is-cpanel'>What is cPanel?</a></td>
+                </tr>
+          <tr style='border-top:1px solid #bbb; border-bottom:1px solid #bbb; background:#eee;'>
+                        <td valign='top'>2.</td>
+                        <td><a href='/support/edu/cpanel/getting-started-cpanel/how-to-log-into-cpanel'>cPanel Login</a></td>
+                </tr>
+          <tr >
+                        <td valign='top'>3.</td>
+                        <td><a href='/support/edu/cpanel/getting-started-cpanel/cpanel-layout'>The cPanel Layout</a></td>
+                </tr>
+          <tr >
+                        <td valign='top'>4.</td>
+                        <td><a href='/support/edu/cpanel/getting-started-cpanel/change-password'>How to Change your cPanel Password</a></td>
+                </tr>
+          <tr >
+                        <td valign='top'>5.</td>
+                        <td><a href='/support/edu/cpanel/getting-started-cpanel/how-to-find-server-specifications-in-cpanel-stats'>How to find server specifications in cPanel stats</a></td>
+                </tr>
+          <tr >
+                        <td valign='top'>6.</td>
+                        <td><a href='/support/edu/cpanel/getting-started-cpanel/how-to-view-your-php-version-in-cpanel'>How to View Your PHP Version in cPanel</a></td>
+                </tr>
+          <tr >
+                        <td valign='top'>7.</td>
+                        <td><a href='/support/edu/cpanel/getting-started-cpanel/using-cpanel-video-tutorials'>Using the cPanel Video Tutorials</a></td>
+                </tr>
+          	</table>
+	
+		</div>
+			<div class="moduletable">
+					
+                <h3>Related Questions</h3>
+                <div>Here are a few questions related to this article that our customers have asked:</div>
+        
+				<div style='margin:10px 0px;'>
+                                        <a href='/support/community-support/cpanel/should-i-be-concerned-about-a-warning-when-logging-into-cpanel'>cPanel SSL Login warning : site's identity can't be verified</a>
+                                </div>
+			
+				<div style='margin:10px 0px;'>
+                                        <a href='/support/community-support/cpanel/why-cant-i-log-into-my-cpanel-i-get-an-error-message'>Why do I see :2083/login/ when I try to login to cPanel?</a>
+                                </div>
+			
+				<div style='margin:10px 0px;'>
+                                        <a href='/support/community-support/cpanel/i-cannot-log-in-to-cpanel-error-403'>I cannot log in to cpanel - error 403</a>
+                                </div>
+			
+				<div style='margin:10px 0px;'>
+                                        <a href='/support/community-support/cpanel/can-not-log-in-to-cpanel'>Connection Timed Out error when accessing cPanel</a>
+                                </div>
+			
+				<div style='margin:10px 0px;'>
+                                        <a href='/support/community-support/general-information/how-to-login-to-cpanel'>How to login to cpanel</a>
+                                </div>
+			
+				<div style='margin:10px 0px;'>
+                                        <a href='/support/community-support/cpanel/cpanel-login'>Log into cPanel for Addon domain</a>
+                                </div>
+			
+				<div style='margin:10px 0px;'>
+                                        <a href='/support/community-support/cpanel/cant-log-into-cpanel'>Blank page after logging into cPanel</a>
+                                </div>
+			
+				<div style='margin:10px 0px;'>
+                                        <a href='/support/community-support/domain-names/how-to-log-in-to-my-cpanel-for-a-new-domain'>How to log in to my cPanel for a new domain.</a>
+                                </div>
+			
+				<div style='margin:10px 0px;'>
+                                        <a href='/support/community-support/cpanel/cannot-log-in-to-cpanel'>Cannot log into cpanel through amp</a>
+                                </div>
+			
+				<div style='margin:10px 0px;'>
+                                        <a href='/support/community-support/cpanel/unable-to-login-cpanel'>cPanel username and password not being accepted</a>
+                                </div>
+			
+				<div style='margin:10px 0px;'>
+                                        <a href='/support/community-support/website-troubleshooting/cpanel-login-prompt'>cPanel login prompt stealing my password?</a>
+                                </div>
+			
+				<div style='margin:10px 0px;'>
+                                        <a href='/support/community-support/cpanel/cant-access-cpanel'>Can't get into cPanel</a>
+                                </div>
+			
+				<div style='margin:10px 0px;'>
+                                        <a href='/support/community-support/cpanel/cant-access-cpanel-for-my-website'>Can't  access cpanel for my website.   </a>
+                                </div>
+			
+				<div style='margin:10px 0px;'>
+                                        <a href='/support/community-support/cpanel/cpanel-two-login-boxes-one-as-separate-window'>cpanel two login boxes one as separate window</a>
+                                </div>
+			
+                <div>Would you like to ask a question about this page? If so, click the button below!</div>
+                <div style='text-align:right; margin-top:10px;'><a class='btn btn-primary' href='/support/community-support/ask-a-question'>Ask a Question</a></div>
+        		</div>
+	
+	</div>
+	
+
+      <div style='clear:both;'></div>
+    </div>
+
+	<div style="background:url('/img/pattern.gif');">
+		<div style='width:910px; margin:0px; padding:10px 0px 10px 0px; margin-left:auto; margin-right:auto;'>
+			<h2 style='text-align:center;margin-bottom:10px;'>Need more Help?</h2>
+
+
+<div style='border:1px solid #ddd; background:#fff; padding:20px;'>
+
+	<div style='float:left; width:47%; border-bottom:1px solid #ddd; height:110px;'>
+
+		<h3>Search</h3>
+		<form action="/support/search" method="get" >
+    			<input name="searchword" id="mod-search-searchword" maxlength="80"  class="inputbox search-query" type="text" size="20" value="How may we help?"  onblur="if (this.value=='') this.value='How may we help?';" onfocus="if (this.value=='How may we help?') this.value='';" />
+			<button class="button btn btn-info" onclick="this.form.searchword.focus();">Search</button>
+		 </form>
+	</div>
+
+	<div style='float:right; width:47%; border-bottom:1px solid #ddd; height:110px;'>
+
+                <h3>Ask the Community!</h3>
+                <div>Get help with your questions from our community of like-minded hosting users and InMotion Hosting Staff.</div>
+                <ul style='margin-left:18px;'>
+                        <li style='float:left; padding:0px 40px 0px 0px;'><a href='/support/community-support'>Browse Questions</a></li>
+                        <li style='float:left;'><a href='/support/community-support/ask-a-question'>Ask a Question</a></li>
+                </ul>
+        </div>
+
+	<div style='clear:both; margin-bottom:20px;'></div>
+
+	<div style='float:left; width:47%;'>
+
+		<h3>Current Customers</h3>
+                <table>
+                        <tr>
+                                <th style='text-align:right;'>Chat:</th>
+                                <td><a rel="nofollow" href="https://chatwithourteam.com/licence/1001/open_chat.cgi?lang=eh&params=IMH%20IMH%20IMH%20-%20INMOTION%20HOSTING%20-%20IMH%20IMH%20IMH&groups=0" onclick="window.open('https://chatwithourteam.com/licence/1001/open_chat.cgi?layout=inm&lang=ei&params=IMH%20IMH%20IMH%20-%20INMOTION%20HOSTING%20-%20IMH%20IMH%20IMH&amp;groups=0&amp;dc='+escape(document.cookie+';l='+document.location+';r='+document.referer+';s='+typeof lc_session),'chat_1001','width=529,height=520,resizable=yes,scrollbars=no,status=1');return false;">Click to Chat Now</a>
+                                </td>
+				<th style='text-align:right;'>E-mail:</th>
+                                <td><a href="mailto:support@inmotionhosting.com">support@InMotionHosting.com</a></td>
+                        </tr>
+                        <tr>
+				<th style='text-align:right;'>Call:</th>
+                                <td>888-321-HOST (4678)</td>
+                                <th style='padding-left:10px;text-align:right;'>Ticket:</th>
+                                <td><a href='https://support.inmotionhosting.com/cgi-bin/pdesk.cgi' title='Submit a Support Ticket'>Submit a Support Ticket</a></td>
+                        </tr>
+                </table>
+
+	</div>
+
+	<div style='float:right; width:47%;'>
+
+		<h3>Not a Customer?</h3>
+		Get <a href="http://www.inmotionhosting.com">web hosting</a> from a company that is here to help. <a href="http://www.inmotionhosting.com">Sign up today!</a>
+	</div>
+
+	<div style='clear:both;'></div>
+</div>
+		</div>
+	</div>
+  
+    </div><!-- /#main -->
+  
+    <span class=""></span>
+<footer role="contentinfo" class="wrap">
+        <div class="container">
+	<ul class="nav nav-list span2">
+                <li class="nav-header">Web Hosting</li>
+		<li><a href="/business-hosting">Business Class Hosting</a></li>
+                <li><a href="/cheap-hosting">Cheap Hosting</a></li>
+                <li><a href="/vps-hosting">VPS Hosting</a></li>
+                <li><a href="/dedicated-servers">Dedicated Servers</a></li>
+		<li><a href="/reseller-hosting">Reseller Hosting</a></li>
+		<li><a href="/launch-assist">Launch Assist&trade;</a></li>
+                <li><a href="/managed-hosting">Managed Hosting</a></li>
+                <li><a href="/domains">Domain Names</a></li>
+                <li><a href="/webdesign">Web Design</a></li>
+            </ul>
+            <ul class="nav nav-list span2">
+                <li class="nav-header">Hosting Tools</li>
+                <li><a href="/wordpress-hosting">WordPress</a></li>
+                <li><a href="/joomla-hosting">Joomla</a></li>
+                <li><a href="/drupal-hosting">Drupal</a></li>
+                <li><a href="/host-with-cpanel">cPanel</a></li>
+                <li><a href="/prestashop-hosting">PrestaShop</a></li>
+                <li><a href="/moodle-hosting">Moodle</a></li>
+                <li><a href="/opencart-hosting">OpenCart</a><li>
+                </ul>
+            <ul class="nav nav-list span2">
+                <li class="nav-header">Community</li>
+                <li><a href="/premier-support">Premier Support &trade;</a></li>
+                <li><a href="http://www.inmotionhosting.com/support">Support Center</a></li>
+                <li><a href="/hosting-affiliate-program">Host Affiliate</a></li>
+                <li><a href="/infographics">Infographics</a></li>
+                <li><a href="/los-angeles-web-hosting">Los Angeles Hosting</a></li>
+                <li><a href="/meet-us/go-green">Green Data Centers</a></li>
+                <li><a href="http://www.inmotionhosting.com/edu">Student Web Hosting</a></li>
+            </ul>
+            <ul class="nav nav-list span2">
+                <li class="nav-header">About Us</li>
+                <li><a href="/contact">Contact Us</a></li>
+                <li><a href="/terms-of-service">Terms of Service</a></li>
+                <li><a href="/privacy-policy">Privacy Policy</a></li>
+                <li><a href="http://www.inmotionhosting.com/blog">Blog</a></li>
+                <li><a href="/guarantee">Guarantee</a></li>
+                <li><a href="/testimonials">Testimonials</a></li>
+                <li><a href="http://www.inmotionhosting.com/employment">We're Hiring</a></li>
+                <li><a href="/sitemap">Site Map</a></li>
+            </ul>
+        <div class="span3">
+            <ul class="ft-iconlist">
+                <li>Stay in touch on</li>
+                <li><a href="https://plus.google.com/+inmotionhosting/posts"><img src="/img/icon-google.png" alt="google+" ></a></li>
+                <li><a href="https://twitter.com/inmotionhosting"><img src="/img/icon-twitter.png" alt="twitter"></a></li>
+                <li><a href="https://www.facebook.com/inmotionhosting"><img src="/img/icon-facebook.png" alt="facebook"></a></li>
+            </ul>
+        </div>
+        <div itemscope itemtype="http://schema.org/LocalBusiness">
+            <span class="ft-logo pull-right"> <a href="/"><img src="/img/footer-logo.png" alt="InMotion Hosting"></a></span>
+            <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            <span itemprop="streetAddress">6100 Center Drive, Suite 1190</span><br />
+            <span itemprop="addressLocality" class="city">Los Angeles</span>, <span itemprop="addressRegion" class="state">CA</span> <span itemprop="postalCode" class="postalcode">90045</span><br />
+            <span itemprop="telephone">888-321-HOST(4678)</span><br />
+            <span>2013 &copy; All Rights Reserved</span></p>
+        </div>
+        </div>
+    </div>
+    </footer>
+
+
+
+
+
+<div style='display:none;'><!-- Google Code for All IMH Visitors Remarketing List -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1071887445;
+var google_conversion_language = "en";
+var google_conversion_format = "3";
+var google_conversion_color = "ffffff";
+var google_conversion_label = "irDaCIfI1AIQ1eiO_wM";
+var google_conversion_value = 0;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/1071887445/?label=irDaCIfI1AIQ1eiO_wM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+
+
+
+
+
+<!-- Google Code for All Support Center Visitors Remarketing List -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1071887445;
+var google_conversion_language = "en";
+var google_conversion_format = "3";
+var google_conversion_color = "ffffff";
+var google_conversion_label = "3soRCI_H1AIQ1eiO_wM";
+var google_conversion_value = 0;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/1071887445/?label=3soRCI_H1AIQ1eiO_wM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Google Code for cPanel Support Center -->
+<!-- Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. For instructions on adding this tag and more information on the above requirements, read the setup guide: google.com/ads/remarketingsetup -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1071887445;
+var google_conversion_label = "6MPoCKfdxwMQ1eiO_wM";
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1071887445/?value=0&amp;label=6MPoCKfdxwMQ1eiO_wM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+
+
+
+
+
+<script type="text/javascript">
+adroll_adv_id = "RTJSUGR5VJDLTAJZWPJL3N";
+adroll_pix_id = "FYDQCMNHNFBATJIQE2L5UC";
+(function () {
+var oldonload = window.onload;
+window.onload = function(){
+   __adroll_loaded=true;
+   var scr = document.createElement("script");
+   var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
+   scr.setAttribute('async', 'true');
+   scr.type = "text/javascript";
+   scr.src = host + "/j/roundtrip.js";
+   ((document.getElementsByTagName('head') || [null])[0] ||
+    document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
+   if(oldonload){oldonload()}};
+}());
+</script>
+
+
+
+
+
+
+<!-- Google Code for All IMH Vistirs -->
+<!-- Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. For instructions on adding this tag and more information on the above requirements, read the setup guide: google.com/ads/remarketingsetup -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1071887445;
+var google_conversion_label = "irDaCIfI1AIQ1eiO_wM";
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1071887445/?value=0&amp;label=irDaCIfI1AIQ1eiO_wM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+</div>
+
+
+
+
+
+
+
+			<script type='text/javascript'>
+				setInterval(
+				function()
+				{
+					var staff_popup_text;
+
+					jQuery.ajax({url:'http://www.inmotionhosting.com/support/bradinternaltools/hud.php?new_window_alert=1',success:function(result){
+						if(result != '')
+							alert(result);
+					}});
+				},180000);
+			</script>
+
+		
+
+
+
+
+
+</body>
+</html>
+

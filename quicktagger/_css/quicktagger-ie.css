@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* InMotion Quick Tagger - IE Hacks */
+#utm_source, #utm_campaign, #fullurl, #twurl {
+	margin-right: 214px;
+}
+#footer {
+	height: 27px;
+}
+*  html #content {
+	height: 130px;
+}

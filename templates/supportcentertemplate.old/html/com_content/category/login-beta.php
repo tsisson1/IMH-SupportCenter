@@ -1,0 +1,75 @@
+<?
+	$document = JFactory::getDocument();
+	$document->setMetaData('robots','noindex,follow');
+?>
+
+
+
+
+
+
+<div class='item-page'>
+
+	<div class='page-header'>
+		<h1>Support Center Login</h1>
+	</div>
+
+	<?
+	/*
+
+	<h2>Login with AMP</h2>
+
+	<form enctype='application/x-www-form-urlencoded' method='post' class='well-small amp-pill' action='/support/login-with-amp' style='display:inline-block;'>
+	
+		<input type='text' name='username' id='username' value='' helper='formText' placeholder='email address'>
+
+		<input type='password' name='password' id='password' value='' helper='formPassword' placeholder='password'>
+
+		<input type='submit' name='submit' id='submit' value='Log in' class='btn btn-primary'>
+	</form>
+
+	<div style='clear:both;'></div>
+
+	<p>
+	<div><a href='https://secure1.inmotionhosting.com/index/forgot'>I don't remember my password</a></div>
+	<div><a href='/support/website/how-to/how-to-log-into-amp'>Video Tutorial</a></div>
+	</p>
+
+	<h2 style='margin:20px 0px;'>-Or-</h2>
+
+	*/
+	?>
+
+
+	<div style='width:400px; float:right;'>
+		<h2>Why login with Social Media?</h2>
+		<p>
+			Logging in with your social media account makes the login process fast and easy. There's no need to fill out a registration form and verify your email address, and it saves you from having to remember yet even another password!
+		</p>
+	</div>
+
+	<div style='width:250px; float:left;'>
+		<h2>Login Options</h2>
+		<div class='well-small amp-pill' style='display:inline-block;'>
+			<div style='padding:6px 0px;'>
+				<a href='/support/login-with-facebook' class='login_with_facebook_btn' style='display:block'>Login with Facebook</a><br />
+				<? // <a href='/support/login-with-twitter' class='login_with_twitter_btn'>Login with Twitter</a> ?>
+				<a href='/support/login-with-google' class='login_with_google_btn' style='display:block;'>Login with Google+</a>
+			</div>
+		</div>
+	</div>
+
+	<div style='clear:both;'></div>
+
+	<div style='margin-top:100px; font-size:12px;'>
+		<p style='font-size:14px; color:#c52228;'>Don't want to login with your Social Media account?</p>
+
+		<p>When we launched our new Support Center earlier this year, in addition to logging in using your social media account, it included an option to login with your AMP account. The <em>login with AMP</em> feature made it easy to login for those who didn't want to login using Facebook or Google+.</p>
+
+		<p>We have some maintenance to do on the <em>AMP login</em> feature, and it was taken down. We are working to get these back up and running as soon as possible, and we apologize if this has caused you any frustration. If you are looking for support and do not wish to login with Facebook or Google+, please <a href='/support/website/website-troubleshooting/how-to-get-great-technical-support'>give us a call, start a chat, or send us an email</a>. You can always <a href='/support'>browse our KnowledgeBase</a> and <a href='/support/edu'>Education Channels</a> without logging in.</p>
+
+		<p style='float:right; width:250px;'>Sincerely,<br />BradM - <a href='/support/team'>Customer Community Team</a></p>
+
+	</div>
+
+</div>

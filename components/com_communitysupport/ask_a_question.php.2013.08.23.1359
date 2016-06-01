@@ -1,0 +1,59 @@
+<div class='item-page'>
+
+        <div class='page-header'>
+                <h1>Ask a Question</h1>
+        </div>
+
+<?
+
+
+if($user->guest)
+{
+	echo "<div>You must first <a href='/support/login'>login</a> before you can post a question.</div>";
+}
+else
+{
+	// we need to grab a list of categories
+	$query = "SELECT * FROM #__question_categories ORDER BY `alias` ASC;";
+	$db->setQuery($query);
+	$categories = $db->loadObjectList();
+	$category_html = "<select name='category_id' id='category_id' onChange='previewQuestion()' style='color:#000;'>";
+	foreach($categories as $k => $v)
+		$category_html .= "<option value='" . $v->id . "'>" . $v->title . "</option>";
+	$category_html .= "</select>";
+
+
+?>
+
+
+	<p>It's time to get an answer! Our InMotion Hosting Support Team monitors all questions asked within the Community, and we guarantee a response within 60 minutes (8am - 9pm EST, Monday - Friday)!</p>
+
+	<p>Be sure to be specific with your question. The more details you can provide, the better the answers will be. If you're having a problem, please include steps that we can take to replicate the problem. Keep in mind that your question will be public, so don't post any sensitive information, such as passwords or other specific account information.</p>
+
+	<div class='main_ask_a_question_div'>
+
+		<form method='post' action='/support/community-support/submit-question' style='width:47%; float:left; border-right:1px dashed #aaa; padding-right:20px;'>
+			<h2 style='margin-top:0px;'>Question</h2>
+			<input type='text' name='question' id='question' onKeyUp="previewQuestion()" style='width:300px;' />
+			<h2>Details</h2>
+			<textarea name='details' id='details' style='width:300px; height:200px;' onKeyUp="previewQuestion()"></textarea>
+			<h2>Category</h2>
+			<? echo $category_html; ?>
+			<input type='submit' name='submit' id='submit' value='Submit your question!' class='btn btn-info' />
+		</form>
+
+		<div name='question_preview' id='question_preview' style='width:47%; float:right;'>
+			<h1 name='question_question' id='question_question'></h1>
+			<div name='question_details' id='question_details' style='margin-top:20px;'>As you type your question to the left, you will be able to preview it here.</div>
+		</div>
+
+		<div style='clear:both;'></div>
+
+	</div>
+
+
+<?
+} // the ending of the if / else, if the user is a guest or not
+?>
+
+</div>

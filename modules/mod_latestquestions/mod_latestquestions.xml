@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+        type="module"
+        version="3.0"
+        client="site">
+        <name>Latest Questions</name>
+        <author>Brad Markle</author>
+        <creationDate>January 2013</creationDate>
+        <copyright>IMH</copyright>
+        <license>IMH</license>
+        <authorEmail>bradm@inmotionhosting.com</authorEmail>
+        <authorUrl>www.inmotionhosting.com</authorUrl>
+        <version>3.0.0</version>
+        <description>Latest Questions</description>
+        <files>
+                <filename module="mod_latestquestions">mod_latestquestions.php</filename>
+                <filename>index.html</filename>
+				<filename>mod_latestquestions.xml</filename>
+        </files>
+</extension>

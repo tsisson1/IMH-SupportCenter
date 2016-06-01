@@ -1,0 +1,220 @@
+<?
+
+ini_set('display_errors', 'On');
+ini_set('memory_limit', '1024M');
+ini_set('max_execution_time', '120');
+error_reporting(E_ALL);
+
+$object_list_of_all_promotions = return_object_list_of_all_promotions($db);
+
+// echo "<pre>"; print_r($object_list_of_all_promotions); echo "</pre>";
+
+$xml_file_of_promotions = pass_promotions_return_xml_file_contents($object_list_of_all_promotions);
+
+echo "<textarea wrap='on' style=\"width:800px; height:400px; font-size:15px;font-family:'Courier New', Courier, monospace; overflow:auto;\">" . htmlentities($xml_file_of_promotions,ENT_QUOTES) . "</textarea>";
+
+
+
+
+
+
+function return_object_list_of_all_promotions($db)
+{
+	$query = "SELECT * FROM #__cse_promotions";
+	$db->setQuery($query);
+	$results = $db->loadObjectList();
+	
+	if($results)
+	{
+		foreach($results as $k => $v)
+		{
+			$exploded_option_view_id = explode("___",$v->option_view_id);
+
+			// ----------------------------------------------------------
+			// is this an article?
+			// ----------------------------------------------------------
+			if($exploded_option_view_id[0] == "com_content" AND $exploded_option_view_id[1] == "article")
+			{
+				$query = "
+					SELECT	`article`.`title`,
+						`article`.`metadesc`,
+						`article`.`alias`,
+						`category`.`path`
+					FROM	#__content as `article`,
+						#__categories as `category`
+					WHERE	`article`.`id` = " . $exploded_option_view_id[2] . " AND
+						`article`.`catid` = `category`.`id`
+				";
+				$db->setQuery($query);
+				$article_info = $db->loadObject();
+				$results[$k]->page_title = $article_info->title;
+				$results[$k]->page_url = $article_info->path . "/" . $article_info->alias;
+				$results[$k]->page_description = $article_info->metadesc;
+				// echo "<pre>"; print_r($article_info); echo "</pre>";
+			}
+		}
+		return $results;
+	}
+	else
+	{
+		echo "<p>No promotions found.</p>";
+		return 0;
+	}
+}
+
+
+
+
+
+
+function pass_promotions_return_xml_file_contents($data)
+{
+	$count = count($data);
+	$x = 1;
+	
+	$xml = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<Promotions start=\"0\" num=\"$count\" total=\"$count\">";
+
+	foreach($data as $k => $v)
+	{
+/*
+This is $v:
+stdClass Object
+(
+    [id] => 6
+    [option_view_id] => com_content___article___346
+    [phrase] => =pass forgot=imop trig=
+    [title] => What is my username and password (I forgot)?
+    [description] => If you forgot your username, whether it be for cPanel, AMP, or something else, this article will help.
+    [epc] => 1
+    [page_title] => What is my username and password (I forgot)?
+    [page_url] => website/amp/what-is-my-username-and-password
+    [page_description] => Sometimes it can be a bit tricky to keep track of all your usernames and passwords. In this article, we'll outline what your username is for various applications and also provide the steps to take if you have forgotten your password.
+)
+*/
+		// 2014.05.22 - don't know what this actually does // $xml_queries = htmlentities($v->phrase,ENT_QUOTES);
+
+		// make sure ".ca" doesn't makes for "captain carl"
+		$v->phrase = str_replace(".","\.",$v->phrase);
+		
+		$xml_url = "http://www.inmotionhosting.com/support/" . $v->page_url;
+		
+		$xml_title = htmlentities($v->title,ENT_QUOTES);
+		if($v->title == "")
+			$xml_title = htmlentities($v->page_title,ENT_QUOTES);
+			
+		$xml_description = htmlentities($v->page_description,ENT_QUOTES);
+		if($v->description!= "")
+			$xml_description = htmlentities($v->description,ENT_QUOTES);
+		if(strlen($xml_description)>199)
+			$xml_description = substr($xml_description,0,195) . "...";
+			
+		if(substr($v->phrase,0,1)=="=")
+		{
+			$xml_queries = pass_phrase_and_epc_return_regex($v->phrase,$v->epc);
+			
+			if(strlen($xml_queries)>500)
+			{
+				echo "<pre>"; print_r($v); echo "</pre>";
+				echo "<p>$xml_queries</p>";
+				die("please ensure query phrase is < 500 chars, currently " . strlen($xml_queries) . ".");
+			}
+		
+			$xml .= "\n\t<Promotion id=\"$x\" queries=\"$xml_queries\" title=\"$xml_title\" url=\"$xml_url\" image_url=\"\" start_date=\"\" end_date=\"\" is_regex=\"true\" enabled=\"true\" description=\"$xml_description\"/>";
+		
+			$x++;
+		}
+		else
+		{
+			echo "<pre>"; print_r($v); echo "</pre>";
+			die("please ensure query phrase surrouned by '='.");
+		}
+	}
+
+	$xml .= "\n</Promotions>";
+
+	return $xml;
+}
+
+
+
+
+
+
+function pass_phrase_and_epc_return_regex($v,$epc)
+{
+	$trimmed_query = trim($v,"=");
+	$exploded_query = explode("=",$trimmed_query);
+	
+
+	// if we need to create every possible combination
+	if($epc=="1")
+	{
+		foreach($exploded_query as $eq_k=> $eq_v)
+		{
+			$this_phrase_turned_into_array_of_words = explode(" ",$eq_v);
+
+			$collect = $this_phrase_turned_into_array_of_words;
+			depth_picker($this_phrase_turned_into_array_of_words, "", $collect);
+			$collect = remove_items_not_x_words_in_lenght($collect,count($this_phrase_turned_into_array_of_words));
+			
+			foreach($collect as $collect_k => $collect_v)
+				$array_of_final_phrases[] = trim($collect_v);
+		}
+	}
+	else
+	{
+		foreach($exploded_query as $eq_k=> $eq_v)
+			$array_of_final_phrases[] = trim($eq_v);		
+	}
+	
+	if(!isset($array_of_final_phrases))
+	{
+		echo "<pre>"; print_r($v); echo "</pre>";
+		die('array_of_final_phrases is not set');
+	}
+
+	// prevent a phrase from showing up twice
+	$array_of_final_phrases = array_unique($array_of_final_phrases);
+	
+	$final_string_for_xml_file = implode(".*)|(?i)(.*",$array_of_final_phrases);
+	$final_string_for_xml_file = str_replace(" ",".*",$final_string_for_xml_file);
+	$final_string_for_xml_file = "(?i)(.*" . $final_string_for_xml_file . ".*)";
+	
+	return $final_string_for_xml_file;
+}
+
+
+
+
+
+
+// http://stackoverflow.com/questions/10834393/php-how-to-get-all-possible-combinations-of-1d-array
+function depth_picker($arr, $temp_string, &$collect) {
+    if ($temp_string != "") 
+        $collect []= $temp_string;
+
+    for ($i=0; $i<sizeof($arr);$i++) {
+        $arrcopy = $arr;
+        $elem = array_splice($arrcopy, $i, 1); // removes and returns the i'th element
+        if (sizeof($arrcopy) > 0) {
+            depth_picker($arrcopy, $temp_string ." " . $elem[0], $collect);
+        } else {
+            $collect []= $temp_string. " " . $elem[0];
+        }   
+    }   
+}
+function remove_items_not_x_words_in_lenght($array,$x)
+{
+	foreach($array as $k => $v)
+		if( substr_count(trim($v)," ") != ($x-1) )
+			unset($array[$k]);
+	return $array;
+}
+
+
+
+
+
+
+?>

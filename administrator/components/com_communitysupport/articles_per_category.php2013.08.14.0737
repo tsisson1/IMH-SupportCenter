@@ -1,0 +1,106 @@
+<?
+
+$query = "SELECT `id`,`path`,`title`,`alias` FROM #__categories WHERE `extension` = 'com_content';";
+$db->setQuery($query);
+$content_categories = $db->loadObjectList();
+
+
+
+
+
+
+echo "	<h1>Articles</h1>
+	<table border='1'>
+		<tr>
+			<th>Category</th>
+			<th>Article Count</th>
+		</tr>
+";
+foreach($content_categories as $cc_k => $cc_v)
+{
+	/*
+	[id] => 2
+	[path] => uncategorised
+	[title] => Uncategorised
+	[alias] => uncategorised
+	*/
+	// grab the number of articles in the category
+	$query = "SELECT count(`id`) as 'article_count' FROM #__content WHERE `catid` = " . $cc_v->id . ";";
+	$db->setQuery($query);
+	$article_count_results = $db->loadObjectList();
+	$article_count = $article_count_results[0]->article_count;
+
+	$color = 'green';
+	if($article_count > 15)
+		$color = 'red';
+
+	echo "	<tr>
+			<td style='padding:4px; width:400px;'>
+				<div style='font-size:16px;'>" . $cc_v->title . " / " . $cc_v->alias . "</div>
+				<div style='font-size:10px; color:#bbb;'>" . $cc_v->path . " / " . $cc_v->id . "</div>
+			</td>
+			<td style='background:$color; padding:4px; text-align:center; color:#fff;'>
+				$article_count
+			</td>
+		</tr>
+	";
+}
+echo "	</table>";
+
+
+
+
+
+
+$query = "SELECT * FROM #__question_categories;";
+$db->setQuery($query);
+$question_category_results = $db->loadObjectList();
+echo "	<h1>Questions</h1>
+	<table border='1'>
+		<tr>
+			<th>Category</th>
+			<th>Article Count</th>
+		</tr>
+";
+foreach($question_category_results as $qcr_k => $qcr_v)
+{
+	/*
+	[22] => stdClass Object
+        (
+            [id] => 2079
+            [parent_id] => 0
+            [title] => Ssl
+            [alias] => ssl
+        )
+	*/
+	$query = "SELECT count(`id`) as 'question_count' FROM #__questions WHERE `category_id` = " . $qcr_v->id . ";";
+	$db->setQuery($query);
+	$question_count_results = $results = $db->loadObjectList();
+	$question_count = $question_count_results[0]->question_count;
+
+	$color = 'green';
+	if($question_count > 15)
+		$color = 'red';
+
+	echo "  <tr>
+                        <td style='padding:4px; width:400px;'>
+                                <div style='font-size:16px;'>" . $qcr_v->title . " / " . $qcr_v->alias . "</div>
+                                <div style='font-size:10px; color:#bbb;'>" . $qcr_v->id . "</div>
+                        </td>
+                        <td style='background:$color; padding:4px; text-align:center; color:#fff;'>
+                                $question_count
+                        </td>
+                </tr>
+        ";
+}
+echo "	</table>";
+
+
+
+
+
+
+
+
+
+?>

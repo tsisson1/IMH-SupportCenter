@@ -1,0 +1,175 @@
+<?
+	$option = JRequest::getVar('option');
+	$view = JRequest::getVar('view');
+	$id = JRequest::getVar('id');
+
+	if( $option == "com_content" )
+	{
+?>
+<div style='position:fixed; bottom:0px; left:0px; color:green; font-weight:bold;'>
+	<script type='text/javascript'>
+		jQuery(document).ready(function() {
+			jQuery("a#launch_support_wiki").fancybox({
+			'transitionIn'	:	'elastic',
+			'transitionOut'	:	'elastic',
+			'speedIn'		:	600, 
+			'speedOut'		:	200,
+			'overlayShow'	:	true,
+			'centerOnScroll':true,
+			'titleShow' : false,
+			'easingIn' : 'easeOutBack',
+			'easingOut' : 'easeInBack' 
+		});
+	});
+	</script>
+	<a href='#support_wiki' id='launch_support_wiki'>&#x2717;</a>
+</div>
+
+<div style='display:none;'>
+	<div id='support_wiki'>
+			<? load_wiki_page($option,$view,$id); ?>
+	</div>
+</div>
+<?
+	}
+?>
+
+
+
+
+
+<?
+
+
+
+
+
+
+function load_wiki_page($option,$view,$id)
+{
+	$db = JFactory::getDbo();
+	$user =& JFactory::getUser();
+
+
+	// preload the value of the wiki page
+	$query = "      SELECT * FROM #__support_wiki_wiki
+			WHERE   `option` = '$option' AND
+				`view` = '$view' AND
+				`id` = $id;
+	";
+        $db->setQuery($query);
+        $wiki_results = $db->loadObjectList();
+
+
+	// currently we're only running this on "content" component
+	if( $option == "com_content" )
+	{
+
+		// -----------------------------------------------------------------------------------------------
+		// stuff to run before hand
+		// -----------------------------------------------------------------------------------------------
+		switch( $_POST['support_wiki_action'] )
+		{
+			case "update":
+				// if there are currently no wiki_results, then this is an insert
+				if( ! $wiki_results)
+				{
+					$query = "	INSERT INTO #__support_wiki_wiki
+							(`option`,`view`,`id`,`text`,`last_update`,`last_updater`)
+							VALUES('$option','$view',$id,'" . addslashes($_POST['wiki_text']) . "',CURRENT_TIMESTAMP,'" . addslashes($user->username) . "');
+					";
+				}
+				else
+				{
+					$query = "	UPDATE #__support_wiki_wiki
+							SET	`text` = '" . addslashes($_POST['wiki_text']) . "',
+								`last_update` = CURRENT_TIMESTAMP,
+								`last_updater` = '" . addslashes($user->username) . "'
+							WHERE	`option` = '$option' AND
+			                	                `view` = '$view' AND
+                        				        `id` = $id
+							LIMIT 1;
+					";
+				}
+				$db->setQuery($query);
+			        try { $result = $db->query(); } catch (Exception $e) { }
+				break;
+		}
+
+
+		// -----------------------------------------------------------------------------------------------
+                // display the wiki content
+                // -----------------------------------------------------------------------------------------------
+		switch( $_POST['support_wiki_action'] )
+		{
+			case "edit":
+				echo "
+					<form method='post'>
+						<textarea style='width:600px; height:300px; display:block;' name='wiki_text' id='wiki_text'>" . htmlspecialchars($wiki_results[0]->text) . "</textarea>
+						<input type='submit' name='support_wiki_action' id='support_wiki_action' value='update' />
+					</form>
+				";
+				break;
+			default:
+				$query = "	SELECT * FROM #__support_wiki_wiki
+						WHERE	`option` = '$option' AND
+							`view` = '$view' AND
+							`id` = $id;
+				";
+				$db->setQuery($query);
+	        		$results = $db->loadObjectList();
+				if( ! $results )
+				{
+					echo "<div style='color:red; font-weight:bold;'>No wiki page exists for this article.</div>";
+				}
+				else
+				{
+					$wiki_text = htmlspecialchars($results[0]->text);
+						$wiki_text = str_replace("&lt;pre&gt;","<pre>",$wiki_text);
+						$wiki_text = str_replace("&lt;/pre&gt;","</pre>",$wiki_text);
+						$wiki_text = str_replace("&lt;h1&gt;","<h1>",$wiki_text);
+                		                $wiki_text = str_replace("&lt;/h1&gt;","</h1>",$wiki_text);
+						$wiki_text = str_replace("&lt;h2&gt;","<h2>",$wiki_text);
+		                                $wiki_text = str_replace("&lt;/h2&gt;","</h2>",$wiki_text);
+						$wiki_text = str_replace("&lt;h3&gt;","<h3>",$wiki_text);
+		                                $wiki_text = str_replace("&lt;/h3&gt;","</h3>",$wiki_text);
+					echo "
+						<div style='white-space:pre-line; border-bottom:1px solid #000;'>$wiki_text</div>
+						<div style='font-size:12px; background:#ddd; padding:4px;'><strong>Last update:</strong> " . $results[0]->last_update . " <strong>by</strong> " . $results[0]->last_updater . "</div>
+					";
+				}
+				echo "
+					<form method='post' style='margin-top:20px; clear:both;'>
+			                        <input type='submit' name='support_wiki_action' id='support_wiki_action' value='edit' />
+					</form>
+			        ";
+				break;
+		}
+	}
+}
+
+
+
+
+
+
+// do we need to autoload the support_wiki?
+if(	$_POST['support_wiki_action'] == "edit" OR
+	$_POST['support_wiki_action'] == "update"
+)
+{
+	echo "
+        	<script type='text/javascript'>
+                	jQuery(document).ready(function() {
+                        	jQuery('#launch_support_wiki').fancybox().trigger('click');
+			});
+		</script>
+	";
+}
+
+
+
+
+
+
+?>

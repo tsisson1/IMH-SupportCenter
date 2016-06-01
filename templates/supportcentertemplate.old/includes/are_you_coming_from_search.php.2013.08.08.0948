@@ -1,0 +1,186 @@
+<?
+
+/*
+$_SERVER['REDIRECT_URL']		/support/search
+$_SERVER['QUERY_STRING']		searchword=installing+wordpress
+$_SERVER['REQUEST_URI']		/support/search?searchword=installing+wordpress
+[HTTP_REFERER] => http://www.inmotionhosting.com/support/search?searchword=how+to+install+wordpress
+*/
+
+$user =& JFactory::getUser();
+
+
+
+
+
+
+$ips_to_block = array("161.69.46.147");
+// if this whole shebang is enabled
+if(	"enable_for_the_world" == "enable_for_the_world" AND
+	$_SERVER['REQUEST_URI'] != "/support/" AND
+	$_SERVER['REQUEST_URI'] != "/support/community-support/ask-a-question" AND
+	$_SERVER['REQUEST_URI'] != "/support/login-with-facebook" AND
+	$_SERVER['REQUEST_URI'] != "/support/login-with-google" AND
+	$_SERVER['REQUEST_URI'] != "/support/login" AND
+	$_SERVER['REQUEST_URI'] != "/support/community-support" AND
+	! in_array($_SERVER['HTTP_X_FORWARDED_FOR'],$ips_to_block)	
+)
+{
+	// if coming from office ip address
+	if( $_SERVER['HTTP_X_FORWARDED_FOR'] == "174.77.92.170" OR "enable_for_the_world" == "enable_for_the_world" )
+	{
+		// if the prior page was a searchresults page AND the current page is not a search result
+		// OR
+		// we are posting 'good_search_page' info
+		if(
+			(substr_count($_SERVER['HTTP_REFERER'],"support/search?searchword") > 0 AND substr_count($_SERVER['QUERY_STRING'],"searchword=") < 1) OR
+			($_POST['good_search_page'])
+		)
+		{
+
+
+
+
+
+
+			// ------------------------------------------------------------------------------------------
+		        // guided by brad
+        		// ------------------------------------------------------------------------------------------
+	        	if( "enabled" == "enabledd" )
+	        	{
+				// grab the user's search word
+                                $referer_query = parse_url($_SERVER['HTTP_REFERER'], PHP_URL_QUERY);
+                                $referer_vars = array();
+                                parse_str($referer_query,$referer_vars);
+                                $users_searchword = htmlspecialchars($referer_vars['searchword']);
+
+        	        	$guided_by_brad = "
+        	        	        <img src='/support/images/authors/bradm.jpg' style='float:left; margin:0px 15px 15px 0px; width:70px;' class='sc_rc'>
+					<div style='float:left; width:530px; margin-top:0px;'>
+	                	        	<p>We can see you searched for <em>$users_searchword</em> and found this page.</p>
+						<div>
+							<div style='float:left; width:250px;'>
+								<p><strong>If this page does not help:</strong></p>
+								<p>You can either <a href='#post_a_comment'>post a comment</a> at the bottom of the page, or <a href='/support/community-support/ask-a-question'>ask a question</a>. Either way, the <a href='/support/team' target='_blank'>Customer Community Team</a> will respond within 60 minutes (M-F 8-9 EST).</p>
+							</div>
+							<div style='float:right; width:250px;'>
+                                                	        <p><strong>If this page helps:</strong></p>
+								<p>Great, we're glad we could help! If you're into social media, we'd love to see you <a href='#like_this_article'>like this page or give us a +1</a>.</p>
+	                                                </div>
+							<div style='clear:both;'></div>
+						</div>
+					</div>
+					<div style='clear:both;'></div>
+                		";
+				JFactory::getApplication()->enqueueMessage($guided_by_brad, 'search_results');
+		        }
+
+
+
+
+
+			// ----------------------------------------------------------------------------------------------
+			// are we processing the information?
+			// ----------------------------------------------------------------------------------------------
+			if($_POST['good_search_page'])
+			{
+				$user_ip_address = $_SERVER['HTTP_X_FORWARDED_FOR'];
+				$good_search = addslashes($_POST['good_search_page']);
+				$landing_page = addslashes($_POST['landing_page']);
+				$users_search_word = addslashes($_POST['users_searchword']);
+
+
+				if( is_a_bot_searching($users_searchword) == false )
+				{
+					$query = "
+					INSERT INTO #__search_result_feedback (
+					`id` ,
+					`timestamp` ,
+					`user_ip` ,
+					`landing_page` ,
+					`good_or_bad` ,
+					`users_searchword`
+					)
+					VALUES ( NULL , CURRENT_TIMESTAMP , '$user_ip_address', '$landing_page', '$good_search', '$users_search_word');
+					";
+					$db = JFactory::getDbo();
+					$db->setQuery($query);
+		        	        try
+                			{
+		                        	$result = $db->execute();
+	                		        JFactory::getApplication()->enqueueMessage('Thank you for your feedback!', 'success');
+						cs_send_email("customer_experience@inmotionhosting.com","Search Results Feedback"," $user_ip_address \n search word = '$users_search_word' \n landing page = $landing_page \n good search = $good_search \n");
+			                }
+                			catch (Exception $e)
+		                	{
+                		        	// catch any database errors.
+			                        JFactory::getApplication()->enqueueMessage("We're sorry, but there was an error.", 'error');
+			                }
+				}
+
+			}
+			// ----------------------------------------------------------------------------------------------
+                        // or are we displaying the form for them?
+                        // ----------------------------------------------------------------------------------------------
+			else
+			{
+				// grab the user's search word
+				$referer_query = parse_url($_SERVER['HTTP_REFERER'], PHP_URL_QUERY);
+				$referer_vars = array();
+				parse_str($referer_query,$referer_vars);
+				$users_searchword = htmlspecialchars($referer_vars['searchword']);
+
+				$message_for_user = "
+				<form method='post'>
+					<p>
+						We see that you searched our Support Center for <em>$users_searchword</em>&nbsp;&nbsp;and found this page. Does this page contain the information you're looking for? <a onClick=\"jQuery('#search_results_feedback_form').slideToggle('slow');\" style='cursor:pointer;'>Let us know!</a>
+					</p>
+					<div name='search_results_feedback_form' id='search_results_feedback_form' style='display:none;'>
+						<p>
+							<input type='radio' name='good_search_page' id='good_search_page' value='yes'>Yes<br>
+							<input type='radio' name='good_search_page' id='good_search_page' value='no'>No
+						</p>
+						<p>
+							If <em>no</em>, <a href='/support/community-support' target='_blank'>ask us a question</a>, and receive an answer within 60 minutes <em>(Mon - Fri, 8am - 9pm EST)</em>.
+						<p>
+							We appreciate your feedback! It will be used to improve our search algorithm and help us improve the content in our Support Center.
+						</p>
+						<p>
+							<input type='submit' value='Submit' class='btn btn-info' />
+						</p>
+					</div>
+					<input type='hidden' name='users_searchword' id='users_searchword' value='" . addslashes($users_searchword) . "' />
+					<input type='hidden' name='landing_page' id='landing_page' value='" . $_SERVER['REQUEST_URI'] . "' />
+				</form>
+				";
+
+				// print the message to the user
+				if( is_a_bot_searching($users_searchword) == false )
+					JFactory::getApplication()->enqueueMessage($message_for_user, 'success');
+
+			} // if we're displaying the feedback form
+
+		} // if the prior page was a searchresults page AND the current page is not a search result
+
+	} // if coming from office ip address
+
+} // if this who shebang is enabled
+
+
+
+
+
+
+function is_a_bot_searching($searchword)
+{
+	if( trim($searchword) == "x" OR trim($searchword) == "How may we help?" OR trim($searchword) == "" )
+		return true;
+	return false;
+}
+
+
+
+
+
+
+?>

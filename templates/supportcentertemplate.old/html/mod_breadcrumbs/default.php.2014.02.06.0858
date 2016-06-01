@@ -1,0 +1,478 @@
+<?php
+/**
+ * @package     Joomla.Site
+ * @subpackage  mod_breadcrumbs
+ *
+ * @copyright   Copyright (C) 2005 - 2012 Open Source Matters, Inc. All rights reserved.
+ * @license     GNU General Public License version 2 or later; see LICENSE.txt
+ */
+
+defined('_JEXEC') or die;
+JHtml::_('bootstrap.tooltip');
+?>
+
+<div id="menuWrap">
+  <div id="menuWrapInner" class="container_12 clearfix">
+  <div id="menu" class="width"> 
+    <!--Begin Menu-->
+    <ul id="menu">
+<?
+
+
+
+
+
+
+$bc_data['three_column_edu'] = "
+<div class='col_3'>
+        <a href='/support/edu'><h2>Education Channels</h2></a>
+</div>
+<div class='col_1'>
+        <ul>
+		<li><a href='/support/edu/cpanel'>cPanel</a></li>
+		<li><a href='/support/edu/dokuwiki'>DokuWiki</a></li>
+		<li><a href='/support/edu/drupal-7'>Drupal 7</a></li>
+		<li><a href='/support/edu/drupal-8'>Drupal 8</a></li>
+                <li><a href='/support/edu/everything-email'>Everything Email</a></li>
+		<li><a href='/support/edu/joomla-25'>Joomla 2.5</a></li>
+		<li><a href='/support/edu/joomla-3'>Joomla 3.1</a></li>
+		<li><a href='/support/edu/magento'>Magento 1.6</a></li>
+		<li><a href='/support/edu/mambo'>Mambo</a></li>			
+        </ul>
+</div>
+<div class='col_1'>
+        <ul>
+                <li><a href='/support/edu/mediawiki'>MediaWiki</a></li>
+		<li><a href='/support/edu/moodle'>Moodle</a></li>
+		<li><a href='/support/edu/movable-type'>Movable Type</a></li>
+		<li><a href='/support/edu/opencart'>OpenCart</a></li>
+		<li><a href='/support/edu/oscommerce'>osCommerce</a></li>
+		<li><a href='/support/edu/php-fusion'>PHP-Fusion</a></li>
+		<li><a href='/support/edu/php-nuke'>PHP-Nuke</a></li>
+		<li><a href='/support/edu/phpbb'>phpBB</a></li>
+		<li><a href='/support/edu/phplist'>phpList</a></li>
+        </ul>
+</div>
+<div class='col_1'>
+        <ul>
+		<li><a href='/support/edu/premium-website-builder'>Premium Website Builder</a></li>
+                <li><a href='/support/edu/prestashop-15'>PrestaShop 1.5</a></li>
+                <li><a href='/support/edu/smf'>SMF</a></li>
+                <li><a href='/support/edu/tiki-wiki'>Tiki Wiki</a></li>
+                <li><a href='/support/edu/whm'>Web Hosting Manager</a></li>
+		<li><a href='/support/edu/website-design'>Website Design</a></li>
+                <li><a href='/support/edu/wordpress'>WordPress</a></li>
+	</ul>
+</div>
+";
+
+
+
+
+
+
+$bc_data['one_column_kb'] = "
+<div class='col_1'>
+	<h2>Knowledge<br />Base</h2>
+	<ul>
+		<li><a href='/support/website'>Website</a></li>
+		<li><a href='/support/email'>Email</a></li>
+		<li><a href='/support/domain-names'>Domain Names</a></li>
+		<li><a href='/support/billing'>Billing</a></li>
+	</ul>
+</div>
+";
+
+
+
+
+
+
+$bc_data['one_column_cs'] = "
+<div class='col_1'>
+	<a href='/support/community-support'><h2>Community Support</h2></a>
+	<ul>
+		<li><a href='/support/community-support'>Browse Questions</a></li>
+                <li><a href='/support/community-support/ask-a-question'>Ask a Question</a></li>
+                <li><a href='http://forum.inmotionhosting.com'>Forums</a></li>
+	</ul>
+</div>
+";
+
+
+
+
+
+
+$bc_data['one_column_tools_and_resources'] = "
+<div class='col_1'>
+	<h2>Tools & Resources</h2>
+	<ul>
+		<li><a href='/support/tools/blacklist-check'>Blacklist Check</a></li>
+		<li><a href='/support/tools/visual-domain-routing'>Visual DNS Lookup</a></li>
+		<li><a href='/support/tools/quicktagger'>Quick Tagger</a></li>
+		<li><a href='/support/resources/icons'>Icon Sets</a></li>
+		<li><a href='/support/tools/favicon-generator'>Favicon Generator</a></li>
+		<li><a href='/support/tools/bounce-back-parser'>Bounce Back Parser</a></li>
+		<li><a href='/support/tools/what-is-my-ip-address'>What is my IP address?</a></li>
+	</ul>
+</div>
+";
+
+
+
+
+
+$x = 1;
+$count_of_letters = 0;
+foreach($list as $k => $v)
+{
+        $name = $v->name;
+        $link = $v->link;
+	$count_of_letters += strlen($name);
+
+	unset($breadcrumb_droppings);
+	ob_start();
+		print_breadcrumb_drop($list,$k,$bc_data);
+		$breadcrumb_droppings = ob_get_contents();
+	ob_end_clean();
+	if( strip_tags($breadcrumb_droppings) == "" )
+		unset($breadcrumb_droppings);
+
+	// do we need to add arrows to show a drop down?
+	$bc_drop_class = "bc_no_dd";
+	if($breadcrumb_droppings)
+		$bc_drop_class = "bc_with_dd";
+
+	if( $x == count($list) AND ($count_of_letters > 105) )
+		$name = substr($name,0,(105 - $count_of_letters)) . "...";
+
+        if($k == 0)
+		echo "<li class='home_item $bc_drop_class' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'>";
+        else
+                echo "<li class='$bc_drop_class' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'>";
+
+        if($link)
+                echo "<a href='$link' itemprop='url'><span itemprop='title'>$name<span></a>";
+        else
+                echo "<span itemprop='title'>$name</span>";
+
+	echo $breadcrumb_droppings;
+
+        echo "</li>";
+
+	if( $x != count($list) )
+		echo "<li class='bc_arrow'>&gt;&gt;</li>";
+
+	$x++;
+}
+
+
+
+
+
+function print_breadcrumb_drop($list,$k,$bc_data)
+{
+        switch($k)
+        {
+                case 0:
+			if($list[1]->link == "/support/edu")
+				echo "<div class='dropdown_2columns'>" . $bc_data['one_column_kb'] . $bc_data['one_column_cs'] . "</div>";
+			else
+				echo "<div class='dropdown_3columns'>" . $bc_data['one_column_kb'] . $bc_data['one_column_cs'] . $bc_data['one_column_tools_and_resources'] . $bc_data['three_column_edu'] . "</div>";
+			break;
+		case 1:
+			if($list[1]->link == "/support/edu")
+				echo "<div class='dropdown_3columns'>" . $bc_data['three_column_edu'] . "</div>";
+			elseif( $list[1]->link == "/support/tools" OR $list[1]->link == "/support/resources" )
+				echo "<div class='dropdown_1column'>" . $bc_data['one_column_tools_and_resources'] . "</div>";
+			elseif($list[1]->link == "/support/community-support")
+				echo "<div class='dropdown_1column'>" . $bc_data['one_column_cs'] . "</div>";
+			elseif($list[1]->name == "Education Channels")
+				echo "<div class='dropdown_3columns'>" . $bc_data['three_column_edu'] . "</div>";
+			else
+			{
+				$drop_down = return_category_listing($list,$k,$list[$k]->name,$list[$k]->link);
+				echo $drop_down;
+			}
+			break;
+		case 2:
+			if($list[1]->link == "/support/edu" AND $k != count($list) -1)
+			{
+				$drop_down = return_edu_channel_dropdown($list[$k]->name,$list[$k]->link);
+                                echo $drop_down;
+			}
+			elseif($list[1]->link == "/support/edu" AND $k == count($list) -1)
+			{
+				// do nothing
+			}
+			elseif($k == count($list) -1)
+			{
+				// do nothing
+			}
+			else
+			{
+				$drop_down = return_article_listing_dropdown($k,$list[$k]->name,$list[$k]->link);
+				echo $drop_down;
+			}
+			break;
+		case 3:
+			if($list[1]->link == "/support/edu" AND $k != count($list) - 1)
+                        {
+                                $drop_down = return_edu_sections($list,$list[$k]->name,$list[$k]->link);
+                                echo "<div class='dropdown_3columns'>$drop_down</div>";
+                        }
+                        break;
+        }
+}
+
+
+
+
+
+
+function return_edu_channel_dropdown($name,$link)
+{
+	$db = JFactory::getDbo();
+
+	$title = "<h2>$name Education Channel</h2>";
+
+	// first, get the id of this edu channel
+	$query = "SELECT `id` FROM #__categories WHERE `title` = '$name' AND `level` = 2 AND `path` LIKE 'edu/%';";
+	$db->setQuery($query);
+	$results = $db->loadObjectList();
+	$parent_id = $results[0]->id;
+
+	// grab all of the 100 articles
+	$query = "SELECT `id`,`title`,`path` FROM #__categories WHERE `parent_id` = $parent_id AND `level` = 3 AND `title` LIKE '1%' ORDER BY `title` ASC;";
+	$db->setQuery($query);
+        $results = $db->loadObjectList();
+	$classes_100 = "<div class='col_2'><h3>100 Level Classes</h3>";
+	foreach($results as $k => $v)
+		$classes_100 .= "<div><a href='/support/" . $v->path . "'>" . $v->title . "</a></div>";
+	$classes_100 .= "</div>";
+
+	 // grab all of the 200 articles
+        $query = "SELECT `id`,`title`,`path` FROM #__categories WHERE `parent_id` = $parent_id AND `level` = 3 AND `title` LIKE '2%' ORDER BY `title` ASC;";
+        $db->setQuery($query);
+        $results = $db->loadObjectList();
+	if($results)
+	{
+	        $classes_200 = "<div class='col_2'><h3>200 Level Classes</h3>";
+        	foreach($results as $k => $v)
+                	$classes_200 .= "<div><a href='/support/" . $v->path . "'>" . $v->title . "</a></div>";
+	        $classes_200 .= "</div>";
+	}
+	
+	if($classes_200)
+		return "<div class='dropdown_4columns'>" . $title . $classes_100 . $classes_200 . "</div>";
+	else
+		return "<div class='dropdown_2columns'>" . $title . $classes_100 . "</div>";
+}
+
+
+
+
+
+
+function return_edu_sections($list,$name,$link)
+{
+        $db = JFactory::getDbo();
+
+	$first_space = strpos($name," ");
+	$name_without_101 = substr($name,$first_space);
+
+        $title = "<h2>$name_without_101</h2>";
+
+        // first, get the id of this edu channel
+        $query = "SELECT `id` FROM #__categories WHERE `title` = '$name' AND `level` = 3 AND `path` LIKE 'edu/%/%';";
+        $db->setQuery($query);
+        $results = $db->loadObjectList();
+        $parent_id = $results[0]->id;
+
+	// grab all of the articles in this class
+	$query = "SELECT `id`,`title`,`alias` FROM #__content WHERE `catid` = $parent_id AND `state` = 1 ORDER BY `ordering` ASC;";
+	$db->setQuery($query);
+        $results = $db->loadObjectList();
+	$section_listing = "<div class='col_3'>";
+	$x = 1;
+	foreach($results as $k => $v)
+	{
+		$section_listing .= "<div>$x. <a style='display:inline;' href='" . $list[3]->link . "/" . $v->alias . "'>" . $v->title . "</a></div>";
+		$x++;
+	}
+	$section_listing .= "</div>";
+
+	return $title . $section_listing;
+}
+
+
+
+
+
+
+function return_category_listing($list,$k,$name,$link)
+{
+	$db = JFactory::getDbo();
+
+	// grab the current category id
+	switch($k)
+	{
+		case 1:
+			$query = "SELECT `id` FROM #__categories WHERE `title` = '$name' AND `level` = 1 AND `extension` = 'com_content';";
+			break;
+	}
+	$db->setQuery($query);
+        $results = $db->loadObjectList();
+        $parent_id = $results[0]->id;
+
+	// grab children categories
+
+	//$query = "SELECT `id`,`title`,`alias` FROM #__categories WHERE `level` = " . ($k + 1) . " AND `parent_id` = $parent_id ORDER BY `title` ASC;";
+	$query = "SELECT `cats`.`id` , `cats`.`title` , `cats`.`alias` , count( `content`.`id` ) AS 'article_count' FROM #__categories AS `cats` , #__content AS `content` WHERE `cats`.`level` = " . ($k+1) . " AND `cats`.`parent_id` = $parent_id AND `content`.`catid` = `cats`.`id` GROUP BY `cats`.`id` ORDER BY `title` ASC";
+	$db->setQuery($query);
+	$results = $db->loadObjectList();
+
+	if(count($results) < 10)
+	{
+		$sub_category_listing = "<div class='col_2'>";
+		foreach($results as $rk => $rv)
+		{
+			$article_count = $rv->article_count;
+
+			$link_url = create_breadcrumb_link($list,$k,$name,$link,$rv);
+
+			$sub_category_listing .= "<div><a href='$link_url'>" . $rv->title . "</a> ($article_count)</div>";
+		}
+		$sub_category_listing .= "</div>";
+
+		return "<div class='dropdown_2columns'>" . $sub_category_listing . "</div>";
+	}
+	else
+	{
+		$count_column_one = floor(count($results) / 2);
+
+		$x = 1;
+
+		$sub_category_listing_one = "";
+		$sub_category_listing_two = "";
+
+		foreach($results as $rk => $rv)
+		{
+			$article_count = $rv->article_count;
+
+			$link_url = create_breadcrumb_link($list,$k,$name,$link,$rv);
+
+			if($x <= $count_column_one)
+				$sub_category_listing_one .= "<div><a href='$link_url'>" . $rv->title . "</a> ($article_count)</div>";
+			else
+				$sub_category_listing_two .= "<div><a href='$link_url'>" . $rv->title . "</a> ($article_count)</div>";
+
+			$x++;
+		}
+
+		return "
+			<div class='dropdown_4columns'>
+				<div class='col_2'>$sub_category_listing_one</div>
+				<div class='col_2'>$sub_category_listing_two</div>
+			</div>
+		";
+	}
+}
+
+
+
+
+
+
+function return_article_listing_dropdown($k,$name,$link)
+{
+	$db = JFactory::getDbo();
+
+	$query = "SELECT `id` FROM #__categories WHERE `title` = '$name' AND `level` = $k AND `extension` = 'com_content';";
+        $db->setQuery($query);
+        $results = $db->loadObjectList();
+        $parent_id = $results[0]->id;
+
+	$query = "SELECT `title`,`alias`,`hits` FROM #__content WHERE `catid` = $parent_id AND `state` = 1 ORDER BY `hits` DESC;";
+	$db->setQuery($query);
+        $results = $db->loadObjectList();
+	if( count($results) > 10 )
+	{
+		$foreach_article_count = 1;
+		foreach($results as $rk => $rv)
+                {
+			$column[$foreach_article_count] .= "<div style='margin-bottom:10px;'><a style='display:inline;' href='" . $link . "/" . $rv->alias . "'>" . $rv->title . "</a> (" . number_format($rv->hits) . " hits)</div>";
+			$foreach_article_count++;
+			if($foreach_article_count > 3)
+				$foreach_article_count = 1;
+
+                        // $article_listing .= "<div><a style='display:inline;' href='" . $link . "/" . $rv->alias . "'>" . $rv->title . "</a> (" . $rv->hits . " hits)</div>";
+                }
+
+		return "
+			<div class='dropdown_3columns' style='width:900px; margin-left:-250px;'>
+				<div class='col_1' style='width:290px;'>" . $column[1] . "</div>
+				<div class='col_1' style='width:290px;'>" . $column[2] . "</div>
+				<div class='col_1' style='width:290px;'>" . $column[3] . "</div>
+			</div>
+		";
+	}
+	elseif( count($results) > 0 )
+	{
+		$article_listing = "<div class='col_3'>";
+		foreach($results as $rk => $rv)
+		{
+			$article_listing .= "<div style='margin-bottom:10px;'><a style='display:inline;' href='" . $link . "/" . $rv->alias . "'>" . $rv->title . "</a> (" . $rv->hits . " hits)</div>";
+		}
+		$article_listing .= "</div>";
+		return "<div class='dropdown_3columns'>$article_listing</div>";
+	}
+	else
+		return false;
+}
+
+
+
+
+
+
+function create_breadcrumb_link($list,$k,$name,$link,$rv)
+{
+	/*
+	if($k == 1)
+	{
+	echo "<pre>";
+		echo "<p>k = $k</p>";
+		print_r($list);
+
+		echo "<pre>\n ----- begin name ----- \n";
+		print_r($name);
+
+		echo "<pre>\n ----- begin link ----- \n";
+		print_r($link);
+
+		echo "<pre>\n ----- begin rv ----- \n";
+		print_r($rv);
+	echo "\n ------------------------------------------- \n</pre>";
+	}
+	*/
+
+	$u = JURI::getInstance();
+
+	if( $list[$k]->link == "" )
+		return $u . "/" . $rv->alias;
+
+	return($list[$k]->link . "/" . $rv->alias);
+}
+
+
+
+
+
+
+?>
+			</ul>
+		</div>
+	</div>
+</div>

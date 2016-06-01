@@ -1,0 +1,101 @@
+<?
+
+
+include_once("../configuration.php");
+$vars = new JConfig;
+$top_position = 300;
+
+
+$con=mysqli_connect("localhost",$vars->user,$vars->password,$vars->db);
+if (mysqli_connect_errno())
+{
+        echo "Failed to connect to MySQL: " . mysqli_connect_error();
+	die();
+}
+
+
+
+
+
+
+// ------------------------------------------------------------------------------------------------
+// questions not locked
+// ------------------------------------------------------------------------------------------------
+$query = "	SELECT	`q`.`question`, `q`.`question_alias`,
+			`qat`.`locker`
+		FROM `" . $vars->dbprefix . "questions` as `q`
+		LEFT OUTER JOIN `" . $vars->dbprefix . "question_admin_tools` as `qat` ON `q`.`id` = `qat`.`question_id`
+		ORDER BY `q`.`id` DESC
+		LIMIT 10;
+";
+$result = mysqli_query($con,$query);
+while($row = mysqli_fetch_array($result))
+{
+	// if there is no locker on the ticket
+	if( $row['locker'] == "" )
+        {
+                $url = "http://www.inmotionhosting.com/support/" . htmlspecialchars($row['question_alias']);
+		if( $_GET['new_window_alert'] != 1 )
+	                echo "  <div style='position:fixed; left:5px; top:" . $top_position . "px; border:1px solid #EB0000; background:#FFE5E5; padding:1px; font-size:9px;'>
+					<a href='$url' target='_blank'>QUESTION: " . htmlspecialchars($row['question']) . "</a>
+                	        </div>
+	                ";
+		$show_staff_popup = true;
+		$show_staff_popup_count++;
+		$top_position += 30;
+        }
+}
+
+
+
+
+
+
+// ------------------------------------------------------------------------------------------------
+// comments not approved
+// ------------------------------------------------------------------------------------------------
+$query = "
+SELECT	`content`.`title`, `content`.`alias`
+FROM	`" . $vars->dbprefix . "content` as `content`,
+	`" . $vars->dbprefix . "comments` as `comments`
+WHERE	`comments`.`hide_comment` = 1 AND
+	`comments`.`object_group` = 'com_content' AND
+	`comments`.`object_id` = `content`.`id`
+";
+$result = mysqli_query($con,$query);
+while($row = mysqli_fetch_array($result))
+{
+	$url = "http://www.inmotionhosting.com/support/" . htmlspecialchars($row['alias']);
+	if( $_GET['new_window_alert'] != 1 )
+	{
+                        echo "  <div style='position:fixed; left:5px; top:" . $top_position . "px; border:1px solid #EB0000; background:#FFE5E5; padding:1px; font-size:9px;'>
+                                        <a href='$url' target='_blank'>COMMENT: " . htmlspecialchars($row['title']) . "</a>
+                                </div>
+                        ";
+                $show_staff_popup = true;
+                $show_staff_popup_count++;
+        }
+        $top_position += 30;
+}
+
+
+
+
+
+
+if( $show_staff_popup == true AND $_GET['new_window_alert'] == 1 )
+	echo "$show_staff_popup_count new IMH alert(s) - Please visit http://customer-community.com/hud_new_staff_items.php";
+
+
+
+
+
+
+mysqli_close($con);
+
+
+
+
+
+
+?>

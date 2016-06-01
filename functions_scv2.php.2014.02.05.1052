@@ -1,0 +1,236 @@
+<?
+
+
+
+
+
+
+
+
+
+
+
+
+function pass_question_id_return_question_url($id)
+{
+        if( ! is_numeric($id) )
+                JError::raiseError( 404, 'Question not found' );
+
+        $db = JFactory::getDbo();
+
+        // grab category information
+        $query = "
+SELECT `q`.`question_alias`, `qc`.*
+FROM #__question_categories qc, #__questions q
+WHERE   `q`.`id` = $id AND
+        `q`.`category_id` = `qc`.`id`
+        ";
+        $db->setQuery($query);
+        $category_info = $db->loadObjectList();
+
+        if( $category_info[0]->parent_id == 0 )
+                // return JURI::base() . "community-support/" . $category_info[0]->alias . "/" . $category_info[0]->question_alias;
+		return "/support/community-support/" . $category_info[0]->alias . "/" . $category_info[0]->question_alias;
+
+        $query = "SELECT `alias` FROM #__question_categories WHERE `id` = " . $category_info[0]->parent_id . ";";
+        $db->setQuery($query);
+        $parent_category_info = $db->loadObjectList();
+
+        // return JURI::base() . "community-support/" . $parent_category_info[0]->alias . "/" . $category_info[0]->alias . "/" . $category_info[0]->question_alias;
+	return "/support/community-support/" . $parent_category_info[0]->alias . "/" . $category_info[0]->alias . "/" . $category_info[0]->question_alias;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+function is_string_pagination_alias($my_string)
+{
+	$last_url_dir = explode("-",$my_string);
+
+	if(count($last_url_dir) != 2) return false;
+
+        if($last_url_dir[0] == "page" AND is_numeric($last_url_dir[1]) AND $last_url_dir[1] != 1)
+                return true;
+
+        return false;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+function remove_canonical()
+{
+	$document = JFactory::getDocument();
+	foreach($document->_links as $k => $v)
+	{
+		if( $v['relation'] == "canonical" )
+			unset( $document->_links[$k] );
+	}
+
+	$joption = JRequest::getVar('option'); $jview = JRequest::getVar('view'); $jid = JRequest::getVar('id');
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+function cs_send_email($to,$subject,$body)
+{
+                $from = array("customer_experience@inmotionhosting.com", "InMotion Hosting Customer Community Team");
+
+                # Invoke JMail Class
+                $mailer = JFactory::getMailer();
+
+                # Set sender array so that my name will show up neatly in your inbox
+                $mailer->setSender($from);
+
+                # Add a recipient -- this can be a single address (string) or an array of addresses
+                $mailer->addRecipient($to);
+
+                $mailer->setSubject($subject);
+                $mailer->setBody($body);
+
+                # If you would like to send as HTML, include this line; otherwise, leave it out
+                // $mailer->isHTML();
+
+                # Send once you have set all of your options
+                $mailer->send();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+function pass_user_object_and_text_then_return_clean_text($user,$text)
+{
+	$new_text = $text;
+        if( $user->groups[8] != 8 )
+                $new_text = htmlspecialchars($text);
+        return nl2br($new_text);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+function return_div_with_social_buttons($previous_saying,$url_of_this_page)
+{
+	// ---------------------------------------------------------------
+	// LIKE THIS PAGE - social media
+	// ---------------------------------------------------------------
+	$like_facebook_html = "<iframe src='//www.facebook.com/plugins/like.php?href=$url_of_this_page&amp;send=false&amp;layout=button_count&amp;width=100&amp;show_faces=false&amp;font=verdana&amp;colorscheme=light&amp;action=like&amp;height=21&amp;appId=209145459223160' scrolling='no' frameborder='0' style='border:none; overflow:hidden; width:100px; height:21px;' allowTransparency='true'></iframe>";
+	$like_google_html = "
+<div class='g-plusone' data-size='medium' data-href='$url_of_this_page'></div>
+<script type='text/javascript'>
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>";
+	$like_twitter_html = "<a href='https://twitter.com/share' class='twitter-share-button' data-via='inmotionhosting'>Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='//platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','twitter-wjs');</script>";
+
+
+	return "
+<div style='text-align:right; margin:10px 0px;'>
+	<span style='padding-right:15px;'>$previous_saying</span>
+	$like_facebook_html
+	$like_google_html
+	$like_twitter_html
+</div>
+	";
+}
+
+
+
+
+
+
+function return_vdiv_with_social_buttons($url_of_this_page)
+{
+        // ---------------------------------------------------------------
+        // LIKE THIS PAGE - social media
+        // ---------------------------------------------------------------
+        $buttons['facebook'] = "<iframe src='//www.facebook.com/plugins/like.php?href=$url_of_this_page&amp;send=false&amp;layout=button_count&amp;width=100&amp;show_faces=false&amp;font=verdana&amp;colorscheme=light&amp;action=like&amp;height=21&amp;appId=209145459223160' scrolling='no' frameborder='0' style='border:none; overflow:hidden; width:100px; height:21px;' allowTransparency='true'></iframe>";
+        $buttons['google'] = "
+<div class='g-plusone' data-size='medium' data-href='$url_of_this_page'></div>
+<script type='text/javascript'>
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>";
+        $buttons['twitter'] = "<a href='https://twitter.com/share' class='twitter-share-button' data-via='inmotionhosting'>Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='//platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','twitter-wjs');</script>";
+
+	return $buttons;
+}
+
+
+
+
+
+
+function does_item_exist_in_database($table,$field,$value)
+{
+	$db = JFactory::getDbo();
+	$query = "SELECT * FROM #__" . $table . " WHERE `" . $field . "` = '$value';";
+	$db->setQuery($query);
+	$results = $db->loadObjectList();
+	if( ! $results )
+		return false;
+	else
+		return true;
+}
+
+
+
+
+
+
+
+
+
+
+
+?>

@@ -1,0 +1,75 @@
+<?
+
+
+// http://stackoverflow.com/questions/49547/making-sure-a-web-page-is-not-cached-across-all-browsers
+header('Cache-Control: no-cache, no-store, must-revalidate'); // HTTP 1.1.
+header('Pragma: no-cache'); // HTTP 1.0.
+header('Expires: 0'); // Proxies.
+
+
+include_once("../configuration.php");
+$vars = new JConfig;
+
+
+$con=mysqli_connect("localhost",$vars->user,$vars->password,$vars->db);
+if (mysqli_connect_errno())
+{
+        echo "Failed to connect to MySQL: " . mysqli_connect_error();
+	die();
+}
+
+
+
+
+
+
+// ------------------------------------------------------------------------------------------------
+// questions not locked
+// ------------------------------------------------------------------------------------------------
+if($_GET['url'] != "")
+{
+	$title = "This Page";
+	$query = "
+		SELECT  *
+                FROM `" . $vars->dbprefix . "google_keyword_log`
+		WHERE	`url` = '" . addslashes($_GET['url']) . "'
+                ORDER BY `id` DESC
+                LIMIT 10;
+	";
+}
+else
+{
+	$title = "Site Wide";
+	$query = "
+		SELECT	*
+		FROM `" . $vars->dbprefix . "google_keyword_log`
+		ORDER BY `id` DESC
+		LIMIT 5;
+	";
+}
+$result = mysqli_query($con,$query);
+
+echo "<div style='font-size:16px;font-weight:bold;'>$title</div>";
+while($row = mysqli_fetch_array($result))
+{
+	echo "
+		<div style='margin:5px 0px; border:1px solid #006600; background:#eee; padding:1px; font-size:12px;'>
+			(" . htmlentities($row['cd'],ENT_QUOTES) . ") <a href='" . htmlentities($row['url'],ENT_QUOTES) . "' target='_blank'>" . htmlentities($row['keyword'],ENT_QUOTES) . "</a> 
+			" . (time() - $row['timestamp_n']) . "s
+		</div>
+	";
+}
+
+
+
+
+
+
+mysqli_close($con);
+
+
+
+
+
+
+?>

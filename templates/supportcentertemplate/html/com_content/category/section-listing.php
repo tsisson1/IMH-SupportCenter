@@ -1,0 +1,109 @@
+<?php
+/**
+ * @package     Joomla.Site
+ * @subpackage  com_content
+ *
+ * @copyright   Copyright (C) 2005 - 2012 Open Source Matters, Inc. All rights reserved.
+ * @license     GNU General Public License version 2 or later; see LICENSE.txt
+ */
+
+defined('_JEXEC') or die;
+
+JHtml::addIncludePath(JPATH_COMPONENT.'/helpers');
+
+$this->document->setTitle($this->category->title . " | InMotion Hosting");
+
+// JHtml::_('behavior.caption');
+
+// run our content plugin - this will fix the std_ss stuff that by default only fixes articles (and not categories)
+$this->category->description = JHtml::_('content.prepare', $this->category->description);
+
+
+
+
+
+
+// this is not effecient, but it will have to do for now
+// get then reorder the sections by the `ordering` column
+$db = JFactory::getDbo();
+foreach ($this->items as $i => $article)
+{
+	// if($_GET['test'] == 'test')
+	//	echo "<p>" . $article->title . "</p>";
+	$query = "SELECT `ordering` FROM #__content WHERE `id` = " . $article->id . ";";
+	$db->setQuery($query);
+	$ordering_results = $db->loadObjectList();
+	$this->items[$i]->ordering = $ordering_results[0]->ordering;
+	$temp_items[$ordering_results[0]->ordering] = $this->items[$i];
+
+	// don't show quizes in the regular listing
+	if($article->alias == "quiz")
+		unset($temp_items[$ordering_results[0]->ordering]);
+}
+// function sort_sections($a, $b)
+// {
+// 	return strcmp($a->ordering, $b->ordering);
+// }
+// usort($this->items, "sort_sections");
+ksort($temp_items);
+$this->items = $temp_items;
+
+
+
+
+
+
+
+?>
+<div class='item-page'>
+
+<div class='page-header'>
+	<h1><? echo $this->category->title; ?></h1>
+</div>
+<div class='section_listing'>
+	<? echo $this->category->description; ?>
+	<table>
+	<?
+	$x = 1;
+	foreach ($this->items as $i => $article)
+	{
+		$gold_star = "";
+		if( substr_count($article->metakey,"[gs]") )
+			$gold_star = "<div class='gold_star'></div>";
+
+		if( $article->params->get('edu_above_title') OR $article->params->get('edu_above_description') )
+		{
+			if($x > 1)
+				echo "<tr><td colspan='3' style='padding-top:20px;'>";
+			else
+				echo "<tr><td colspan='3'>";
+
+			if($article->params->get('edu_above_title'))
+				echo "<h2>" . $article->params->get('edu_above_title') . "</h2>";
+
+			if( $article->params->get('edu_above_description'))
+				echo "<div>" .  $article->params->get('edu_above_description') . "</div>";
+
+			echo "</td></tr>";
+
+		}
+
+		$article_url = JRoute::_(ContentHelperRoute::getArticleRoute($article->slug, $article->catid));
+		echo "	<tr>
+				<td style='width:75px; font-weight:bold;'>Section " . ($x) . ":</td>
+				<td style='padding-right:10px;'>$gold_star</td>
+				<td style='padding-bottom:10px;'>
+					<a href='$article_url'>" . $article->title . "</a>
+					<div>" . $article->metadesc . "</div>
+					<div class='smallgrey'>Hits: " . number_format($article->hits) . "</div>
+				</td>
+			</tr>
+		";
+
+		$x++;
+	}
+	?>
+	</table>
+</div>
+
+</div>

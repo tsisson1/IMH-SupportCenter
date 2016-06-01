@@ -1,0 +1,5 @@
+<h1>500 Error</h1>
+<form method='get' action='/support/search'>
+	<div>Try searching our support center:</div>
+	<input type='text' name='searchword' id='searchword' style='width:400px;'><input type='submit' value='search' />
+</form>

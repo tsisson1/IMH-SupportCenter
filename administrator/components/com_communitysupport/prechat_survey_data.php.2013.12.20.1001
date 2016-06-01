@@ -1,0 +1,124 @@
+<?
+
+if( ! $_GET['start_date'] )
+        $start_date = date("Y-m-d H:m:s",time());
+else
+        $start_date = $_GET['start_date'];
+
+
+if( ! $_GET['end_date'] )
+        $end_date = date("Y-m-d H:m:s",time());
+else
+        $end_date = $_GET['end_date'];
+
+/*
+$grab_editor_username_checked = "";
+if( $_GET['grab_editor_username'] == 1 )
+        $grab_editor_username_checked = "checked";
+
+$feedback_without_trac_checked = "";
+if( $_GET['feedback_without_trac'] == 1 )
+        $feedback_without_trac_checked = "checked";
+*/
+
+?>
+
+
+
+
+
+
+<form>
+        <strong>From</strong>
+        <input type='text' name='start_date' id='start_date' value='<? echo $start_date; ?>' />
+        <strong>End</strong>
+        <input type='text' name='end_date' id='end_date' value='<? echo $end_date; ?>' />
+        <input type='submit' value='submit' />
+        <input type='hidden' name='option' id='option' value='com_communitysupport' />
+        <input type='hidden' name='task' id='task' value='prechat_survey_data' />
+
+        <!-- <div><input type='checkbox' name='grab_editor_username' id='grab_editor_username' value='1' <? echo $grab_editor_username_checked; ?> />select editor username</div>
+        <div><input type='checkbox' name='feedback_without_trac' id='feedback_without_trac' value='1' <? echo $feedback_without_trac_checked; ?> />show only feedback without a trac ticket</div> -->
+
+</form>
+
+
+
+
+
+
+<?
+
+if( $_GET['start_date'] AND $_GET['end_date'] )
+{
+
+	$start_date = strtotime($_GET['start_date']) - (60*60*6);
+        $end_date = strtotime($_GET['end_date']) - (60*60*5);
+
+	/*
+        $sql_feedback_without_trac = "";
+        if( $_GET['feedback_without_trac'] == 1 )
+                $sql_feedback_without_trac = " AND `fb`.`trac` = 0 AND `fb`.`feedback` != '' ";
+	*/
+
+	$show_id_only = "";
+	if( is_numeric($_POST['show_id_only']) )
+		$show_id_only = " AND `id` = " . $_POST['show_id_only'] . " ";
+
+        $query = "
+	        SELECT *
+		FROM #__prechat
+		WHERE `timestamp_n` BETWEEN '$start_date' AND '$end_date'
+		$show_id_only
+	";
+
+        $db->setQuery($query);
+        $results = $db->loadObjectList();
+	// echo "<pre>"; print_r($results); echo "</pre>";
+
+	echo "	<table class='table'>
+			<tr>
+				<th>#</th>
+				<th>id</th>
+				<th>timestamp</th>
+				<th>user ip</th>
+				<th>name</th>
+				<th>email</th>
+				<th>domain</th>
+				<th>question</th>
+				<th>launched chat</th>
+				<th># results</th>
+				<th># clicks</th>
+				<th>timeout?</th>
+			</tr>
+	";
+	$count = 0;
+	foreach($results as $k => $v)
+	{
+		$count++;
+
+		echo "	<tr>
+				<td>$count</td>
+				<td>
+					<form method='post' style='padding:0px; margin:0px;'>
+						<input type='hidden' name='show_id_only' id='show_id_only' value='" . $v->id . "' />
+						<input type='submit' value='" . $v->id . "' />
+					</form>
+				</td>
+				<td>" . date("Y-m-d H:m:s",$v->timestamp_n) . "</td>
+				<td>" . htmlentities($v->user_ip,ENT_QUOTES) . "</td>
+				<td>" . htmlentities($v->name,ENT_QUOTES) . "</td>
+				<td>" . htmlentities($v->email,ENT_QUOTES) . "</td>
+				<td>" . htmlentities($v->domain,ENT_QUOTES) . "</td>
+				<td style='white-space:pre-wrap; width:300px; word-break:break-all;'>" . htmlentities($v->question,ENT_QUOTES) . "</td>
+				<td>" . $v->launched_chat . "</td>
+				<td>" . $v->num_results . "</td>
+				<td>" . $v->num_clicks . "</td>
+				<td>" . $v->timeout . "</td>
+			</tr>
+		";
+	}
+	echo "	</table>";
+}
+
+?>

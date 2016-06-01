@@ -1,0 +1,342 @@
+<?
+
+
+
+
+setcookie("sc_overlay_join_the_community_test_1","it is working",time()+60*60*24*30,'/','.inmotionhosting.com');
+
+overlay_join_the_community_set_cookies();
+send_email_join_the_community();
+
+$task = $_POST['task'];
+switch($task)
+{
+	case "show_overlay":
+		show_overlay();
+		break;
+	case "hide_overlay":
+		hide_overlay();
+		break;
+}
+
+
+
+
+
+
+/**
+ * Return all Cookie variables that are 32 characters in length, such as:
+ * [2eb140e115c8a7259d43dcc255c77264] => 20241d2b0075f68e2e0543117e90648c
+ *
+ * @return  array
+ */
+function get_sessionid_cookies()
+{
+	foreach($_COOKIE as $k => $v)
+		if (strlen($k)==32 AND strlen($v)==32)
+			$sessionid_cookies[$k]=$v;
+	return $sessionid_cookies;
+}
+
+
+
+
+
+
+/**
+ * Connect to the database to see if this user is logged in
+ *
+ * @params  array of 32 character cookies that represent session id's
+ * @return  user object (id = 0 if not logged in,username)
+ */
+function return_user_info($sessionid_cookies)
+{
+	// if there are no session cookies, return false
+	if (count($sessionid_cookies) == 0)
+	{
+		$user->id = 0;
+		return $user;
+	}
+
+	// build our IN clause
+	foreach($sessionid_cookies as $k => $v)
+		$session_id_in[] = $v;
+
+	// grab session data from database
+	$query = "
+		SELECT	`userid`,`username`
+		FROM	`#__session`
+		WHERE	`session_id` IN ('" . implode("','",$session_id_in) . "');
+	";
+	$session_info_from_database = db_loadArrayList($query);
+
+	// loop through database results and return the user's id and username
+	if (count($session_info_from_database) > 0)
+	{
+		$logged_in = false;
+		foreach($session_info_from_database as $k => $v)
+		{
+			if (is_numeric($v['userid']) AND $v['userid'] > 0 AND trim($v['username']) != "")
+			{
+				$user->id = $v['userid'];
+				$user->username = $v['username'];
+				return $user;
+			}
+		}
+	}
+	else
+	{
+		$user->id = 0;
+		return $user;
+	}
+}
+
+
+
+
+
+
+/**
+ * Pass this function a query and we'll return an array of arrays
+ *
+ * @return  array
+ */
+function db_loadArrayList($query)
+{
+	// connect to the database
+        include_once("../configuration.php");
+        $cg = new JConfig;
+        $con = mysqli_connect("localhost",$cg->user,$cg->password,$cg->db);
+        if (mysqli_connect_errno())
+                die('cannot connect to database');
+
+	// replace #__ with prefix
+	$query = str_replace("#__",$cg->dbprefix,$query);
+
+	// run the query
+        $result = mysqli_query($con,$query);
+        while($row = mysqli_fetch_array($result))
+		$return_rows[] = $row;
+
+        // close the connection to the data
+        mysqli_close($con);
+
+        return $return_rows;
+}
+
+
+
+
+
+
+function db_execute($query)
+{
+        // connect to the database
+        include_once("../configuration.php");
+        $cg = new JConfig;
+        $con = mysqli_connect("localhost",$cg->user,$cg->password,$cg->db);
+        if (mysqli_connect_errno())
+                die('cannot connect to database');
+
+        // replace #__ with prefix
+        $query = str_replace("#__",$cg->dbprefix,$query);
+
+        // run the query
+	mysqli_query($con,$query);
+
+        // close the connection to the data
+        mysqli_close($con);
+}
+
+
+
+
+
+
+function show_overlay()
+{
+	// if the user previously clicked the X to close the advertisement
+	if ($_COOKIE['sc_overlay_join_the_community_hide'] == "yes")
+		return false;
+
+	// if the user is logged in, do not show the overlay
+	$sessionid_cookies = get_sessionid_cookies();
+        $user = return_user_info($sessionid_cookies);
+	if ($user->id > 0)
+		return;
+
+	// if the user is at the "Join the Community!" page, don't show the message
+	if(     $_POST['option'] == "com_content" AND
+                $_POST['view'] == "article" AND
+                $_POST['id'] == 3283 )
+		return;
+
+	// if we've already sent the user an email
+	if ($_COOKIE['sc_overlay_join_the_community_sent_email_on_login'] == "yes")
+		return;
+
+
+	echo "
+		<style>
+			.close_x {
+				position:absolute;
+				top:5px;
+				right:5px;
+				width:30px;
+				height:30px;
+				background:transparent url(/support/templates/supportcentertemplate/images/fancybox/fancybox.png) -40px 0;
+				cursor:pointer;
+				z-index:1103
+			}
+			div.overlay_join_community {
+				position:fixed;
+				left:0px;
+				bottom:0px;
+				width:100%;
+				color:#ccc;
+				background: url('/support/templates/supportcentertemplate/images/bgs/overlay_gears_1.png');
+				background-repeat: no-repeat;
+				background-position: right bottom;
+				background-color:rgba(23,23,23,0.9);
+				padding-top:10px;
+			}
+			table.overlay_join_community {
+                                width:930px;
+                                margin:0px auto -5px auto;
+                                overflow:visible;
+				border-collapse:separate;
+				background-color:rgba(0,0,0,0);
+				border:0px;
+				line-height:18px;
+			}
+			.member_type_header {
+				display:block;
+				font-size:15px;
+				text-transform:uppercase;
+				color:#fff;
+				font-weight:bold;
+				padding-bottom:8px;
+			}
+		</style>	
+		<script type='text/javascript'>
+			function close_overlay_join_community()
+			{
+				jQuery.post('/support/includes/overlay_join_the_community.php',{task:'hide_overlay'});
+				jQuery('#853_overlay_join_community').fadeOut('slow');
+			}
+		</script>
+		<div class='overlay_join_community'>
+		<table class='overlay_join_community white_box'>
+			<tr>
+				<td style='width:50%; padding-right:25px;' valign='top'>
+					<span class='member_type_header'>Current Customers</span>
+					Are you a current InMotion customer or Community Member? Sign in or join our Customer Community to get special benefits just for Community members.
+					<a href='/support/team/faq/join?membership=c&test=overlay' class='btn btn-primary' style='float:right;'>Learn more</a>
+				</td>
+				<td style='width:50%; display:relative; padding-left:25px;' valign='top'>
+					<div class='close_x' onClick=' close_overlay_join_community();'></div>
+					<span class='member_type_header'>Not a Community Member Yet?</span>
+					Not a customer or a Community Member? Join today and get free priority support and be eligible for company goodies, discounts, and more.
+					<a href='/support/team/faq/join?membership=m&test=overlay' class='btn btn-primary' style='float:right;'>Learn more</a>
+				</td>
+			</tr>
+			<tr style='display:none;'>
+				<td colspan='2'>
+					sc_overlay_join_the_community_hide: " . $_COOKIE['sc_overlay_join_the_community_hide'] . "<br />
+					sc_overlay_join_the_community_send_email_on_login: " . $_COOKIE['sc_overlay_join_the_community_send_email_on_login'] . "<br />
+					sc_overlay_join_the_community_sent_email_on_login: " . $_COOKIE['sc_overlay_join_the_community_sent_email_on_login'] . "<br />
+					sc_overlay_join_the_community_membership: " . $_COOKIE['sc_overlay_join_the_community_membership'] . "
+				</td>
+			</tr>
+		</table>
+		</div>
+	";
+}
+
+
+
+
+
+
+function hide_overlay()
+{
+	setcookie("sc_overlay_join_the_community_hide","yes",time()+60*60*24*30);
+
+	return false;
+}
+
+
+
+
+
+
+function overlay_join_the_community_set_cookies()
+{
+	// customer type? customer or member?
+	$membership_type = "m";
+	if (substr_count($_SERVER['HTTP_REFERER'],"membership=c")==1)
+		$membership_type = "c";
+	setcookie("sc_overlay_join_the_community_membership",$membership_type,time()+60*60*24*30);
+
+	// if the user has read the /support/team/faq/join page, they should be sent an email
+	if(	$_POST['option'] == "com_content" AND
+		$_POST['view'] == "article" AND
+		$_POST['id'] == 3283 )
+		setcookie("sc_overlay_join_the_community_send_email_on_login","yes",time()+60*60*24*30);
+}
+
+
+
+
+
+
+function send_email_join_the_community()
+{
+        // do we need to send an email?
+        if (    $_POST['guest'] == "0" AND                                                      /* the user is not a guest, they have successfully logged in */
+                $_COOKIE['sc_overlay_join_the_community_send_email_on_login'] == "yes" AND      /* the user has clikcked the link to join the community */
+                $_COOKIE['sc_overlay_join_the_community_sent_email_on_login'] != "yes" AND      /* we have not alrady sent the email */
+                $_COOKIE['sc_overlay_join_the_community_membership'] == "m" )                   /* the user is a "m"ember, not a "c"ustomer */
+        {
+		include_once("../functions_scv2.php");
+		$subject = "Welcome to the InMotion Hosting Community!";
+		$email_body_txt = "Hello, and welcome to the InMotion Hosting Customer Community!
+
+If you need hosting anytime in the future, here's a 50% coupon to make it easier to try InMotion Hosting:
+
+https://secure1.inmotionhosting.com/cgi-bin/gby/clickthru.cgi?id=supportcenter&page=7
+
+Sincerely,
+InMotion Hosting Customer Community Team";
+		$email_body_html = "<p>Hello, and welcome to the InMotion Hosting Customer Community!</p>
+
+<p>If you need hosting anytime in the future, here's a 50% coupon to make it easier to try InMotion Hosting:</p>
+
+<p><a href='https://secure1.inmotionhosting.com/cgi-bin/gby/clickthru.cgi?id=supportcenter&page=7'>https://secure1.inmotionhosting.com/cgi-bin/gby/clickthru.cgi?id=supportcenter&page=7</a></p>
+
+<p>Sincerely,<br />
+InMotion Hosting Customer Community Team</p>";
+		$email_body_html = pass_title_body_return_html_email($subject,$email_body_html);
+
+		// get the email address of this user
+		$sessionid_cookies = get_sessionid_cookies();
+		$user = return_user_info($sessionid_cookies);
+		$query = "SELECT `email` FROM `#__users` WHERE `id` = " . addslashes($user->id) . " LIMIT 1;";
+		$tmp_user = db_loadArrayList($query);
+		$to = $tmp_user[0]['email'];
+
+		$query = "
+		INSERT INTO #__email_queue (`id`,`created_date`,`been_sent`,`subject`,`body_text`,`body_html`,`to`)
+		VALUES (NULL,CURRENT_TIMESTAMP,0,'" . addslashes($subject) . "','" . addslashes($email_body_txt) . "','" . addslashes($email_body_html) . "','" . addslashes($to) . "');";
+		db_execute($query);
+
+		setcookie("sc_overlay_join_the_community_sent_email_on_login","yes",time()+60*60*24*30);
+	}
+}
+
+
+
+
+
+
+?>

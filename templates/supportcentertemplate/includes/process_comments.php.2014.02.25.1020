@@ -1,0 +1,188 @@
+<?
+
+
+
+
+
+
+if($_POST['sc_task'])
+	$db = JFactory::getDbo();
+
+
+
+
+
+
+if( $_POST['sc_task'] == "change_new_comment_notifications" )
+{
+	$db = JFactory::getDbo();
+	$user = JFactory::getUser();
+
+	if(
+		! $user->guest AND
+		( $_POST['get_new_comment_notifications'] == "yes" OR $_POST['get_new_comment_notifications'] == "no" ) AND
+		is_numeric($_POST['article_id']) AND
+		is_numeric($_POST['user_id']) AND
+		$_POST['user_id'] == $user->id
+	)
+	{
+		unset($query);
+		switch($_POST['get_new_comment_notifications'])
+		{
+			case "yes":
+				$query = "DELETE FROM #__content_do_not_email_me WHERE `user_id` = " . $user->id . " AND `article_id` = " . $_POST['article_id'] . ";";
+				$update_email_notification = "Email notifications for comments to this article have been ENABLED.";
+				break;
+			case "no":
+				$query = "INSERT INTO #__content_do_not_email_me (`id`,`user_id`,`article_id`) VALUES (NULL, " . $user->id . "," . $_POST['article_id'] . ");";
+				$update_email_notification = "Email notifications for comments to this article have been DISABLED.";
+				break;
+		}
+		if($query)
+		{
+			$db->setQuery($query);
+			try
+			{
+				$result = $db->query();
+				JFactory::getApplication()->enqueueMessage("$update_email_notification", 'success');
+			}
+			catch (Exception $e)
+			{
+				// catch any database errors.
+				JFactory::getApplication()->enqueueMessage('Error - your email notification settings for comments to this article have not changed.', 'error');
+			}
+		}
+	}
+}
+
+
+
+
+
+
+if($_POST['sc_task'] == "add_comment" AND does_item_exist_in_database("comments","comment",addslashes($_POST['new_comment'])) == false)
+{
+	$allowable_groups = array("com_content","com_communitysupport");
+
+	$comment = $_POST['new_comment'];
+	$object_group = $_POST['object_group'];
+	$object_id = $_POST['object_id'];
+	$user_ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
+	$user = JFactory::getUser();
+	$current_utc_n = strtotime(gmdate('Y-m-d H:i:s'));
+
+	if( $user->guest )
+	{
+		JError::raiseNotice( "You must be logged in to comment!", 'Notice' );
+		break;
+	}
+
+	if( !in_array($object_group,$allowable_groups) )
+	{
+		JError::raiseNotice( "You cannot post a comment here!", 'Notice' );
+		break;
+	}
+
+	if( !is_numeric($object_id) )
+	{
+                JError::raiseNotice( "You cannot post on this page!", 'Notice' );
+		break;
+        }
+
+	if( $comment == "" )
+	{
+		JFactory::getApplication()->enqueueMessage('Your comment was blank!', 'error');
+		$do_not_add_comment = true;
+	}
+
+	$query = "INSERT INTO #__comments (`id` ,`object_id` ,`object_group` ,`user_id` ,`comment` ,`ip` ,`utc_n`)VALUES (NULL , '$object_id', '$object_group', '" . $user->id . "', '" . addslashes($comment) . "', '$user_ip', '$current_utc_n');";
+	$db->setQuery($query);
+	$send_email_after_article_comment = false;
+
+	cc_clear_page_cache();
+
+	if( $do_not_add_comment != true )
+	{
+		try
+		{
+			$result = $db->execute();
+			JFactory::getApplication()->enqueueMessage('Thank you for posting a comment!', 'success');
+			$send_email_after_article_comment = true;
+		}
+		catch (Exception $e)
+		{
+			JError::raiseNotice( "Your comment failed to post!", 'Notice' );
+		}
+	}
+
+
+
+
+
+
+	// handle email notifications of comments
+	if( $send_email_after_article_comment == true )
+	{
+		$send_email_after_article_comment_email_message = "
+Hi %s,
+
+A new comment has been added to the following page:
+
+%s
+%s
+
+
+%s says:
+---------------------------------------------------
+%s
+---------------------------------------------------
+
+Best Regards,
+InMotion Hosting Support Team
+";
+
+		$article_commenters = return_array_of_all_commenters_of_this_page($object_id);
+		$users_not_wanting_email = return_array_of_users_not_wanting_new_comment_notification_emails($object_id);
+
+		foreach($article_commenters as $k => $v)
+		{
+			// do we want to send this email?
+			$send_this_email = false;
+			if( ! is_array($users_not_wanting_email) )
+				$send_this_email = true;
+			else
+			{
+				if( ! in_array($v->id,$users_not_wanting_email) AND $user->id != $v->id )
+					$send_this_email = true;
+			}
+			if( $v->email == $user->email )
+				$send_this_email = false;
+
+
+			if( $send_this_email )
+			{
+				$mail_body = sprintf(
+                                        $send_email_after_article_comment_email_message,
+                                        $v->username,
+					$this->title,
+					$this->base,
+					$user->username,
+					$comment
+                                );
+				cs_send_email($v->email,"NEW COMMENT - " . $this->title,$mail_body);
+			}
+		}
+
+		$mail_body = sprintf($send_email_after_article_comment_email_message,"STAFF",$this->title,$this->base,$user->username,$comment);
+		cs_send_email("customer_experience@inmotionhosting.com","ADMIN EMAIL - NEW COMMENT - " . $this->title,$mail_body); // staff email
+	}	
+
+	
+}
+
+
+
+
+
+
+?>

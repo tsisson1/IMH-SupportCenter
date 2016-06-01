@@ -1,0 +1,54 @@
+<?php
+
+
+//don't allow other scripts to grab and execute our file
+defined('_JEXEC') or die('Direct Access to this location is not allowed.');
+
+
+$seven_days_ago_nn = date("Y-m-d H:i:s", time() - 60*60*24*7);
+
+
+$option = JRequest::getVar('option');
+$view = JRequest::getVar('view');
+$id = JRequest::getVar('id');
+
+if( $option != "com_content" or $view != "categories" or $id != 0)
+	return;
+
+$db = JFactory::getDbo();
+$query = "SELECT * FROM #__content WHERE `catid` = 50 AND `state` = 1 AND `created` >= '$seven_days_ago_nn';";
+$db->setQuery($query);
+$results = $db->loadObjectList();
+
+// // echo "<pre>"; print_r($results); echo "</pre>";
+
+if( ! $results )
+	return;
+else
+{
+	foreach($results as $k  => $v)
+	{
+		$article_title = $v->title;
+		$article_url = JRoute::_(ContentHelperRoute::getArticleRoute($v->id . "-" . $v->alias, $v->catid));
+
+		$news_item_color_style = "";
+		if( time() - strtotime($v->created) <= (60*60*24) )
+			$news_item_color_style = "style='color:red;'";
+
+		$news_items .= "
+			<div>
+				<a href='$article_url' $news_item_color_style >$article_title</a>
+				<div>" . date('Y-m-d h:i a',strtotime($v->created)) . "</div>
+				<div>Hits: " . $v->hits . "</div>
+			</div>
+		";
+	}
+}
+
+echo "
+	<h3>News / Announcements</h3>
+	$news_items
+";
+
+
+?>

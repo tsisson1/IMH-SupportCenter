@@ -1,0 +1,11 @@
+How to Change Name Servers in Google Domains
+
+Google has recently become a domain registrar and allows you register domains of many different types for a relatively low cost.  You can use a domain registered through Google Domains, but you will either need to point an A Record to InMotion Hosting's server, or change the name servers to point to InMotion Hosting.  The following tutorial will walk you through how to change the name servers to point to InMotion Hosting's web servers.
+
+
+Google is a domain registrar that allows you register domains of many different types for a relatively low cost.  You can use a domain registered through Google Domains for your Web Hosting Hub account, but you will either need to point an A Record to Web Hosting Hub's server, or change the name servers to point to Web Hosting Hub.  The following tutorial will step you through how to change the name servers of your Google Domain to in order to point to Web Hosting Hub's servers.
+
+
+Login to your Google Domains Account
+
+If you have multiple domains, you will need t

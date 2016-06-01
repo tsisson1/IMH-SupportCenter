@@ -1,0 +1,157 @@
+<?
+
+
+$start_date = "2014-02-17 00:00:00";
+if( $_POST['start_date'] )
+	$start_date = $_POST['start_date'];
+$end_date = "2014-02-23 23:59:59";
+if( $_POST['end_date'] )
+	$end_date = $_POST['end_date'];
+
+?>
+
+
+
+
+
+
+<form method='post'>
+	Start Date: <input type='text' name='start_date' id='start_date' value='<? echo $start_date; ?>' />
+	End Date: <input type='text' name='end_date' id='end_date' value='<? echo $end_date; ?>' />
+	<input type='submit' value='Get stats' class='btn btn-primary' />
+</form>
+
+
+
+
+
+
+<?
+
+if( $_POST )
+{
+	$start_date = strtotime($_POST['start_date']) - (3*60*60);
+        $end_date = strtotime($_POST['end_date']) - (3*60*60);
+
+
+
+
+
+
+	$deps['2324923566971164486'] = "Technical Support 24/7";
+	$deps['1621843185299383618'] = "Billing";
+	$deps['4574741892902413188'] = "Sales - Business Class hosting";
+	$deps['161470813524485003'] = "Sales - Custom Web Design";
+	$deps['1943748019446294429'] = "Sales - Dedicated servers";
+	$deps['3027061675179994483'] = "Sales - Reseller Hosting";
+	$deps['1382987596054887839'] = "Sales - Virtual Private Servers (VPS)";
+	$deps[''] = "NO DEPARTMENT SELECTED";
+
+
+
+
+
+
+$allowed_ips = return_staff_ips();
+$internal_ips = implode("','",$allowed_ips);
+
+
+
+
+
+
+	foreach($deps as $dep_id => $dep_title)
+	{
+		echo "<h1>$dep_title</h1>";
+
+		$base_query = "
+		SELECT  count(`id`)
+        	FROM    #__prechat
+	        WHERE   (`timestamp_n` BETWEEN '$start_date' AND '$end_date') AND
+			(`user_ip` NOT IN ('$internal_ips')) AND
+                	(LENGTH(`timestamp_n_id`) = 14) AND
+			(`department` = '$dep_id')
+		";
+
+		echo "	<style>
+				.table-striped tr td {text-align:center; font-size:10px;}
+			</style>
+			<table class='table table-striped' style='margin-bottom:50px;'>
+				<tr>
+					<th>Category</th>
+					<td style='font-size:10px;'>launched_chat</td>
+					<td style='font-size:10px;'>num_results</td>
+					<td style='font-size:10px;'>num_clicks</td>
+					<td style='font-size:10px;'>timeout</td>
+					<th>Count</th>
+					<th>%</th>
+				</tr>
+		";
+
+
+		// number of prechats
+		$db->setQuery($base_query);
+		$results = $db->loadResult();
+		$total_prechats = $results;
+		$suspicious_count = $results;
+		echo "	<tr><th>Total number of prechats</th><td>*</td><td>*</td><td>*</td><td>*</td><th>$results</th><th>100%</th></tr>";
+
+		// total number of chats launched
+	        $db->setQuery("
+			$base_query AND
+			(`launched_chat` = 1 AND `num_results` = 0 AND `num_clicks` = 0 AND `timeout` = 1)
+		");
+		$results = $db->loadResult();
+		$percentage = round($results/$total_prechats*100,2);
+		$suspicious_count -= $results;
+	        echo "  <tr><th style='background:#FFCCCC;'>FAIL - chat launched AUTOMATICALLY because of timeout</th><td>1</td><td>0</td><td>0</td><td>1</td><th>$results</th><th>$percentage%</th></tr>";
+
+		// total number of chats launched because of no search results
+	        $db->setQuery("
+        	        $base_query AND
+	                (`launched_chat` = 1 AND `num_results` = 0 AND `num_clicks` = 0 AND `timeout` = 0)
+        	");
+	        $results = $db->loadResult();
+		$percentage = round($results/$total_prechats*100,2);
+		$suspicious_count -= $results;
+	        echo "  <tr><th style='background:#FFCCCC;'>FAIL - chat launched AUTOMATICALLY because of no search results</th><td>1</td><td>0</td><td>0</td><td>0</td><th>$results</th><th>$percentage%</th></tr>";
+
+		// total number of chats launched because they didn't click any results
+	        $db->setQuery("
+        	        $base_query AND
+	                (`launched_chat` = 1 AND `num_results` >=1 AND `num_clicks` = 0 AND `timeout` = 0)
+        	");
+	        $results = $db->loadResult();
+		$percentage = round($results/$total_prechats*100,2);
+		$suspicious_count -= $results;
+	        echo "  <tr><th style='background:#FFCCCC;'>FAIL - chat launched BY USER because they didn't click search results</th><td>1</td><td>&gt;=1</td><td>0</td><td>0</td><th>$results</th><th>$percentage%</th></tr>";
+
+		// total number of chats launched because they clicked links but they didn't help
+	        $db->setQuery("
+	                $base_query AND
+        	        (`launched_chat` = 1 AND `num_results` >=1 AND `num_clicks` >= 1 AND `timeout` = 0)
+	        ");
+	        $results = $db->loadResult();
+		$percentage = round($results/$total_prechats*100,2);
+		$suspicious_count -= $results;
+	        echo "  <tr><th style='background:#FFCCCC;'>FAIL - chat launched BY USER because ajax results were clicked but not helpful</th><td>1</td><td>&gt;=1</td><td>&gt;=1</td><td>0</td><th>$results</th><th>$percentage%</th></tr>";
+
+		// total number of chats logically prevented
+	        $db->setQuery("
+        	        $base_query AND
+	                (`launched_chat` = 0 AND `num_results` >= 1 AND `num_clicks` >= 1 AND `timeout` = 0)
+        	");
+	        $results = $db->loadResult();
+		$percentage = round($results/$total_prechats*100,2);
+		$suspicious_count -= $results;
+        	echo "  <tr><th style='background:#CCFFCC;'>Success - chat logically prevented</th><td>0</td><td>&gt;=1</td><td>&gt;=1</td><td>0</td><th>$results</th><th>$percentage%</th></tr>";
+
+		$results = $suspicious_count;
+		$percentage = round($results/$total_prechats*100,2);
+		echo "  <tr><th style='background:#FFFFCC;'>Uncategorized / Suspicious data</th><td>?</td><td>?</td><td>?</td><td>?</td><th>$results</th><th>$percentage%</th></tr>";
+
+		echo "	</table>";
+	}
+}
+
+?>

@@ -1,0 +1,4 @@
+/* Mobile Styles */
+#wrapper{border:none; margin:0%; padding:0%;min-width:280px;width:100%;border:1px solid #000000}
+.box{width:96%;padding:2%;margin:2% 0% 0% 0%;display:inline-block;vertical-align:top;border:1px solid #000000}
+.image-box{padding:0% 2% 0% 0%;max-width:100px;}

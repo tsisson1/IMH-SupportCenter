@@ -1,0 +1,47 @@
+<?
+
+// write some info to the database
+include_once("gd_database.php");
+
+// define that this will be a png
+header('content-type: image/png');
+
+// define the image size
+$image = imagecreatetruecolor(227, 18);
+
+// define our colors
+$white = imagecolorallocate($image, 255, 255, 255);
+$red = imagecolorallocate($image, 255, 0, 0);
+$black = imagecolorallocate($image, 0, 0, 0);
+$grey = imagecolorallocate($image, 100, 100, 100);
+$grey2 = imagecolorallocate($image,200,200,200);
+
+// define our font
+$font_path = 'verdana.ttf';
+
+// define the text to write
+$string = 'mgr_feedback@webhostinghub.com';
+
+// give a background color
+ImageFillToBorder($image, 0, 0, $grey2, $white);
+
+
+// draw the text on the screen. 11 font-size, 0 angle
+imagettftext ($image, 9, 0, 1, 13, $black, $font_path, $string);
+
+    $x1 = 0;
+    $y1 = 0;
+    $x2 = ImageSX($image) - 1;
+    $y2 = ImageSY($image) - 1;
+
+    for($i = 0; $i < 1; $i++)
+    {
+        ImageRectangle($image, $x1++, $y1++, $x2--, $y2--, $grey);
+    } 
+
+imagegif($image);
+
+imagedestroy($image);
+
+?>
+

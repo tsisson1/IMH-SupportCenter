@@ -1,0 +1,1038 @@
+<?
+
+
+
+
+
+
+if( $_POST['bbp_feedback'] != "" )
+{
+	cs_send_email(
+		"customer_experience@inmotionhosting.com",
+		"BBParser Feedback",
+		"USER IP: " . $_SERVER['HTTP_X_FORWARDED_FOR'] . "\n\n" . $_POST['bbp_feedback']
+	);
+	JFactory::getApplication()->enqueueMessage('Thank you for providing feedback!', 'success');
+}
+
+
+
+
+
+
+echo "<div class='item-page'>"; // START THE ENTIRE PAGE
+
+
+
+
+
+$bounce_to_display = htmlspecialchars($_POST['bounce']);
+$lower_bounce = strtolower($_POST['bounce']);
+
+// FIXING THIS - forwarded emails
+$forwards_to_fix = array("> ",">> ");
+foreach($forwards_to_fix as $ftf_k => $fof_v)
+{
+	if( substr_count($lower_bounce,$fof_v) > 5 )
+	{
+		$lower_bounce = str_replace("\n" . $fof_v,"\n",$lower_bounce);
+		$lower_bounce = str_replace("\r" . $fof_v,"\r",$lower_bounce);
+	}
+}
+foreach($forwards_to_fix as $ftf_k => $fof_v)
+{
+	if( substr($lower_bounce,0,strlen($fof_v)) == $fof_v)
+		$lower_bounce = substr_replace($lower_bounce,"",0,strlen($fof_v));
+}
+$lower_bounce = str_replace("\r\n>\r\n","\r\n\r\n",$lower_bounce);
+
+
+
+
+
+
+// step 1
+print_bounce_submission_form($lower_bounce);
+
+// step 2
+if( $_POST['bounce'] )
+{
+	switch(return_type_of_bounce($lower_bounce))
+	{
+		case "smtp error from remote mail server after end of data":
+			parse_smtp_error_from_remote_mail_server_after_end_of_data($lower_bounce);
+			break;
+		case "smtp error from remote mail server after rcpt to":
+			parse_smtp_error_from_remote_mail_server_after_rcpt_to($lower_bounce);
+                        break;
+		case "smtp error from remote mail server after initial connection":
+			parse_smtp_error_from_remote_mail_server_after_initial_connection($lower_bounce);
+                        break;
+		case "smtp error from remote mail server after mail from":
+                        parse_smtp_error_from_remote_mail_server_after_mail_from($lower_bounce);
+                        break;
+		default:
+			echo "	<div>
+					<a name='step-2'></a>
+					<h2>Unfortunately we were unable to read your bounce back message.</h2>
+					<ul>
+						<li>Review <a href='#examples'>the examples provided</a> and ensure you are submitting the required details.</li>
+						<li>
+							At this time, this tool is only able to interpret messages similar to:
+							<ul>
+								<li>smtp error from remote mail server after end of data</li>
+								<li>smtp error from remote mail server after rcpt to</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			";
+			// log to the database
+			/*
+		        if( does_item_exist_in_database("log_bounce_backs","pasted_bounce",addslashes($_POST['bounce'])) == false )
+		        {
+                		$db = JFactory::getDbo();
+		                $query = "      INSERT INTO #__log_bounce_backs
+                		                (`id`,`pasted_bounce`,`utc_n_timestamp`,`resolution`)
+                                		VALUES (NULL, '" . addslashes($_POST['bounce']) . "', " . strtotime(gmdate('Y-m-d H:i:s')) . ", -1)
+		                ";
+                		$db->setQuery($query);
+		                $result = $db->query();
+		        }
+			*/
+			break;
+	}
+}
+
+
+
+
+
+
+// print the form to allow the user to post a bounce
+function print_bounce_submission_form($lower_bounce)
+{
+	echo "
+		<div class='page-header'>
+			<h1>Bounce Back Parser</h1>
+			Written by <a href='https://plus.google.com/102670474114655224886'>Brad Markle</a>				
+		</div>
+
+		<iframe width='390' height='250' src='http://www.youtube.com/embed/XhAGAWylDqk?rel=0' frameborder='0' allowfullscreen style='float:right; margin:0px 0px 15px 15px;'></iframe>
+
+		<p>Wondering <a href='/support/email/email-troubleshooting/email-bounce-bounceback-error'>why your email is being bounced back</a> and returned to you? Usually it is because of <a href='/support/tools/blacklist-check'>a server appearing in a blacklist</a>, a misspelled email address, or a <a href='/support/email/email-troubleshooting/email-error-450'>temporary greylisting issue</a>.</p>
+
+		<p>Many times understanding the <a href='http://www.ietf.org/rfc/rfc1893.txt' target='_blank'>error numbers listed in these bounce back messages</a> is difficult for the untrainied eye. To help in troubleshooting bounce back messages, we've created the tool found below, our <em>bounce back parser</em>.</p>
+
+		<form method='post' action='#step-2' style='clear:both;'>
+
+			<h2>Step 1: Paste your bounce back message below</h2>
+
+			<p>
+				When you paste in your bounce back message, start with the text that says <span class='white_box' style='padding:2px;'>From:</span> and end with the line that reads <span class='white_box' style='padding:2px;'>------ This is a copy of the message, including all the headers. ------</span>. Refer to the screenshot and text below for an example.
+			</p>
+
+			<a name='examples'></a>
+			<table class='article_table'>
+				<tr>
+					<td valign='top'>
+						<ol class='article_list'>
+							<li>
+								<a class='std_ss' href='/support/images/stories/bounce-reader/forward-the-email-to-yourself.gif'>
+        	                                                        <img src='/support/images/stories/bounce-reader/forward-the-email-to-yourself.gif' style='float:right; width:100px; margin:0px 0px 0px 10px;' />
+	                                                        </a>
+								Forward the bounce back message to your own email address.
+							</li>
+							<li style='clear:both;'>
+								<a class='std_ss' href='/support/images/stories/bounce-reader/highlight-and-copy-the-headers.gif'>
+                                                                        <img src='/support/images/stories/bounce-reader/highlight-and-copy-the-headers.gif' style='float:right; width:100px; margin:8px 0px 0px 10px;' />
+                                                                </a>
+								When you receive this forwarded copy of the bounce back message, copy the headers as described above (and highlighted in the screenshot to the right)
+							</li>
+							<li>
+								Paste what you copided into the box to the right, and then click Submit.
+							</li>
+						</ol>
+					</td>
+					<td valign='top'>
+						<textarea name='bounce' id='bounce' style='width:300px; height:296px;'>$lower_bounce</textarea>
+					</td>
+				</tr>
+			</table>
+
+			<div><input class='btn btn-primary' type='submit' value='Submit' /></div>
+
+		</form>
+	";
+}
+
+
+
+
+
+
+function return_type_of_bounce($lower_bounce)
+{
+	$lower_bounce = remove_all_new_lines_and_double_spaces($lower_bounce);
+
+	if(
+		(
+			substr_count($lower_bounce,"smtp error from remote mail server after end of data") > 0 OR
+			substr_count($lower_bounce,"smtp error from remote mail server after data") > 0
+		) AND
+		substr_count($lower_bounce,"------ this is a copy of the message, including all the headers. ------") > 0
+	)
+		return "smtp error from remote mail server after end of data";
+
+	if(     substr_count($lower_bounce,"smtp error from remote mail server after rcpt to") > 0 AND
+                substr_count($lower_bounce,"------ this is a copy of the message, including all the headers. ------") > 0
+        )
+                return "smtp error from remote mail server after rcpt to";
+	
+	if(     substr_count($lower_bounce,"smtp error from remote mail server after initial connection") > 0 AND
+                substr_count($lower_bounce,"------ this is a copy of the message, including all the headers. ------") > 0
+        )
+                return "smtp error from remote mail server after initial connection";
+
+	if(     substr_count($lower_bounce,"smtp error from remote mail server after mail from") > 0 AND
+                substr_count($lower_bounce,"------ this is a copy of the message, including all the headers. ------") > 0
+        )
+                return "smtp error from remote mail server after mail from";
+}
+
+
+
+
+
+
+function parse_smtp_error_from_remote_mail_server_after_end_of_data($lower_bounce)
+{
+	$bounce_guts = return_bounce_guts($lower_bounce);
+
+        $bounce_details = array_of_details_from_smtp_error_from_remote_mail_server($bounce_guts);
+	$bounce_details['who_delivered_the_bounce'] = return_server_name_deliverying_the_bounce($lower_bounce);
+	$bounce_details['original_sender'] = return_who_sent_original_message($lower_bounce);
+	$bounce_details['original_recipient'] = return_who_original_message_was_sent_to($lower_bounce);
+
+        print_generic_why_bounce($bounce_details);
+	print_error_number_information($bounce_details);
+	print_solution($bounce_details);
+}
+
+
+
+
+
+
+function parse_smtp_error_from_remote_mail_server_after_rcpt_to($lower_bounce)
+{
+	$bounce_guts = return_bounce_guts($lower_bounce);
+
+	$bounce_details = array_of_details_from_smtp_error_from_remote_mail_server($bounce_guts);
+	$bounce_details['who_delivered_the_bounce'] = return_server_name_deliverying_the_bounce($lower_bounce);
+	$bounce_details['original_sender'] = return_who_sent_original_message($lower_bounce);
+	$bounce_details['original_recipient'] = return_who_original_message_was_sent_to($lower_bounce);
+
+	print_generic_why_bounce($bounce_details);
+	print_error_number_information($bounce_details);
+	print_solution($bounce_details);
+}
+
+
+
+
+
+
+function parse_smtp_error_from_remote_mail_server_after_initial_connection($lower_bounce)
+{
+        $bounce_guts = return_bounce_guts($lower_bounce);
+
+        $bounce_details = array_of_details_from_smtp_error_from_remote_mail_server($bounce_guts);
+        $bounce_details['who_delivered_the_bounce'] = return_server_name_deliverying_the_bounce($lower_bounce);
+        $bounce_details['original_sender'] = return_who_sent_original_message($lower_bounce);
+        $bounce_details['original_recipient'] = return_who_original_message_was_sent_to($lower_bounce);
+
+        print_generic_why_bounce($bounce_details);
+        print_error_number_information($bounce_details);
+	print_solution($bounce_details);
+}
+
+
+
+
+
+
+function parse_smtp_error_from_remote_mail_server_after_mail_from($lower_bounce)
+{
+        $bounce_guts = return_bounce_guts($lower_bounce);
+
+        $bounce_details = array_of_details_from_smtp_error_from_remote_mail_server($bounce_guts);
+        $bounce_details['who_delivered_the_bounce'] = return_server_name_deliverying_the_bounce($lower_bounce);
+        $bounce_details['original_sender'] = return_who_sent_original_message($lower_bounce);
+        $bounce_details['original_recipient'] = return_who_original_message_was_sent_to($lower_bounce);
+
+        print_generic_why_bounce($bounce_details);
+        print_error_number_information($bounce_details);
+	print_solution($bounce_details);
+}
+
+
+
+
+
+
+function return_bounce_guts($lower_bounce)
+{
+        $location_of_this_is_a_copy = strpos($lower_bounce,"------ this is a copy of the message, including all the headers. ------");
+        $location_of_smtp_error_from = strpos($lower_bounce,"smtp error from");
+        $bounce_guts = substr($lower_bounce,$location_of_smtp_error_from,($location_of_this_is_a_copy - $location_of_smtp_error_from));
+        // remove new lines
+        $bounce_guts = str_replace("\n"," ",$bounce_guts);
+        $bounce_guts = str_replace("\r"," ",$bounce_guts);
+        // remove extra spaces
+        while(substr_count($bounce_guts,"  ") > 0)
+                $bounce_guts = str_replace("  "," ",$bounce_guts);
+        // remove space at end
+        $bounce_guts = trim($bounce_guts);
+	return $bounce_guts;
+}
+
+
+
+
+
+
+function array_of_details_from_smtp_error_from_remote_mail_server($bounce_guts)
+{
+	// ------------------------------------------------------------------------------
+        // find the error number
+        // ------------------------------------------------------------------------------
+        $x = 4;
+        while($error_number_found != true AND $x <= 5)
+        {
+                if( substr_count($bounce_guts,": $x") > 0)
+                {
+                        $error_number_found = true;
+                        $error_number_location = strpos($bounce_guts,": $x");
+                        $error_number_phrase = substr($bounce_guts,$error_number_location + 2);
+                        $text_before_error_number_phrase = substr($bounce_guts,0,$error_number_location);
+                }
+                $x++;
+        }
+
+
+
+
+
+
+        // ------------------------------------------------------------------------------
+        // what host is saying the error number phrase
+        // ------------------------------------------------------------------------------
+        // find last occorence of " host ";
+        $location_of_text_host = strrpos($text_before_error_number_phrase," host ");
+        $host_complaining = substr($text_before_error_number_phrase, ($location_of_text_host + 6) );
+
+
+
+
+
+
+	// ------------------------------------------------------------------------------
+	// get the error numbers, as in 550 5.7.1
+	// 550 5.7.1 <catmar2@valisland.com>... h:m12 [173.205.127.246] connection refused due to abuse
+	// ------------------------------------------------------------------------------
+
+	$tmp_error_number_phrase = $error_number_phrase;
+
+	// FIXING THIS - 550-5.1.1 the email account that you tried to (notice the - between 550 and 5.1.1
+	if( substr($tmp_error_number_phrase,3,1) == "-" )
+		$tmp_error_number_phrase = substr_replace($tmp_error_number_phrase," ",3,1);
+
+	// FIXING THIS - 550 5.7.1<ann_m@qualitythermoforming.com> (notice no space after 5.7.1 and <ann_m
+	$eerp_clean_up_array = array("<");
+	foreach($eerp_clean_up_array as $eerpcua_k => $eerpcua_v)
+		$tmp_error_number_phrase = str_replace($eerpcua_v," ",$tmp_error_number_phrase);
+		
+
+	$exploded_error_number_phrase = explode(" ",$tmp_error_number_phrase);
+
+	// FIXING THIS - 554-mail1.bsci.com 554 your access to this mail system has been (notice the dash after the first 554)
+	if( substr($exploded_error_number_phrase[0],3,1) == "-" AND is_numeric(substr($exploded_error_number_phrase[0],0,3)) )
+		$exploded_error_number_phrase[0] = substr($exploded_error_number_phrase[0],0,3);
+
+	if( is_numeric($exploded_error_number_phrase[0]) )
+		$details['main_error_number'] = $exploded_error_number_phrase[0];
+
+	// FIXING THIS - 550 #5.1.0 address rejected. (notice the # in front of 5.1.0)
+	if( substr($exploded_error_number_phrase[1],0,1) == "#" )
+		$exploded_error_number_phrase[1] = str_replace("#","",$exploded_error_number_phrase[1]);
+
+	if( substr_count($exploded_error_number_phrase[1],".") == 2 AND strlen($exploded_error_number_phrase[1]) == 5 )
+		$details['sub_error_number'] = $exploded_error_number_phrase[1];
+
+
+
+
+
+
+	// ------------------------------------------------------------------------------
+	// determine, if available, the ip of the server blacklisted
+	// ------------------------------------------------------------------------------
+
+	// FIXING THIS - 521-173.247.244.116 blocked by sbc:black... (notice the ip blocked is not isolated)
+	$tmp_error_number_phrase = str_replace("-"," ",$error_number_phrase);
+
+	$exploded_error_number_phrase = explode(" ",$tmp_error_number_phrase);
+	$search_for_ip_blocked_count = 0;
+	$remove_array = array("<",">","[","]",")","(");
+	while(	$found_blocked_ip != true AND
+		$search_for_ip_blocked_count != count($exploded_error_number_phrase)
+	)
+	{
+		$check_this = $exploded_error_number_phrase[$search_for_ip_blocked_count];
+
+		foreach($remove_array as $ra_k => $ra_value)
+			$check_this = str_replace($ra_value,"",$check_this);
+
+		// FIXING THIS - with ip address, 74.124.203.159). if you believe (notice the ")" and "." and the end of the ip)
+		$check_this = trim($check_this,".");
+
+		// FIXING THIS - http://bbl.barracudacentral.com/q.cgi?ip=70.39.249.184 (notice the ip is at the end in the url)
+		if( substr_count($check_this,"=") == 1 )
+		{
+			$exploded_check_this = explode("=",$check_this);
+			$check_this = $exploded_check_this[1];
+		}
+
+		if( is_this_an_ip($check_this) == true )
+		{
+			$details['ip_that_is_blocked'] = $check_this;
+			$found_blocked_ip = true;
+		}
+
+		$search_for_ip_blocked_count++;
+	}
+
+
+
+
+
+
+	// ------------------------------------------------------------------------------
+	// determine who's doing the block, like spamhaus
+	// ------------------------------------------------------------------------------
+	$possible_blockers = array("mailspike.org","blocklist.zap","delist@messaging.microsoft.com","trendmicro.com","sbc:blacklist.mailrelay.att.net","mailhostingservice.com","senderbase.org","us.army.mil","barracudacentral.com","verizon.net/whitelist","att.net/blocks","trend micro","comcast.net");
+	foreach($possible_blockers as $pb_k => $pb_v)
+	{
+		if( substr_count($error_number_phrase,$pb_v) > 0 )
+			$details['blocking_service'] = $pb_v;
+	}
+
+
+
+
+	$details['host_complaining'] = $host_complaining;
+	$details['error_number_phrase'] = $error_number_phrase;
+
+	return $details;
+}
+
+
+
+
+
+
+function print_generic_why_bounce($bounce_details)
+{
+	echo "
+		<a name='step-2'></a>
+		<h2 style='margin-bottom:15px;'>Step 2: Review the reason for the delivery failure</h2>
+
+		<h3 style='font-size:20px;padding-bottom:0px;'>After reviewing your bounce back, we determined that:</h3>
+		<div style='margin-bottom:15px;'>
+                        <div style='float:left; width:300px;'>
+                                <h3 style='color:#c52228; font-size:18px;'>This user:</h3>
+                                <div class='white_box'>
+                                        " . htmlspecialchars($bounce_details['original_sender']) . "
+                                </div>
+                        </div>
+
+                        <div style='float:right; width:300px;'>
+                                <h3 style='color:#c52228; font-size:18px;'>... tried to send an email to:</h3>
+                                <div class='white_box' style='word-wrap:break-word;'>
+                                        " . htmlspecialchars($bounce_details['original_recipient']) . "
+                                </div>
+                        </div>
+
+                        <div style='clear:both;'></div>
+
+                </div>
+
+                <h3 style='font-size:20px; padding-bottom:0px;'>This email was bounced because:</h3>
+                <div style='margin-bottom:15px;'>
+                        <div style='float:left; width:300px;'>
+                                <h3 style='color:#c52228; font-size:18px;'>This Server:</h3>
+                                <div class='white_box'>
+                                        " . htmlspecialchars($bounce_details['host_complaining']) . "
+                                </div>
+                        </div>
+
+                        <div style='float:right; width:300px;'>
+                                <h3 style='color:#c52228;font-size:18px;'>... said this:</h3>
+                                <div class='white_box' style='word-wrap:break-word;'>
+                                        " . htmlspecialchars($bounce_details['error_number_phrase']) . "
+                                </div>
+                        </div>
+
+                        <div style='clear:both;'></div>
+
+                </div>
+        ";
+
+	// echo "<pre>"; print_r($bounce_details); echo "</pre>";
+}
+
+
+
+
+
+function return_server_name_deliverying_the_bounce($lower_bounce)
+{
+	$lower_bounce_exploded = explode("\n",$lower_bounce);
+
+	foreach($lower_bounce_exploded as $line_number => $text)
+	{
+		// FIXING THIS - if they paste the data, and there is a space in front of " from"
+		$text = trim($text);
+
+		if( substr($text,0,5) == "from:" || $last_line_was_from == 1 )
+		{
+			// return all the including and after "@"
+			$server_name = strstr($text,"@");
+
+			$remove_characters = array("@",">","]");
+			foreach($remove_characters as $rc_key => $remove_me)
+				$server_name = str_replace($remove_me,"",$server_name);
+
+			if( $server_name != "" )
+				return trim($server_name);
+			else
+				$last_line_was_from++;
+		}
+	}
+}
+
+
+
+
+
+
+function return_who_sent_original_message($lower_bounce)
+{
+	$lower_bounce = str_replace("\r","\n",$lower_bounce);
+        $lower_bounce_exploded = explode("\n",$lower_bounce);
+
+        foreach($lower_bounce_exploded as $line_number => $text)
+        {
+                if( substr($text,0,3) == "to:" )
+                {
+			$original_sender = str_replace("to:","",$text);
+			
+			// FIXING THIS - to: melinda rea-holloway <melinda@ethnographic-research.com> (notice it has more than just the email address)
+			if( substr_count($original_sender," ") > 0 )
+			{
+				$exploded_original_sender = explode(" ",$original_sender);
+				foreach($exploded_original_sender  as $eos_k => $eos_v)
+					if( substr_count($eos_v,"@") == 1)
+						$original_sender = $eos_v;
+			}
+
+                        $remove_characters = array(">","<","]"," ");
+                        foreach($remove_characters as $rc_key => $remove_me)
+                                $original_sender = str_replace($remove_me,"",$original_sender);
+
+			if($original_sender != "" )
+	                        return $original_sender;
+                }
+        }
+
+	return "** Error **";
+}
+
+
+
+
+
+
+function return_who_original_message_was_sent_to($lower_bounce)
+{
+        $lower_bounce_exploded = explode("\n",$lower_bounce);
+
+        foreach($lower_bounce_exploded as $line_number => $text)
+        {
+		$text = trim($text);
+
+		// FIXING THIS - "captlarryntisi@aol.com <mailto:captlarryntisi@aol.com>" (this is what we want, but it has the extra mailto stuff in there)
+		if( substr_count($text," ") == 1 AND substr_count($text,"mailto") == 1)
+		{
+			$exploded_text = explode(" ",$text);
+			$text = $exploded_text[0];
+		}
+
+		if(	(substr_count($text," ") == 0) AND
+			$text != "" AND
+			(substr_count($text,"@") > 0) AND
+			substr_count($text,"[") < 1 AND
+			substr_count($text,"<") < 1 AND
+			substr_count($text,":") < 1
+		)
+			return $text;
+        }
+}
+
+
+
+
+
+
+function remove_all_new_lines_and_double_spaces($string)
+{
+	$string = str_replace("\n"," ",$string);
+        $string = str_replace("\r"," ",$string);
+        while( substr_count($string,"  ") > 0 )
+                $string = str_replace("  "," ",$string);
+	return $string;
+}
+
+
+
+
+
+
+function  print_error_number_information($bounce_details)
+{
+	// echo "<pre>"; print_r($bounce_details); echo "</pre>";
+
+	if( is_numeric($bounce_details['main_error_number']) )
+	{
+		echo "
+			<h3 style='font-size:20px;padding-bottom:0px;'>Technically, what happened?</h3>
+
+			<p>The email server involved, <em>" . $bounce_details['host_complaining'] . "</em>, returned the following error number:<br />
+			" . $bounce_details['main_error_number'] . " " . $bounce_details['sub_error_number'] . "</p>
+
+			<p>According to <a href='http://www.ietf.org/rfc/rfc1893.txt' target='_blank'>rfc1893</a>, this means:</p>
+		";
+
+		print_table_of_error_code_data($bounce_details);
+	}
+}
+
+
+
+
+
+
+function print_table_of_error_code_data($bounce_details)
+{
+	// main error code
+	$first_number = substr($bounce_details['main_error_number'],0,1);
+	switch($first_number)
+	{
+		case "2":
+			$main_first_number_tech_details = "<strong>Success</strong><br />Success specifies that the DSN is reporting a positive delivery action.  Detail sub-codes may provide notification of transformations required for delivery.";
+		case "4":
+			$main_first_number_tech_details = "<strong>Persistent Transient Failure</strong><br />A persistent transient failure is one in which the message as sent is valid, but some temporary event prevents the successful sending of the message.  Sending in the future may be successful.";
+			break;
+		case "5":
+			$main_first_number_tech_details = "<strong>Permanent Failure</strong><br />A permanent failure is one which is not likely to be resolved by resending the message in the current form.  Some change to the message or the destination must be made for successful delivery.";
+			break;
+		default:
+			$main_first_number_tech_details = "<span style='color:red;'><strong>Error</strong><br />This error code is not defined in <a href='http://www.ietf.org/rfc/rfc1893.txt' target='_blank'>rfc1893</a>.";
+			break;
+	}
+
+	// sub error code
+	if( $bounce_details['sub_error_number'] )
+	{
+		$two_digit_code = substr($bounce_details['sub_error_number'],2,3);
+		switch($two_digit_code)
+		{
+			case "0.0":
+				$tdctd = "<strong>Other undefined Status</strong><br />Other undefined status is the only undefined error code. It should be used for all errors for which only the class of the error is known.";
+				break;
+			case "1.0":
+				$tdctd = "<strong>Other address status</strong><br />Something about the address specified in the message caused this DSN.";
+				break;
+			case "1.1":
+				$tdctd = "<strong>Bad destination mailbox address</strong><br />The mailbox specified in the address does not exist.  For Internet mail names, this means the address portion to the left of the \"@\" sign is invalid.  This code is only useful for permanent failures.";
+				break;
+			case "1.2":
+				$tdctd = "<strong>Bad destination system address</strong><br />The destination system specified in the address does not exist or is incapable of accepting mail.  For Internet mail names, this means the address portion to the right of the \"@\" is invalid for mail.  This codes is only useful for permanent failures.";
+				break;
+			case "1.3":
+				$tdctd = "<strong>Bad destination mailbox address syntax</strong><br />The destination address was syntactically invalid. This can apply to any field in the address.  This code is only useful for permanent failures.";
+				break;
+			case "1.4":
+				$tdctd = "<strong>Destination mailbox address ambiguous</strong><br />The mailbox address as specified matches one or more recipients on the destination system.  This may result if a heuristic address mapping algorithm is used to map the specified address to a local mailbox name.";
+				break;
+			case "1.5":
+				$tdctd = "<strong>Destination address valid</strong><br />This mailbox address as specified was valid.  This status code should be used for positive delivery reports.";
+				break;
+			case "1.6":
+				$tdctd = "<strong>Destination mailbox has moved, No forwarding address</strong><br />The mailbox address provided was at one time valid, but mail is no longer being accepted for that address.  This code is only useful for permanent failures.";
+				break;
+			case "1.7":
+				$tdctd = "<strong>Bad sender's mailbox address syntax</strong><br />The sender\'s address was syntactically invalid.  This can apply to any field in the address.";
+				break;
+			case "1.8":
+				$tdctd = "<strong>Bad sender\'s system address</strong><br />The sender\'s system specified in the address does not exist or is incapable of accepting return mail.  For domain names, this means the address portion to the right of the \"@\" is invalid for mail.";
+				break;
+			case "2.0":
+				$tdctd = "<strong>Other or undefined mailbox status</strong><br />The mailbox exists, but something about the destination mailbox has caused the sending of this DSN.";
+				break;
+			case "2.1":
+				$tdctd = "<strong>Mailbox disabled, not accepting messages</strong><br />The mailbox exists, but is not accepting messages.  This may be a permanent error if the mailbox will never be re-enabled or a transient error if the mailbox is only temporarily disabled.";
+				break;
+			case "2.2":
+				$tdctd = "<strong>Mailbox full</strong><br />The mailbox is full because the user has exceeded a per-mailbox administrative quota or physical capacity.  The general semantics implies that the recipient can delete messages to make more space available.  This code should be used as a persistent transient failure.";
+				break;
+			case "2.3":
+				$tdctd = "<strong>Message length exceeds administrative limit</strong><br />A per-mailbox administrative message length limit has been exceeded.  This status code should be used when the per-mailbox message length limit is less than the general system limit.  This code should be used as a permanent failure.";
+				break;
+			case "2.4":
+				$tdctd = "<strong>Mailing list expansion problem</strong><br />The mailbox is a mailing list address and the mailing list was unable to be expanded.  This code may represent a permanent failure or a persistent transient failure.";
+				break;
+			case "3.0":
+				$tdctd = "<strong>Other or undefined mail system status</strong><br />The destination system exists and normally accepts mail, but something about the system has caused the generation of this DSN.";
+				break;
+			case "3.1":
+				$tdctd = "<strong>Mail system full</strong><br />Mail system storage has been exceeded.  The general semantics imply that the individual recipient may not be able to delete material to make room for additional messages.  This is useful only as a persistent transient error.";
+				break;
+			case "3.2":
+				$tdctd = "<strong>System not accepting network messages</strong><br />The host on which the mailbox is resident is not accepting messages.  Examples of such conditions include an immanent shutdown, excessive load, or system maintenance.  This is useful for both permanent and permanent transient errors.";
+				break;
+			case "3.3":
+				$tdctd = "<strong>System not capable of selected features</strong><br />Selected features specified for the message are not supported by the destination system.  This can occur in gateways when features from one domain cannot be mapped onto the supported feature in another.";
+				break;
+			case "3.4":
+				$tdctd = "<strong>Message too big for system</strong><br />The message is larger than per-message size limit.  This limit may either be for physical or administrative reasons. This is useful only as a permanent error.";
+				break;
+			case "3.5":
+				$tdctd = "<strong>System incorrectly configured</strong><br />The system is not configured in a manner which will permit it to accept this message.";
+				break;
+			case "4.0":
+				$tdctd = "<strong>Other or undefined network or routing status</strong><br />Something went wrong with the networking, but it is not clear what the problem is, or the problem cannot be well expressed with any of the other provided detail codes.";
+				break;
+			case "4.1":
+				$tdctd = "<strong>No answer from host</strong><br />The outbound connection attempt was not answered, either because the remote system was busy, or otherwise unable to take a call.  This is useful only as a persistent transient error.";
+				break;
+			case "4.2":
+				$tdctd = "<strong>Bad connection</strong><br />The outbound connection was established, but was otherwise unable to complete the message transaction, either because of time-out, or inadequate connection quality. This is useful only as a persistent transient error.";
+				break;
+			case "4.3":
+				$tdctd = "<strong>Directory server failure</strong><br />The network system was unable to forward the message, because a directory server was unavailable.  This is useful only as a persistent transient error. The inability to connect to an Internet DNS server is one example of the directory server failure error.";
+				break;
+			case "4.4":
+				$tdctd = "<strong>Unable to route</strong><br />The mail system was unable to determine the next hop for the message because the necessary routing information was unavailable from the directory server. This is useful for both permanent and persistent transient errors. A DNS lookup returning only an SOA (Start of Administration) record for a domain name is one example of the unable to route error.";
+				break;
+			case "4.5":
+				$tdctd = "<strong>Mail system congestion</strong><br />The mail system was unable to deliver the message because the mail system was congested. This is useful only as a persistent transient error.";
+				break;
+			case "4.6":
+				$tdctd = "<strong>Routing loop detected</strong><br />A routing loop caused the message to be forwarded too many times, either because of incorrect routing tables or a user forwarding loop. This is useful only as a persistent transient error.";
+				break;
+			case "4.7":
+				$tdctd = "<strong>Delivery time expired</strong><br />The message was considered too old by the rejecting system, either because it remained on that host too long or because the time-to-live value specified by the sender of the message was exceeded. If possible, the code for the actual problem found when delivery was attempted should be returned rather than this code.  This is useful only as a persistent transient error.";
+				break;
+			case "5.0":
+				$tdctd = "<strong>Other or undefined protocol status</strong><br />Something was wrong with the protocol necessary to deliver the message to the next hop and the problem cannot be well expressed with any of the other provided detail codes.";
+				break;
+			case "5.1":
+				$tdctd = "<strong>Invalid command</strong><br />A mail transaction protocol command was issued which was either out of sequence or unsupported.  This is useful only as a permanent error.";
+				break;
+			case "5.2":
+				$tdctd = "<strong>Syntax error</strong><br />A mail transaction protocol command was issued which could not be interpreted, either because the syntax was wrong or the command is unrecognized. This is useful only as a permanent error.";
+				break;
+			case "5.3":
+				$tdctd = "<strong>Too many recipients</strong><br />More recipients were specified for the message than could have been delivered by the protocol.  This error should normally result in the segmentation of the message into two, the remainder of the recipients to be delivered on a subsequent delivery attempt.  It is included in this list in the event that such segmentation is not possible.";
+				break;
+			case "5.4":
+				$tdctd = "<strong>Invalid command arguments</strong><br />A valid mail transaction protocol command was issued with invalid arguments, either because the arguments were out of range or represented unrecognized features. This is useful only as a permanent error.";
+				break;
+			case "5.5":
+				$tdctd = "<strong>Wrong protocol version</strong><br />A protocol version mis-match existed which could not be automatically resolved by the communicating parties.";
+				break;
+			case "6.0":
+				$tdctd = "<strong>Other or undefined media error</strong><br />Something about the content of a message caused it to be considered undeliverable and the problem cannot be well expressed with any of the other provided detail codes.";
+				break;
+			case "6.1":
+				$tdctd = "<strong>Media not supported</strong><br />The media of the message is not supported by either the delivery protocol or the next system in the forwarding path. This is useful only as a permanent error.";
+				break;
+			case "6.2":
+				$tdctd = "<strong>Conversion required and prohibited</strong><br />The content of the message must be converted before it can be delivered and such conversion is not permitted.  Such prohibitions may be the expression of the sender in the message itself or the policy of the sending host.";
+				break;
+			case "6.3":
+				$tdctd = "<strong>Conversion required but not supported</strong><br />The message content must be converted to be forwarded but such conversion is not possible or is not practical by a host in the forwarding path.  This condition may result when an ESMTP gateway supports 8bit transport but is not able to downgrade the message to 7 bit as required for the next hop.";
+				break;
+			case "6.4":
+				$tdctd = "<strong>Conversion with loss performed</strong><br />This is a warning sent to the sender when message delivery was successfully but when the delivery required a conversion in which some data was lost.  This may also be a permanant error if the sender has indicated that conversion with loss is prohibited for the message.";
+				break;
+			case "6.5":
+				$tdctd = "<strong>Conversion Failed</strong><br />A conversion was required but was unsuccessful.  This may be useful as a permanent or persistent temporary notification.";
+				break;
+			case "7.0":
+				$tdctd = "<strong>Other or undefined security status</strong><br />Something related to security caused the message to be returned, and the problem cannot be well expressed with any of the other provided detail codes.  This status code may also be used when the condition cannot be further described because of security policies in force.";
+				break;
+			case "7.1":
+				$tdctd = "<strong>Delivery not authorized, message refused</strong><br />The sender is not authorized to send to the destination. This can be the result of per-host or per-recipient filtering.  This memo does not discuss the merits of any such filtering, but provides a mechanism to report such. This is useful only as a permanent error.";
+				break;
+			case "7.2":
+				$tdctd = "<strong>Mailing list expansion prohibited</strong><br />The sender is not authorized to send a message to the intended mailing list. This is useful only as a permanent error.";
+				break;
+			case "7.3":
+				$tdctd = "<strong>Security conversion required but not possible</strong><br />A conversion from one secure messaging protocol to another was required for delivery and such conversion was not possible. This is useful only as a permanent error.";
+				break;
+			case "7.4":
+				$tdctd = "<strong>Security features not supported</strong><br />A message contained security features such as secure authentication which could not be supported on the delivery protocol. This is useful only as a permanent error.";
+				break;
+			case "7.5":
+				$tdctd = "<strong>Cryptographic failure</strong><br />A transport system otherwise authorized to validate or decrypt a message in transport was unable to do so because necessary information such as key was not available or such information was invalid.";
+				break;
+			case "7.6":
+				$tdctd = "<strong>Cryptographic algorithm not supported</strong><br />A transport system otherwise authorized to validate or decrypt a message was unable to do so because the necessary algorithm was not supported.";
+				break;
+			case "7.7":
+				$tdctd = "<strong>Message integrity failure</strong><br />A transport system otherwise authorized to validate a message was unable to do so because the message was corrupted or altered.  This may be useful as a permanent, transient persistent, or successful delivery code.";
+				break;
+		} // END switch($two_digit_code)
+	} // END if( $bounce_details['sub_error_number'] )
+
+	echo "	<table class='article_table'>
+			<tr>
+				<th>" . $bounce_details['main_error_number'] . "</th>
+				<td>$main_first_number_tech_details</td>
+			</tr>
+	";
+	if($tdctd)
+		echo "	<tr>
+				<th>" . $bounce_details['sub_error_number'] . "</th>
+				<td>$tdctd</td>
+			</tr>
+		";
+	echo "	</table>";
+}
+
+
+
+
+
+
+function print_solution($bounce_details)
+{
+	$subject_of_email_to_systems = "BBParser - " . $bounce_details['who_delivered_the_bounce'] . " - " . $bounce_details['ip_that_is_blocked'] . " - " . $bounce_details['blocking_service'] . " - RCPT:" . $bounce_details['original_recipient'];
+
+	echo "<h2 style='margin-bottom:15px;'>Step 3: What should I do?</h2>";
+
+	if( substr_count($bounce_details['who_delivered_the_bounce'],"inmotionhosting.com") == 1 )
+		$is_our_server = true;
+
+	$blocked_words = array("block","abuse","denied","poor reputation","spam reject","aol.com esmtp not accepting connections","found on one or more dnsbls","rejected due to spam content","554conb1.html","421conb1.html","untrusted mail delivery system");
+	foreach($blocked_words as $k => $v)
+		if( substr_count($bounce_details['error_number_phrase'],$v) > 0 )
+			$potential_blacklisting = true;
+
+
+
+
+
+	// spf issues?
+	if(	substr_count($bounce_details['error_number_phrase'],"spf") > 0 OR
+		substr_count($bounce_details['error_number_phrase'],"address rejected") > 0
+	)
+		$maybe_spf = true;
+	if( substr_count($bounce_details['error_number_phrase']," spf ") > 0 )
+		$solution_message[] = return_maybe_spf_diagnosis($bounce_details);
+
+
+
+
+
+
+	// full inbox?
+	if( substr_count($bounce_details['error_number_phrase'],"mail quota exceeded") > 0 )
+		$solution_message[] = "<p>It appears that the inbox for " . $bounce_details['original_recipient'] . " is full, there's no more room for email. This user should clean out their inbox or increase the size of their mailbox.</p>";
+
+
+
+
+
+	// inmotionhosting server and 5.7.1
+	if(
+		($bounce_details['sub_error_number'] == "5.7.1" AND $is_our_server == true) OR
+		($is_our_server == true AND $potential_blacklisting == true)
+	)
+	{
+		$solution_message[] = "
+                <p>It appears that the server, " . $bounce_details['who_delivered_the_bounce'] . ", may be listed in a blacklist. You should foward this bounceback message to support@inmotionhosting.com, and our System Administration team can review this further.</p>
+                ";
+		$resolution_number = 1;
+	}
+	elseif( $potential_blacklisting == true )
+	{
+		$solution_message[] = "
+                <p>It appears that the server you are sending email from may be listed in a blacklist. We weren't able to determine which server this is, so it is recommended to contact your email provider for further assistance.</p>
+                ";
+                $resolution_number = 1;
+	}
+	// 5.1.1 - bad email address
+	elseif(
+		$bounce_details['sub_error_number'] == "5.1.1" OR
+		substr_count($bounce_details['error_number_phrase'],"account has been disabled or discontinued") > 0 OR
+		substr_count($bounce_details['error_number_phrase'],"no such user") > 0 OR
+		substr_count($bounce_details['error_number_phrase'],"user account is unavailable") > 0 OR
+		substr_count($bounce_details['error_number_phrase'],"user unknown") > 0 OR
+		substr_count($bounce_details['error_number_phrase'],"this user doesn't have a yahoo.com account") > 0
+	)
+	{
+		$solution_message[] = "
+		<p>It appears that you may have misspelled the email address. Double check your spelling of:<p>
+		<span class='white_box' style='background:yellow;'>" . $bounce_details['original_recipient'] . "</span>
+		<p>If this is an email address you own / control, double check it has been <a href='/support/edu/everything-email/introduction-email/creating-email-account' target='_blank'>created within your cPanel</a>.</p>
+		";
+	}
+	// maybe spf
+	elseif( $maybe_spf == true )
+	{
+		$solution_message[] = return_maybe_spf_diagnosis($bounce_details);
+	}
+	else
+	{
+		if( count($solution_message) == 0 )
+		{
+			$solution_message[] = "
+			<p>Unfortunately at this time we do not have a suggested solution for the error message that you have submitted. Our team will be reviewing this further.</p>
+			";
+			$resolution_number = 0;
+		}
+	}
+
+
+
+
+
+
+	if($solution_message)
+	{
+		echo "	<ul>";
+		foreach($solution_message as $sm_k => $sm_v)
+			echo "<li>$sm_v</li>";
+		echo "	</ul>";
+	}
+	// allow for feedback
+	echo "	<form method='post' style='margin:50px 0px 0px 0px;'>
+			<h2>Want to provide feedback?</h2>
+			<p>Enter your email address, your feedback, and your bounce back message, and we'll use your data to help update this tool. Thanks in advance!</p>
+			<textarea name='bbp_feedback' id='bbp_feedback' style='width:630px; height:100px;'></textarea><br />
+			<input type='submit' value='Send Feedback' class='btn btn-primary' />
+		</form>
+	";
+
+
+
+
+
+
+	// echo "<pre style='margin-top:100px;'>SUBJECT TO SYSETMS:\n$subject_of_email_to_systems</pre>";
+
+	// echo "<pre style='margin-top:100px;'>"; print_r($bounce_details); echo "</pre>";
+
+	// log to the database and send emails
+	/*
+	if( does_item_exist_in_database("log_bounce_backs","pasted_bounce",addslashes($_POST['bounce'])) == false )
+	{
+		$db = JFactory::getDbo();
+		$query = "	INSERT INTO #__log_bounce_backs
+				(`id`,`pasted_bounce`,`utc_n_timestamp`,`resolution`)
+				VALUES (NULL, '" . addslashes($_POST['bounce']) . "', " . strtotime(gmdate('Y-m-d H:i:s')) . ", $resolution_number)
+		";
+		$db->setQuery($query);
+		$result = $db->query();
+
+		cs_send_email("customer_experience@inmotionhosting.com",$subject_of_email_to_systems,$_POST['bounce']);
+	}
+	*/
+}
+
+
+
+
+
+
+function is_this_an_ip($text)
+{
+	if( substr_count($text,".") == 3 )
+	{
+		$exploded_text = explode(".",$text);
+		foreach($exploded_text as $k => $v)
+		{
+			if( ! is_numeric($v) )
+				return false;
+		}
+		return true;
+	}
+	else
+		return false;
+}
+
+
+
+
+
+
+function return_maybe_spf_diagnosis($bounce_details)
+{
+	// get domain of sender
+	$exploded_original_sender = explode("@",$bounce_details['original_sender']);
+	$sender_domain = $exploded_original_sender[1];
+
+	$txt_record = dns_get_record($sender_domain,DNS_TXT);
+	foreach($txt_record as $k => $v)
+		if( substr($v['txt'],0,5) == "v=spf" )
+			$spf_record = $v['txt'];
+
+	if(! $spf_record)
+                return;
+
+	if( is_this_an_ip($bounce_details['ip_that_is_blocked']) )
+		return "
+			<p>The problem may be related to your SPF record. Double check that " . $bounce_details['ip_that_is_blocked'] . " is properly configured in your SPF record for $sender_domain </p>
+			<p class='white_box'>$spf_record</p>
+		";
+
+	// we don't have an ip address, so get it
+	$mx_record = dns_get_record($sender_domain,DNS_MX);
+	$first_mx_record_host = $mx_record[0]['target'];
+	$first_mx_record_a_array = dns_get_record($first_mx_record_host,DNS_A);
+	$first_mx_record_a = $first_mx_record_a_array[0]['ip'];
+	if( is_this_an_ip($first_mx_record_a) )
+		return "
+                        <p>The problem may be related to your SPF record. Double check that $first_mx_record_a is properly configured in your SPF record for $sender_domain </p>
+                        <p class='white_box'>$spf_record</p>
+                ";
+
+}
+
+
+
+
+
+
+echo "</div>"; // END THE ENTIRE PAGE (div class='item-page')
+
+
+
+
+
+
+?>

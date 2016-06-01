@@ -1,0 +1,228 @@
+<div style='clear:both;'></div>
+
+<?
+
+display_comments();
+
+allow_for_comments();
+
+
+
+
+
+
+
+function display_comments()
+{
+	$db = JFactory::getDbo();
+
+	$option = JRequest::getVar('option');
+	$view = JRequest::getVar('view');
+	$id = JRequest::getVar('id');
+
+	if( $id == 0 )
+		return;
+	if($view == "category")
+		return;
+	if( substr_count($_SERVER['REQUEST_URI'],"/support/community-support/users") > 0 )
+		return;
+	if( $option == "com_communitysupport" )
+		return;
+
+	$object_id = JRequest::getVar('id');
+	if($option == "com_communitysupport")
+		$object_id = return_qa_question_id();
+
+	$query = "SELECT * FROM #__comments WHERE `object_id` = '$object_id' AND `object_group` = '$option' ORDER BY `utc_n` ASC;";
+	$db->setQuery($query);
+	$results = $db->loadObjectList();
+
+	if($results)
+	{
+		foreach($results as $k => $v)
+			display_individual_comment($v,count($results),$k+1);
+	}
+}
+
+
+
+
+
+
+function allow_for_comments()
+{
+	$user = JFactory::getUser();
+
+	$option = JRequest::getVar('option');
+	$view = JRequest::getVar('view');
+        $id = JRequest::getVar('id');
+
+        if( $id == 0 )
+                return;
+	if($view=="category")
+		return;
+	if( substr_count($_SERVER['REQUEST_URI'],"/support/community-support/users") > 0 )
+                return;
+	if( $option == "com_communitysupport" )
+                return;
+
+	$object_id = JRequest::getVar('id');
+	if($option == "com_communitysupport")
+	{
+		$db = JFactory::getDbo();
+		$exploded_url = explode("/",$_SERVER['REDIRECT_URL']);
+		$question_alias = addslashes( $exploded_url[3] . "/" . $exploded_url[4] );
+		$query = "SELECT * FROM #__questions WHERE `url` = '$question_alias' LIMIT 1;";
+		$db->setQuery($query);
+		$question_details = $db->loadObjectList();
+		$object_id = $question_details[0]->id;
+	}
+
+	if($user->guest)
+	{
+		echo "<a name='post_a_comment'></a><p style='margin-top:30px;'><a href='/support/login'>Login to comment.</a></p>";
+		return;
+	}
+
+	if(!is_numeric($object_id))
+		return;
+
+
+	$users_not_wanting_emails_after_comments_made = return_array_of_users_not_wanting_new_comment_notification_emails($object_id);
+	$yes_email_checked = "checked";
+	$no_email_checked = "";
+
+	if( is_array($users_not_wanting_emails_after_comments_made) )
+	{
+		if( in_array($user->id,$users_not_wanting_emails_after_comments_made) )
+		{
+			$yes_email_checked = "";
+		        $no_email_checked = "checked";
+		}
+	}
+
+
+	echo "
+<a name='post_a_comment'></a>
+<div class='main_comment_submission_div' style='margin-top:20px;'>
+	<h3>Post a Comment</h3>
+
+	<form method='post'>
+		<textarea name='new_comment' id='new_comment' style='height:75px;'></textarea>
+		<input type='hidden' name='sc_task' id='sc_task' value='add_comment' />
+		<input type='hidden' name='object_group' id='object_group' value='$option' />
+		<input type='hidden' name='object_id' id='object_id' value='$object_id' />
+		<input type='submit' value='Submit Comment' class='btn btn-info' style='display:inline;' />
+	</form>
+
+	<div style='border-bottom:1px dotted #bbb; margin-bottom:15px;'></div>
+
+	<div class='small_full_gear_grey'>
+		<a onClick=\"jQuery('#comment_notifications_form').slideToggle('slow');\" style='cursor:pointer;'>
+			Email Notifications
+		</a>
+	</div>
+
+	<form method='post' name='comment_notifications_form' id='comment_notifications_form' style='display:none;'>
+		<div style='margin:10px 0px 5px 0px;'>Would you like to receive email notifications whenever there is a new comment on this page?</div>
+		<input type='radio' name='get_new_comment_notifications' id='get_new_comment_notifications' value='yes' $yes_email_checked >Yes<br />
+		<input type='radio' name='get_new_comment_notifications' id='get_new_comment_notifications' value='no' $no_email_checked > No<br />
+		<input type='submit' name='update' value='Update' class='btn btn-info' style='display:inline;margin-top:10px;' />
+		<input type='hidden' name='user_id' id='user_id' value='" . $user->id . "' />
+		<input type='hidden' name='article_id' id='article_id' value='$object_id' />
+		<input type='hidden' name='sc_task' id='sc_task' value='change_new_comment_notifications' />
+	</form>
+</div>
+";
+}
+
+
+
+
+
+
+function return_qa_question_id()
+{
+	$db = JFactory::getDbo();
+        $exploded_url = explode("/",$_SERVER['REDIRECT_URL']);
+        $question_alias = addslashes( $exploded_url[3] . "/" . $exploded_url[4] );
+        $query = "SELECT * FROM #__questions WHERE `url` = '$question_alias' LIMIT 1;";
+        $db->setQuery($query);
+        $question_details = $db->loadObjectList();
+        return $question_details[0]->id;
+}
+
+
+
+
+
+
+function display_individual_comment($v,$total_comments,$count)
+{
+	$user = JFactory::getUser($v->user_id);
+
+	$current_user = JFactory::getUser();
+
+	// grab the suer group
+	foreach($user->groups as $ugk => $ugv)
+		$user_group = $ugk;
+
+	$comment = $v->comment;
+	// $community_support_technician = " <i>Community Support technician</i>";
+	$community_support_technician = "<div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px; margin-left:10px;'>Staff</div>";
+	if($user_group != 8)
+	{
+		$comment = htmlspecialchars($v->comment);
+		$community_support_technician = "";
+	}
+	$comment = nl2br($comment);
+
+	$author_avatar_url = pass_userid_get_avatar_url_2($user->id);
+
+	// setup appropriate borders
+	if($total_comments > 1)
+	{
+		if($count == 1)
+		{
+			$border_style = "class='individual_comment straight_bottom' style='background:#efefef; border:1px dolid #ddd; padding:12px; border-bottom:1px dotted #ddd;'";
+		}
+		elseif( $count != $total_comments )
+		{
+			$border_style = "style='background:#efefef; border:1px solid #d4d4d4; padding:12px; border-top:0px; border-bottom:1px dotted #ddd;'";
+		}
+		else
+		{
+			$border_style = "class='round_bottom' style='background:#efefef; border:1px solid #d4d4d4; padding:12px; border-top:0px;'";
+		}
+	}
+	else
+	{
+		$border_style = "class='individual_comment'";
+	}
+	
+
+	// allow admins to easily edit this comment
+	$staff_edit_this_comment = "";
+	if( $current_user->groups[8] == 8 )
+        	$staff_edit_this_comment = "<div style='font-size:10px;'><a href='" . JURI::base() . "administrator/index.php?row_id=" . $v->id . "&task_a=search_for_edit&option=com_communitysupport&task=database_access&table_name=%23__comments' target='_blank'>Edit</a></div>";
+
+
+	echo "
+	<div $border_style>
+		<div>
+			<img src='$author_avatar_url' style='max-width:30px; margin-right:15px;' />
+			<a style='font-size:16px;' href='/support/community-support/users/" . str_replace('.','&per;',$user->username) . "'>" . $user->username . "</a> $community_support_technician
+			<span style='font-size:12px; color:#aaa; padding-left:10px;'>" . date('Y-m-d g:i a',$v->utc_n - (60*60*4)) . " EST</span>
+		</div>
+		<div>$comment</div>
+		$staff_edit_this_comment
+	</div>
+	";
+}
+
+
+
+
+
+
+?>

@@ -1,0 +1,9 @@
+#wrapper{border:none; margin:0px auto; padding:0px;width:90%}
+#header-content{margin:0px; padding:10px; background-color: #663300; height:8%;}
+#main-content{margin:0px auto; padding:10px; background-color:#ede4c7;}
+#inner-content{height:auto}
+#footer-content{clear: both; margin:0px; padding:10px;background-color:#663300; height:8%}
+#footer-content p{color:#cc9f00;}
+#banner {background:  url(https://lh5.googleusercontent.com/-YbMbuqYGPCs/T5XHY6mcEqI/AAAAAAAAANY/-hNU-NpJ1ms/s1000/S655-021113-12_Google_Plus_Cover_Banner-sun.png) repeat-x #000000;height: 180px;width:auto;border: 1px solid #000000;margin-bottom:15px;}
+#banner h1{padding: 25px 0px 0px 25px;font-size;120%;color: #eeeeee}
+

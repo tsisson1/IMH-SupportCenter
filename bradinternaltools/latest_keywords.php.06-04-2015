@@ -1,0 +1,142 @@
+<?
+
+// http://stackoverflow.com/questions/49547/making-sure-a-web-page-is-not-cached-across-all-browsers
+header('Cache-Control: no-cache, no-store, must-revalidate'); // HTTP 1.1.
+header('Pragma: no-cache'); // HTTP 1.0.
+header('Expires: 0'); // Proxies.
+
+?><html>
+
+<head>
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+	<style>
+		body {
+			background:none;
+			padding-top:25px;
+		}
+		table.table.table-striped.table-bordered {
+			background:#fff;
+			font-size:12px;
+		}
+		table.table.table-striped.table-bordered tbody tr td form {
+			display:inline;
+		}
+		table.table.table-striped.table-bordered tbody tr td form input.btn {
+			font-size:10px;
+			padding:2px;
+			letter-spacing:1px;
+		}
+	</style>
+</head>
+
+<body>
+
+	<p class='label label-success' style='position:fixed;top:0px;left:0px;width:100%;'>SEO</p>
+<?
+
+
+
+
+
+
+include_once("../configuration.php");
+$vars = new JConfig;
+
+$con=mysqli_connect("localhost",$vars->user,$vars->password,$vars->db);
+if (mysqli_connect_errno())
+{
+        echo "Failed to connect to MySQL: " . mysqli_connect_error();
+	die();
+}
+
+
+
+
+
+
+// ------------------------------------------------------------------------------------------------
+// questions not locked
+// ------------------------------------------------------------------------------------------------
+if($_GET['url'] != "")
+{
+	$query = "
+		SELECT  *
+                FROM `" . $vars->dbprefix . "google_keyword_log`
+		WHERE	`url` = '" . addslashes($_GET['url']) . "'
+                ORDER BY `id` DESC
+                LIMIT 20;
+	";
+	$result = mysqli_query($con,$query);
+
+	echo "	<p class='label label-primary' style='display:inline-block;'>Latest 10 keywords from Google to this page</p>
+		<table class='table table-striped table-bordered'>
+			<tr>
+				<th>Keyword</th>
+				<th>Position</th>
+				<th>Last seen</th>
+			</tr>
+	";
+	while($row = mysqli_fetch_array($result))
+	{
+		echo "
+			<tr>
+				<td>" . $row['keyword'] . "</td>
+				<td>" . $row['cd'] . "</td>
+				<td>" . (time() - $row['timestamp_n']) . "</td>
+			</tr>
+		";
+	}
+	echo "	</table>";
+}
+
+
+
+// grab all of the anchor and what not that links here
+$query = "
+	SELECT	`anchor`
+	FROM	`" . $vars->dbprefix . "internal_linking`
+	WHERE	`dest_option` = '" . addslashes($_GET['option']) . "' AND
+		`dest_view` = '" . addslashes($_GET['view']) . "' AND
+		`dest_id` = '" . addslashes($_GET['id']) . "'
+	ORDER BY `anchor` ASC
+";
+$result = mysqli_query($con,$query);
+while($row = mysqli_fetch_object($result))
+	$anchor_text[strtolower($row->anchor)]++;
+
+if($anchor_text)
+{
+	ksort($anchor_text);
+	echo "	<p class='label label-primary' style='display:inline-block;'>Internal Anchor Text Here</p>
+		<table class='table table-striped table-bordered'>
+			<tr>
+				<th>Anchor Text</th>
+				<th>Count</th>
+			</tr>
+	";
+	foreach($anchor_text as $keyword => $count)
+	{
+		echo "	<tr>
+				<td>" . htmlentities($keyword,ENT_QUOTES) . "</td>
+				<td>$count</td>
+			</tr>
+		";
+	}
+	echo "	</table>";
+}
+else
+	echo "  <p class='label label-danger' style='display:inline-block;'>This page has NO other internal pages linkin to it :(</p>";
+
+
+
+
+
+
+mysqli_close($con);
+
+
+
+
+
+
+?>

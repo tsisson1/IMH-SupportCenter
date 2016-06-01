@@ -1,0 +1,51 @@
+<?
+	$document = JFactory::getDocument();
+	$document->setMetaData('robots','noindex,follow');
+?>
+
+
+
+
+
+
+<div class='item-page'>
+
+	<div class='page-header'>
+		<h1>Support Center Login</h1>
+	</div>
+
+	<?
+	/*
+
+	<h2>Login with AMP</h2>
+
+	<form enctype='application/x-www-form-urlencoded' method='post' class='well-small amp-pill' action='/support/login-with-amp' style='display:inline-block;'>
+	
+		<input type='text' name='username' id='username' value='' helper='formText' placeholder='email address'>
+
+		<input type='password' name='password' id='password' value='' helper='formPassword' placeholder='password'>
+
+		<input type='submit' name='submit' id='submit' value='Log in' class='btn btn-primary'>
+	</form>
+
+	<div style='clear:both;'></div>
+
+	<p>
+	<div><a href='https://secure1.inmotionhosting.com/index/forgot'>I don't remember my password</a></div>
+	<div><a href='/support/website/how-to/how-to-log-into-amp'>Video Tutorial</a></div>
+	</p>
+
+	<h2 style='margin:20px 0px;'>-Or-</h2>
+
+	*/
+	?>
+
+	<div class='well-small amp-pill' style='display:inline-block;'>
+		<div style='padding:6px 0px;'>
+			<a href='/support/login-with-facebook' class='login_with_facebook_btn'>Login with Facebook</a>
+			<? // <a href='/support/login-with-twitter' class='login_with_twitter_btn'>Login with Twitter</a> ?>
+			<a href='/support/login-with-google' class='login_with_google_btn'>Login with Google+</a>
+		</div>
+	</div>
+
+</div>

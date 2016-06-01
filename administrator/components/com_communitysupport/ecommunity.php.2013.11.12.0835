@@ -1,0 +1,122 @@
+<div style='border-bottom:1px solid #bbb; width:100%; padding-bottom:5px; margin-bottom:15px;'>
+	<a href='/support/administrator/index.php?option=com_communitysupport&task=ecommunity&ecommunity_t=vmems' class='btn btn-primary'>View all ECommunity Members</a>
+</div>
+
+<div style='clear:both;'></div>
+
+
+
+
+
+<?
+
+
+
+
+
+
+// ----------------------------------------------------------------------------------------
+// if we're viewing a member's page
+// ----------------------------------------------------------------------------------------
+if( $_GET['ecommunity_t'] == "vp" AND is_numeric($_GET['ecommunity_p']) AND is_numeric($_GET['ecommunity_m']) )
+{
+	// grab the url we want to visit
+	$query = "SELECT `url` FROM #__ecommunity_pages WHERE `id` = " . $_GET['ecommunity_p'] . ";";
+	$db->setQuery($query);
+	$external_url = $db->loadObjectList();
+	$external_url_url = $external_url[0]->url;
+	echo "<script type='text/javascript'>window.open('$external_url_url')</script>";
+	
+	// log that this staff member viewed this page
+	$query = "	INSERT INTO #__ecommunity_page_reviews
+			(`id`,`member_id`,`staff_id`,`page_id`,`timestamp`,`status`)
+			VALUES (null," . $_GET['ecommunity_m'] . "," . $user->id . "," . $_GET['ecommunity_p'] . ",CURRENT_TIMESTAMP,0);
+	";
+	$db->setQuery($query);
+	$result = $db->execute();
+	echo "<div class='btn btn-success'>Thank you. This view has been logged.</div>";
+	
+}
+
+
+
+
+
+
+// ----------------------------------------------------------------------------------------
+// if we're viewing a member's page
+// ----------------------------------------------------------------------------------------
+if( $_GET['ecommunity_t'] == "vph" AND is_numeric($_GET['ecommunity_p']) AND is_numeric($_GET['ecommunity_m']) )
+{
+	$query = "SELECT * FROM #__ecommunity_page_reviews WHERE `page_id` = " . $_GET['ecommunity_p'] . ";";
+	$db->setQuery($query);
+	$page_view_history = $db->loadObjectList();
+	echo "<pre>"; print_r($page_view_history); echo "</pre>";
+	echo "	<table>
+	";
+	foreach($page_view_history as $pvh_k => $pvh_v)
+	{
+		echo "	<tr>
+				<td>" . $pvh_v->staff_id . "</td>
+				<td>" . $pvh_v->timestamp . "</td>
+				<td>" . $pvh_v->status . "</td>
+			</tr>
+		";
+	}
+	echo "	</table>";
+}
+
+
+
+
+
+// ----------------------------------------------------------------------------------------
+// if we're viewing all ecommunity members
+// ----------------------------------------------------------------------------------------
+if( $_GET['ecommunity_t'] == "vmems" )
+{
+	// grab all members
+	$query = "SELECT * FROM #__ecommunity_members";
+	$db->setQuery($query);
+	$ecommunity_members = $db->loadObjectList();
+	
+	// loop through each ecommunity member
+	foreach($ecommunity_members as $ecm_k => $ecm_v)
+	{
+	
+		// grab all of the member's pages
+		$query = "SELECT * FROM #__ecommunity_pages WHERE `member_id` = " . $ecm_v->id . ";";
+		$db->setQuery($query);
+		$member_pages = $db->loadObjectList();
+		unset($members_page_html);
+		if($member_pages)
+		{
+			foreach($member_pages as $mp_k => $mp_v)
+			{
+				// ecommunity_t = task
+					// vp = view page
+				// ecommunity_p = page
+				// ecommunity_m = member id
+				$members_page_html .= "
+					<div style='margin:2px 0px;'>
+						<span class='btn btn-primary'>" . $mp_v->name . "</span>
+						<a href='/support/administrator/index.php?option=com_communitysupport&task=ecommunity&ecommunity_t=vp&ecommunity_p=" . $mp_v->id . "&ecommunity_m=" . $ecm_v->id . "'>View</a>
+						<a href='/support/administrator/index.php?option=com_communitysupport&task=ecommunity&ecommunity_t=vph&ecommunity_p=" . $mp_v->id . "&ecommunity_m=" . $ecm_v->id . "'>History</a>
+						
+					</div>
+				";
+			}
+		}
+	
+		echo "	<div style='float:left; max-width:200px; padding:0px; margin:5px; border:1px solid #ccc; padding:5px; background:#eee;'>
+				<div style='color:#c52228; font-weight:bold; font-size:16px;'>" . $ecm_v->name . "</div>
+				<div style='font-weight:bold;'>" . $ecm_v->title . "</div>
+				<div style='font-style:italic; color:#aaa;'>" . $ecm_v->organization . "</div>
+				<img src='" . $ecm_v->picture_url . "' style='display:block; max-width:150px;' />
+				$members_page_html
+			</div>
+		";
+	}
+}
+
+?>

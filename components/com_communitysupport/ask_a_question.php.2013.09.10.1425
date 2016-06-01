@@ -1,0 +1,173 @@
+<script type="text/javascript">
+
+function get_ajax_search_results(e)
+{
+	question_length = jQuery("#question").val().length;
+	jQuery("#summary_count").html(70 - question_length);
+	
+	var unicode = e.keyCode? e.keyCode : e.charCode;
+	// alert(unicode);
+
+	run_ajax = false;
+	if(unicode == 32)
+		run_ajax = true;
+
+	if(e == "details")
+		run_ajax = true;
+
+	user_question = jQuery("#question").val();
+	last_user_question = jQuery("#last_ajax_query_sent").val();
+	if( user_question == last_user_question )
+		run_ajax = false;
+
+	if( question_length < 5 )
+		run_ajax = false;
+
+	if( jQuery("#currently_searching").val() == "1" )
+		run_ajax = false;
+
+	if(run_ajax == true)
+	{
+		jQuery("#currently_searching").val("1");
+		jQuery("#ajax_search_status").html("Searching...");
+		jQuery("#ajax_search_info").html("<strong>Search Results</strong>");
+		user_question = jQuery("#question").val();
+		jQuery("#question_search_results").html("");
+		jQuery("#last_ajax_query_sent").val(user_question);
+		jQuery.get("/support/ajax-search-2",
+			{searchword:user_question},
+			function(data,status){
+				var obj = JSON.parse(data);
+				results = 0;
+				jQuery.each(obj, function(index,value) {
+					if( value.url != undefined )
+					{
+						jQuery("#question_search_results").append("<a href='" + value.url + "?tsrc=aaq' target='_blank'>" + value.title + "</a><br />" + value.description + "<br /><br />");
+						results++;
+					}
+				});
+				jQuery("#ajax_search_status").html("");
+				jQuery("#currently_searching").val("0");
+				if( results == 0 )
+					jQuery("#question_search_results").html("No search results, looks like you have a good question for us!");
+		        });
+	}
+}
+
+function enough_details_for_question_submission()
+{
+	able_to_submit = 0;
+
+	question_length = jQuery("#question").val().length;
+	if( question_length < 1 )
+	{
+		jQuery("#question_required").slideDown("slow");
+	}
+	else
+	{
+		jQuery("#question_required").slideUp("slow");
+		able_to_submit++;
+	}
+
+	details_length = jQuery("#details").val().length;
+        if( details_length < 1 )
+        {
+                jQuery("#details_required").slideDown("slow");
+        }
+        else
+        {
+                jQuery("#details_required").slideUp("slow");
+		able_to_submit++;
+        }
+
+	if(able_to_submit == 2)
+		jQuery("#submit").removeAttr("disabled");
+	else
+		jQuery("#submit").attr("disabled","disabled");
+}
+
+</script>
+
+<div class='item-page'>
+
+        <div class='page-header'>
+                <h1>Ask a Question</h1>
+        </div>
+
+<?
+
+
+if($user->guest)
+{
+	echo "<div>You must first <a href='/support/login'>login</a> before you can post a question.</div>";
+}
+else
+{
+	// we need to grab a list of categories
+	$query = "SELECT * FROM #__question_categories ORDER BY `alias` ASC;";
+	$db->setQuery($query);
+	$categories = $db->loadObjectList();
+	$category_html = "<select name='category_id' id='category_id' onChange='previewQuestion()' style='color:#000;'>";
+	foreach($categories as $k => $v)
+		$category_html .= "<option value='" . $v->id . "'>" . $v->title . "</option>";
+	$category_html .= "</select>";
+
+
+?>
+
+
+	<p>It's time to get an answer! Our InMotion Hosting Support Team monitors all questions asked within the Community, and we guarantee a response within 60 minutes (8am - 9pm EST, Monday - Friday)!</p>
+
+	<p>Be sure to be specific with your question. The more details you can provide, the better the answers will be. If you're having a problem, please include steps that we can take to replicate the problem. Keep in mind that your question will be public, so don't post any sensitive information, such as passwords or other specific account information.</p>
+
+	<div class='main_ask_a_question_div'>
+
+		<form method='post' action='/support/community-support/submit-question' style='width:47%; float:left; border-right:1px dashed #aaa; padding-right:20px;'>
+
+
+			<h2 style='margin-top:0px;'>Question Summary</h2>
+			<div>In 70 characters or less, summarize your question.</div>
+
+			<input maxlength="70" type='text' name='question' id='question' onKeyUp="previewQuestion(); enough_details_for_question_submission(); get_ajax_search_results(event);" style='width:260px; display:inline;' />
+			<span style='font-size:20px;'>(<span name='summary_count' id='summary_count'>70</span>)</span>
+
+			<div style='color:#c52228;' name='question_required' id='question_required'>* required field</div>
+			<div style='color:#aaa;'>Example: <em>I cannot log into cPanel</em></div>
+
+
+			<h2>Question Details</h2>
+			<div>Tell us more about your question.</div>
+
+			<textarea name='details' id='details' style='width:300px; height:200px;' onKeyUp="previewQuestion(); enough_details_for_question_submission();" onFocus="get_ajax_search_results('details');"></textarea>
+
+			<div style='color:#c52228;' name='details_required' id='details_required'>* required field</div>
+			<div style='color:#aaa;'>Example: <em>When I try to access cPanel from within AMP, it prompts me for a password. I don't know why my password is. How can I reset my cPanel password so I can login?</em></div>
+
+
+			<h2>Category</h2>
+			<? echo $category_html; ?>
+			<input type='submit' name='submit' id='submit' value='Submit your question!' class='btn btn-info' disabled="true" />
+		</form>
+
+		<div name='question_preview' id='question_preview' style='width:47%; float:right;'>
+			<h1 name='question_question' id='question_question'></h1>
+			<div name='question_details' id='question_details' style='margin-top:20px;'>As you type your question to the left, you will be able to preview it here.</div>
+
+			<div name='ajax_search_info' id='ajax_search_info' style='margin-top:20px; padding-top:20px; border-top:1px dashed #aaa;'>We will also search the support center for tutorials based upon your question summary as well.</div>
+			<div style='text-align:center;' name='ajax_search_status' id='ajax_search_status'></div>
+			<div name='question_search_results' id='question_search_results'></div>
+
+			<input type='hidden' name='last_ajax_query_sent' id='last_ajax_query_sent' />
+			<input type='hidden' name='currently_searching' id='currently_searching' value='0' />
+		</div>
+
+		<div style='clear:both;'></div>
+
+	</div>
+
+
+<?
+} // the ending of the if / else, if the user is a guest or not
+?>
+
+</div>

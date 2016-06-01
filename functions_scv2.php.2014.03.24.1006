@@ -1,0 +1,433 @@
+<?
+
+
+
+
+
+
+
+
+
+
+
+
+function pass_question_id_return_question_url($id)
+{
+        if( ! is_numeric($id) )
+                JError::raiseError( 404, 'Question not found' );
+
+        $db = JFactory::getDbo();
+
+        // grab category information
+        $query = "
+SELECT `q`.`question_alias`, `qc`.*
+FROM #__question_categories qc, #__questions q
+WHERE   `q`.`id` = $id AND
+        `q`.`category_id` = `qc`.`id`
+        ";
+        $db->setQuery($query);
+        $category_info = $db->loadObjectList();
+
+        if( $category_info[0]->parent_id == 0 )
+                // return JURI::base() . "community-support/" . $category_info[0]->alias . "/" . $category_info[0]->question_alias;
+		return "/support/community-support/" . $category_info[0]->alias . "/" . $category_info[0]->question_alias;
+
+        $query = "SELECT `alias` FROM #__question_categories WHERE `id` = " . $category_info[0]->parent_id . ";";
+        $db->setQuery($query);
+        $parent_category_info = $db->loadObjectList();
+
+        // return JURI::base() . "community-support/" . $parent_category_info[0]->alias . "/" . $category_info[0]->alias . "/" . $category_info[0]->question_alias;
+	return "/support/community-support/" . $parent_category_info[0]->alias . "/" . $category_info[0]->alias . "/" . $category_info[0]->question_alias;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+function is_string_pagination_alias($my_string)
+{
+	$last_url_dir = explode("-",$my_string);
+
+	if(count($last_url_dir) != 2) return false;
+
+        if($last_url_dir[0] == "page" AND is_numeric($last_url_dir[1]) AND $last_url_dir[1] != 1)
+                return true;
+
+        return false;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+function remove_canonical()
+{
+	$document = JFactory::getDocument();
+	foreach($document->_links as $k => $v)
+		if( $v['relation'] == "canonical" )
+			unset( $document->_links[$k] );
+}
+
+
+
+
+
+
+
+
+
+
+
+
+function cs_send_email($to,$subject,$body)
+{
+                $from = array("customer_experience@inmotionhosting.com", "InMotion Hosting Customer Community Team");
+
+                # Invoke JMail Class
+                $mailer = JFactory::getMailer();
+
+                # Set sender array so that my name will show up neatly in your inbox
+                $mailer->setSender($from);
+
+                # Add a recipient -- this can be a single address (string) or an array of addresses
+                $mailer->addRecipient($to);
+
+                $mailer->setSubject($subject);
+                $mailer->setBody($body);
+
+                # If you would like to send as HTML, include this line; otherwise, leave it out
+                // $mailer->isHTML();
+
+                # Send once you have set all of your options
+                $mailer->send();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+function pass_user_object_and_text_then_return_clean_text($user,$text)
+{
+	$new_text = $text;
+        if( $user->groups[8] != 8 )
+                $new_text = htmlspecialchars($text);
+        return nl2br($new_text);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+function return_div_with_social_buttons($previous_saying,$url_of_this_page)
+{
+	// ---------------------------------------------------------------
+	// LIKE THIS PAGE - social media
+	// ---------------------------------------------------------------
+	$like_facebook_html = "<iframe src='//www.facebook.com/plugins/like.php?href=$url_of_this_page&amp;send=false&amp;layout=button_count&amp;width=100&amp;show_faces=false&amp;font=verdana&amp;colorscheme=light&amp;action=like&amp;height=21&amp;appId=209145459223160' scrolling='no' frameborder='0' style='border:none; overflow:hidden; width:100px; height:21px;' allowTransparency='true'></iframe>";
+	$like_google_html = "
+<div class='g-plusone' data-size='medium' data-href='$url_of_this_page'></div>
+<script type='text/javascript'>
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>";
+	$like_twitter_html = "<a href='https://twitter.com/share' class='twitter-share-button' data-via='inmotionhosting'>Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='//platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','twitter-wjs');</script>";
+
+
+	return "
+<div style='text-align:right; margin:10px 0px;'>
+	<span style='padding-right:15px;'>$previous_saying</span>
+	$like_facebook_html
+	$like_google_html
+	$like_twitter_html
+</div>
+	";
+}
+
+
+
+
+
+
+function return_vdiv_with_social_buttons($url_of_this_page)
+{
+        // ---------------------------------------------------------------
+        // LIKE THIS PAGE - social media
+        // ---------------------------------------------------------------
+        $buttons['facebook'] = "<iframe src='//www.facebook.com/plugins/like.php?href=$url_of_this_page&amp;send=false&amp;layout=button_count&amp;width=100&amp;show_faces=false&amp;font=verdana&amp;colorscheme=light&amp;action=like&amp;height=21&amp;appId=209145459223160' scrolling='no' frameborder='0' style='border:none; overflow:hidden; width:100px; height:21px;' allowTransparency='true'></iframe>";
+        $buttons['google'] = "
+<div class='g-plusone' data-size='medium' data-href='$url_of_this_page'></div>
+<script type='text/javascript'>
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>";
+        $buttons['twitter'] = "<a href='https://twitter.com/share' class='twitter-share-button' data-via='inmotionhosting'>Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='//platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','twitter-wjs');</script>";
+
+	return $buttons;
+}
+
+
+
+
+
+
+function does_item_exist_in_database($table,$field,$value)
+{
+	$db = JFactory::getDbo();
+	$query = "SELECT * FROM #__" . $table . " WHERE `" . $field . "` = '$value';";
+	$db->setQuery($query);
+	$results = $db->loadObjectList();
+	if( ! $results )
+		return false;
+	else
+		return true;
+}
+
+
+
+
+
+
+function cc_clear_page_cache()
+{
+	// return true;
+	$path_to_check = '/home/ccdevinm/public_html/support/cache/page/';
+	$needle = "cid:" . md5($_SERVER['REQUEST_URI']);
+	foreach(glob($path_to_check.'*.php') as $filename)
+	{
+		foreach(file($filename) as $fli=>$fl)
+		{
+			if(strpos($fl, $needle)!==false)
+			{
+				// echo $filename.' on line '.($fli+1).': '.$fl;
+				unlink($filename);
+			}
+		}
+	}
+}
+
+
+
+
+
+
+function return_additional_anchor_text($option,$view,$id)
+{
+	$db = JFactory::getDbo();
+
+	$query = "
+	SELECT *
+	FROM #__additional_anchor_text
+	WHERE	`option` = '$option' AND
+		`view` = '$view' AND
+		`option_view_id` = $id
+	LIMIT 1;
+	";
+	$db->setQuery($query);
+	$results = $db->loadObject();
+	if( $results )
+		return $results;
+	return false;
+}
+
+
+
+
+
+
+function load_user_profile($db,$user)
+{
+	$query = "SELECT * FROM #__user_profile WHERE `user_id` = " . $user->id . ";";
+	$db->setQuery($query);
+	$user_profile = $db->loadObject();
+
+	if(! $user_profile)
+	{
+		$query = "INSERT INTO #__user_profile (`id`,`user_id`) VALUES (NULL," . $user->id . ");";
+		$db->setQuery($query);
+		$db->execute();
+
+		$query = "SELECT * FROM #__user_profile WHERE `user_id` = " . $user->id . ";";
+	        $db->setQuery($query);
+        	$user_profile = $db->loadObject();
+	}
+
+	return $user_profile;
+}
+
+
+
+
+
+
+function update_user_profile($db,$user)
+{
+	if( $user->guest )
+		return false;
+
+	$twitter_username = addslashes($_POST['twitter_username']);
+	$facebook_url = addslashes($_POST['facebook_url']);
+	$google_url = addslashes($_POST['google_url']);
+	$user_profile_bio = addslashes($_POST['user_profile_bio']);
+
+	$query = "
+	UPDATE	#__user_profile
+	SET	`twitter_username` = '$twitter_username',
+		`facebook_url` = '$facebook_url',
+		`google_url` = '$google_url',
+		`bio` = '$user_profile_bio'
+	WHERE	`user_id` = " . $user->id . ";
+	";
+
+	$db->setQuery($query);
+	$db->execute();
+
+	JFactory::getApplication()->enqueueMessage('Profile updated!', 'success');
+}
+
+
+
+
+
+
+function pass_tinymce_text_and_script_tags($level,$text)
+{
+	switch($level)
+	{
+		case 1:
+			return strip_tags($text,'<div><p><strong><em><span><sub><code><blockquote><ul><ol><li><h1><h2><h3><h4><h5><h6><a><img><pre>');
+			break;
+		default:
+			return false;
+	}
+}
+
+
+
+
+
+
+function gf_pass_userid_get_avatar_url($id)
+{
+        $db = JFactory::getDbo();
+
+        if(!is_numeric($id))
+                die('pugau1 error');
+
+        // is this a facebook account?
+        $query = "SELECT `avatar_url` FROM #__login_facebook_userdata as `lfu`, #__users as `users` WHERE `users`.`id` = $id AND `users`.`username` = `lfu`.`username`;";
+        $db->setQuery($query);
+        $results = $db->loadObjectList();
+        if($results[0]->avatar_url != "")
+                return $results[0]->avatar_url;
+
+        // is this a google+ account?
+        $query = "SELECT `avatar_url` FROM #__login_google_userdata as `lgu`, #__users as `users` WHERE `users`.`id` = $id AND `users`.`username` = `lgu`.`username`;";
+        $db->setQuery($query);
+        $results = $db->loadObjectList();
+        if($results[0]->avatar_url != "")
+                return str_replace("?sz=50","?sz=90",$results[0]->avatar_url);
+
+        // is this a twitter account?
+        $query = "SELECT `avatar_url` FROM #__login_twitter_userdata as `ltu`, #__users as `users` WHERE `users`.`id` = $id AND `users`.`username` = `ltu`.`username`;";
+        $db->setQuery($query);
+        $results = $db->loadObjectList();
+        if($results[0]->avatar_url != "")
+                return $results[0]->avatar_url;
+
+        // is this an amp account?
+        $query = "SELECT `avatar_url` FROM #__login_amp_userdata as `lau`, #__users as `users` WHERE `users`.`id` = $id AND `users`.`username` = `lau`.`username`;";
+        $db->setQuery($query);
+        $results = $db->loadObjectList();
+        if($results[0]->avatar_url != "")
+                return $results[0]->avatar_url;
+
+        // when ALL else failes
+        return "/support/images/avatars/default_avatar.jpg";
+}
+
+
+
+
+
+
+function return_list_of_anonymous_comments($db,$object_group,$object_id)
+{
+	$query = "
+	SELECT	DISTINCT `email_address`,
+		`name`
+	FROM	#__comments
+	WHERE	`object_group` = '$object_group' AND
+		`object_id` = $object_id AND
+		`email_address` != ''
+	";
+	$db->setQuery($query);
+	$results = $db->loadObjectList();
+	return $results;
+}
+
+
+
+
+
+
+function gf_run_query($query,$success_message,$failure_message)
+{
+        $db = JFactory::getDbo();
+	$db->setQuery($query);
+	try
+	{
+		$db->execute();
+		if( $success_message != "" )
+			JFactory::getApplication()->enqueueMessage($success_message, 'success');
+		return true;
+	}
+	catch (Exception $e)
+	{
+		if( $failure_message != "" )
+			JFactory::getApplication()->enqueueMessage($failure_message, 'warning');
+		return false;
+	}
+}
+
+
+
+
+
+
+?>

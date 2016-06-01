@@ -1,0 +1,6 @@
+<?
+
+header( 'Location: /support' );
+die();
+
+?>

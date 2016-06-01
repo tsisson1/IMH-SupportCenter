@@ -1,0 +1,78 @@
+<?
+
+
+
+
+
+
+$this->document->setTitle("Email Configuration Tool | InMotion Hosting");
+
+
+
+
+// ---------------------------------------------------------------
+// LIKE THIS PAGE - social media
+// ---------------------------------------------------------------
+$url_of_this_page = $this->document->base;
+
+echo "<div class='item-page'>"; // START THE ENTIRE PAGE
+
+echo "<p>Info here regarding the tool</p>";
+
+
+	
+    
+if(isset($_POST['SubmitButton'])){ //check if form was submitted
+$email = $_POST['email']; //get input text
+}    
+?>
+
+    
+<form action="" method="post">
+  Email Address: <input type="text" name="email"/>
+  <input type="submit" name="SubmitButton"/>
+</form>  
+
+
+<?
+
+echo "The email address you have entered was: ". $email;
+
+
+echo "
+
+<h3>IMAP Settings:</h3>
+<br />
+<br />Standard Non-SSL
+<br />Username
+<br />Incoming mail server
+<br />outgoing mail server
+<br />
+<br />
+Secure SSL
+<br />username
+<br />incoming mail server
+<br />outgoing mail server
+<br />
+
+
+<h3>POP Settings:</h3>
+Standard Non-SSL
+<br />Username
+<br />Incoming mail server
+<br />outgoing mail server
+<br />
+<br />
+Secure SSL
+<br />username
+<br />incoming mail server
+<br />outgoing mail server
+
+
+
+";
+
+
+
+?>
+</div>

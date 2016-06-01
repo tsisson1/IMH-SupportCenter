@@ -1,0 +1,158 @@
+<?
+
+$joption = JRequest::getVar('option'); $jview = JRequest::getVar('view'); $jid = JRequest::getVar('id');
+
+$timestamp_n_id = gmmktime() . rand(1000,1999);
+
+?>
+
+
+
+
+
+
+<script type='text/javascript'>
+
+
+
+
+
+
+	function dtahryp_set_value(fbvalue)
+	{
+		if(fbvalue == 1)
+		{
+			jQuery('#dtahryp_good_button').attr('class','btn btn-primary');
+			jQuery('#dtahryp_bad_button').attr('class','btn btn-info');
+		}
+		else
+		{
+			jQuery('#dtahryp_bad_button').attr('class','btn btn-primary');
+			jQuery('#dtahryp_good_button').attr('class','btn btn-info');
+		}
+
+		jQuery('#dtahryp_feedback_value').val(fbvalue);
+		jQuery('#dtahryp_more_feedback').slideDown('slow');
+
+		dtahryp_option = jQuery('#dtahryp_option').val();
+		dtahryp_view = jQuery('#dtahryp_view').val();
+		dtahryp_page_id = jQuery('#dtahryp_page_id').val();
+		timestamp_n_id = jQuery('#timestamp_n_id').val();
+		user_ip = jQuery('#user_ip').val();
+
+		jQuery.post("/support/includes/feedback.php",
+		{
+			option:dtahryp_option,
+			view:dtahryp_view,
+			id:dtahryp_page_id,
+			tsid:timestamp_n_id,
+			ip:user_ip,
+			feedbackvalue:fbvalue,
+			dtahryp_task:'insert'
+		},
+		function(data,status){
+		});
+	}
+
+
+
+
+
+
+	function dtahryp_update_value()
+	{
+		dtahryp_display_thankyou();
+
+		timestamp_n_id = jQuery('#timestamp_n_id').val();
+		feedback_text = jQuery('#additional_feedback').val();
+		feedback_email = jQuery('#user_email').val();
+
+		jQuery.post("/support/includes/feedback.php",
+                {
+			feedback:feedback_text,
+			email:feedback_email,
+                        tsid:timestamp_n_id,
+                        dtahryp_task:'update'
+                },
+                function(data,status){
+                });
+	}
+
+
+
+
+
+
+	function dtahryp_display_thankyou()
+	{
+		jQuery('#dtahryp_container').slideUp( "slow", function() {
+			// Animation complete.
+			jQuery('#dtahryp_thankyou').html("<div class='alert alert-success'>Thank you for your feedback!</div>");
+			jQuery('#dtahryp_thankyou').slideDown("slow");
+		});
+	}
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+<style type="text/css">
+	#dtahryp_thankyou,
+	#dtahryp_container {margin-top:30px}
+	#dtahryp_form {margin:0px}
+	#dtahryp_form .hding {font-size:16px; margin-top:10px}
+	#dtahryp_form .hlpr {font-size:12px; color:#aaa;}
+	#dtahryp_more_feedback {display:none; margin-top:20px;}
+	#dtahryp_thankyou{display:none}
+</style>
+
+
+
+
+
+
+<div class='main_comment_submission_div' name='dtahryp_container' id='dtahryp_container'>
+
+	<div name='dtahryp_form' id='dtahryp_form'>
+
+		<div class='hding' style='display:inline;'>Did you find this article helpful?</div>
+
+		<input type='button' class='btn btn-info' value='Yes' onClick="dtahryp_set_value('1');" style='margin:0px;' id='dtahryp_good_button' name='dtahryp_good_button' />
+		<input type='button' class='btn btn-info' value='No' onClick="dtahryp_set_value('-1');" style='margin:0px;' id='dtahryp_bad_button' name='dtahryp_bad_button' />
+
+		<div name='dtahryp_more_feedback' id='dtahryp_more_feedback'>
+
+			<p class='alert alert-success'>We value your feedback!</p>
+
+			<div class='hding'>Please tell us how we can improve our Support Center:</div>
+	
+			<textarea style='width:98%; height:50px;' name='additional_feedback' id='additional_feedback'></textarea>
+
+			<div class='hding'>Email Address</div>
+			<div class='hlpr'>Optional, but our team may contact you for more information.</div>
+
+			<input type='text' name='user_email' id='user_email' />
+
+			<div><input type='button' value='Submit Feedback' class='btn btn-primary' onClick="dtahryp_update_value();" /></div>
+
+		</div>
+
+		<input type='hidden' name='dtahryp_feedback_value' id='dtahryp_feedback_value' value='0' />
+		<input type='hidden' name='dtahryp_option' id='dtahryp_option' value='<? echo $joption; ?>' />
+		<input type='hidden' name='dtahryp_view' id='dtahryp_view' value='<? echo $jview; ?>' />
+		<input type='hidden' name='dtahryp_page_id' id='dtahryp_page_id' value='<? echo $jid; ?>' />
+		<input type='hidden' name='timestamp_n_id' id='timestamp_n_id' value='<? echo $timestamp_n_id; ?>' />
+		<input type='hidden' name='user_ip' id='user_ip' value='<? echo $_SERVER['HTTP_X_FORWARDED_FOR']; ?>' />
+
+	</div>
+
+</div>
+<div name='dtahryp_thankyou' id='dtahryp_thankyou'></div>

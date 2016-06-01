@@ -1,0 +1,261 @@
+<?
+
+
+
+
+
+
+$session = JFactory::getSession();
+$form_data = "
+        <input type='hidden' name='username' value='username' />
+        <input type='hidden' name='password' value='password' />
+        <input type='hidden' name='option' value='com_users' />
+        <input type='hidden' name='task' value='user.login' />
+        <input type='hidden' name='login_type' id='login_type' value='amp' />
+        <input type='hidden' name='return' id='return' value='" . $session->get('return1') . "' />
+        " . JHtml::_('form.token') . "
+";
+
+
+
+
+
+
+if($_POST)
+{
+	$print_domain = htmlspecialchars(addslashes($_POST['username']));
+
+	$curl = curl_init();
+
+	$url_to_curl = "https://secure1.inmotionhosting.com/index/login";
+	if($_POST['domain'])
+		$url_to_curl = "https://secure1.inmotionhosting.com/index/logindomain/username/" . $_POST['username'];
+
+	curl_setopt($curl, CURLOPT_URL, $url_to_curl);
+	curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+	curl_setopt($curl, CURLOPT_USERAGENT, "Support Center CURL Login");
+
+	$fields_wanted = array('username','password','domain','submit','bid');
+	foreach($_POST as $k => $v)
+	{
+		if( in_array($k,$fields_wanted) )
+			$fields[$k] = $v;
+	}
+	$fields['bid'] = 1;
+	// // echo "<pre>--fields--"; print_r($fields); echo "</pre>";
+
+	curl_setopt($curl,CURLOPT_POST, true);
+	curl_setopt($curl,CURLOPT_POSTFIELDS, $fields);
+	curl_setopt($curl,CURLOPT_FOLLOWLOCATION, true); // follow redirects - http://stackoverflow.com/questions/3519939/make-curl-follow-redirects
+
+	$result = curl_exec($curl);
+	// echo "<pre>--results--$result--</pre>";
+
+	$info = curl_getinfo($curl);
+	// echo "<pre>--info--"; print_r($info); echo "</pre>";
+
+	$code = curl_getinfo($curl, CURLINFO_HTTP_CODE);
+	// echo "<pre>--code--"; print_r($code); echo "</pre>";
+
+	curl_close($curl);
+
+
+
+
+
+
+	// -------------------------------------------------------------------------------------------
+	// check for possible errors
+	// -------------------------------------------------------------------------------------------
+	$email_on_multiple_accounts = "The email address you entered appears on multiple accounts.  Please enter the primary domain name associated with the account you are trying to access.";
+	if( substr_count($result,$email_on_multiple_accounts) > 0 )
+	{
+		$warnings[] = $email_on_multiple_accounts;
+		$ask_for_domain = "<div>Domain (do not include www)</div><input type='text' name='domain' id='domain' />";
+	}
+	$bad_credentials = "Invalid username and/or password";
+	if( substr_count($result,$bad_credentials) > 0 )
+	{
+		$warnings[] = $bad_credentials;
+	}
+
+
+
+
+
+
+}
+
+
+
+
+
+
+if($warnings)
+{
+	foreach($warnings as $k => $v)
+	{
+		JFactory::getApplication()->enqueueMessage($v, 'error');
+	}
+}
+else
+{
+	$curl = curl_init();
+
+        $url_to_curl = "https://secure1.inmotionhosting.com/";
+
+        curl_setopt($curl, CURLOPT_URL, $url_to_curl);
+        curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($curl, CURLOPT_USERAGENT, "Support Center CURL Login");
+
+        // curl_setopt($curl,CURLOPT_POST, true);
+        // curl_setopt($curl,CURLOPT_POSTFIELDS, $fields);
+        curl_setopt($curl,CURLOPT_FOLLOWLOCATION, true); // follow redirects - http://stackoverflow.com/questions/3519939/make-curl-follow-redirects
+
+
+	echo "<div style='width:600px; height:400px; overflow:auto;'>";
+
+        $result = curl_exec($curl);
+        echo "<pre>--results--$result--</pre>";
+
+        $info = curl_getinfo($curl);
+        echo "<pre>--info--"; print_r($info); echo "</pre>";
+
+        $code = curl_getinfo($curl, CURLINFO_HTTP_CODE);
+        echo "<pre>--code--"; print_r($code); echo "</pre>";
+
+	echo "</div>";
+
+        curl_close($curl);
+
+	die();
+}
+
+
+
+
+
+
+// successful login!!
+if($_POST AND $code == "200" AND !$warnings)
+{
+	log_amp_userdata();
+
+
+
+
+
+
+	if(amp_user_have_username())
+	{
+		echo "
+                        <form action='/support/' method='post' id='login-form-amp' name='login-form-amp'>
+                                $form_data
+                        </form>
+                        <script type='text/javascript'>
+                                document.forms['login-form-amp'].submit();
+                        </script>
+                ";
+	}
+
+
+
+
+
+
+	else
+	{
+		$app = JFactory::getApplication();
+                $template = $app->getTemplate();
+
+                echo "
+                	<form action='/support/' method='post' id='login-form-amp' name='login-form-amp'>
+                        $form_data
+                ";
+                include_once("templates/$template/includes/you_need_to_create_a_username.php");
+                echo "</form>";
+	}
+
+
+
+
+
+
+}
+// failed login
+else
+{
+	echo "	<form enctype='application/x-www-form-urlencoded' method='post'>
+		        <label for='username' class='required'>Email Address</label>
+		        <input type='text' name='username' id='username' value='$print_domain' helper='formText'>
+		        <label for='password' class='required'>Password</label>
+		        <input type='password' name='password' id='password' value='' helper='formPassword'>
+		        $ask_for_domain
+		        <div><input type='submit' name='submit' id='submit' value='Submit'></div>
+		</form>
+	";
+}
+
+
+
+
+
+
+function log_amp_userdata()
+{
+	$db = JFactory::getDbo();
+
+	$current_utc_n = strtotime(gmdate('Y-m-d H:i:s'));
+
+        $token = JSession::getFormToken();
+	if(!$token)
+		die('ntal');
+
+	// do we already have this email address?
+	if($_POST['domain'])
+		$query = "SELECT count(`id`) as 'account_exists' FROM #__login_amp_userdata WHERE `email` = '" . addslashes($_POST['username']) . "' AND `domain` = '" . addslashes($_POST['domain']) . "';";
+	else
+		$query = "SELECT count(`id`) as 'account_exists' FROM #__login_amp_userdata WHERE `email` = '" . addslashes($_POST['username']) . "';";
+
+	$db->setQuery($query);
+	$results = $db->loadObjectList();
+
+	// if the account doesn't exist
+	if($results[0]->account_exists == 0)
+		$query = "INSERT INTO #__login_amp_userdata (`id` ,`email` ,`domain` ,`username` ,`first_login_utc_n` ,`last_login_utc_n` ,`token`)VALUES (NULL , '" . addslashes($_POST['username']) . "', '" . addslashes($_POST['domain']) . "', '', '$current_utc_n', '$current_utc_n', '$token');";
+	else
+	// if the account does exist
+		$query = "UPDATE #__login_amp_userdata SET `last_login_utc_n` = '$current_utc_n', `token` = '$token' WHERE `email` = '" . addslashes($_POST['username']) . "' AND `domain` = '" . addslashes($_POST['domain']) . "' LIMIT 1;";
+	$db->setQuery($query);
+	try { $result = $db->execute(); } catch (Exception $e) {  die('lauer'); }
+}
+
+
+
+
+
+
+function amp_user_have_username()
+{
+	$db = JFactory::getDbo();
+
+	$token = JSession::getFormToken();
+        if(!$token)
+                die('ntal2');
+
+	$query = "SELECT `username` FROM #__login_amp_userdata WHERE `email` = '" . addslashes($_POST['username']) . "' AND `domain` = '" . addslashes($_POST['domain']) . "';";
+	$db->setQuery($query);
+	$results = $db->loadObjectList();
+
+	if($results[0]->username == "")
+		return false;
+	else
+		return true;
+}
+
+
+
+
+
+
+?>

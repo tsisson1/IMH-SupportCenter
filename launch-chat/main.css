@@ -1,0 +1,122 @@
+body{
+	background:rgb(244, 244, 244);
+	font-size:14px;
+	line-height:21px;
+	font-family:"Lucida Grande",Arial,Verdana,"Trebuchet MS",Helvetica,sans-serif;
+	padding:3px;
+}
+
+
+div.logo{
+	background:url('/img/logo-imh.png') no-repeat;
+	min-height:54px;
+}
+
+
+.main_container{
+	background:#fff;
+	border:1px solid #ddd;
+	margin:0px;
+	padding:10px;
+}
+
+
+.field_title{
+	font-weight:bold;
+}
+
+
+.ras{
+	color:red;
+	font-size:18px;
+}
+
+#asr{
+	display:none;
+}
+
+
+select,
+input[type="text"]{
+	width:200px;
+}
+
+
+textarea{
+	width:100%;
+	height:65px;
+}
+
+
+ul.sresults{
+	list-style-type:none;
+	padding:0px;
+}
+
+
+ul.sresults li{
+	padding-bottom:10px;
+}
+
+
+#asr_help{
+	display:none;
+}
+
+
+#loading_asr{
+	padding-top:10px;
+	/*
+	display:none;
+	text-align:center;
+	*/
+}
+
+
+#find_fast_support{
+	display:none;
+	font-weight:bold;
+}
+
+
+.blue_button{
+-webkit-background-clip: border-box;
+-webkit-background-origin: padding-box;
+-webkit-background-size: auto;
+-webkit-box-shadow: rgb(63, 137, 194) 0px 3px 0px 0px;
+background-attachment: scroll;
+background-clip: border-box;
+background-color: rgb(75, 160, 225);
+background-image: none;
+background-origin: padding-box;
+background-size: auto;
+border-bottom-color: rgba(0, 0, 0, 0.247059);
+border-bottom-left-radius: 4px;
+border-bottom-right-radius: 4px;
+border-left-color: rgba(0, 0, 0, 0.14902);
+border-right-color: rgba(0, 0, 0, 0.14902);
+border-top-color: rgba(0, 0, 0, 0.14902);
+border-top-left-radius: 4px;
+border-top-right-radius: 4px;
+box-shadow: rgb(63, 137, 194) 0px 3px 0px 0px;
+color: rgb(255, 255, 255);
+cursor: pointer;
+display: inline-block;
+font-family: adelle-sans, Helvetica, Arial, sans-serif;
+font-size: 13px;
+padding-bottom: 4px;
+padding-left: 12px;
+padding-right: 12px;
+padding-top: 4px;
+margin-bottom: 0px;
+margin-left: 0px;
+margin-right: 0px;
+margin-top: 0px;
+text-align: center;
+text-decoration: none solid rgb(255, 255, 255);
+vertical-align: middle;
+white-space: nowrap;
+}
+.blue_button:hover{
+	background-color:#3f89c2;
+}

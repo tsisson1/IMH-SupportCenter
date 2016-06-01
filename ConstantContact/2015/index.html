@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Basic Website Security</title>
+
+    <meta name="description" content="Basic Website Security">
+    <meta name="author" content="Scott Mitchell">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/moon.css" id="theme">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+<body>
+
+<div id="logo" style="float:right; padding: 10pt;">
+                        <img src="images/logo3.png" />
+                      </div>
+
+    <div class="reveal">
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+
+        <section>
+          <img src="images/5logo.png" /><br /><br />
+          <h2>Basic Website Security</h2>
+          <h4>Scott Mitchell</h4>
+          <p style="font-size:small">http://inmotionhosting.com/support/ConstantContact/2015</p>
+        </section>
+
+     <section>
+      <h2>About Me</h2>
+      <img src="images/scott.jpg" />
+      <p>
+        <small>Scott Mitchell<br /><br />
+          Working with the Web since 1997<br /><br />
+          InMotion Hosting since 2010<br /><br />
+          Customer Community Developer<br /><br />
+        </small>
+      </p>
+    </section>
+
+    <section>
+      <h2>About InMotion</h2>
+      <img src="images/inmotion.png" style="border-width:0px; background-color:transparent;">
+      <p>
+        <small>Hosting since 2001<br /><br />
+          small - med sized businesses<br /><br />
+          approx. 225 employees<br /><br />
+          <a href="http://inmotionhosting.com">http://inmotionhosting.com</a><br /><br />
+          <a href="http://inmotionhosting.com/support">http://inmotionhosting.com/support</a><br /><br />
+          @inmotionhosting
+        </small>
+
+      </p>
+    </section>
+    
+    <section>
+      <h2>Agenda</h2>
+      <ul>
+        <li>The bad guys</li>
+        <li>Types of attacks</li>
+        <li>Protecting your site</li>
+     </ul>
+    </section>
+
+    <section>
+      <h2>The Bad Guys</h2>
+      <h4>(Disturbing images ahead)</h4>
+    </section>
+
+    <section>
+      <img src="images/hacked2.jpg" />
+    </section>
+
+    <section>
+      <img src="images/hacked3.jpg" />
+    </section>
+
+    <section>
+      <img src="images/hacked4.jpg" />
+    </section>
+
+    <section>
+      <h3>How it makes you feel</h3>
+      <ul>
+        <li>Violated</li>
+        <li>Angry</li>
+        <li>Scared</li>
+        <li>Discredited</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Types of bad guys</h3>
+    </section>  
+
+    <section>
+      <h3>Hackers</h3>
+      <p><img src="images/grayhat.jpg" /></p>
+      <p>Typically non malicious, curious, advancing their skills.</p>
+      <p>Some actually think they are helping</p>
+      <p>White/Gray hat</p>
+    </section> 
+
+    <section>
+      <h3>Crackers</h3>
+      <p><img src="images/blackhat.jpg" /></p>
+      <p>Malicious, destructive, steal information</p>
+      <p>Black hat</p>
+    </section> 
+
+
+    <section>
+      <h3>Hacktivists</h3>
+      <p><img src="images/hacktivist.jpg" /></p>
+      <p>Spreads the word for their cause by hacking sites and inserting their message</p>
+    </section> 
+
+    <section>
+      <h3>Types of Attacks</h3>
+    </section>  
+
+<!--
+    <section>
+      <h3>LFI/RFI</h3>
+      <p>Local File Inclusion / Remote File Inclusion</p>
+      <p>LFI - the process of including files on a server through the web browser.</p>
+      <p>RFI - Able to get the target intertpreter to load a given file. Can be from another site, or uploaded.</p>
+    </section> 
+-->
+
+    <section>
+      <h3>Brute Force</h3>
+      <img src="images/bruteforce.jpg" /><br />
+        <p>Repeated attacks trying every possible combination until correct code is found.</p>
+    </section> 
+
+    <section>
+      <h3>Dictionary Attack</h3>
+      <img src="images/dictionary.jpg" /><br />
+        <p>A guessing attack which runs down a list of options.</p>
+    </section> 
+
+    <section>
+      <h3>SQL Injection</h3>
+      <img src="images/bobbytables.png" /><br />
+        <p>Uses weak code to trick the database into giving information or altering the data in the database.</p>
+    </section> 
+
+    <section>
+      <h3>Code Injection</h3>
+      <img src="images/codeinject.jpg" /><br />
+        <p>Exploits a computer bug caused by processing invalid data. Causes the course of execution to change.</p>
+        <p>Used by computer worms to propagate.</p>
+    </section> 
+
+    <section>
+      <h3>Cross Site Scripting</h3>
+        <p>Allows client side JavaScript execution.</p>
+        <ul>
+          <li>Cookie Stealing - use to gain access or bypas security.</li>
+          <li>Cross_Site Request Forgery - makes user send a request unknowingly.</li>
+          <li>XSS Worms - malcious script that can spread to other sites.</li>
+          <li>Keylogging - logs keystrokes.</li>
+        </ul>
+    </section>
+
+    <section>
+      <h3>Man In The Middle</h3>
+        <p><img src="images/eavesdrop.jpg" /><br />Digital Eavesdropping</p>
+    </section>
+
+
+    <section>
+      <h3>Where do they come from?</h3>
+        <img src="images/internalexternal.png" />
+    </section>
+
+    <section>
+        <h3>External</h3>
+        <img src="images/world2.jpg" /> <br />
+        <ul>
+          <li>Deface site</li>
+          <li>Just to see if it can be done</li>
+          <li>Crime of opportunity</li>
+          <li>Use as a platform (hacktivism)</li>
+        </ul> 
+    </section>
+
+    <section>
+        <h3>Internal</h3>
+        <img src="images/internal.jpg" /><br />
+        <ul>
+          <li>Most dangerous</li>
+          <li>Already have some access</li>
+          <li>Disgruntled</li>
+          <li>Destroy/steal information</li>
+        </ul> 
+    </section>
+
+
+    <section>
+      <h3>Protecting Your Site</h3>
+    </section> 
+
+    <section>
+      <h3>Use SSL</h3>
+      <img src="images/ssl.jpg" /><br />
+      <ul>
+        <li>Common in E-commerce</li>
+        <li>Shopping checkout</li>
+        <li>Login pages</li>
+        <li>Data collection</li>
+        <li>Whole site</li>
+      </ul>
+    </section> 
+
+    <section>
+      <h3>Data validation</h3>
+      <img src="images/smokey.jpg" /><br />
+      <ul>
+        <li>Done on server ONLY!</li>
+        <li>NOT client side (JavaScript)</li>
+      </ul>
+    </section> 
+
+    <section>
+      <h3>External login</h3>
+       <p>Log in via encrypted connections (SFTP or Open SSH)</p>
+     </section>
+
+    <section>
+      <h3>Use Secure Networks</h3>
+      <img src="images/starbucks.jpg" /><br />
+       <p>Avoid coffeeshop connections, use secured networks</p>
+     </section>
+
+
+    <section>
+      <h3>Login Credentials</h3>
+      <img src="images/dontshare.jpg" /><br />
+       <p>Don't share login credentials with ANYONE!</p>
+     </section>
+
+     <section>
+      <h3>Key Access</h3>
+       <p>Try to use key based authentication vs password when available</p>
+     </section>
+
+     <section>
+      <h3>Secure your Workstation</h3>
+      <ul>
+        <li>Update the Operating System</li>
+        <li>Update the anti-virus</li>
+        <li>Firewalls enabled</li>
+        <li>Look for suspicious emails</li>
+        <li>Install software from credible sources</li>
+      </ul>
+     </section>
+
+    <!-- 
+    <section>
+      <h3>Use redundancy</h3>
+      <img src="images/redundancy.jpg" />
+      <ul>
+        <li>Use redundancy to protect your site</li>
+        <li>Use redundancy to protect your site</li>
+        <li>Use redundancy to protect your site</li>
+      </ul>
+    </section>
+  -->
+
+    <section>
+      <h3>Use a non-login email address on public material</h3>
+      <p>Have a specific email address set for promotional information (info@example.com)</p>
+    </section>
+
+
+    <section>
+      <h3>Use Strong Passwords</h3>
+      <ul>
+        <li>Long passwords are good (min 8 characters)</li>
+        <li>Use a 'pass sentence'</li>
+        <li>Avoid the obvious</li>
+        <li>Do not recycle passwords</li>
+        <li>Rotate passwords</li>
+        <li>Use Upper, Lower, letters, and characters</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Most common passwords in 2014</h3>
+      <ul>
+        <li>123456</li>
+        <li>password</li>
+        <li>12345</li>
+        <li>12345678</li>
+        <li>qwerty</li>
+        <li>123456789</li>
+        <li>1234</li>
+        <li>letmein</li>
+        <li>abc123</li>
+        <li>111111</li>
+      </ul>
+    </section>
+
+
+    <section>
+      <h3>Backups! (Part 1)</h3>
+      <img src="images/safe.jpg" /><br />
+      <ul>
+        <li>Host copy</li>
+        <li>Developer copy</li>
+        <li>Personal copy</li>
+        <li>Physical copy</li>
+        <li>Digital copy</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Backups! (part 2)</h3>
+      <img src="images/safe.jpg" /><br />
+      <ul>
+        <li>Files and database</li>
+        <li>Regular intervals</li>
+        <li>Before major changes</li>
+        <li>DONT store backups on the hosting server</li>
+      </ul>
+    </section>
+
+     <section>
+      <h3>Limit Access</h3>
+      <img src="images/restricted.jpg" /><br />
+<p>Don't give access to everyone.</li>
+<p>Give only the access they need.</li>
+    </section>
+
+
+     <section>
+      <h3>Stay up to date</h3>
+      <img src="images/uptodate.png" /><br />
+    <p>Stay up to date on all software versions (both server and client side)
+    includes plugins and CMSes for server and ALL software on the client side</p>
+    </section>
+
+    <section>
+      <h3>Use caution on Social Media</h3>
+      <img src="images/socialmedia.jpg" /><br />
+    <p>Watch what you say on your personal social media.</p>
+    </section>
+
+    <section>
+      <h3>Guard against social engineering</h3>
+      <img src="images/catchme.jpg" /><br />
+      <ul>
+        <li><span style="font-size:x-large;" >Very old method</span></li>
+        <li><span style="font-size:x-large;" >Human hacking</span></li>
+        <li><span style="font-size:x-large;" >Attacks the human tendency to trust</span></li>
+        <li><span style="font-size:x-large;" >Human based</span></li>
+        <li><span style="font-size:x-large;" >Computer based</span></li>
+      </ul>
+    </section>
+     
+     <section>
+      <h3>Other notes</h3>
+      <ul>
+        <li><span style="font-size:x-large;" >There is no 100% secure site</span></li>        
+        <li><span style="font-size:x-large;" >Common Sense</span></li>
+        <li><span style="font-size:x-large;" >Most simple</span></li>
+        <li><span style="font-size:x-large;" >Fail to plan</span></li>
+      </ul>
+    </section>
+
+    <section>
+      <h1>Thank You!</h1>
+    </section>
+   </div>
+</div>
+
+
+<script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true },
+          { src: 'plugin/notes/notes.js', async: true }
+        ]
+      });
+
+    </script>
+
+</body>
+</html>

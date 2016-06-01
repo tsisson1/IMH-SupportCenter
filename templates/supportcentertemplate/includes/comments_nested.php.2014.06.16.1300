@@ -1,0 +1,457 @@
+<div style='clear:both;'></div>
+<a name='comments'></a>
+
+
+<?
+
+if (JRequest::getVar('option') == "com_content" AND JRequest::getVar('view') == "article" AND JRequest::getVar('id') == 3283) /* don't show comments on "join the community!" page */
+{
+	// don't show comments
+}
+else
+{
+	display_comments();
+
+	allow_for_comments();
+}
+
+
+
+
+
+
+
+function display_comments()
+{
+	$db = JFactory::getDbo();
+	$user = JFactory::getUser();
+
+	$option = JRequest::getVar('option');
+	$view = JRequest::getVar('view');
+	$id = JRequest::getVar('id');
+
+	if( $id == 0 )
+		return;
+	if($view == "category")
+		return;
+	if( substr_count($_SERVER['REQUEST_URI'],"/support/community-support/users") > 0 )
+		return;
+	if( $option == "com_communitysupport" )
+		return;
+
+	$object_id = JRequest::getVar('id');
+	if($option == "com_communitysupport")
+		$object_id = return_qa_question_id();
+
+	if( $user->groups[8] == 8 )
+		$query = "SELECT * FROM #__comments WHERE `object_id` = '$object_id' AND `object_group` = '$option' AND `parent_id` = 0 ORDER BY `utc_n` ASC;";
+	else
+		$query = "SELECT * FROM #__comments WHERE `object_id` = '$object_id' AND `object_group` = '$option' AND `parent_id` = 0 AND `hide_comment` = 0 ORDER BY `utc_n` ASC;";
+	$db->setQuery($query);
+	$results = $db->loadObjectList();
+
+	if($results)
+	{
+		foreach($results as $k => $v)
+			display_individual_comment($v,count($results),$k+1,0);
+	}
+}
+
+
+
+
+
+
+function allow_for_comments()
+{
+	$user = JFactory::getUser();
+
+	$option = JRequest::getVar('option');
+	$view = JRequest::getVar('view');
+        $id = JRequest::getVar('id');
+
+        if( $id == 0 )
+                return;
+	if($view=="category")
+		return;
+	if( substr_count($_SERVER['REQUEST_URI'],"/support/community-support/users") > 0 )
+                return;
+	if( $option == "com_communitysupport" )
+                return;
+
+	$object_id = JRequest::getVar('id');
+	if($option == "com_communitysupport")
+	{
+		$db = JFactory::getDbo();
+		$exploded_url = explode("/",$_SERVER['REDIRECT_URL']);
+		$question_alias = addslashes( $exploded_url[3] . "/" . $exploded_url[4] );
+		$query = "SELECT * FROM #__questions WHERE `url` = '$question_alias' LIMIT 1;";
+		$db->setQuery($query);
+		$question_details = $db->loadObjectList();
+		$object_id = $question_details[0]->id;
+	}
+
+	if($user->guest)
+	{
+		// echo "<a name='post_a_comment'></a><p style='margin-top:30px;'><a href='/support/login'>Login to comment.</a></p>";
+		comment_form_for_users_not_logged_in();
+		return;
+	}
+
+	if(!is_numeric($object_id))
+		return;
+
+
+	$users_not_wanting_emails_after_comments_made = return_array_of_users_not_wanting_new_comment_notification_emails($object_id);
+	$yes_email_checked = "checked";
+	$no_email_checked = "";
+
+	if( is_array($users_not_wanting_emails_after_comments_made) )
+	{
+		if( in_array($user->id,$users_not_wanting_emails_after_comments_made) )
+		{
+			$yes_email_checked = "";
+		        $no_email_checked = "checked";
+		}
+	}
+
+
+	echo "
+<a name='post_a_comment'></a>
+<div class='main_comment_submission_div' style='margin-top:20px;' name='main_comment_submission_div' id='main_comment_submission_div'>
+	<h3>Post a Comment</h3>
+
+	<form method='post'>
+		<textarea name='new_comment' id='new_comment' style='height:75px;'></textarea>
+		<input type='hidden' name='sc_task' id='sc_task' value='add_comment' />
+		<input type='hidden' name='object_group' id='object_group' value='$option' />
+		<input type='hidden' name='object_id' id='object_id' value='$object_id' />
+		<input type='submit' value='Submit Comment' class='btn btn-info' style='display:inline;' />
+		<input type='hidden' name='new_comment_parent_id' id='new_comment_parent_id' value='0' />
+	</form>
+
+	<div style='border-bottom:1px dotted #bbb; margin-bottom:15px;'></div>
+
+	<div class='small_full_gear_grey'>
+		<a onClick=\"jQuery('#comment_notifications_form').slideToggle('slow');\" style='cursor:pointer;'>
+			Email Notifications
+		</a>
+	</div>
+
+	<form method='post' name='comment_notifications_form' id='comment_notifications_form' style='display:none;'>
+		<div style='margin:10px 0px 5px 0px;'>Would you like to receive email notifications whenever there is a new comment on this page?</div>
+		<input type='radio' name='get_new_comment_notifications' id='get_new_comment_notifications' value='yes' $yes_email_checked >Yes<br />
+		<input type='radio' name='get_new_comment_notifications' id='get_new_comment_notifications' value='no' $no_email_checked > No<br />
+		<input type='submit' name='update' value='Update' class='btn btn-info' style='display:inline;margin-top:10px;' />
+		<input type='hidden' name='user_id' id='user_id' value='" . $user->id . "' />
+		<input type='hidden' name='article_id' id='article_id' value='$object_id' />
+		<input type='hidden' name='sc_task' id='sc_task' value='change_new_comment_notifications' />
+	</form>
+</div>
+";
+}
+
+
+
+
+
+
+function return_qa_question_id()
+{
+	$db = JFactory::getDbo();
+        $exploded_url = explode("/",$_SERVER['REDIRECT_URL']);
+        $question_alias = addslashes( $exploded_url[3] . "/" . $exploded_url[4] );
+        $query = "SELECT * FROM #__questions WHERE `url` = '$question_alias' LIMIT 1;";
+        $db->setQuery($query);
+        $question_details = $db->loadObjectList();
+        return $question_details[0]->id;
+}
+
+
+
+
+
+
+function display_individual_comment($v,$total_comments,$count,$level)
+{
+	$db = JFactory::getDbo();
+
+	$user = JFactory::getUser($v->user_id);
+	$current_user = JFactory::getUser();
+
+	// grab the suer group
+	foreach($user->groups as $ugk => $ugv)
+		$user_group = $ugk;
+
+
+
+
+
+
+	// SETUP comment
+	$comment = $v->comment;
+	$community_support_technician = "<div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div>";
+	if($user_group != 8)
+	{
+		$comment = htmlspecialchars($v->comment);
+		$community_support_technician = "";
+	}
+	$comment = nl2br($comment);
+	if($v->comment_type == 1)
+        	$comment = strip_tags($v->comment,'<div><p><strong><em><span><sub><code><blockquote><ul><ol><li><h1><h2><h3><h4><h5><h6><a><img><pre>');
+
+
+
+
+
+	// SETUP avatar
+	if( strlen($v->email_address) >= 5 )
+		$author_avatar_url = "//www.gravatar.com/avatar/" . md5(strtolower(trim($v->email_address))) . "?s=90";
+	else
+		$author_avatar_url = gf_pass_userid_get_avatar_url($user->id);
+
+
+
+
+
+	// SETUP USERNAME and PROFILE URL
+	if( strlen($v->email_address) >= 5 )
+	{
+		$username_to_print = htmlentities($v->name,ENT_QUOTES);
+		$url_to_profile = "//www.gravatar.com/" . md5(strtolower(trim($v->email_address)));
+	}
+	else
+	{
+		$username_to_print = htmlentities($user->username,ENT_QUOTES);
+		$url_to_profile = "/support/community-support/users/" . str_replace('.','&per;',$user->username);
+	}
+
+
+
+
+
+
+	// setup appropriate borders
+	if($total_comments > 1)
+	{
+		if($count == 1)
+		{
+			$border_style = "class='individual_comment straight_bottom' style='background:#efefef; border:1px dolid #ddd; padding:12px; border-bottom:1px dotted #ddd;'";
+		}
+		elseif( $count != $total_comments )
+		{
+			$border_style = "style='background:#efefef; border:1px solid #d4d4d4; padding:12px; border-top:0px; border-bottom:1px dotted #ddd;'";
+		}
+		else
+		{
+			$border_style = "class='round_bottom' style='background:#efefef; border:1px solid #d4d4d4; padding:12px; border-top:0px;'";
+		}
+	}
+	else
+	{
+		$border_style = "class='individual_comment'";
+	}
+	
+
+	// allow admins to easily edit this comment
+	$staff_edit_this_comment = "";
+	if( $current_user->groups[8] == 8 )
+	{
+        	$staff_edit_this_comment = "<div style='font-size:10px;'><a href='" . JURI::base() . "administrator/index.php?row_id=" . $v->id . "&task_a=search_for_edit&option=com_communitysupport&task=database_access&table_name=%23__comments' target='_blank'>Edit</a></div>";
+		if($v->hide_comment == 1)
+			$staff_edit_this_comment .= "	<form method='post' name='approve_comment_" . $v->id . "' id='approve_comment_" . $v->id . "' style='font-size:10px;'>
+								<input type='hidden' name='task_a' id='task_a' value='approve_comment' />
+								<input type='hidden' name='comment_id' id='comment_id' value='" . $v->id . "' />
+								<a href='' onClick=\"document.getElementById('approve_comment_" . $v->id . "').submit(); return false;\" style='color:red;'>Approve</a>
+							</form>
+			";
+
+	}
+
+
+
+	if( $count == 1 AND $level == 0)
+	{
+		echo "
+		<div class='sc_rc' style='background:#efefef;border:1px solid #ddd;padding:12px;margin-bottom:30px;'>
+			<h3 style='font-size:16px; padding-bottom:0px;'>Comments</h3>
+			<div style='margin-bottom:15px;border-bottom:1px dotted #ddd;'><a href='#post_a_comment' style='font-size:11px;'>Post a comment</a></div>
+		</div>
+		";
+	}
+
+	$comment_container_div_style = "margin:40px 0px 0px 0px;";
+	$comment_container_div_class = "";
+	if ($level > 0)
+	{
+		$comment_container_div_style = "margin:2px 0px 0px " . ($level * 40) . "px;";
+		$comment_container_div_class = "";
+	}
+
+	$commenter_points_text = get_user_points($user->id,"number link");
+
+	$user_profile = load_user_profile($db,$user);
+	$commenter_social_media_contact = pass_profile_get_sc_links($user_profile,"20");
+
+	// LOGIC FOR: is this user a current customer?
+	$current_customer_html_for_staff = "";
+	if( $current_user->groups[8] == 8 AND $user->groups[8] != 8 )
+	{
+		$current_customer_html_for_staff = pass_type_and_type_id_return_is_customer_html_form("article_comment",$v->id);
+	}
+
+	$comment_title = "";
+	if ($v->title != "")
+		$comment_title = "<h2><span style='font-weight:bold;color:#000;'>Question:</span> " . htmlentities($v->title,ENT_QUOTES) . "</h2>";
+
+
+	echo "
+		<a name='comment-" . $v->id . "'></a>
+		<div $comment_container_div_class style='$comment_container_div_style'>
+			$comment_title
+			<table style='width:100%; border-collapse:separate; border:1px solid #aaa;' class='sc_rc'>
+				<tr>
+					<td valign='top' style='width:100px; padding:5px; border-right:1px solid #aaa;background-image: -webkit-linear-gradient(top,#e3e3e3,#efefef);background-image: linear-gradient(to bottom, #E3E3E3, #EFEFEF); border-bottom-left-radius: 5px; border-top-left-radius: 5px;'>
+						<img src='$author_avatar_url' class='sc_rc' style='max-width:90px; margin-right:15px;display:block;' />
+						<div><a style='font-size:16px;' href='$url_to_profile'>$username_to_print</a></div>
+						<div>$commenter_social_media_contact</div>
+						<div>$community_support_technician</div>
+						<div>$commenter_points_text</div>
+						$current_customer_html_for_staff
+					</td>
+					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
+						<div style='float:right;margin:0px 0px 15px 15px;font-size:12px;color:#aaa'>" . date('Y-m-d g:i a',$v->utc_n - (60*60*4)) . "</div>
+				                <div>$comment</div>
+						<div style='text-align:right; clear:both;'><a href='#post_a_comment' class='btn btn-primary' style='text-transform:none;' onClick=\"jQuery('#new_comment_parent_id').val(" . $v->id . ");jQuery('html, body').animate({scrollTop: jQuery('#main_comment_submission_div').offset().top}, 1500);return false;\" >Reply</a></div>
+        	        			$staff_edit_this_comment
+					</td>
+				</tr>
+			</table>
+		</div>
+	";
+
+
+
+
+	// -----------------------------------------------------------------------------------------------
+	// are there children comments?
+	// -----------------------------------------------------------------------------------------------
+	$option = JRequest::getVar('option');
+	$object_id = JRequest::getVar('id');
+        if($option == "com_communitysupport")
+                $object_id = return_qa_question_id();
+	if( $current_user->groups[8] == 8 )
+                $query = "SELECT * FROM #__comments WHERE `object_id` = '$object_id' AND `object_group` = '$option' AND `parent_id` = " . $v->id . " ORDER BY `utc_n` ASC;";
+        else
+                $query = "SELECT * FROM #__comments WHERE `object_id` = '$object_id' AND `object_group` = '$option' AND `parent_id` = " . $v->id . " AND `hide_comment` = 0 ORDER BY `utc_n` ASC;";
+        $db->setQuery($query);
+        $results = $db->loadObjectList();
+        if($results)
+        {
+                foreach($results as $k => $v)
+                        display_individual_comment($v,count($results),$k+1,$level + 1);
+        }
+
+
+
+
+}
+
+
+
+
+
+
+function comment_form_for_users_not_logged_in()
+{
+	if( isset($_GET['acomments']) OR "enabled" == "enabled")
+	{
+		// recaptcha - required includes and variables
+		require_once('templates/supportcentertemplate/html/com_content/category/recaptcha-php-1.11/recaptchalib.php');
+		$publickey = "6LeoSOcSAAAAAGEzHG3DfhwCCZTigzSlHi3Qjymt"; // you got this from the signup page
+                $privatekey = "6LeoSOcSAAAAACyk04ENGfotd8a-9zZAzPfNsIIv"; // you got this from the signup page
+		// if we posted a comment and it failed
+		if( $GLOBALS['post_this_anonymous_comment'] == "no" )
+		{
+			$acomment_name = htmlentities($_POST['acomment_name'],ENT_QUOTES);
+			$acomment_email = htmlentities($_POST['acomment_email'],ENT_QUOTES);
+			$acomment_comment = htmlentities($_POST['acomment_comment'],ENT_QUOTES);
+
+			$acomment_parent_id = 0;
+			if (is_numeric($_POST['new_comment_parent_id']))
+				$acomment_parent_id = $_POST['new_comment_parent_id'];
+		}
+		// recaptcha - show the recaptcha form
+        	$recaptcha = recaptcha_get_html($publickey);
+		echo "
+		<style>
+			.acomment tr th {text-align:left;vertical-align:top}
+			.recaptchatable * {line-height:4px}
+		</style>
+		<a name='post_a_comment'></a>
+		<a name='acomment_form'></a>
+		<div class='main_comment_submission_div' style='margin-top:20px;' name='main_comment_submission_div' id='main_comment_submission_div'>
+	        <h3>Post a Comment</h3>
+		<form method='post'>
+			<table class='table acomment'>
+				<tr>
+					<th>Name:</th>
+					<td>
+						" . $GLOBALS['acomment_no_name'] . "
+						<input type='text' name='acomment_name' id='acomment_name' style='width:97%;' value='$acomment_name' />
+					</td>
+				</tr>
+				<tr>
+					<th>Email Address:</th>
+					<td>
+						" . $GLOBALS['acomment_no_email'] . "
+						<input type='text' name='acomment_email' id='acomment_email' style='width:97%;' value='$acomment_email' />
+					</td>
+				</tr>
+				<tr>
+					<th>Comment:</th>
+					<td>
+						" . $GLOBALS['acomment_no_comment'] . "
+						<script type='text/javascript' src='http://cdn.inmotionhosting.com/support/components/com_pup/tinymce/js/tinymce/tinymce.min.js'></script>
+						<script type='text/javascript'>
+							tinymce.init({
+							    selector: 'textarea.acomment_comment',
+							    plugins: [
+							        // 'advlist autolink lists link image charmap print preview anchor',
+						        	// 'searchreplace visualblocks code fullscreen',
+							        // 'insertdatetime media table contextmenu paste moxiemanager'
+							    ],
+							    toolbar: 'insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image'
+							});
+						</script>
+						<textarea class='acomment_comment' name='acomment_comment' id='acomment_comment' style='width:100%;height:150;'>$acomment_comment</textarea>
+					</td>
+				</tr>
+				<tr>
+					<th>Are you a bot?</th>
+					<td>
+						" . $GLOBALS['recaptcha_failed'] . "
+						$recaptcha
+					</td>
+				</tr>
+				<tr>
+					<th>Submit</th>
+					<td style='text-align:left;'>
+						<p>Please note: Your name and comment will be displayed, but we will not show your email address.</p>
+						<input type='submit' class='btn btn-primary' value='Submit Comment' />
+					</td>
+				</tr>
+			</table>
+			<input type='hidden' name='new_comment_parent_id' id='new_comment_parent_id' value='$acomment_parent_id' />
+		</form>
+		</div>
+		";
+	}
+}
+
+
+
+
+
+
+?>

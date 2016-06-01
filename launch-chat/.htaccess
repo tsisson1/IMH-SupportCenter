@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# force https
+RewriteCond %{HTTP:X-Forwarded-Proto} !^https
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+# force www
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteRule ^ https://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+

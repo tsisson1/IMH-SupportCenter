@@ -1,0 +1,127 @@
+<?php
+
+
+//don't allow other scripts to grab and execute our file
+defined('_JEXEC') or die('Direct Access to this location is not allowed.');
+
+// only run on /edu/ pages and pages (not categories)
+if( substr_count($_SERVER['REQUEST_URI'],"/edu/") != 1 OR substr_count($_SERVER['REQUEST_URI'],"/") != 5 )
+        return;
+
+$option = JRequest::getVar('option');
+$view = JRequest::getVar('view');
+
+if($view == "article")
+{
+        $article = JTable::getInstance('content');
+        $article->load(JRequest::getInt('id'));
+}
+if($view == "category" || $view == "categories")
+{
+        return;
+}
+if($option == "com_communitysupport")
+{
+        return;
+}
+
+
+
+
+
+
+// grab all article id's and aliases that belong to this article, sort by ordering
+$query = "
+SELECT `id`,`title`,`alias`,`catid`,`attribs`
+FROM #__content
+WHERE   `catid` = " . $article->catid . " AND
+        `state` = 1 AND
+	`alias` != 'quiz'
+ORDER BY `ordering` ASC;
+";
+$db = JFactory::getDbo();
+$db->setQuery($query);
+$articles_in_this_category = $db->loadObjectList();
+
+
+
+
+
+
+// do we have a quiz that is enabled?
+$query = "SELECT `id` FROM #__quiz WHERE `catid` = " . $article->catid . " AND `enabled` = 1;";
+$db->setQuery($query);
+$have_quiz = $db->loadResult();
+if($have_quiz)
+	$take_the_quiz = "<div style='text-align:right;padding-top:5px;'><a href='quiz' class='btn btn-success small'>Take the quiz!</a></div>";
+
+
+
+
+
+
+// grab the title of the category id
+$query = "SELECT `title` FROM #__categories WHERE `id` = " . $article->catid . ";";
+$db = JFactory::getDbo();
+$db->setQuery($query);
+$category_title = $db->loadObjectList();
+$category_title = $category_title[0]->title;
+$category_title = strstr($category_title, ' ');
+
+
+
+
+
+
+// get a link to the category
+$category_link = JRoute::_(ContentHelperRoute::getCategoryRoute($article->catid));
+
+
+
+
+
+
+// loop through all articles and print a link to them
+$article_count = 1;
+echo "
+		<a href='$category_link?tsrc=rsbedu'><h3 style='border-bottom:1px solid #bbb; margin-bottom:10px; padding-bottom:2px; font-size:16px; line-height:17px;'>$category_title</h3></a>
+		<table>";
+foreach($articles_in_this_category as $k => $v)
+{
+        $article_slug = $v->id . ":" . $v->alias;
+        $article_url = JRoute::_(ContentHelperRoute::getArticleRoute($article_slug, $v->catid));
+
+        $this_article = "";
+        if($v->id == $article->id)
+	{
+                // $this_article = "class='current_edu_article'";
+		$this_article = "style='border-top:1px solid #bbb; border-bottom:1px solid #bbb; background:#eee;'";
+	}
+
+	$article_attribs = json_decode($v->attribs);
+	if($article_attribs->edu_above_title)
+		echo "<tr><td colspan='2'><h4>" . $article_attribs->edu_above_title . "</h4></td></tr>";
+
+	// additional anchor text
+	$anchor_text = $v->title;
+	$additional_anchor_text = return_additional_anchor_text("com_content","article",$v->id);
+	if( $additional_anchor_text->edu_sidebar_listing != "" )
+		$anchor_text = $additional_anchor_text->edu_sidebar_listing;
+
+        echo "  <tr $this_article>
+                        <td valign='top'>$article_count.</td>
+                        <td><a href='$article_url?tsrc=rsbedu'>" . $anchor_text . "</a></td>
+                </tr>
+        ";
+
+        $article_count++;
+}
+echo "  	</table>
+		$take_the_quiz
+";
+
+
+
+
+
+?>

@@ -1,0 +1,546 @@
+<?
+
+
+
+
+
+
+$send_email_after_article_comment_email_message = "** THIS IS AN AUTOMATED MESSAGE. PLEASE DO NOT REPLY **
+
+Hi %1\$s,
+
+A new comment has been added to the following page:
+
+%2\$s
+%3\$s
+
+
+%4\$s says:
+---------------------------------------------------
+%5\$s
+---------------------------------------------------
+
+Best Regards,
+InMotion Hosting Support Team
+
+
+
+UNSUBSCRIBE:
+If you would like to unsubscribe from email alerts about this article, please click this link: %3\$s?%6\$s
+";
+$send_email_after_article_comment_email_message_html = "<p style='text-align:center;font-size:12px;color:red;font-weight:bold;'>** THIS IS AN AUTOMATED MESSAGE. PLEASE DO NOT REPLY **</p>
+
+<p>Hi %1\$s,</p>
+
+<p>A new comment has been added to the following page:</p>
+
+<p><strong>%2\$s</strong><br />
+<a href='%3\$s'>%3\$s</a></p>
+
+<p><strong>%4\$s says:</strong></p>
+<p style='padding-left:40px;'><em>%5\$s</em></p>
+
+<p>Best Regards,<br />
+InMotion Hosting Support Team</p>
+
+<hr>
+
+<p><strong>Unsubscribe</strong>:<br />
+If you would like to unsubscribe from email alerts about this article, please <a href='%3\$s?%6\$s'>click here</a>.</p>
+";
+
+
+
+
+
+
+// --------------------------------------------------------------------------------------------------------------------------------------------------
+// approve an anonymous comment and email all the users
+// --------------------------------------------------------------------------------------------------------------------------------------------------
+// if we are posting a request to approve a comment
+if( $_POST['task_a'] == "approve_comment")
+{
+	$user = JFactory::getUser();
+	$db = JFactory::getDbo();
+	// if the logged in user is a super administrator and the comment_id to approve is a number
+	if( $user->groups[8] == 8 AND is_numeric($_POST['comment_id']) )
+	{
+		// update the comment so hide_login = 0 and the comment is technically approved
+		$query = "UPDATE #__comments SET `hide_comment` = 0 WHERE `id` = " . $_POST['comment_id'];
+		$comment_has_been_approved = gf_run_query($query,"Comment has been approved!","Error - comment was not approved successfully.");
+		if( $comment_has_been_approved == true )
+		{
+			cc_clear_page_cache();
+			// grab the details of the anonymous content, so we can use it in an email
+			$query = "SELECT `name`,`comment`,`email_address` FROM #__comments WHERE `id` = " . $_POST['comment_id'];
+			$db->setQuery($query);
+			$anonymous_comment = $db->loadObject();
+			// --------------------------------------------------------------------------------------------------------------------------
+			// email all registered users who commented on this page
+			// --------------------------------------------------------------------------------------------------------------------------
+			$article_commenters = return_array_of_all_commenters_of_this_page(JRequest::getVar('id'));
+	                $users_not_wanting_email = return_array_of_users_not_wanting_new_comment_notification_emails(JRequest::getVar('id'));
+	                foreach($article_commenters as $k => $v)
+        	        {
+                	        // do we want to send this email?
+                        	$send_this_email = false;
+				// if the array of users not to email is empty, email everyone
+	                        if( ! is_array($users_not_wanting_email) )
+        	                        $send_this_email = true;
+				// else, if we do have an array of users that don't want an email
+                	        else
+                        	{
+					// if the user is not in the array of users that don't want to be emailed
+                                	if( ! in_array($v->id,$users_not_wanting_email) )
+                                        	$send_this_email = true;
+	                        }
+	                        if( $send_this_email )
+        	                {
+					$unsubscribe_url_value = "unsubscribe=" . rand(1000,9999) . $v->id . "--" . md5($v->email);
+                	                $mail_body = sprintf(
+                        	                $send_email_after_article_comment_email_message,
+                                	        $v->username,
+                                        	$this->title,
+	                                        $this->base,
+        	                                htmlentities($anonymous_comment->name,ENT_QUOTES),
+                	                        strip_tags($anonymous_comment->comment),
+						$unsubscribe_url_value
+                        	        );
+					$mail_body_html = sprintf(
+                                                $send_email_after_article_comment_email_message_html,
+                                                $v->username,
+                                                htmlentities($this->title,ENT_QUOTES),
+                                                $this->base,
+                                                htmlentities($anonymous_comment->name,ENT_QUOTES),
+                                                strip_tags($anonymous_comment->comment),
+						$unsubscribe_url_value
+                                        );
+					$mail_body_html = pass_title_body_return_html_email("A new comment has been submitted!",$mail_body_html);
+                                	// cs_send_email($v->email,"NEW COMMENT - " . $this->title,$mail_body);
+					cs_send_email_with_html($v->email,"NEW COMMENT - " . $this->title,$mail_body,$mail_body_html);
+	                        }
+        	        }
+			// --------------------------------------------------------------------------------------------------------------------------
+			// email all anonymous users who commented on this page
+			// --------------------------------------------------------------------------------------------------------------------------
+			$anonymous_users = return_list_of_anonymous_comments($db,'com_content',JRequest::getVar('id'));
+			$anonymous_users_dont_email = return_array_of_anonymous_commenters_not_wanting_email_alert_on_this_article($db,JRequest::getVar('id'));
+	                if( $anonymous_users )
+        	        {
+                	        foreach($anonymous_users as $au_k => $au_v)
+                        	{
+					if(count($anonymous_users_dont_email) == 0 OR !in_array($au_v->email_address,$anonymous_users_dont_email))
+					{
+						$unsubscribe_url_value = "unsubscribe_email=" . $au_v->email_address . "--" . md5(substr($au_v->email_address,0,4).substr($au_v->email_address,-4));
+	                                	$mail_body = sprintf(
+        	                                	$send_email_after_article_comment_email_message,
+	        	                                htmlentities($au_v->name,ENT_QUOTES),
+        	        	                        $this->title,
+                	        	                $this->base,
+                        	        	        htmlentities($anonymous_comment->name,ENT_QUOTES),
+                                	        	strip_tags($anonymous_comment->comment),
+							$unsubscribe_url_value
+		                                );
+						$mail_body_html = sprintf(
+                	                                $send_email_after_article_comment_email_message_html,
+                        	                        htmlentities($au_v->name,ENT_QUOTES),
+                                	                htmlentities($this->title,ENT_QUOTES),
+                                        	        $this->base,
+                                                	htmlentities($anonymous_comment->name,ENT_QUOTES),
+	                                                strip_tags($anonymous_comment->comment),
+							$unsubscribe_url_value
+        	                                );
+						$mail_body_html = pass_title_body_return_html_email("A new comment has been submitted!",$mail_body_html);
+        	        	                // cs_send_email($au_v->email_address,"NEW COMMENT - " . $this->title,$mail_body);
+						cs_send_email_with_html($au_v->email_address,"NEW COMMENT - " . $this->title,$mail_body,$mail_body_html);
+					}
+                	        }
+	                }
+		}
+	}
+}
+
+
+
+
+
+
+if($_POST['sc_task'])
+	$db = JFactory::getDbo();
+
+
+
+
+
+
+if( $_POST['sc_task'] == "change_new_comment_notifications" )
+{
+	$db = JFactory::getDbo();
+	$user = JFactory::getUser();
+
+	if(
+		! $user->guest AND
+		( $_POST['get_new_comment_notifications'] == "yes" OR $_POST['get_new_comment_notifications'] == "no" ) AND
+		is_numeric($_POST['article_id']) AND
+		is_numeric($_POST['user_id']) AND
+		$_POST['user_id'] == $user->id
+	)
+	{
+		unset($query);
+		switch($_POST['get_new_comment_notifications'])
+		{
+			case "yes":
+				$query = "DELETE FROM #__content_do_not_email_me WHERE `user_id` = " . $user->id . " AND `article_id` = " . $_POST['article_id'] . ";";
+				$update_email_notification = "Email notifications for comments to this article have been ENABLED.";
+				break;
+			case "no":
+				$query = "INSERT INTO #__content_do_not_email_me (`id`,`user_id`,`article_id`) VALUES (NULL, " . $user->id . "," . $_POST['article_id'] . ");";
+				$update_email_notification = "Email notifications for comments to this article have been DISABLED.";
+				break;
+		}
+		if($query)
+		{
+			$db->setQuery($query);
+			try
+			{
+				$result = $db->query();
+				JFactory::getApplication()->enqueueMessage("$update_email_notification", 'success');
+			}
+			catch (Exception $e)
+			{
+				// catch any database errors.
+				JFactory::getApplication()->enqueueMessage('Error - your email notification settings for comments to this article have not changed.', 'error');
+			}
+		}
+	}
+}
+
+
+
+
+
+
+if($_POST['sc_task'] == "add_comment" AND does_item_exist_in_database("comments","comment",addslashes($_POST['new_comment'])) == false)
+{
+	$allowable_groups = array("com_content","com_communitysupport");
+
+	$rgfv = rgfv();
+
+	$comment = $_POST['new_comment'];
+	$object_group = $_POST['object_group'];
+	$object_id = $_POST['object_id'];
+	$user_ip = $rgfv->user_ip;
+	$user = JFactory::getUser();
+	$current_utc_n = strtotime(gmdate('Y-m-d H:i:s'));
+
+	if( $user->guest )
+	{
+		JError::raiseNotice( "You must be logged in to comment!", 'Notice' );
+		break;
+	}
+
+	if( !in_array($object_group,$allowable_groups) )
+	{
+		JError::raiseNotice( "You cannot post a comment here!", 'Notice' );
+		break;
+	}
+
+	if( !is_numeric($object_id) )
+	{
+                JError::raiseNotice( "You cannot post on this page!", 'Notice' );
+		break;
+        }
+
+	if( $comment == "" )
+	{
+		JFactory::getApplication()->enqueueMessage('Your comment was blank!', 'error');
+		$do_not_add_comment = true;
+	}
+
+    if ( $user->groups[8] != 8 ) 
+    {
+        $comment = strip_tags($comment);
+    }
+	$this_comment_parent_id = 0;
+        if (is_numeric($_POST['new_comment_parent_id']))
+                $this_comment_parent_id = $_POST['new_comment_parent_id'];
+
+	$query = "INSERT INTO #__comments (`id` ,`object_id` ,`object_group` ,`user_id` ,`comment` ,`ip` ,`utc_n`,`parent_id`)VALUES (NULL , '$object_id', '$object_group', '" . $user->id . "', '" . addslashes($comment) . "', '$user_ip', '$current_utc_n',$this_comment_parent_id);";
+	$db->setQuery($query);
+	$send_email_after_article_comment = false;
+
+	if( $do_not_add_comment != true )
+	{
+		try
+		{
+			$result = $db->execute();
+			JFactory::getApplication()->enqueueMessage('Thank you for posting a comment!', 'success');
+			$send_email_after_article_comment = true;
+
+			gf_clear_user_points($user->id);
+			cc_clear_page_cache();
+		}
+		catch (Exception $e)
+		{
+			JError::raiseNotice( "Your comment failed to post!", 'Notice' );
+		}
+	}
+
+
+
+
+
+
+	// handle email notifications of comments
+	if( $send_email_after_article_comment == true )
+	{
+		$send_email_after_article_comment_email_message = "** THIS IS AN AUTOMATED MESSAGE. PLEASE DO NOT REPLY **
+
+Hi %1\$s,
+
+A new comment has been added to the following page:
+
+%2\$s
+%3\$s
+
+
+%4\$s says:
+---------------------------------------------------
+%5\$s
+---------------------------------------------------
+
+Best Regards,
+InMotion Hosting Support Team
+
+
+
+UNSUBSCRIBE:
+If you would like to unsubscribe from email alerts about this article, please click this link: %3\$s?%6\$s
+";
+	$send_email_after_article_comment_email_message_html = "<p style='text-align:center;font-size:12px;color:red;font-weight:bold;'>** THIS IS AN AUTOMATED MESSAGE. PLEASE DO NOT REPLY **</p>
+
+<p>Hi %1\$s,</p>
+
+<p>A new comment has been added to the following page:</p>
+
+<p><strong>%2\$s</strong><br />
+<a href='%3\$s'>%3\$s</a></p>
+
+<p><strong>%4\$s says:</strong></p>
+<p style='padding-left:40px;'><em>%5\$s</em></p>
+
+<p>Best Regards,<br />
+InMotion Hosting Support Team</p>
+
+<hr>
+
+<p><strong>Unsubscribe</strong>:<br />
+If you would like to unsubscribe from email alerts about this article, please <a href='%3\$s?%6\$s'>click here</a>.</p>
+";
+
+		$article_commenters = return_array_of_all_commenters_of_this_page($object_id);
+		$users_not_wanting_email = return_array_of_users_not_wanting_new_comment_notification_emails($object_id);
+
+		foreach($article_commenters as $k => $v)
+		{
+			// do we want to send this email?
+			$send_this_email = false;
+			if( ! is_array($users_not_wanting_email) )
+				$send_this_email = true;
+			else
+			{
+				if( ! in_array($v->id,$users_not_wanting_email) AND $user->id != $v->id )
+					$send_this_email = true;
+			}
+			if( $v->email == $user->email )
+				$send_this_email = false;
+
+
+			if( $send_this_email )
+			{
+				$unsubscribe_url_value = "unsubscribe=" . rand(1000,9999) . $v->id . "--" . md5($v->email);
+				$mail_body = sprintf(
+                                        $send_email_after_article_comment_email_message,
+                                        $v->username,
+					$this->title,
+					$this->base,
+					$user->username,
+					$comment,
+					$unsubscribe_url_value
+                                );
+				$mail_body_html = sprintf(
+                                        $send_email_after_article_comment_email_message_html,
+                                        $v->username,
+                                        htmlentities($this->title,ENT_QUOTES),
+                                        $this->base,
+                                        $user->username,
+                                        htmlentities($comment,ENT_QUOTES),
+					$unsubscribe_url_value
+                                );
+				$mail_body_html = pass_title_body_return_html_email("A new comment has been submitted!",$mail_body_html);
+				// cs_send_email($v->email,"NEW COMMENT - " . $this->title,$mail_body);
+				cs_send_email_with_html($v->email,"NEW COMMENT - " . $this->title,$mail_body,$mail_body_html);
+			}
+		}
+
+		// after we've emailed all of the regular users, let's email the anonymous users
+		$anonymous_users = return_list_of_anonymous_comments($db,'com_content',JRequest::getVar('id'));
+		$anonymous_users_dont_email = return_array_of_anonymous_commenters_not_wanting_email_alert_on_this_article($db,JRequest::getVar('id'));
+		if( $anonymous_users )
+		{
+			foreach($anonymous_users as $au_k => $au_v)
+			{
+				if(count($anonymous_users_dont_email) == 0 OR !in_array($au_v->email_address,$anonymous_users_dont_email))
+				{
+					$unsubscribe_url_value = "unsubscribe_email=" . $au_v->email_address . "--" . md5(substr($au_v->email_address,0,4).substr($au_v->email_address,-4));
+					$mail_body = sprintf(
+						$send_email_after_article_comment_email_message,
+                	                	htmlentities($au_v->name,ENT_QUOTES),
+	                	                $this->title,
+        	                	        $this->base,
+                	                	$user->username,
+	                        	        $comment,
+						$unsubscribe_url_value
+					);
+					$mail_body_html = sprintf(
+                        	                $send_email_after_article_comment_email_message_html,
+                                	        htmlentities($au_v->name,ENT_QUOTES),
+                                        	htmlentities($this->title,ENT_QUOTES),
+	                                        $this->base,
+        	                                $user->username,
+                	                        htmlentities($comment,ENT_QUOTES),
+						$unsubscribe_url_value
+                        	        );
+					$mail_body_html = pass_title_body_return_html_email("A new comment has been submitted!",$mail_body_html);
+        		                // cs_send_email($au_v->email_address,"NEW COMMENT - " . $this->title,$mail_body);
+					cs_send_email_with_html($au_v->email_address,"NEW COMMENT - " . $this->title,$mail_body,$mail_body_html);
+				}
+			}
+		}
+
+		$mail_body = sprintf($send_email_after_article_comment_email_message,"STAFF",$this->title,$this->base,$user->username,$comment,"unsubscribe=you_cannot");
+		$mail_body_html = sprintf($send_email_after_article_comment_email_message_html,"STAFF",htmlentities($this->title,ENT_QUOTES),$this->base,$user->username,htmlentities($comment,ENT_QUOTES),"unsubscribe=you_cannot");
+		$mail_body_html = pass_title_body_return_html_email("A new comment has been submitted!",$mail_body_html);
+		// cs_send_email("daily_alerts@gadgets.inmotionhosting.com","ADMIN EMAIL - NEW COMMENT - " . $this->title,$mail_body); // staff email
+		cs_send_email_with_html("daily_alerts@gadgets.inmotionhosting.com","ADMIN EMAIL - NEW COMMENT - " . $this->title,$mail_body,$mail_body_html);
+		insert_new_staff_alert("new comment",JURI::current());
+	}	
+
+	
+}
+
+
+
+
+
+
+// ----------------------------------------------------------------------------------------------------
+// are we submitting an anonymous comment?
+// ----------------------------------------------------------------------------------------------------
+if( isset($_POST['acomment_comment']) )
+{
+	$post_this_comment = true;
+	// did they enter a name?
+	if( strlen(trim($_POST['acomment_name'])) < 1 )
+	{
+		$GLOBALS['acomment_no_name'] = "<p class='alert alert-danger'>Please enter your name.</p>";
+		$post_this_comment = false;
+	}
+	// did they enter a valid email?
+	if(	substr_count($_POST['acomment_email'],"@") != 1 OR substr_count($_POST['acomment_email'],".") < 1 OR strlen(trim($_POST['acomment_email'])) < 5		)
+	{
+		$GLOBALS['acomment_no_email'] = "<p class='alert alert-danger'>Please enter a valid email address.</p>";
+		$post_this_comment = false;
+	}
+	// did they enter a comment?
+	if( strlen(trim($_POST['acomment_comment'])) < 1 )
+        {
+                $GLOBALS['acomment_no_comment'] = "<p class='alert alert-danger'>Please enter a comment.</p>";
+		$post_this_comment = false;
+        }
+	// did they pass recaptcha?
+	require_once('templates/supportcentertemplate/html/com_content/category/recaptcha-php-1.11/recaptchalib.php');
+        $publickey = "6LeoSOcSAAAAAGEzHG3DfhwCCZTigzSlHi3Qjymt"; // you got this from the signup page
+        $privatekey = "6LeoSOcSAAAAACyk04ENGfotd8a-9zZAzPfNsIIv"; // you got this from the signup page
+        $resp = recaptcha_check_answer ($privatekey,
+                $_SERVER['HTTP_X_FORWARDED_FOR'],
+                $_POST["recaptcha_challenge_field"],
+                $_POST["recaptcha_response_field"]);
+        if (! $resp->is_valid)
+	{
+		$GLOBALS['recaptcha_failed'] = "<p class='alert alert-danger'>The words you entered into the recaptcha were incorrect. Please try again.</p>";
+                $post_this_comment = false;
+	}
+	// did they fail honeypot?
+	if (	$_POST['old_comment_parent_id'] != "2" OR	// this is hard coded and must be set to 2
+		$_POST['acomment_phone'] != "" OR		// this is hidden and should not be set
+		$_POST['acomment_bcomment'] != ""		// this is hidden and should not be set
+	)
+	{
+		$GLOBALS['recaptcha_failed'] = "<p class='alert alert-danger'>Something about your submission makes you look like a bot. Please try again.</p>";
+		$post_this_comment = false;
+	}
+
+	// are we posting this to the database?
+	if( $post_this_comment == true )
+	{
+		$db = JFactory::getDbo();
+		// setup some variables
+		$acomment_comment = addslashes($_POST['acomment_comment']);
+		$acomment_bcomment = addslashes($_POST['acomment_bcomment']);
+		$acomment_name = addslashes($_POST['acomment_name']);
+		$acomment_email = addslashes($_POST['acomment_email']);
+		$acomment_phone = addslashes($_POST['acomment_phone']);
+		$acomment_random_number = addslashes($_POST['old_comment_parent_id']);
+	        $user_ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
+        	$current_utc_n = strtotime(gmdate('Y-m-d H:i:s'));
+		$joption = JRequest::getVar('option');
+		$jview = JRequest::getVar('view');
+		$jid = JRequest::getVar('id');
+
+		$this_comment_parent_id = 0;
+	        if (is_numeric($_POST['new_comment_parent_id']))
+        	        $this_comment_parent_id = $_POST['new_comment_parent_id'];
+
+		// setup the query
+		$query = "
+		INSERT INTO #__comments
+			(`id` ,`object_id` ,`object_group` ,`user_id` ,`comment` ,`ip` ,`utc_n`,`admin_verified`,`name`,`email_address`,`hide_comment`,`comment_type`,`parent_id`,`phone_number`,`random_number`,`bcomment`)
+		VALUES	(NULL , '$jid', '$joption', '316002496', '$acomment_comment', '$user_ip', '$current_utc_n',0,'$acomment_name','$acomment_email',1,1,$this_comment_parent_id,'$acomment_phone','$acomment_random_number','$acomment_bcomment');";
+		$db->setQuery($query);
+		try
+       	        {
+               	        $result = $db->execute();
+                       	JFactory::getApplication()->enqueueMessage('Thank you for posting a comment! You will receive an email after your comment has been approved.', 'success');
+			$GLOBALS['post_this_anonymous_comment'] = "yes";
+
+			// old staff email
+			//
+			// cs_send_email("daily_alerts@gadgets.inmotionhosting.com","ADMIN EMAIL - NEW ANONYMOUS COMMENT",$_SERVER['REQUEST_URI']); // staff email
+			//
+			// new staff email
+			$mail_body = sprintf($send_email_after_article_comment_email_message,"STAFF",$this->title,$this->base,$acomment_name,$acomment_comment,"unsubscribe=you_cannot");
+	                $mail_body_html = sprintf($send_email_after_article_comment_email_message_html,"STAFF",htmlentities($this->title,ENT_QUOTES),$this->base,htmlentities($acomment_name,ENT_QUOTES),htmlentities($acomment_comment,ENT_QUOTES),"unsubscribe=you_cannot");
+        	        $mail_body_html = pass_title_body_return_html_email("A new comment has been submitted!",$mail_body_html);
+	                cs_send_email_with_html("daily_alerts@gadgets.inmotionhosting.com","ADMIN EMAIL - NEW ANONYMOUS COMMENT - " . $this->title,$mail_body,$mail_body_html);
+			insert_new_staff_alert("new anonymous comment",JURI::current());
+       	        }
+               	catch (Exception $e)
+                {
+       	                JError::raiseNotice( "Your comment failed to post - please try submitting it again.", 'Notice' );
+			$GLOBALS['post_this_anonymous_comment'] = "no";
+                }
+	}
+	else
+	{
+		$GLOBALS['post_this_anonymous_comment'] = "no";
+		JFactory::getApplication()->enqueueMessage( "Your comment failed to post - <a href='#acomment_form'>Click here</a> for more information.", 'Notice' );
+	}
+}
+
+
+
+
+
+
+?>

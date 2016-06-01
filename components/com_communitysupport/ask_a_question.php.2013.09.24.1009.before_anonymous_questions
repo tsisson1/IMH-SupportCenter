@@ -1,0 +1,192 @@
+<script type="text/javascript">
+
+function get_ajax_search_results(e)
+{
+	user_question = jQuery("#question").val();
+	user_details = jQuery("#details").val();
+
+
+	run_ajax = true;
+	if(run_ajax == true)
+	{
+		jQuery('#step-post-question').slideUp('slow');
+                jQuery('#ajax_search_success').slideUp('slow');
+		jQuery("#currently_searching").val("1");
+		jQuery("#ajax_search_status").html("Searching...");
+		jQuery("#ajax_search_info").html("<strong>Search Results</strong>");
+		// user_question = jQuery("#question").val();
+		jQuery("#question_search_results").html("");
+		// jQuery("#last_ajax_query_sent").val(user_question);
+		jQuery("#last_ajax_details_sent").val(user_details);
+		jQuery.get("/support/search",
+			{searchword:user_question,rf:'json',details:user_details},
+			function(data,status){
+				// // jQuery("#brad_debug").html(data);
+				var obj = JSON.parse(data);
+				results = 0;
+				jQuery.each(obj, function(index,value) {
+					if( value.url != undefined )
+					{
+						jQuery("#question_search_results").append("<a href='" + value.url + "?tsrc=aaq' target='_blank'>" + value.title + "</a><br />" + value.description + "<br /><br />");
+						results++;
+					}
+				});
+				// jQuery("#ajax_search_status").html("");
+				jQuery("#ajax_search_status").slideUp('slow');
+				jQuery("#currently_searching").val("0");
+				if( results == 0 )
+				{
+					jQuery("#any-these-links-help").slideUp('slow');
+					jQuery("#question_search_results").html("No search results, looks like you have a good question for us!");
+					jQuery('#step-post-question').slideDown('slow');
+				}
+				else
+					jQuery('#any-these-links-help').slideDown('slow');
+				jQuery("#number_ajax_search_results").val(results);
+		        });
+	}
+}
+
+function enough_details_for_question_submission()
+{
+	able_to_submit = 0;
+
+	question_length = jQuery("#question").val().length;
+	if( question_length < 1 )
+	{
+		jQuery("#question_required").slideDown("slow");
+	}
+	else
+	{
+		jQuery("#question_required").slideUp("slow");
+		able_to_submit++;
+	}
+
+	details_length = jQuery("#details").val().length;
+        if( details_length < 1 )
+        {
+                jQuery("#details_required").slideDown("slow");
+        }
+        else
+        {
+                jQuery("#details_required").slideUp("slow");
+		able_to_submit++;
+        }
+
+	if(able_to_submit == 2)
+		jQuery("#goto_step_2").removeAttr("disabled");
+	else
+		jQuery("#goto_step_2").attr("disabled","disabled");
+}
+
+</script>
+
+<div class='item-page'>
+
+        <div class='page-header'>
+                <h1>Ask a Question</h1>
+        </div>
+
+<?
+
+
+if($user->guest)
+{
+	echo "<div>You must first <a href='/support/login'>login</a> before you can post a question.</div>";
+}
+else
+{
+	// we need to grab a list of categories
+	$query = "SELECT * FROM #__question_categories ORDER BY `alias` ASC;";
+	$db->setQuery($query);
+	$categories = $db->loadObjectList();
+	$category_html = "<select name='category_id' id='category_id' onChange='previewQuestion()' style='color:#000;'>";
+	foreach($categories as $k => $v)
+		$category_html .= "<option value='" . $v->id . "'>" . $v->title . "</option>";
+	$category_html .= "</select>";
+
+
+?>
+
+
+	<p>It's time to get an answer! Our InMotion Hosting Support Team monitors all questions asked within the Community, and we guarantee a response within 60 minutes (8am - 9pm EST, Monday - Friday)!</p>
+
+	<p>Be sure to be specific with your question. The more details you can provide, the better the answers will be. If you're having a problem, please include steps that we can take to replicate the problem. Keep in mind that your question will be public, so don't post any sensitive information, such as passwords or other specific account information.</p>
+
+<form method='post' action='/support/community-support/submit-question'>
+
+		<div class='main_ask_a_question_div'>
+
+		<div>
+                        <h2 style='font-size:18px; margin:0px;'>Question summary:</h2>
+                        <div><div style='color:#c52228; padding-right:30px; float:left;' name='question_required' id='question_required'>* required field</div> In 70 characters or less, summarize your question.</div>
+                        <input maxlength="70" type='text' name='question' id='question' style='width:97%; display:inline;' onKeyUp="enough_details_for_question_submission();" />
+                </div>
+
+
+
+		<div>
+			<h2 style='margin:10px 0px 0px 0px; font-size:18px;'>Question Details:</h2>
+			<div><div style='color:#c52228; padding-right:30px; float:left;' name='details_required' id='details_required'>* required field</div> Tell us more about your question.</div>
+			<textarea name='details' id='details' style='width:97%; height:100px;' onKeyUp="enough_details_for_question_submission();"></textarea>
+		</div>
+
+		<input type='button' name='goto_step_2' id='goto_step_2' value='Click here to proceed to next step' onClick="get_ajax_search_results(event); jQuery('#step-return-ajax-search').slideDown('slow');" style='display:block; margin:10px 0px;' disabled=true class='btn btn-primary' />
+		</div>
+
+
+
+
+		<div class='main_ask_a_question_div' name='step-return-ajax-search' id='step-return-ajax-search' style='display:none; margin-top:30px;'>
+			<h2 style='margin:0px; font-size:18px;'>We may have documentation about your question, let's see...</h2>
+
+			<div style='margin:20px 0px;'>
+				<div style='text-align:center;' name='ajax_search_status' id='ajax_search_status'></div>
+				<div name='ajax_search_info' id='ajax_search_info'></div>
+                		<div name='question_search_results' id='question_search_results'></div>
+		                <input type='hidden' name='last_ajax_query_sent' id='last_ajax_query_sent' style='width:200px; display:block;' />
+				<input type='hidden' name='currently_searching' id='currently_searching' value='0' />
+				<input type='hidden' name='number_ajax_search_results' id='number_ajax_search_results' value='0' />
+			</div>
+
+			<div name='any-these-links-help' id='any-these-links-help' style='display:none;'>
+				<div>Do any of the tutorials above help answer your question?</div>
+				<input type='button' value='Yes' onClick="jQuery('#ajax_search_success').slideDown('slow'); jQuery('#step-post-question').slideUp('slow');" class='btn btn-primary' />
+				<input type='button' value='No' onClick="jQuery('#step-post-question').slideDown('slow'); jQuery('#ajax_search_success').slideUp('slow');" class='btn btn-primary' />
+			</div>
+		</div>
+
+
+
+
+		<div class='main_ask_a_question_div' name='step-post-question' id='step-post-question' style='display:none; margin-top:30px;'>
+			<h2 style='margin-top:0px; font-size:18px;'>Post your question!</h2>
+			<p>For further help with your question, you can post the question to the community. The <em>question summary</em> and <em>question details</em> that you typed above will be public for everyone to see. If you have any sensitive information there, such as usernames and passwords, please be sure to remove them.</p>
+			<p>To post your question, choose an appropriate category and then click submit!</p>
+			<p><strong>Category:</strong> <? echo $category_html; ?></p>
+			<input type='submit' value='submit' class='btn btn-primary' />
+		</div>
+
+
+
+
+		<div class='main_ask_a_question_div' name='ajax_search_success' id='ajax_search_success' style='display:none; margin-top:30px;'>
+			<h2 style='margin-top:0px; font-size:18px;'>Answer found!</h2>
+			<p>We're glad to hear you were able to find an answer to your question!</p>
+		</div>
+
+
+
+
+	</form>
+
+
+
+
+
+
+<?
+} // the ending of the if / else, if the user is a guest or not
+?>
+
+</div>

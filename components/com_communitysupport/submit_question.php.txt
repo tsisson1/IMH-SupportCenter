@@ -1,0 +1,139 @@
+<?
+
+
+
+
+
+
+// ***********************************************************************
+// check to ensure the user has submitted enough info
+// ***********************************************************************
+if( $_POST )
+{
+	if
+	(	substr_count($_POST['question']," ") < 4 OR
+		substr_count($_POST['details']," ") < 10
+	)
+	{
+		echo "
+			<form method='post' action='/support/community-support/ask-a-question' name='mqdn' id='mqdn'>
+				<input type='hidden' name='question_question' id='question_question' value='" . htmlspecialchars($_POST['question'],ENT_QUOTES) . "' />
+				<textarea name='question_details' id='question_details' style='display:none;'>" . htmlspecialchars($_POST['details'],ENT_QUOTES) . "</textarea>
+			</form>
+			<script>document.getElementById('mqdn').submit();</script>
+		";
+		die();
+	}
+}
+
+
+
+
+
+
+if(! is_numeric( $_POST['category_id']) )
+	die('nnnnnum');
+
+
+// problem - we don't want to allow someone to ask the same question twice (IE, the same alias)
+// if it already exists, add a number after it
+$original_question_url = $_POST['category'] . "/" . create_alias($_POST['question']);
+$original_question_alias = create_alias($_POST['question']);
+
+/*
+$query = "SELECT count(`id`) as 'duplicate_aliases' FROM #__questions WHERE `url` = '$original_question_url';";
+$db->setQuery($query);
+$results = $db->loadObjectList();
+*/
+$current_alias_count = pass_alias_return_total_existing_same_aliases(create_alias($_POST['question']));
+
+if($current_alias_count > 0 OR is_string_pagination_alias($original_question_alias) == true)
+{
+	$created_question_url = false;
+	$x = 2;
+	while($created_question_url == false)
+	{
+		$new_question_url = $original_question_alias . "-" . $x;
+
+		/*
+		$query = "SELECT count(`id`) as 'duplicate_aliases' FROM #__questions WHERE `url` = '$new_question_url';";
+		$db->setQuery($query);
+		$results = $db->loadObjectList();
+		*/
+		$current_alias_count = pass_alias_return_total_existing_same_aliases($new_question_url);
+
+		if($current_alias_count > 0 OR is_string_pagination_alias($new_question_url) == true)
+			$x++;
+		else
+		{
+			$created_question_url = true;
+			$question_url = $new_question_url;
+			$question_alias = $new_question_url;
+		}
+	}
+}
+else
+{
+	$question_url = $original_question_url;
+	$question_alias = $original_question_alias;
+}
+
+
+
+
+
+
+// number of ajax search results
+if( ! is_numeric($_POST['number_ajax_search_results']) )
+	$num_ajax_results = 0;
+else
+	$num_ajax_results = $_POST['number_ajax_search_results'];
+
+
+
+
+
+
+if( $_POST['question'] != "" ) // prevent blank questions
+{
+	$question_approved = 0;
+	if( $user->guest )
+		$question_approved = -1;
+
+	if( $user->guest )
+		$asker_user_id = "316002496";
+	else
+		$asker_user_id = $user->id;
+
+	$query = "INSERT INTO #__questions (
+`id` ,
+`category_id` ,
+`asker_id` ,
+`question` ,
+`question_alias` ,
+`description` ,
+`utc_n_ask_date` ,
+`best_answer_user` ,
+`best_answer_staff` ,
+`hits` ,
+`number_ajax_results`,
+`approved`
+)
+VALUES (
+NULL, ". $_POST['category_id'] . " , '" . $asker_user_id . "', '" . addslashes($_POST['question']) . "', '$question_alias', '" . addslashes($_POST['details']) . "', '" . strtotime(gmdate('Y-m-d H:i:s')) . "', '0', '0', '0', $num_ajax_results, $question_approved
+);";
+
+	$db->setQuery($query);
+	$results = $db->loadObjectList();
+
+	$question_id = $db->insertid();
+	$question_url = "http://www.inmotionhosting.com" . pass_question_id_return_question_url($question_id);
+
+	$mail_body = sprintf($new_question_email_message,$_POST['question'],$question_url);
+	cs_send_email("customer_experience@inmotionhosting.com","IMH - A new question has been submitted",$mail_body);
+}
+
+header( "Location: $question_url" );
+die();
+
+?>

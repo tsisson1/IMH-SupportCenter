@@ -1,0 +1,321 @@
+<?
+	//don't allow other scripts to grab and execute our file
+	defined('_JEXEC') or die('Direct Access to this location is not allowed.');
+	
+	$ip = $_GET['ip'];
+	
+	$count_found_in = 0;
+
+	// if an 'ip' was passed
+	if($ip)
+	{
+		// is this an IP address?
+		if(! bl_check_is_ip($ip) )
+		{
+			// if this is not an ip address, try to get an IP based upon host
+			$ip = gethostbyname($ip);
+
+	                // is this an IP address?
+        	        if(! bl_check_is_ip($ip) )
+			{
+				$ip_error_code = "badip";
+			}
+		}
+	}
+	else
+	{
+		$ip_error_code = "noip";
+	}
+
+	if( ! $_GET['ip'] )
+	{
+		$ip = "";
+	}
+	elseif($ip_error_code)
+	{
+		$ip = "INVALID ip or domain";
+	}
+
+	// setup some google analytics logging
+	/*
+	if( $_GET['ip'] )
+		echo "
+			<script type=\"text/javascript\">
+                        	_gaq.push(['_setAccount', 'UA-1501988-1']);
+				_gaq.push(['_trackEvent', 'community support', 'blacklist checker submission - " . addslashes($_GET['ip']) . "']);
+			</script>
+		";
+	*/
+?>
+
+<div class='item-page'>
+	<div class='page-header'>
+		<h1>Is my domain listed in a blacklist?</h1>
+	</div>
+	<h2>What is a blacklist?</h2>
+	<p>As spam email is such a huge issue online, there are many sources available on the internet that publicly list known servers that send spam. These lists, commonly referred to as blacklists, are used by many email providers to help block spam emails sent to their users.</p>
+	<h2>Am I on a blacklist?</h2>
+		<h3>Did you get a bounce back message?</h3>
+		<p>If you received a bounce back message, it may have given you a message stating that your email was <strong>blocked due to abuse</strong>. This abuse it's referring to is usually spamming, and it believes you (or <a href='/support/email/email-troubleshooting/why-do-mail-servers-get-blacklisted'>other users sharing your email server</a>) are sending spam because it found your email server in a blacklist.</p>
+		<p> If this is the case, you can <a href='/support/tools/bounce-back-parser'>scan the bounce back message using our bounce back parser tool</a>. If we find that the email was returned due to a blacklisting issue, the tool will give you the option to notifiy our System Administration team to review the issue further.</p>
+		<h3>Can I check if I am on a blacklist?</h3>
+	<form method='get' style='margin-bottom:25px;'>
+		Please enter an IP address or domain name below and click submit to check it against our list of popular blacklists.<br />
+		<input type='text' style='width:200px;' name='ip' id='ip' value='<? echo $ip; ?>' />
+		<input type='submit' value='submit' class='btn btn-info' />
+		<div style='font-size:10px; font-style:italic;'>( Please be patient as this lookup may take several seconds to complete )</div>
+	</form>
+
+<?
+
+// setup our list of blacklists
+
+// TAKEN OUT LIST
+// 'DNSBL.INPS.DE',
+
+$mybls = array(
+'B.BARRACUDACENTRAL.ORG',
+'BL.DEADBEEF.COM',
+// 'BL.EMAILBASURA.ORG',
+'BL.SPAMCOP.NET',
+'BLACKHOLES.FIVE-TEN-SG.COM',
+'BLACKLIST.WOODY.CH',
+'BOGONS.CYMRU.COM',
+'CBL.ABUSEAT.ORG CDL.ANTI-SPAM.ORG.CN',
+'COMBINED.ABUSE.CH',
+'COMBINED.RBL.MSRBL.NET',
+'DB.WPBL.INFO',
+'DNSBL-1.UCEPROTECT.NET',
+'DNSBL-2.UCEPROTECT.NET',
+'DNSBL-3.UCEPROTECT.NET',
+'DNSBL.ABUSE.CH',
+'DNSBL.AHBL.ORG',
+'DNSBL.CYBERLOGIC.NET',
+// 'DNSBL.NJABL.ORG',
+'DNSBL.SORBS.NET',
+'DRONE.ABUSE.CH',
+'DUINV.AUPADS.ORG',
+'DUL.DNSBL.SORBS.NET',
+'DUL.RU',
+'DYNA.SPAMRATS.COM',
+'DYNIP.ROTHEN.COM',
+'HTTP.DNSBL.SORBS.NET',
+'IMAGES.RBL.MSRBL.NET',
+'IPS.BACKSCATTERER.ORG',
+'IX.DNSBL.MANITU.NET',
+'KOREA.SERVICES.NET',
+'MISC.DNSBL.SORBS.NET',
+'NOPTR.SPAMRATS.COM',
+'OHPS.DNSBL.NET.AU',
+'OMRS.DNSBL.NET.AU',
+'ORVEDB.AUPADS.ORG',
+'OSPS.DNSBL.NET.AU',
+'OSRS.DNSBL.NET.AU',
+'OWFS.DNSBL.NET.AU',
+'OWPS.DNSBL.NET.AU',
+'PBL.SPAMHAUS.ORG',
+'PHISHING.RBL.MSRBL.NET',
+'PROBES.DNSBL.NET.AU',
+'PROXY.BL.GWEEP.CA',
+'PROXY.BLOCK.TRANSIP.NL',
+'PSBL.SURRIEL.COM',
+'RBL.INTERSERVER.NET',
+'RDTS.DNSBL.NET.AU',
+'RELAYS.BL.GWEEP.CA',
+'RELAYS.BL.KUNDENSERVER.DE',
+'RELAYS.NETHER.NET',
+'RESIDENTIAL.BLOCK.TRANSIP.NL',
+'RICN.DNSBL.NET.AU',
+'RMST.DNSBL.NET.AU',
+'SBL.SPAMHAUS.ORG',
+'SHORT.RBL.JP',
+'SMTP.DNSBL.SORBS.NET',
+'SOCKS.DNSBL.SORBS.NET',
+'SPAM.DNSBL.SORBS.NET',
+'SPAM.RBL.MSRBL.NET',
+'SPAM.SPAMRATS.COM',
+'SPAMLIST.OR.KR',
+'SPAMRBL.IMP.CH',
+'T3DIRECT.DNSBL.NET.AU',
+'TOR.AHBL.ORG',
+'TOR.DNSBL.SECTOOR.DE',
+'TORSERVER.TOR.DNSBL.SECTOOR.DE',
+'UBL.LASHBACK.COM',
+'UBL.UNSUBSCORE.COM',
+'VIRBL.BIT.NL',
+'VIRUS.RBL.JP',
+'VIRUS.RBL.MSRBL.NET',
+'WEB.DNSBL.SORBS.NET',
+'WORMRBL.IMP.CH',
+'XBL.SPAMHAUS.ORG',
+'ZEN.SPAMHAUS.ORG'
+);
+
+
+// do we have a valid IP address to work with?
+if( ! $ip_error_code )
+{
+	
+	$table_of_results .= "	<table cellspacing='0' cellpadding='2' style='border:1px solid #ccc;'>
+					<tr style='font-weight:bold; background:#ccc;'>
+						<td>Listed?</td>
+						<td>Blacklist</td>
+						<td>Response</td>
+					</tr>
+	";
+
+	// loop through all of our specified blacklists
+	foreach($mybls as $k => $v)
+	{
+	
+		// get the txt record
+		$exploded_ip = explode(".",$ip);
+		$ip_for_dig = $exploded_ip[3] . "." . $exploded_ip[2] . "." . $exploded_ip[1] . "." . $exploded_ip[0] . "." . $v;
+	
+		// begin to track how long the query takes
+		$current_time = time();
+
+		$result = dns_get_record($ip_for_dig);
+		
+		// end how long the query took		
+		$it_took = time() - $current_time;
+		
+		// did we get records from this?
+		if($result)
+		{
+			unset($a_record);
+			unset($txt_record);		
+		
+			
+			// grab the a and txt records
+			foreach($result as $rk => $rv)
+			{
+				switch($rv['type'])
+				{
+					case "A":
+						$a_record = $rv['ip'];
+						break;
+					case "TXT":
+						$txt_record = $rv['txt'];
+						break;
+				}
+			}
+			
+			
+			// if we have an a record
+			if( $a_record )
+			{
+				$listed = "LISTED";
+				$response = "	<div style='margin-bottom:10px;'>$a_record</div>
+									<div>$txt_record</div>
+				";
+				$trbg = "FFFFE5";
+				
+				$count_found_in++;
+			}
+			else
+			{
+				$listed = "";
+				$response = "";
+				$trbg = "fff";
+			}
+		}
+		else
+		{
+			$listed = "";
+			$response = "";
+			$trbg = "fff";
+		}
+		
+		$table_of_results .= "	<tr style='background:#" . $trbg . ";'>
+						<td valign='top' style='padding-right:15px; color:red; font-weight:bold;'>$listed</td>
+						<td valign='top' style='padding-right:15px;'>
+							$v
+							<div style='font-size:10px; color:#bbb;'>Check took $it_took seconds</div>
+						</td>
+						<td valign='top'>$response</td>
+					</tr>
+					<!-- DNS Query Took $it_took -->
+		";
+	}
+	
+	$table_of_results .= "</table>";
+	
+	// determine color of the message
+	if($count_found_in == "0")
+	{
+		$count_color = "339900";
+	}
+	else
+	{
+		$count_color = "991A00";
+		$help_message = "	<p>Most likely you initially found out about the blacklisting from a <a href='http://www.inmotionhosting.com/support/email/email-troubleshooting/what-to-do-if-an-email-is-returned' target='_blank'>bounce back message.</a></p>
+								<p>Please note this does not mean that your account was used to send SPAM. Because a mail server can be used by more than one account, the actions of one or more users can sometimes impact other users on that server.</p>
+								<p>
+									<strong>If you are a current InMotion Hosting Customer:</strong><br />
+									Please <a href='http://www.inmotionhosting.com/support/website/website-troubleshooting/how-to-get-great-technical-support' target='_blank'>contact our Support Department</a> for further assistance with troubleshooting this issue.
+								</p>
+								<p>
+									<strong>If you ARE NOT a current InMotion Hosting Customer:</strong><br />
+									If you have shared hosting with another host, it would be best to contact your host for further assistance. If you are managing your own server, visit the website for the blacklist in question. Most sites will include a method for you to request delisting of your domain / IP address from the blacklist.
+								</p>									
+							";
+	}
+	
+	echo "	<div style='margin-bottom:15px; font-weight:bold; text-align:center; color:#" . $count_color . "; font-size:14px;'>You were found in $count_found_in blacklists</div>
+				$help_message
+				$table_of_results
+	";
+	
+	
+}
+// if we don't have a valid ip address, let's show the list of blacklists we'll check
+else
+{
+	echo "	<div>The following is a list of blacklists we will check:</div>
+		<ul>";
+
+	foreach($mybls as $k => $v)
+	{
+		echo "	<li>$v</li>";
+	}
+
+	echo "	</ul>";
+
+}
+
+
+
+
+
+
+$like_this_blacklist_tool = return_div_with_social_buttons("Like this tool?",$this->document->base);
+
+echo "		$like_this_blacklist_tool
+	</div>"; // end the item-page class
+
+
+
+
+
+
+// -------------------------------------------------------------------------------------
+// This function validates whether a string is an IP address or not
+// http://www.electrictoolbox.com/php-validate-ip-address-filter-var/
+// -------------------------------------------------------------------------------------
+function bl_check_is_ip($ip)
+{
+	if(filter_var($ip, FILTER_VALIDATE_IP, FILTER_FLAG_IPV4))
+        {
+		// this is an IP address
+        	return true;
+	}
+        else
+        {
+		// this is not an IP address
+		return false;
+        }
+}
+
+?> 
+

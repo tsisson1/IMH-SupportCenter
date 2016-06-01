@@ -1,0 +1,201 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Fluid Responsive Template</title>
+<link rel="stylesheet" href="core-style.css" /> 
+<link rel="stylesheet" media="screen and (min-device-width: 1440px)" href="style.css" /> 
+<link rel='stylesheet' media='screen and (min-width: 699px) and (max-width: 1439px)' href='medium-style.css' />
+<link rel='stylesheet' media='screen and (min-width: 100px) and (max-width: 700px)' href='mobile-style.css' />
+
+<link href="css/humanity/jquery-ui-1.10.3.custom.css" rel="stylesheet">
+	<script src="js/jquery-1.9.1.js"></script>
+	<script src="js/jquery-ui-1.10.3.custom.js"></script>
+	<script>
+	$(function() {
+		
+		$( "#accordion" ).accordion();
+		
+
+		
+		var availableTags = [
+			"ActionScript",
+			"AppleScript",
+			"Asp",
+			"BASIC",
+			"C",
+			"C++",
+			"Clojure",
+			"COBOL",
+			"ColdFusion",
+			"Erlang",
+			"Fortran",
+			"Groovy",
+			"Haskell",
+			"Java",
+			"JavaScript",
+			"Lisp",
+			"Perl",
+			"PHP",
+			"Python",
+			"Ruby",
+			"Scala",
+			"Scheme"
+		];
+		$( "#autocomplete" ).autocomplete({
+			source: availableTags
+		});
+		
+
+		
+		$( "#button" ).button();
+		$( "#radioset" ).buttonset();
+		
+
+		
+		$( "#tabs" ).tabs();
+		
+
+		
+		$( "#dialog" ).dialog({
+			autoOpen: false,
+			width: 400,
+			buttons: [
+				{
+					text: "Ok",
+					click: function() {
+						$( this ).dialog( "close" );
+					}
+				},
+				{
+					text: "Cancel",
+					click: function() {
+						$( this ).dialog( "close" );
+					}
+				}
+			]
+		});
+
+		// Link to open the dialog
+		$( "#dialog-link" ).click(function( event ) {
+			$( "#dialog" ).dialog( "open" );
+			event.preventDefault();
+		});
+		
+
+		
+		$( "#datepicker" ).datepicker({
+			inline: true
+		});
+		
+
+		
+		$( "#slider" ).slider({
+			range: true,
+			values: [ 17, 67 ]
+		});
+		
+
+		
+		$( "#progressbar" ).progressbar({
+			value: 20
+		});
+		
+
+		// Hover states on the static widgets
+		$( "#dialog-link, #icons li" ).hover(
+			function() {
+				$( this ).addClass( "ui-state-hover" );
+			},
+			function() {
+				$( this ).removeClass( "ui-state-hover" );
+			}
+		);
+	});
+	</script>
+	<style>
+	.demoHeaders {
+		margin-top: 2em;
+	}
+	#dialog-link {
+		padding: .4em 1em .4em 20px;
+		text-decoration: none;
+		position: relative;
+	}
+	#dialog-link span.ui-icon {
+		margin: 0 5px 0 0;
+		position: absolute;
+		left: .2em;
+		top: 50%;
+		margin-top: -8px;
+	}
+	#icons {
+		margin: 0;
+		padding: 0;
+	}
+	#icons li {
+		margin: 2px;
+		position: relative;
+		padding: 4px 0;
+		cursor: pointer;
+		float: left;
+		list-style: none;
+	}
+	#icons span.ui-icon {
+		float: left;
+		margin: 0 4px;
+	}
+	.fakewindowcontain .ui-widget-overlay {
+		position: absolute;
+	}
+	</style>
+    
+    
+    </head> 
+<body>
+<div id="wrapper">
+    <div id="header-content" class="ui-widget-content">
+    	<div style="width:300px;float:left;"><h2>Your Responsive Template</h2></div>
+        
+    	<div style:float:right:width:auto;><ul id="icons">
+        <li class="ui-state-default ui-corner-all" title="Home"><a href="#">Home</a></li>
+        <li class="ui-state-default ui-corner-all" title="Aboute"><a href="#" class="ui-icon-mail-closed">About</a></li>
+        <li class="ui-state-default ui-corner-all" title="Contact me"><a href="#">Contact</a></li>
+        </ul></div>
+        
+        <br style="clear:both" />
+       
+    </div>
+	
+    <div id="main-content" class="ui-state-hover">
+    
+    <div id="banner" class="ui-corner-all">
+    	<h1>Google Rocks the Casbah</h2>
+    </div>
+        
+        <div id="inner-content">
+        <h1>Suspendisse commodo purus aliquam mi</h1>
+        <p>Donec sed urna lectus, vel viverra tellus. Nullam molestie tortor eu erat aliquet fermentum. Suspendisse commodo purus aliquam mi tempor pulvinar.  Pellentesque bibendum suscipit dui, id vehicula leo aliquet at. Duis sem diam, pharetra sed posuere sed, iaculis vitae leo.</p> 
+       
+        <div class="box ui-corner-all ui-widget-content"><h2>Pellentesque bibendum</h2><img class="image-box" src="http://4.bp.blogspot.com/-9NLW8cCqmko/Tg77yk69o-I/AAAAAAAAAPs/4VVJ5qocs1k/s400/google%2Bplus%2Bblack%2Blogo.jpg" />Curabitur pulvinar odio ut magna aliquet consequat. Etiam id euismod justo. Praesent vel lectus ipsum, ac placerat urna. Quisque a leo nibh.  Curabitur bibendum accumsan orci eget euismod. Pellentesque mattis gravida imperdiet.<p>Curabitur pulvinar odio ut magna aliquet consequat. Etiam id euismod justo. Praesent vel lectus ipsum, ac placerat urna. Quisque a leo nibh.</p></div>  
+        <div class="box ui-corner-all ui-widget-content"><h2>Donec sed urna lectus</h2><img class="image-box" src="http://www.wired.com/geekdad/wp-content/uploads/2009/07/steam-logo.jpg" />Vestibulum luctus augue at arcu eleifend ac convallis massa bibendum. Proin ut odio quam, eu feugiat risus. Curabitur bibendum accumsan orci eget euismod. Aliquam porttitor faucibus orci, vitae semper dui varius eu.<p>Curabitur pulvinar odio ut magna aliquet consequat. Etiam id euismod justo. Praesent vel lectus ipsum, ac placerat urna. Quisque a leo nibh.</p></div> 
+        <div class="box ui-corner-all ui-widget-content"><h2>Proin ut odio quam</h2><img class="image-box ui-tooltip-12" src="http://www1.pcmag.com/media/images/337168-google-play.jpg?thumb=y" />Vivamus ut enim eu leo euismod semper. Cras sagittis auctor ante, sagittis scelerisque diam iaculis at. Pellentesque mattis gravida imperdiet. Praesent vestibulum volutpat vestibulum. <p>Curabitur pulvinar odio ut magna aliquet consequat. Etiam id euismod justo. Praesent vel lectus ipsum, ac placerat urna. Quisque a leo nibh.</p></div> 
+        <div class="box ui-corner-all ui-widget-content"><h2>Vestibulum luctus elementum</h2><img class="image-box" src="http://3.bp.blogspot.com/-QSDQhZ36Dv8/UBmpVVXupEI/AAAAAAAAAPw/ADOReMdZkEM/s1600/facebook-logo-Black-300.14501434_std.jpg" />Quisque eget leo eget magna ultrices tincidunt. Vestibulum luctus elementum sollicitudin. Sed at mi sit amet nisl semper tincidunt non in lorem. Donec semper commodo interdum.<p>Curabitur pulvinar odio ut magna aliquet consequat. Etiam id euismod justo. Praesent vel lectus ipsum, ac placerat urna. Quisque a leo nibh.</p></div> 
+        
+        <br style="clear:both" />
+        </div>    
+        
+    </div>
+    
+    <div id="footer-content" class="ui-widget-content">
+
+	<!-- ui-dialog -->
+	<a href="#" id="dialog-link" class="ui-state-default ui-corner-all" style="float:right;"><span class="ui-icon ui-icon-newwin"></span>Info</a>
+	    <div id="dialog" title="More Information">
+        <p><a href="http://www.lipsum.com/" target="_blank">Lorem ipsum dolor sit amet</a>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>  
+    </div>
+
+    <p align="center" style="clear:both">Copyright &copy; 2013 | My <a href="http://www.inmotionhosting.com/support/edu/website-design/create-responsive-template" target="_blank">InMotion Responsive Web Template</a></p>
+  </div>
+</div>
+</body>

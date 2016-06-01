@@ -1,0 +1,10 @@
+[29-Jul-2015 07:54:53 America/Los_Angeles] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/ccdevinm/public_html/support/components/com_communitysupport/admin_cron.php on line 7
+[29-Jul-2015 07:55:46 America/Los_Angeles] PHP Fatal error:  Class 'JFactory' not found in /home/ccdevinm/public_html/support/components/com_communitysupport/admin_cron.php on line 4
+[29-Jul-2015 07:57:22 America/Los_Angeles] PHP Fatal error:  Class 'JFactory' not found in /home/ccdevinm/public_html/support/components/com_communitysupport/admin_cron.php on line 6
+[29-Jul-2015 07:59:46 America/Los_Angeles] PHP Parse error:  syntax error, unexpected ';', expecting '(' in /home/ccdevinm/public_html/support/components/com_communitysupport/admin_cron.php on line 11
+[29-Jul-2015 08:00:15 America/Los_Angeles] PHP Strict Standards:  Only variables should be assigned by reference in /home/ccdevinm/public_html/support/components/com_communitysupport/admin_cron.php on line 11
+[29-Jul-2015 08:00:15 America/Los_Angeles] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/ccdevinm/public_html/support/components/com_communitysupport/admin_cron.php on line 15
+[29-Jul-2015 08:00:42 America/Los_Angeles] PHP Parse error:  syntax error, unexpected '::' (T_PAAMAYIM_NEKUDOTAYIM) in /home/ccdevinm/public_html/support/components/com_communitysupport/admin_cron.php on line 11
+[29-Jul-2015 08:01:05 America/Los_Angeles] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/ccdevinm/public_html/support/components/com_communitysupport/admin_cron.php on line 14
+[29-Jul-2015 08:01:55 America/Los_Angeles] PHP Parse error:  syntax error, unexpected 'y' (T_STRING) in /home/ccdevinm/public_html/support/components/com_communitysupport/admin_cron.php on line 10
+[29-Jul-2015 08:02:14 America/Los_Angeles] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/ccdevinm/public_html/support/components/com_communitysupport/admin_cron.php on line 12

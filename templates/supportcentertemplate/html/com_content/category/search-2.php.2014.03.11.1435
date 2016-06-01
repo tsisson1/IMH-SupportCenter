@@ -1,0 +1,8 @@
+<?
+
+if( $_GET['search_type'] == "gcs" )
+	include_once("google_site_search.php");
+else
+	include_once("/home/ccdevinm/public_html/support/templates/supportcentertemplate/includes/search/search-2.php");
+
+?>

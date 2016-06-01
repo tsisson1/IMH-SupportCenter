@@ -1,0 +1,5 @@
+Change Language in PHP-Fusion
+
+Languages are considered LOCALES within the PHP-Fusion system.  In order to change a language, you will need to load the locale which contains all of the hard-coded text. By default, the software is loaded only with the English locale.  The following article explains how to find and change
+
+745 STart time for testing

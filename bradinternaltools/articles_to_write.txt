@@ -1,0 +1,280 @@
+<a href='#other_tasks'>Other Tasks</a>
+Weekly Goals
+	<a href='#wg_48_412'>4/8 - 4/12</a>
+	<a href='#wg_415_419'>4/15 - 4/19</a>
+Daily Goals
+	<a href='#dg_2013_04_10'>2013.04.10</a>
+
+
+<a name='other_tasks'></a>
+== OTHER TASKS ==
+
+* ALL		2013.04.05	10:30 - 5 helping support (email spam issues)
+		2013.04.11
+		2013.04.12	ALL day in support
+		2013.04.15	3:30 and on in support
+		2013.04.16	ALL day in support
+		2013.04.17	ALL day in support
+		2013.04.23	12 tickets (2 hours)
+		2013.04.30	12pm - Scott / James / arnel - 12 tickets
+		2013.05.01	EVERYONE working on WHH bad links
+		2013.05.02	James - turning WHH opencart and prestashop into EDUs
+				Scott - transcribing drupal 8 video
+				JohnPaul - WHH site errors
+				Jacob - ALP (if articles need to be written for that...)
+		2013.05.06	JohnPaul - Working on fixing WHH builder content
+
+* JacobN	2013.03.29	ALL day on Systems tickets
+		2013.04.01	ALL day on Systems tickets
+
+
+
+
+<a name='wg_422_426'></a>
+== Weekly Goals 4/22 - 4/26 ==
+
+* JohnPaulB	* Link this to secure password article - * http://www.webhostinghub.com/support/edu/concrete5/securing/security-tips
+		* Backlog forum postings from last week
+		* Send BradM summary of Concrete5 pdf work from last week
+
+* JacobN	* Get Trey to review RYSL script by the end of the week
+
+
+<a name='wg_415_419'></a>
+== Weekly Goals 4/15 - 4/19 ==
+
+* [X] ScottM	External Forums - Be sure not to wait until the last minute to get these in
+		AIM for completing one of these this week
+		-- [ ] All new features on wordpress 3.6 - http://wordpress.org/news/2013/04/wordpress-3-6-beta-1/ - 300 Article - What's new in WordPress 3.6
+		-- [ ] PrestaShop Security
+                -- [ ] Drupal Security
+
+* [X] JohnPaulB	-- Finish and email BradM "Concrete5 Security"
+		-- Email BradM the Concrete5 PDF by EOB Wednesday (be sure to review link on this page that lists things that need to be done)
+		-- Don't save "catch up work" (extra articles) until the end of the week
+
+* [X] ArnelC	Don't save "catch up work" (extra articles) until the end of * the week
+		[ ] Branch out this article into different articles - http://www.webhostinghub.com/support/website/wordpress/wordpress-36-upgrade
+			-- like this - http://www.inmotionhosting.com/support/website/wordpress/wordpress-34-beta-1-released
+
+* [X] JamesR	When you're not writing articles, take note of what you're * doing and the time it takes
+		Put all the extra stuff on hold, go back to articles / forums / q&a
+
+
+
+
+<a name='dg_2013_04_10'></a>
+== 2013.04.10 Daily Goals==
+
+* [X] ScottM	Be sure to set yourself up for success with the forum posts, don't wait until the last minute
+
+* [X] JohnPaulB	Think about how you're going to squeeze in an extra articles this week, so far you're par
+		DUE BY THE END OF THE WEEK, Concrete5 PDF - be sure to log how much time spent working it
+		No forum posts Mon or Tue, don't wait until the last minute for forum posts
+
+* [X] JamesR	10 YOM so far this week, Be sure to log the time spent doing this
+		Brad will touch base on how much "reducing contacts" work to do
+
+
+
+
+<a name='wg_48_412'></a>
+== Weekly Goals 4/8 - 4/12 ==
+
+
+* [X] ArnelC	> required # articles
+		>= 2 backlinks
+		All new features on wordpress 3.6 - http://wordpress.org/news/2013/04/wordpress-3-6-beta-1/ - 300 Article - New features in WordPress 3.6
+		PrestaShop Security
+                OpenCart Security
+
+* [X] JohnPaulB	> required # articles
+		http://nsa.bradmarkle.com/index.php?title=2013.04.08#Concrete5_PDF
+		* [ ] Somehow, touch base with Concrete5 team, "Is there anything you'd like to see?"
+		* [ ] FINISH THIS BY END OF WEEK!!!!!!
+
+* [X] JacobN	Q&A - farm out questions if needed, last week wasn't so good
+		http://atomlabs.net/articles/rysl.htm
+			* [ ] Need an introduction
+			* [ ] Get them to fix this link - https://secure103.inmotionhosting.com:2083/frontend/x3/minos/index.livephp
+			* [ ] What is this? - help drop down
+			* [ ] add more spacing
+			* [ ] Next archived / raw access logs
+			* [ ] Add some headings
+			* [ ] MEET WITH TREY TUES OR WEDS TO REVIEW
+
+* [X] JamesR	Remove Warning about video here - http://www.inmotionhosting.com/support/edu/wordpress/wordpress-introduction/install-wordpress
+		Continue work on YOM
+
+* [X] ScottM	>= 8 forum posts and 2 backlinks
+		All new features on wordpress 3.6 - http://wordpress.org/news/2013/04/wordpress-3-6-beta-1/ - 300 Article - What's new in WordPress 3.6
+		PrestaShop Security
+                Drupal Security
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------
+-------------------------------------------- DAILY GOALS --------------------------------------------
+-----------------------------------------------------------------------------------------------------
+* [X] = A verbal review of the 'goals for the day' has been done
+
+
+
+
+== 2013.04.03 ==
+
+WHILE BRAD IS AWAY WED - FRI
+bradm@inmotionhosting.com - 757-478-1902
+
+* [ ] JamesR	Customer Community - Reducing Contacts per Customer
+		Take charge of your opinion matters (each one gets an apology / explanation)
+			** Back and forth emails should be from customer_experience@inmotionhosting.com
+			** First, send one massive email, BCC everyone
+				** Explain that YOM is a new feature, and we were bombarded with new article ideas
+				** We understand a month to hear back is unacceptable, and we're working on this
+				** We appreciate you taking the time to feedback
+				** If you still have questions, as a question
+
+* [ ] JohnPaulB	Concrete5 PDF (I will send you more info)
+		Concrete5 Security
+		Concrete5 Site Optimization (speed)
+
+* [ ] ScottM	PrestaShop Security
+		Drupal Security
+
+* [ ] ArnelC	PrestaShop Security
+		OpenCart Security
+
+
+
+
+== 2013.04.02 ==
+
+* [X] ScottM	2 forum posts
+		>= 3 articles
+		Q&A - focus on ONE TO MANY
+		[ ] "An overview on testing different software on your website"
+		[ ] "An overview on moving applications to different folders within your account"
+			[ ] if not already, "How to move WordPress to a different folder"
+			[ ] if not already, "How to move Joomla to a different folder"
+			* If your software is not listed here, leave a comment on this page and we *may be able to write a guide
+
+* [X] ArnelC	2 forum posts
+		>= 3 articles
+
+* [X] JamesR	2 forum posts
+		>= 3 articles
+		3 infractions yesterday, watch this closer
+		REACH OUT FOR HELP IF YOU GET STUCK ON ARTICLES - WAS HAVING TROUBLE TODAY GETTING SOME WORDPRESS SECURITY PLUGINS WORKING
+
+* [X] JacobN	2 forum posts
+		>= 2 articles
+		FINISH MOCKUP BY EOB TUESDAY
+			1 infraction yesterday, user waited 2 hours for this simple answer - http://www.inmotionhosting.com/support/community-support/domain-names/i-have-a-tempurl-and-need-to-update-with-my-new-domain-where-do-i-go-to-change-this
+		ALWAYS DO ARTICLES AND FORUM POSTS FIRST, THEN DO SYSETMS WORK
+
+* [X] JohnPaulB
+		>= 4 articles
+		2 forum posts
+		ENSURE YOU ARE ENTERING ANCHOR TEXT FOR BACKLINKS
+		INCOMPLETE 301 meta description - http://www.webhostinghub.com/support/edu/virtuemart
+		SHORTEN Q&A signature
+
+
+
+
+== 2013.04.01 ==
+
+* [X] ScottM	+9 articles all time
+		88 QA Average
+		Q&A - 50.47 - 1 infraction
+		-3 forum postings from last week
+
+* [X] ArnelC	-11.5 articles all time
+		82.5 QA Average
+		Q%A - 120.03 - 4
+		-2 forum postings from last week
+
+* [X] JamesR	+33 articles all time
+		96 QA Average
+		Q&A - 455.76 - 7 infractions
+
+* [X] JohnPaulB	-7 articles all time
+		91.5 QA Average
+		Q&A - 81.72 - 1 infraction
+		-1 forum backlinks
+
+* [X] JacobN	-3 articles all time
+		93.5 QA Average
+		Q&A - 68.51 - 6 infractions
+		FINISH MOCKUP BY EOB TUESDAY
+
+
+
+
+=====================================================================================================
+== 2013.03.29 ==
+=====================================================================================================
+
+* [X] ScottM	4 articles
+		<span style='background:red;'>4 forum posts</span>
+
+* [ ] ArnelC	6 articles
+		2 forum posts
+		ARNEL WAS OUT THIS DAY
+
+* [X] JamesR	0 articles
+		4 forum posts / 1 backlink
+
+* [X] JohnPaulB	6 articles
+		4 forum posts / 1 backlink
+
+* [X] JacobN	2 articles
+		>0 https://docs.google.com/spreadsheet/ccc?key=0Aut1SAP-LDzUdER1YkZtSHNxakhucXluaGZQb2c0RGc&usp=sharing
+		JACOB WAS ASKED TO WORK ALL DAY IN SYSTEMS
+
+
+
+
+== 2013.03.28 ==
+
+* [X] ScottM	4 articles
+		1 forum post
+
+* [X] ArnelC	<span style='background:red;'>4 articles</span> - WAS ASKED TO WRITE 4 ARTICLES AND ONLY WROTE 1?
+		1 forum post
+
+* [X] JamesR	ALL CAUGHT UP ON ARTICLES
+		1 forum post
+
+* [X] JohnPaulB	<span style='background:red;'>5 articles</span>	- 3 articles down, so two extra Thur and 1 extra Fri
+		1 forum post
+
+* [X] JacobN	3 articles
+		1 forum post
+		>0 https://docs.google.com/spreadsheet/ccc?key=0Aut1SAP-LDzUdER1YkZtSHNxakhucXluaGZQb2c0RGc&usp=sharing
+
+
+
+
+== 2013.03.27 ==
+
+* [X] ScottM -	3 forum posts
+		4 articles	- 3 articles down, so need 1 extra per day
+
+* [X] ArnelC -	3 forum posts
+		4 articles	- 3 articles down, so need 1 extra per day
+
+* [X] JamesR - 	3 forum posts
+		4 articles	- 2 articles down, so 1 extra today and tomorrow
+
+* [X] JacobN -	3 forum posts
+		3 articles	- 2 articles down, so 1 extra today and tomorrow
+		>0 systems	- this needs updating - https://docs.google.com/spreadsheet/ccc?key=0Aut1SAP-LDzUdER1YkZtSHNxakhucXluaGZQb2c0RGc&usp=sharing
+				- continue work mockup for trey
+				- touch base with T3 about possible cPanel plugin
+		
+* [X] JohnPaulB	2 forum posts
+		<span style='background:red;'>4 articles</span>	- 2 articles down, so 1 extra today and tomorrow

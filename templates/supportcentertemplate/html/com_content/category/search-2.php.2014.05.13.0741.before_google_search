@@ -1,0 +1,17 @@
+<?
+
+$user =& JFactory::getUser();
+
+if( $_GET['search_type'] == "gcs" )
+	if( $_GET['rf'] == "json" )
+		include_once("google_site_search_json.php");
+	else
+		include_once("google_site_search.php");
+elseif ($_GET['search_type'] == "searchtime")
+	include_once("/home/ccdevinm/public_html/support/templates/supportcentertemplate/includes/search/search-2-debug.php");
+elseif ($user->username == "brads-g-account")
+	include_once("/home/ccdevinm/public_html/support/templates/supportcentertemplate/includes/search/search-2-brads-g-account.php");
+else
+	include_once("/home/ccdevinm/public_html/support/templates/supportcentertemplate/includes/search/search-2.php");
+
+?>

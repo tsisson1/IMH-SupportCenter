@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="captcha">
+	<name>plg_captcha_nocaptcharecaptcha</name>
+	<version>1.0.0</version>
+	<creationDate>December 2014</creationDate>
+	<author>Plugins Cart</author>
+	<authorEmail>contact@pluginscart.com</authorEmail>
+	<authorUrl>pluginscart.com</authorUrl>
+	<copyright>Copyright (C) 2014 Plugins Cart. All rights reserved.</copyright>
+	<license>GNU General Public License version 3 or later</license>
+	<description>PLG_CAPTCHA_NOCAPTCHARECAPTCHA_XML_DESCRIPTION</description>
+	<files>
+		<filename
+			plugin="nocaptcharecaptcha">nocaptcharecaptcha.php</filename>
+		<filename>index.html</filename>
+		<filename>license.txt</filename>
+	</files>
+	<languages>
+	<language tag="en-GB">language/en-GB/en-GB.plg_captcha_nocaptcharecaptcha.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.plg_captcha_nocaptcharecaptcha.sys.ini</language>
+	</languages>
+	<config>
+	<fields name="params">
+		<fieldset name="basic">
+		<field
+			name="site_key"
+			type="text"
+			default=""
+			label="PLG_NOCAPTCHARECAPTCHA_PUBLIC_KEY_LABEL"
+			description="PLG_NOCAPTCHARECAPTCHA_PUBLIC_KEY_DESC"
+			required="true"
+			filter="string"
+			size="50" />
+
+		<field
+			name="secret_key"
+			type="text"
+			default=""
+			label="PLG_NOCAPTCHARECAPTCHA_PRIVATE_KEY_LABEL"
+			description="PLG_NOCAPTCHARECAPTCHA_PRIVATE_KEY_DESC"
+			required="true"
+			filter="string"
+			size="50" />
+
+		</fieldset>
+	</fields>
+	</config>
+</extension>

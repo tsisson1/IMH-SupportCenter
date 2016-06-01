@@ -1,0 +1,631 @@
+<?
+$document = JFactory::getDocument();
+$document->setMetaData('robots','noindex,follow');
+
+$user =& JFactory::getUser();
+
+
+
+
+
+
+	$db = JFactory::getDbo();
+
+
+	$searchword = $_GET['searchword'];
+	$searchword = trim($searchword);
+	$searchword = addslashes(htmlspecialchars($searchword));
+
+	$exploded_searchword = explode(" ",$searchword);
+
+	$x = 0;
+	foreach($exploded_searchword as $k => $v)
+	{
+		// see if there are synonyms
+		$query = "SELECT * FROM #__search_synonyms WHERE `data` LIKE '%=$v=%';";
+		$db->setQuery($query);
+		$results = $db->loadObjectList();
+
+		if($results)
+		{
+			$exploded_synonyms = explode("=",$results[0]->data);
+				unset($exploded_synonyms[ count($exploded_synonyms) - 1]);
+				unset($exploded_synonyms[0]);
+
+			foreach($exploded_synonyms as $es_key => $synonym)
+			{
+				$tmp_exploded_searchword = $exploded_searchword;
+				$tmp_exploded_searchword[$x] = $synonym;
+				$search_phrases[] = implode(" ",$tmp_exploded_searchword);
+			}
+		}
+		$x++;
+	}
+
+	if($_GET['tell_me_why'] == 1)
+	{
+		if($search_phrases)
+		{
+			echo "
+				<h3 style='color:red;'>Synonym Search Phrases</h3>
+				<pre style='margin-bottom:20px; color:red;'>"; print_r($search_phrases); echo "</pre>
+			";
+		}
+	}
+
+
+
+
+
+
+if( $_GET['searchword'] )
+{
+
+
+
+	// ------------------------------------------------------------------------------------------
+        // guided by brad
+        // ------------------------------------------------------------------------------------------
+        if( "enabled" == "enabledd" )
+        {
+                echo "
+                <div class='white_box' style='margin-bottom:15px;'>
+			<img src='/support/images/authors/bradm.jpg' style='float:left; margin:0px 15px 15px 0px; width:70px;' class='sc_rc'>
+                        <p>Below are the results of your search.</p>
+			<p>If the pages we've provided don't help, <a href='/support/login'>login</a> and then <a href='/support/community-support/ask-a-question'>ask a question</a>. <a href='/support/team'>My team and I</a> will answer your question within one hour (M-F 8-9 EST).</p>
+                </div>
+		<div style='clear:both;'></div>
+                ";
+        }
+
+
+
+
+
+
+	echo "
+		<div class='item-page'>
+			<div class='page-header'>
+				<h1>Search results for: " . stripslashes($searchword) . "</h1>
+			</div>
+			<form method='get' action='/support/search' >
+				<input type='text' name='searchword' id='mod-search-searchword' value=\"" . stripslashes($searchword) . "\" />
+				<button class='button btn btn-info' onclick='this.form.searchword.focus();' style='display:inline-block; width:80px; border-radius:3px; height:32px; line-height:22px; margin:0px;'>Search</button>
+			</form>
+	";
+	$search_results = return_search_results($searchword,$search_phrases);
+	echo "
+		</div>
+	";
+}
+
+
+
+
+
+
+function return_search_results($searchword,$search_phrases)
+{
+	$db = JFactory::getDbo();
+
+	$searchword_count = substr_count($searchword, " ") + 1;
+
+
+
+
+
+
+	// --------------------------------------------------------------------------------------------
+	// point system
+	// --------------------------------------------------------------------------------------------
+	$points_anchor_exact = 12;
+	$points_anchor_all = 10;
+	$points_article_exact = 8;
+	$points_article_all = 4;
+	$points_question_exact = 6;
+	$points_question_all = 2;
+
+	if($_GET['tell_me_why'] == 1)
+	{
+		echo "
+			<h3 style='color:red;'>Point System</h3>
+			<ul style='color:red;'>
+				<li>anchor exact = $points_anchor_exact</li>
+				<li>anchor all = $points_anchor_all</li>
+				<li>article exact = $points_article_exact</li>
+				<li>article all = $points_article_all</li>
+				<li>question exact = $points_question_exact</li>
+				<li>question all = $points_question_all</li>
+			</ul>
+		";
+	}
+
+
+
+
+
+
+	// --------------------------------------------------------------------------------------------
+        // EXACT MATCHES WITHIN ANCHOR TEXT INDEX
+        // --------------------------------------------------------------------------------------------
+
+	if( count($search_phrases) >= 1)
+        {
+                $imploded_search_phrases_description_exact = implode("%' OR `sci`.`description` LIKE '%",$search_phrases);
+                $imploded_search_phrases_description_exact = "`sci`.`description` LIKE '%" . $imploded_search_phrases_description_exact . "%'";
+	}
+	else
+	{
+		$imploded_search_phrases_description_exact = "`sci`.`description` LIKE '%$searchword%'";
+	}
+
+	$query = "
+SELECT `content`.`metadesc`, `content`.`catid`, `content`.`alias`, `content`.`title`, `content`.`state`, `sci`.*
+FROM	#__search_content_items as `sci`,
+	#__content as `content`
+WHERE	`content`.`id` = `sci`.`article_id` AND
+	($imploded_search_phrases_description_exact) AND (`sci`.`type` = 'article_anchor_text' OR `sci`.`type` = 'answer_anchor_text') ORDER BY LENGTH(`sci`.`description`)
+LIMIT 20;
+	";
+	$db->setQuery($query);
+	$results = $db->loadObjectList();
+	if($results)
+	{
+		foreach($results as $k => $v)
+		{
+			if($v->state == 1)
+			{
+				$anchor_text_article_id_results[] = $v->article_id;
+				$article_link = JRoute::_(ContentHelperRoute::getArticleRoute($v->article_id . "-" . $v->alias, $v->catid));
+
+				$result_scores[$article_link] += $points_anchor_exact;
+				$result_description[$article_link] = $v->metadesc;
+				$result_title[$article_link] = $v->title;
+
+				if($v->type == "article_anchor_text")
+					$result_reason_for_score[$article_link] .= "<br />-exact anchor within an article- ";
+				if($v->type == "answer_anchor_text")
+                                        $result_reason_for_score[$article_link] .= "<br />-exact anchor within an answer- ";
+			}
+		}
+	}
+
+
+
+
+
+
+	// --------------------------------------------------------------------------------------------
+        // ALL WORD MATCHES WITHIN ANCHOR TEXT INDEX
+        // --------------------------------------------------------------------------------------------
+	if( $searchword_count > 1)
+	{
+		if( count($search_phrases) >= 1)
+        	{
+                	foreach($search_phrases as $k => $v)
+	                {
+        	                $exploded_search_phrase = explode(" ",$v);
+
+                	        $imploded_search_phrases_description_allwords = implode("%' AND `description` LIKE '%",$exploded_search_phrase);
+                        	$imploded_search_phrases_description_allwords_array[] = "(`description` LIKE '%" . $imploded_search_phrases_description_allwords . "%')";
+			}
+			$description_allwords = implode(" OR ",$imploded_search_phrases_description_allwords_array);
+		}
+		else
+		{
+			$exploded_search_phrase = explode(" ",$searchword);
+
+                	$imploded_search_phrases_description_allwords = implode("%' AND `description` LIKE '%",$exploded_search_phrase);
+	                $description_allwords  = "(`description` LIKE '%" . $imploded_search_phrases_description_allwords . "%')";
+		}
+
+		$not_in = "";
+        	if( count($anchor_text_article_id_results) > 0 )
+                	$not_in = " AND (`sci`.`article_id` NOT IN(" . implode(",",$anchor_text_article_id_results) . "))";
+		$not_in = "";
+
+		$query = "
+SELECT `content`.`catid`, `content`.`alias`, `content`.`title`, `content`.`metadesc`, `content`.`state`, `sci`.*
+FROM #__search_content_items as `sci`, #__content as `content`
+WHERE	`content`.`id` = `sci`.`article_id` AND
+	($description_allwords) AND
+	(`sci`.`type` = 'article_anchor_text' OR `sci`.`type` = 'answer_anchor_text')
+	$not_in
+ORDER BY LENGTH(`sci`.`description`)
+LIMIT 20;
+		";
+	        $db->setQuery($query);
+        	$results = $db->loadObjectList();
+
+	        if($results)
+        	{
+        	        foreach($results as $k => $v)
+                	{
+				if($v->state == 1)
+				{
+	                        	$article_link = JRoute::_(ContentHelperRoute::getArticleRoute($v->article_id . "-" . $v->alias, $v->catid));
+
+					$result_scores[$article_link] += $points_anchor_all;
+	        	                $result_description[$article_link] = $v->metadesc;
+        	        	        $result_title[$article_link] = $v->title;
+					$result_reason_for_score[$article_link] .= " -all anchor- ";
+				}
+        	        }
+        	}
+	}
+
+
+
+
+
+
+	// --------------------------------------------------------------------------------------------
+	// EXACT MATCHES WITH ARTICLES
+	// --------------------------------------------------------------------------------------------
+
+	if( count($search_phrases) >= 1)
+	{
+		$imploded_search_phrases_title_exact = implode("%' OR `title` LIKE '%",$search_phrases);
+		$imploded_search_phrases_title_exact = "`title` LIKE '%" . $imploded_search_phrases_title_exact . "%'";
+
+		$imploded_search_phrases_introtext_exact = implode("%' OR `introtext` LIKE '%",$search_phrases);
+	        $imploded_search_phrases_introtext_exact = "`introtext` LIKE '%" . $imploded_search_phrases_introtext_exact . "%'";
+
+		$imploded_search_phrases_metadesc_exact = implode("%' OR `metadesc` LIKE '%",$search_phrases);
+        	$imploded_search_phrases_metadesc_exact = "`metadesc` LIKE '%" . $imploded_search_phrases_metadesc_exact . "%'";
+
+/*
+		$imploded_search_phrases_metakey_exact = implode("%' OR `metakey` LIKE '%",$search_phrases);
+		$imploded_search_phrases_metakey_exact = "`metakey` LIKE '%" . $imploded_search_phrases_metakey_exact . "%'";
+*/
+	}
+	else
+	{
+		$imploded_search_phrases_title_exact = "`title` LIKE '%$searchword%'";
+		$imploded_search_phrases_introtext_exact = "`introtext` LIKE '%$searchword%'";
+		$imploded_search_phrases_metadesc_exact = "`metadesc` LIKE '%$searchword%'";
+		// $imploded_search_phrases_metakey_exact = "`metakey` LIKE '%$searchword%'";
+	}
+
+
+	// ARTICLES - EXACT MATCH
+
+	$limit = 5;
+	if( $searchword_count == 1)
+		$limit = 10;
+	$limit = 20;
+
+	$query = "
+SELECT *
+FROM #__content
+WHERE	(
+		($imploded_search_phrases_title_exact) OR
+		($imploded_search_phrases_introtext_exact) OR
+		($imploded_search_phrases_metadesc_exact)
+	) AND
+	`state` = 1
+ORDER BY `hits` DESC
+LIMIT $limit;
+	";
+	$db->setQuery($query);
+	$results = $db->loadObjectList();
+	$exact_matches = 0;
+	if($results)
+	{
+		foreach($results as $k => $v)
+		{
+			$title = $v->title;
+			$link = JRoute::_(ContentHelperRoute::getArticleRoute($v->id . "-" . $v->alias, $v->catid));
+			$description = $v->metadesc;
+
+			$article_id_results[] = $v->id;
+
+			$exact_matches++;
+
+			$result_scores[$link] += $points_article_exact;
+                        $result_description[$link] = $description;
+                        $result_title[$link] = $title;
+			$result_reason_for_score[$link] .= " -exact article- ";
+		}
+	}
+
+
+
+
+
+
+	// --------------------------------------------------------------------------------------------
+	// ALL WORDS - ARTICLES
+	// --------------------------------------------------------------------------------------------
+
+	if( $searchword_count > 1 )
+	{
+		if( count($search_phrases) >= 1)
+		{
+			foreach($search_phrases as $k => $v)
+			{
+				$exploded_search_phrase = explode(" ",$v);
+
+				$imploded_search_phrases_title_allwords = implode("%' AND `title` LIKE '%",$exploded_search_phrase);
+	                	$imploded_search_phrases_title_allwords_array[] = "(`title` LIKE '%" . $imploded_search_phrases_title_allwords . "%')";
+
+				$imploded_search_phrases_introtext_allwords = implode("%' AND `introtext` LIKE '%",$exploded_search_phrase);
+        	                $imploded_search_phrases_introtext_allwords_array[] = "(`introtext` LIKE '%" . $imploded_search_phrases_introtext_allwords . "%')";
+
+				$imploded_search_phrases_metadesc_allwords = implode("%' AND `metadesc` LIKE '%",$exploded_search_phrase);
+                        	$imploded_search_phrases_metadesc_allwords_array[] = "(`metadesc` LIKE '%" . $imploded_search_phrases_metadesc_allwords . "%')";
+
+				$imploded_search_phrases_metakey_allwords = implode("%' AND `metakey` LIKE '%",$exploded_search_phrase);
+        	                $imploded_search_phrases_metakey_allwords_array[] = "(`metakey` LIKE '%" . $imploded_search_phrases_metakey_allwords . "%')";
+			}
+
+			$title_allwords = implode(" OR ",$imploded_search_phrases_title_allwords_array);
+			$introtext_allwords = implode(" OR ",$imploded_search_phrases_introtext_allwords_array);
+			$metadesc_allwords = implode(" OR ",$imploded_search_phrases_metadesc_allwords_array);
+			$metakey_allwords = implode(" OR ",$imploded_search_phrases_metakey_allwords_array);
+		}
+		else
+		{
+			$exploded_search_phrase = explode(" ",$searchword);
+
+                	$imploded_search_phrases_title_allwords = implode("%' AND `title` LIKE '%",$exploded_search_phrase);
+	                $title_allwords  = "(`title` LIKE '%" . $imploded_search_phrases_title_allwords . "%')";
+
+        	        $imploded_search_phrases_introtext_allwords = implode("%' AND `introtext` LIKE '%",$exploded_search_phrase);
+                	$introtext_allwords = "(`introtext` LIKE '%" . $imploded_search_phrases_introtext_allwords . "%')";
+
+	                $imploded_search_phrases_metadesc_allwords = implode("%' AND `metadesc` LIKE '%",$exploded_search_phrase);
+        	        $metadesc_allwords = "(`metadesc` LIKE '%" . $imploded_search_phrases_metadesc_allwords . "%')";
+
+	                $imploded_search_phrases_metakey_allwords = implode("%' AND `metakey` LIKE '%",$exploded_search_phrase);
+        	        $metakey_allwords = "(`metakey` LIKE '%" . $imploded_search_phrases_metakey_allwords . "%')";
+		}
+
+	$not_in = "";
+	if( count($article_id_results) > 0 )
+		$not_in = " AND (`id` NOT IN(" . implode(",",$article_id_results) . "))";
+	$not_in = "";
+
+
+	$limit = 10 - $exact_matches;
+	$limit = 20;
+
+	$query = "
+SELECT *
+FROM #__content
+WHERE 	(
+		($title_allwords OR $introtext_allwords OR $metadesc_allwords OR $metakey_allwords)
+	) AND
+	`state` = 1
+	$not_in
+ORDER BY `hits` DESC
+LIMIT $limit;
+        ";
+	$db->setQuery($query);
+        $results = $db->loadObjectList();
+        if($results)
+        {
+                foreach($results as $k => $v)
+                {
+                        $title = $v->title;
+                        $link = JRoute::_(ContentHelperRoute::getArticleRoute($v->id . "-" . $v->alias, $v->catid));
+                        $description = $v->metadesc;
+
+			$result_scores[$link] += $points_article_all;
+                        $result_description[$link] = $description;
+                        $result_title[$link] = $title;
+			$result_reason_for_score[$link] .= " -all article- ";
+                }
+        }
+	}
+
+
+
+
+
+
+	// -----------------------------------------------------------------------------------------------------------
+	// Q&A - EXACT MATCH
+	// -----------------------------------------------------------------------------------------------------------
+
+	if( count($search_phrases) >= 1)
+        {
+                $imploded_search_phrases_question_exact = implode("%' OR `question` LIKE '%",$search_phrases);
+                $imploded_search_phrases_question_exact = "`question` LIKE '%" . $imploded_search_phrases_question_exact . "%'";
+
+                $imploded_search_phrases_description_exact = implode("%' OR `description` LIKE '%",$search_phrases);
+                $imploded_search_phrases_description_exact = "`description` LIKE '%" . $imploded_search_phrases_description_exact . "%'";
+
+                $imploded_search_phrases_all_answers_exact = implode("%' OR `answer` LIKE '%",$search_phrases);
+                $imploded_search_phrases_all_answers_exact = "`answer` LIKE '%" . $imploded_search_phrases_all_answers_exact . "%'";
+        }
+        else
+        {
+                $imploded_search_phrases_question_exact = "`question` LIKE '%$searchword%'";
+                $imploded_search_phrases_description_exact = "`description` LIKE '%$searchword%'";
+                $imploded_search_phrases_all_answers_exact = "`answer` LIKE '%$searchword%'";
+        }
+
+	$query = "
+SELECT	`question`.`question`,
+	`question`.`hits`,
+	`question`.`id`,
+	`question`.`description`,
+	group_concat(`answers`.`answer`)
+FROM	#__questions AS `question`,
+	#__answers AS `answers`
+WHERE	`question`.`id` = `answers`.`question_id` AND
+	(
+		($imploded_search_phrases_question_exact) OR
+		($imploded_search_phrases_description_exact) OR
+		($imploded_search_phrases_all_answers_exact)
+	)
+GROUP BY `question`.`id`
+ORDER BY `question`.`hits` DESC
+LIMIT 5;
+	";
+	// // echo "<pre>"; print_r($query); echo "</pre>";
+	$db->setQuery($query);
+        $results = $db->loadObjectList();
+	if($results)
+	{
+		foreach($results as $k => $v)
+		{
+			$question_url = pass_question_id_return_question_url($v->id);
+
+			$all_words_question_id_results[] = $v->id;
+
+			$result_scores[$question_url] += $points_question_exact;
+			if($v->description)
+			{
+				if( strlen(htmlspecialchars($v->description)) > 120)
+		                        $result_description[$question_url] = htmlspecialchars(substr($v->description, 0, 120)) . "...";
+				else
+					$result_description[$question_url] = htmlspecialchars($v->description);
+			}
+			else
+				$result_description[$question_url] = "";
+                        $result_title[$question_url] = htmlspecialchars($v->question);
+			$result_reason_for_score[$question_url] .= " -exact question- ";
+		}
+	}
+
+
+
+
+
+
+	// -----------------------------------------------------------------------------------------------------------
+        // Q&A - ALL WORDS
+        // -----------------------------------------------------------------------------------------------------------
+
+	if( $searchword_count > 1 )
+        {
+	        if( count($search_phrases) >= 1)
+        	{
+			unset($imploded_search_phrases_description_allwords_array);
+
+                	foreach($search_phrases as $k => $v)
+	                {
+        	                $exploded_search_phrase = explode(" ",$v);
+
+                	        $imploded_search_phrases_question_allwords = implode("%' AND `question` LIKE '%",$exploded_search_phrase);
+                        	$imploded_search_phrases_question_allwords_array[] = "(`question` LIKE '%" . $imploded_search_phrases_question_allwords . "%')";
+
+	                        $imploded_search_phrases_description_allwords = implode("%' AND `description` LIKE '%",$exploded_search_phrase);
+        	                $imploded_search_phrases_description_allwords_array[] = "(`description` LIKE '%" . $imploded_search_phrases_description_allwords . "%')";
+
+                	        $imploded_search_phrases_answer_allwords = implode("%' AND `answer` LIKE '%",$exploded_search_phrase);
+                        	$imploded_search_phrases_answer_allwords_array[] = "(`answer` LIKE '%" . $imploded_search_phrases_answer_allwords . "%')";
+                	}
+
+	                $question_allwords = implode(" OR ",$imploded_search_phrases_question_allwords_array);
+        	        $description_allwords = implode(" OR ",$imploded_search_phrases_description_allwords_array);
+                	$answer_allwords = implode(" OR ",$imploded_search_phrases_answer_allwords_array);
+	        }
+        	else
+	        {
+        	        $exploded_search_phrase = explode(" ",$searchword);
+
+                	$imploded_search_phrases_question_allwords = implode("%' AND `question` LIKE '%",$exploded_search_phrase);
+	                $question_allwords  = "(`question` LIKE '%" . $imploded_search_phrases_question_allwords . "%')";
+
+        	        $imploded_search_phrases_description_allwords = implode("%' AND `description` LIKE '%",$exploded_search_phrase);
+                	$description_allwords = "(`description` LIKE '%" . $imploded_search_phrases_description_allwords . "%')";
+
+	                $imploded_search_phrases_answer_allwords = implode("%' AND `answer` LIKE '%",$exploded_search_phrase);
+        	        $answer_allwords = "(`answer` LIKE '%" . $imploded_search_phrases_answer_allwords . "%')";
+	        }
+
+		$not_in = "";
+	        if( count($all_words_question_id_results) > 0 )
+        	        $not_in = " AND (`question`.`id` NOT IN(" . implode(",",$all_words_question_id_results) . "))";
+
+		$query = "
+SELECT  `question`.`question`,
+        `question`.`hits`,
+	`question`.`id`,
+	`question`.`description`,
+        group_concat(`answers`.`answer`)
+FROM    #__questions AS `question`,
+        #__answers AS `answers`
+WHERE   `question`.`id` = `answers`.`question_id` AND
+        (
+                $question_allwords or
+                $description_allwords or
+                $answer_allwords
+        )
+	$not_in
+GROUP BY `question`.`id`
+ORDER BY `question`.`hits` DESC
+LIMIT 5;
+        ";
+	        // echo "<pre>"; print_r($query); echo "</pre>";
+        	$db->setQuery($query);
+	        $results = $db->loadObjectList();
+	        if($results)
+        	{
+                	foreach($results as $k => $v)
+	                {
+				$question_url = pass_question_id_return_question_url($v->id);
+
+				$result_scores[$question_url] += $points_question_all;
+				if($v->description)
+	                        {
+        	                        if( strlen(htmlspecialchars($v->description)) > 120)
+                	                        $result_description[$question_url] = htmlspecialchars(substr($v->description, 0, 120)) . "...";
+                        	        else
+                                	        $result_description[$question_url] = htmlspecialchars($v->description);
+	                        }
+        	                else
+                	                $result_description[$question_url] = "";
+        	                $result_title[$question_url] = htmlspecialchars($v->question);
+				$result_reason_for_score[$question_url] .= " -all question- ";
+        	        }
+	        }
+	} // end q&a all words
+
+
+
+
+
+
+	if($result_scores)
+	{
+		arsort($result_scores);
+		foreach($result_scores as $k => $v)
+		{
+			echo "	<div style='margin-bottom:20px;'>
+					<div><a href='$k'>" . $result_title[$k] . "</a></div>
+					<div>" . $result_description[$k] . "</div>
+			";
+
+			if($_GET['tell_me_why'] == 1)
+				echo "
+					<div style='margin-bottom:20px; color:red;'>
+						<strong>POINTS</strong>: $v<br />
+						<strong>MATCH TYPES</strong>: " . $result_reason_for_score[$k] . "
+					</div>
+				";
+
+			echo "	</div>";
+		}
+		echo "<p class='alert' style='margin-top:20px;'>If you're not finding what you need, feel free to <a href='/support/community-support/ask-a-question'>ask us a question</a>.</p>";
+	}
+	else
+	{
+		echo "<div>No search results, but we can still help - <a href='/support/community-support/ask-a-question'>ask us a question</a>!</div>";
+	}
+
+
+
+	
+
+}
+
+
+
+
+
+
+?>

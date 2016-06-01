@@ -1,0 +1,6 @@
+/* Desktop Styles */
+#wrapper{border:none; margin:0% auto; padding:0%; width:80%; min-width:760px;max-width:1600px;border:1px solid #000000}
+.box{padding:2%;margin:0% 0% 0% 2%;width:18%;border:1px solid #000000;display: inline-block;vertical-align: top;}
+.image-box{max-width:40%;float:left;padding:0px 2% 0% 0%;}
+
+

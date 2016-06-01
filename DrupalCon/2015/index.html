@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>DrupalCon 2015 - Managing Drupal with Nginx</title>
+
+    <meta name="description" content="Drupalcon 2015 Presentation">
+    <meta name="author" content="Scott Mitchell">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/moon.css" id="theme">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+<body>
+
+<div id="logo" style="float:right; padding: 10pt;">
+                        <img src="images/logo3.png" />
+                      </div>
+
+    <div class="reveal">
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <section>
+          <img src="images/drupalcon.jpg" />
+          <h2>Managing Drupal with Nginx</h2>
+          <h4>Performance of an Nginx hybrid vs Apache</h4>
+          <p style="font-size:small">http://inmotionhosting.com/support/DrupalCon/2015</p>
+          <h4>Scott Mitchell</h4>
+        </section>
+
+    <section>
+      <h2>About Me</h2>
+      <img src="images/scott.jpg" />
+      <p>
+        <small>Scott Mitchell<br /><br />
+          Working with the Web since 1997<br /><br />
+          InMotion Hosting since 2010<br /><br />
+          Customer Community Developer<br /><br />
+          Drupal since 2012
+        </small>
+      </p>
+    </section>
+
+    <section>
+      <h2>About InMotion</h2>
+      <img src="images/inmotion.png" style="border-width:0px; background-color:transparent;">
+      <p>
+        <small>Hosting since 2001<br /><br />
+          small - med sized businesses<br /><br />
+          approx. 225 employees<br /><br />
+          <a href="http://inmotionhosting.com">http://inmotionhosting.com</a><br /><br />
+          <a href="http://inmotionhosting.com/support">http://inmotionhosting.com/support</a><br /><br />
+          @inmotionhosting
+        </small>
+
+      </p>
+    </section>
+
+    <section>
+      <h2>Agenda</h2>
+      <ul>
+        <li>History of Apache</li>
+        <li>History of Nginx</li>
+        <li>Apache vs Nginx</li>
+        <li>Test Setup</li>
+        <li>Test Results</li>
+      </ul>
+    </section>
+
+    <section>
+      <center>
+      <img src="images/apachelogo3.png" style="border-width:0px; vertical-align:middle;"/><br /><h3>History of Apache</h3>
+    </center>
+</section>
+
+    <section>
+        <h3 style="font-size:90pt;"><img src="images/peabody4.png" /> 1995</h3>
+        <ul>
+          <span class="fragment"><li>Dominant http server: NCSA httpd by Robert McCool</li></span>
+          <span class="fragment"><li>Microsoft IIS - August 1995</li></span>
+          <span class="fragment"><li>Apache - Early 1995</li></span>
+          <span class="fragment"><li>1.0 release date - December 1995</li></span>
+        </ul>
+    </section>
+
+    <section>
+      <h3 style="font-size:90pt;"><img src="images/peabody4.png" /> 1995</h3>
+      <center>
+        <table>
+          <tr><td colspan="2"><center>December</center></td></tr>
+          <tr><td>NCSA</td><td>52%</td></tr>
+          <tr><td>Other</td><td>36%</td></tr>
+          <tr><td><span style="color:red;">Apache</span></td><td><span style="color:red;">5%</span></td></tr>
+          <tr><td>Sun</td><td>5%</td></tr>
+          <tr><td>Microsoft</td><td>&lt;1%</td></tr>
+        </table>
+        <span style="font-size:xx-small">Source: http://news.netcraft.com/archives/2015/02/24/february-2015-web-server-survey.html</span>
+      </center>
+    </section>
+
+    <section>
+      <h3 style="font-size:90pt;"><img src="images/peabody4.png" /> 1996</h3>
+      <center>
+        <table>
+          <tr><td colspan="2"><center>June</center></td></tr>
+          <tr><td><span style="color:red;">Apache</span></td><td><span style="color:red;">33%</span></td></tr>
+          <tr><td>NCSA</td><td>22%</td></tr>
+          <tr><td>Sun</td><td>16%</td></tr>
+          <tr><td>Other</td><td>26%</td></tr>
+          <tr><td>Microsoft</td><td>3%</td></tr>
+        </table>
+        <span style="font-size:xx-small">Source: http://news.netcraft.com/archives/2015/02/24/february-2015-web-server-survey.html</span>
+    </center>
+    </section>
+
+    <section>
+      <h3>Websites of the 90's</h3>
+      <img src="images/netscape.png" />
+    </section>
+
+    <section>
+      <h3>Websites of the 90's</h3>
+      <img src="images/hamsterdance-sm.png"/>
+    </section>
+
+    <section>
+      <h3 style="font-size:72pt;"><img src="images/peabody4.png" /> Recent History</h3>
+      <p>2005 - peaked at approx 70% of market share</p>
+      <p>2015 - approx 39% - lowest since 1996</p>
+    </section>
+
+
+      <section>
+        <img src="images/nginxlogo.png" style="border-width:0px; vertical-align:middle;"/> <br /><h3>History of Nginx</h3>
+      </section>
+
+      <section> 
+        <h3 style="font-size:68pt;"><img src="images/delorean.png" /> Nginx History</h3> 
+
+        <span class="fragment"><img style="text-align:center;"src="images/igor-sysoev.jpg" />
+
+        <center>
+          <ul>
+            <li>Development started in 2002 by Igor Sysoev.</li></span>
+            <span class="fragment"><li>First release in 2004</li></span>
+            <span class="fragment"><li>Created to handle the "C10k" issue.</li></span>
+            <span class="fragment"><li>Fill the needs of high traffic sites like Rambler (500 million requests per day in 2008)</li></span>
+          </ul>
+        </center>
+      </section>
+
+    <section>
+      <h3 style="font-size:68pt;"><img src="images/delorean.png" /> 2007</h3>
+      <center>
+        <table>
+          <tr><td colspan="2"><center>May</center></td></tr>
+          <tr><td>Apache</td><td>56%</td></tr>
+          <tr><td>Microsoft</td><td>32%</td></tr>
+          <tr><td>Other</td><td>8%</td></tr>
+          <tr><td>Sun</td><td>2%</td></tr>
+          <tr><td>Google</td><td>2%</td></tr>
+          <tr><td><span style="color:red;">Nginx</span></td><td><span style="color:red;">&lt;1%</span></td></tr>
+        </table>
+        <span style="font-size:xx-small">Source: http://news.netcraft.com/archives/2015/02/24/february-2015-web-server-survey.html</span>
+    </center>
+    </section>
+
+    <section>
+      <h3 style="font-size:68pt;"><img src="images/delorean.png" /> 2015</h3>
+      <center>
+        <table>
+          <tr><td colspan="2"><center>Feb</center></td></tr>
+          <tr><td>Apache</td><td>39%</td></tr>
+          <tr><td>Microsoft</td><td>29%</td></tr>
+          <tr><td>Other</td><td>16%</td></tr>
+          <tr><td><span style="color:red;">Nginx</span></td><td><span style="color:red;">15%</span></td></tr>          
+          <tr><td>Google</td><td>2%</td></tr>
+        </table>
+        <span style="font-size:xx-small">Source: http://news.netcraft.com/archives/2015/02/24/february-2015-web-server-survey.html</span>
+    </center>
+    </section>
+
+    <section>
+      <h3>Sample sites running on Nginx</h3>
+      <span class="fragment"><img src="images/netflix.jpg" /></span>
+      <span class="fragment"><img src="images/hulu.jpg" /></span>
+      <span class="fragment"><img src="images/pinterest.jpg" /></span>
+    </section>
+</section>
+
+<section>
+  <h2>Apache vs Nginx</h2>
+</section>
+
+    <section>
+      <h3>Connections</h3>
+      <div>Apache<br />
+        <ul>
+        <span class="fragment"><li>mpm_worker: spawns processes</li></span>
+        <span class="fragment"><li>Each process can handle multiple threads</li></span></li>
+        <span class="fragment"><li>Each thread has single connection</li></span>
+      </ul>
+      </div>
+    </section>
+    <section>
+      <h3>Connections</h3>
+      <div>Nginx<br />
+          <ul>
+          <li>Spawns workers</li></span>
+          <span class="fragment"><li>Each worker handles thousands of connections</li></span>
+          <span class="fragment"><li>Fast looping mechanism checks events</li></span>
+          <span class="fragment"><li>Events are processed asynchronously</li></span>
+          <span class="fragment"><li>Once handled, event is removed from the loop</li></span>
+        </ul>
+      </div>
+    </section>
+
+
+    <section>
+      <h3>Static &amp; Dynamic content</h3>
+      <div>Apache<br />
+        <ul>
+        <span class="fragment"><li>Static: handled by default</li></span>
+        <span class="fragment"><li>Dynamic: embed processor into worker <br />instance (mod_suphp)</li></span></li>
+        <span class="fragment"><li>Can swap modules as needed per requirements</li></span>
+      </ul>
+      </div>
+    </section>
+    <section>
+      <h3>Static &amp; Dynamic content</h3>
+      <div>Nginx<br />
+          <ul>
+          <span class="fragment"><li>Static: handled by default</li></span>
+          <span class="fragment"><li>Dynamic: pass to external processor (FastCGI)</li></span>
+          <span class="fragment"><li>Overhead only for static content</li></span>
+        </ul>
+      </div>
+    </section>
+
+   <section>
+      <h3>Configuration</h3>
+      <div>Apache<br />
+        <ul>
+        <span class="fragment"><li>Distributed configuration via htaccess files</li></span>
+        <span class="fragment"><li>Checks each component in the path for an .htaccess file</li></span></li>
+        <span class="fragment"><li>URL rewrites/access restriction/authentication, etc</li></span>
+      </ul>
+      </div>
+      </section>
+      <section>
+      <h3>Configuration</h3>
+      <div>Nginx<br />
+        <ul>
+          <span class="fragment"><li>No decentralized configuration</li></span>
+          <span class="fragment"><li>Increase in performance</li></span>
+          <span class="fragment"><li>Better security because only the admin can configure</li></span>
+        </ul>
+      </div>
+    </section>
+
+
+   <section>
+      <h3>Modules</h3>
+      <div>Apache<br />
+        <ul>
+        <span class="fragment"><li>Dynamically enable/disable modules</li></span>
+      </ul>
+      </div>
+      <br />
+      <span class="fragment"><div>Nginx</span><br />
+          <ul>
+          <span class="fragment"><li>Modules are compiled into core</li></span>
+        </ul>
+      </div>
+    </section>
+
+   <section>
+      <h3>Apache/Nginx Hybrid?</h3>
+      <span class="fragment"><img src="images/hybrid.jpg" /></span>
+      <ul>
+          <span class="fragment"><li>Nginx in front as reverse proxy</li></span>
+          <span class="fragment"><li>Handles client requests</li></span>
+          <span class="fragment"><li>Speed serving static content</li></span>
+          <span class="fragment"><li>Pass dynamic content to Apache</li></span>
+          <span class="fragment"><li>Easy to install</li></span>
+          <span class="fragment"><li>Easier configuration for Content Managment Systems</li></span>
+          <span class="fragment"><li>No need to change hosting companies in most cases</li></span>
+      </ul>
+    </section>
+
+    <section>
+      <h3>The Test</h3>
+      <ul>
+        <li>ApacheBench benchmarking tool</li>
+        <li>Varying concurrent users (100, 150, 250)</li>
+        <li>Varying requests (2500, 5000, 10000)</li>
+        <li>Same physical VPS server (standard VPS with SSD 8GB RAM).</li>
+        <li>Drupal 7 test site</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>NginxCP<br /><span style="font-size:medium">http://www.nginxcp.com/</span></h3>
+      <ul>
+        <span class="fragment"><li>FREE!</li></span>
+        <span class="fragment"><li>DDOS Protection</li></span>
+        <span class="fragment"><li>WHM Interface</li></span>
+        <span class="fragment"><li>GZIP compression</li></span>
+        <span class="fragment"><li>cPanel service monitor support</li>    </span>    
+        <span class="fragment"><li>PHP rewrite Compatible</li></span>
+        <span class="fragment"><li>Can manage which domain use Nginx and which domain use Apache via SSH.</li></span>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Installation</h3>
+      <div><img src="images/easy.jpg" /><br />Super Easy!
+    <section data-markdown>
+
+        cd /usr/local/src
+        wget http://nginxcp.com/latest/nginxadmin.tar 
+        tar xf nginxadmin.tar
+        cd publicnginx
+        ./nginxinstaller install
+        chmod a+x nginxcp.sh
+        ./nginxcp.sh
+    </section>
+  </div>
+    </section>
+
+    <section>
+      <h3>Test 1 Results - Apache</h3>
+      <table>
+        <tr><td>Requests</td><td>Users</td><td>Time</td></tr>
+        <tr><td>2500</td><td>100</td><td>26.5</td></tr>
+        <tr><td>2500</td><td>150</td><td>41.3</td></tr>
+        <tr><td>2500</td><td>250</td><td>dnf</td></tr>
+      </table>
+    </section>
+
+    <section>
+      <h3>Test 1 Results - Nginx Hybrid</h3>
+      <table>
+        <tr><td>Requests</td><td>Users</td><td>Time</td></tr>
+        <tr><td>2500</td><td>100</td><td>9.5</td></tr>
+        <tr><td>2500</td><td>150</td><td>19.7</td></tr>
+        <tr><td>2500</td><td>250</td><td>20.4</td></tr>
+      </table>
+    </section>
+
+   <section>
+      <h3>Test 1 Chart - 2500 Requests</h3>
+<img src="images/2500.png" />
+    </section>
+
+
+    <section>
+      <h3>Test 2 Results - Apache</h3>
+      <table>
+        <tr><td>Requests</td><td>Users</td><td>Time</td></tr>
+        <tr><td>5000</td><td>100</td><td>44.8</td></tr>
+        <tr><td>5000</td><td>150</td><td>47.9</td></tr>
+        <tr><td>5000</td><td>250</td><td>dnf</td></tr>
+      </table>
+    </section>
+
+    <section>
+      <h3>Test 2 Results - Nginx Hybrid</h3>
+      <table>
+        <tr><td>Requests</td><td>Users</td><td>Time</td></tr>
+        <tr><td>5000</td><td>100</td><td>33.8</td></tr>
+        <tr><td>5000</td><td>150</td><td>36.1</td></tr>
+        <tr><td>5000</td><td>250</td><td>34.9</td></tr>
+      </table>
+    </section>
+
+       <section>
+      <h3>Test 2 Chart - 5000 Requests</h3>
+<img src="images/5k.png" />
+    </section>
+
+    <section>
+      <h3>Test 3 Results - Apache</h3>
+      <table>
+        <tr><td>Requests</td><td>Users</td><td>Time</td></tr>
+        <tr><td>10000</td><td>100</td><td>111.3</td></tr>
+        <tr><td>10000</td><td>150</td><td>104.4</td></tr>
+        <tr><td>10000</td><td>250</td><td>dnf</td></tr>
+      </table>
+    </section>
+
+    <section>
+      <h3>Test 3 Results - Nginx Hybrid</h3>
+      <table>
+        <tr><td>Requests</td><td>Users</td><td>Time</td></tr>
+        <tr><td>10000</td><td>100</td><td>68.5</td></tr>
+        <tr><td>10000</td><td>150</td><td>64.8</td></tr>
+        <tr><td>10000</td><td>250</td><td>76.1</td></tr>
+      </table>
+    </section>
+
+   <section>
+      <h3>Test 3 Chart - 10000 Requests</h3>
+<img src="images/10k.png" />
+    </section>
+
+    <section>
+      <h3>Results Summary</h3>
+      <ul>
+        <li>2500 Test - Hybrid twice as fast as Apache</li>
+        <li>5000 Test - Hybrid ~ 35% faster than Apache</li>
+        <li>10000 Test - Hybrid ~ 35 - 40% faster than Apache</li>
+        <li>Hybrid able to process at all concurrent user levels vs Apache</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>What does this mean?</h3>
+      <ul>
+        <li>Increase in overall performance</li>
+        <li>Able to handle a higher level of traffic</li>
+        <li>Easy to toggle on and off if desired</li>
+        <li>No need to reconfigure Drupal to work</li>
+        <li>May save time/money by increasing time before upgrading server</li>
+      </ul>
+    </section>
+
+    <section>
+      <h1>Thank You!</h1>
+    </section>
+    
+   </div>
+</div>
+
+
+<script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true },
+          { src: 'plugin/notes/notes.js', async: true }
+        ]
+      });
+
+    </script>
+
+</body>
+</html>

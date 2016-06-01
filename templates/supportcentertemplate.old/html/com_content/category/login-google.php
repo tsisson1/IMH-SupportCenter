@@ -1,0 +1,249 @@
+<div class='item-page'>
+        <div class='page-header'>
+                <h1>Please wait while you are logged in using Google+...</h1>
+        </div>
+<?
+
+$document = JFactory::getDocument();
+$document->setMetaData('robots','noindex,follow');
+
+force_this_url_over_ssl();
+
+
+
+
+if($_GET['error'] == "access_denied")
+{
+	Header( "HTTP/1.1 301 Moved Permanently" );
+	Header( "Location: /support/login" );
+	exit();
+}
+
+
+
+
+
+
+// http://code.google.com/p/google-api-php-client/source/browse/trunk/examples/userinfo/index.php
+require_once 'google_login/src/Google_Client.php';
+require_once 'google_login/src/contrib/Google_PlusService.php';
+require_once 'google_login/src/contrib/Google_Oauth2Service.php'; //bradm
+
+
+// Set your cached access token. Remember to replace $_SESSION with a
+// real database or memcached.
+session_start();
+
+unset($_SESSION['token']); // bradm
+
+$client = new Google_Client();
+$client->setApplicationName('Google+ PHP Starter Application');
+// Visit https://code.google.com/apis/console?api=plus to generate your
+// client id, client secret, and to register your redirect uri.
+
+// $client->setClientId('266013485747.apps.googleusercontent.com');
+$client->setClientId('22633305058.apps.googleusercontent.com');
+
+// $client->setClientSecret('Ccbf_SkhaAe4yhuxeU_vt_KW');
+$client->setClientSecret('Ff34u7p4QKfnv_gZKv357i0T');
+
+$client->setRedirectUri('https://www.inmotionhosting.com/support/login-with-google');
+
+// $client->setDeveloperKey('AIzaSyBA8Rq51Su92tyf2SbJdE5Hhws2IYurazk');
+$client->setDeveloperKey('AIzaSyDxab9vc_WStsub_JYDWIQ6Q_ZvenKDtCM');
+
+// $client->setScopes(array("https://www.googleapis.com/auth/plus.me","https://www.googleapis.com/auth/userinfo.profile","https://www.googleapis.com/auth/userinfo.email"));
+$client->setScopes(array("https://www.googleapis.com/auth/plus.me","https://www.googleapis.com/auth/userinfo.email"));
+$plus = new Google_PlusService($client);
+$oauth2 = new Google_Oauth2Service($client);
+
+
+
+
+
+
+$session = JFactory::getSession();
+$form_data = "
+	<input type='hidden' name='username' value='username' />
+	<input type='hidden' name='password' value='password' />
+	<input type='hidden' name='option' value='com_users' />
+	<input type='hidden' name='task' value='user.login' />
+	<input type='hidden' name='code' id='code' value='" . addslashes($_GET['code']) . "' />
+	<input type='hidden' name='login_type' id='login_type' value='gplus' />
+	<input type='hidden' name='return' id='return' value='" . $session->get('return1') . "' />
+	" . JHtml::_('form.token') . "
+";
+
+
+
+
+
+
+if (isset($_GET['code']))
+{
+	$client->authenticate();
+	$_SESSION['token'] = $client->getAccessToken();
+	$redirect = 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'];
+
+	//header('Location: ' . filter_var($redirect, FILTER_SANITIZE_URL));
+}
+
+if (isset($_SESSION['token']))
+{
+	$client->setAccessToken($_SESSION['token']);
+}
+
+if ($client->getAccessToken())
+{
+	$activities = $plus->activities->listActivities('me', 'public');
+
+	// 2014.03.25 - userinfo is depreciated
+	// $user = $oauth2->userinfo->get();
+
+	$me = $plus->people->get('me');
+
+	$user['id'] = $me['id'];
+	$user['email'] = $me['emails'][0]['value'];
+
+	// We're not done yet. Remember to update the cached access token.
+	// Remember to replace $_SESSION with a real database or memcached.
+	$_SESSION['token'] = $client->getAccessToken();
+
+	// the user has successfully logged in. Let's keep track of this user's data in #__login_google_userdata
+	log_google_userdata($user,$me,$activities);
+
+
+
+
+
+
+	// ------------------------------------------------
+	// if the logged in user already has a username set
+	// ------------------------------------------------
+	if( google_user_have_username($user['id']) )
+	{
+		echo "
+		<form action='/support/' method='post' id='login-form-gplus' name='login-form-gplus'>
+			$form_data
+		</form>
+		<script type='text/javascript'>
+                        document.forms['login-form-gplus'].submit();
+                </script>
+		";
+	}
+
+
+
+
+
+
+	// ----------------------------------------------
+	// if the logged in user does not have a username
+	// ----------------------------------------------
+	else
+	{
+		$app = JFactory::getApplication();
+		$template = $app->getTemplate();
+
+		echo "
+		<form action='/support/' method='post' id='login-form-gplus' name='login-form-gplus'>
+                        $form_data
+		";
+			include_once("templates/$template/includes/you_need_to_create_a_username.php");
+		echo "</form>";
+	}
+
+
+
+
+
+
+}
+else
+{
+	$authUrl = $client->createAuthUrl();
+	echo("<script> top.location.href='" . $authUrl . "'</script>"); // bradm
+	// print "<a href='$authUrl'>Connect Me!</a>";
+}
+
+?>
+
+
+
+
+
+
+</div><!-- <div class='item-page'></div> -->
+
+
+
+
+
+
+<?
+
+function log_google_userdata($user,$profile,$activities)
+{
+	$db = JFactory::getDbo();
+
+	$latest_code = $_GET['code'];
+
+	$current_utc_n = strtotime(gmdate('Y-m-d H:i:s'));
+
+	$google_id = $user['id'];
+	$email = $user['email'];
+	$avatar_url = $profile['image']['url'];
+
+	$g_user = json_encode($user);
+	$g_profile = json_encode($profile);
+	$g_activities = json_encode($activities);
+
+	if( !is_numeric($google_id) )
+		die("<h1>G+ID is not numeric</h1>");
+
+	// first, does this user already exist in the database?
+	$query = "SELECT count(`id`) as 'user_exists' FROM #__login_google_userdata WHERE `google_id` = $google_id;";
+	$db->setQuery($query);
+	$results = $db->loadObjectList();
+
+	switch($results[0]->user_exists)
+	{
+		// this is a new user
+		case 0:
+			$query = "INSERT INTO #__login_google_userdata (`id` ,`google_id` ,`username`, `email` ,`avatar_url`, `first_login_utc_n` ,`last_login_utc_n` ,`activities_array` ,`user_array` ,`profile_array`, `latest_code`)VALUES (NULL , '$google_id', '', '" . addslashes($email) . "', '" . addslashes($avatar_url) . "', '$current_utc_n', '$current_utc_n', '" . addslashes($g_activities) . "', '" . addslashes($g_user) . "', '" . addslashes($g_profile) . "', '" . addslashes($latest_code) . "');";
+			$db->setQuery($query);
+			try { $result = $db->execute(); } catch (Exception $e) { echo "<pre>$query</pre>"; die("<h1>Error g+ Add</h1>"); }
+			break;
+		case 1:
+			$query = "UPDATE #__login_google_userdata SET `last_login_utc_n` = '$current_utc_n', `email` = '" . addslashes($email) . "', `activities_array` = '" . addslashes($g_activities) . "', `user_array` = '" . addslashes($g_user) . "', `profile_array` = '" . addslashes($g_profile) . "', `latest_code` = '" . addslashes($latest_code) . "', `avatar_url` = '" . addslashes($avatar_url) . "' WHERE `google_id` = '$google_id' LIMIT 1;";
+			$db->setQuery($query);
+                        try { $result = $db->execute(); } catch (Exception $e) { die("<h1>Error g+ Modify</h1>"); }
+                        break;
+	}
+}
+
+
+
+
+
+
+function google_user_have_username($id)
+{
+	$db = JFactory::getDbo();
+
+	$query = "SELECT `username` FROM #__login_google_userdata WHERE `google_id` = '$id';";
+	$db->setQuery($query);
+	$results = $db->loadObjectList();
+
+	if( $results[0]->username == "" )
+		return false;
+	else
+		return true;
+}
+
+
+
+
+
+
+?>

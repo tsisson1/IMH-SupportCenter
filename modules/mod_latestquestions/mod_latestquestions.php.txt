@@ -1,0 +1,161 @@
+<?php
+
+
+//don't allow other scripts to grab and execute our file
+defined('_JEXEC') or die('Direct Access to this location is not allowed.');
+$current_utc_n = strtotime(gmdate('Y-m-d H:i:s'));
+$option = JRequest::getVar('option'); $view = JRequest::getVar('view'); $id = JRequest::getVar('id');
+$db = JFactory::getDbo();
+
+
+
+
+
+
+// ************************************************************************************
+// find questions related to this article
+// ************************************************************************************
+if( $option == "com_communitysupport" )
+{
+	// grab the question id
+	$exploded_url = explode("/",$_SERVER['REDIRECT_URL']);
+	$question_alias = addslashes( $exploded_url[ count($exploded_url)-1 ] );
+	$query = "SELECT `id`,`related_article_id` FROM #__questions WHERE `question_alias` = '$question_alias' LIMIT 1;";
+	$db->setQuery($query);
+	$question_details = $db->loadObjectList();
+
+	// if this page is a question
+	if( $question_details )
+	{
+		// grab the related article id
+		$related_article_id = $question_details[0]->related_article_id;
+		$this_question_id = $question_details[0]->id;
+
+		// if this question has a related article
+		if( is_numeric($related_article_id) AND $related_article_id > 0 )
+		{
+			// grab the details about the article
+			$query = "SELECT `id`,`title`,`alias`,`catid` FROM #__content WHERE `id` = $related_article_id;";
+			$db->setQuery($query);
+	        	$article_details = $db->loadObjectList();
+			// double check that we found an article
+			if( $article_details )
+			{
+				$article_title = $article_details[0]->title;
+				require_once JPATH_SITE.'/components/com_content/helpers/route.php';
+				$article_url = JRoute::_(ContentHelperRoute::getArticleRoute($related_article_id . "-" . $article_details[0]->alias, $article_details[0]->catid));
+				echo "
+                        	        <div style='margin:10px 0px;'>
+						<h3>Related Articles</h3>
+                                        	<a href='$article_url'>" . htmlspecialchars($article_title) . "</a>
+        	                        </div>
+                	        ";
+			}
+		}
+		// if this question does not have a related article
+		else
+		{
+			echo "
+		                <h3>Related Articles</h3>
+                		<div style='margin:10px 0px; color:#aaa;'>It looks like there are no related articles.</div>
+                		<div>Would you like to ask a question about this page? If so, click the button below!</div>
+		                <div style='text-align:right; margin-top:10px;'><a class='btn btn-primary' href='/support/community-support/ask-a-question'>Ask a Question</a></div>
+		        ";
+		}
+	} // end if this page is a question
+}
+
+
+
+
+
+
+// is this an article?
+if($option == "com_content" AND $view == "article")
+{
+	/*
+	if($user->username == "BradM" AND $option == "com_communitysupport" AND $related_article_id > 0 AND $this_question_id > 0)
+	{
+		$id = $related_article_id;
+		$query = "SELECT `id`,`question` FROM #__questions WHERE `related_article_id` = $related_article_id AND `id` != $this_question_id;";
+	}
+	else
+		$query = "SELECT `id`,`question` FROM #__questions WHERE `related_article_id` = $id;";
+	*/
+	$query = "SELECT `id`,`question` FROM #__questions WHERE `related_article_id` = $id;";
+	$db->setQuery($query);
+	$related_questions = $db->loadObjectList();
+	// if we have related questions
+	if( $related_questions )
+	{
+		foreach($related_questions as $k => $qo)
+		{
+			$related_question_url = pass_question_id_return_question_url_mod_latestquestions($qo->id);
+        		$related_question_list .= "
+				<div style='margin:10px 0px;'>
+                                        <a href='$related_question_url'>" . htmlspecialchars($qo->question) . "</a>
+                                </div>
+			";
+		}
+	}
+	echo "
+                <h3>Related Questions</h3>
+                <div>Here are a few questions related to this article that our customers have asked:</div>
+        ";
+        if( $related_question_list )
+                echo $related_question_list;
+        else
+                echo "<div style='margin:10px 0px; color:#aaa;'>Ooops! It looks like there are no questions about this page.</div>";
+        echo "
+                <div>Would you like to ask a question about this page? If so, click the button below!</div>
+                <div style='text-align:right; margin-top:10px;'><a class='btn btn-primary' href='/support/community-support/ask-a-question'>Ask a Question</a></div>
+        ";
+}
+
+
+
+
+
+
+return;
+
+
+
+
+
+
+function pass_question_id_return_question_url_mod_latestquestions($id)
+{
+        if( ! is_numeric($id) )
+                JError::raiseError( 404, 'Question not found' );
+
+        $db = JFactory::getDbo();
+
+        // grab category information
+        $query = "
+SELECT `q`.`question_alias`, `qc`.*
+FROM #__question_categories qc, #__questions q
+WHERE   `q`.`id` = $id AND
+        `q`.`category_id` = `qc`.`id`
+        ";
+        $db->setQuery($query);
+        $category_info = $db->loadObjectList();
+
+        if( $category_info[0]->parent_id == 0 )
+                // BREAKS SSL // return JURI::base() . "community-support/" . $category_info[0]->alias . "/" . $category_info[0]->question_alias;
+		return "/support/community-support/" . $category_info[0]->alias . "/" . $category_info[0]->question_alias;
+
+        $query = "SELECT `alias` FROM #__question_categories WHERE `id` = " . $category_info[0]->parent_id . ";";
+        $db->setQuery($query);
+        $parent_category_info = $db->loadObjectList();
+
+        // BREAKS SSL // return JURI::base() . "community-support/" . $parent_category_info[0]->alias . "/" . $category_info[0]->alias . "/" . $category_info[0]->question_alias;
+	return "/support/community-support/" . $parent_category_info[0]->alias . "/" . $category_info[0]->alias . "/" . $category_info[0]->question_alias;
+}
+
+
+
+
+
+
+?>

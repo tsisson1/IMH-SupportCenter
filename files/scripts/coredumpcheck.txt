@@ -1,0 +1,79 @@
+<html>
+
+<head>
+	<title>Core Dump Checker</title>
+
+	<style type="text/css">
+		div a{font-size:12px;}
+		.results{border:1px solid #ccc; padding:2px; width:800px; height:400px; overflow:auto;}
+	</style>
+</head>
+
+<body>
+
+<?
+
+	// The purpose of this file is to help find out what is causing
+	// a core dump
+
+	echo "<h1>Scanning Directory for core dumps</h1>";
+
+	// grab a listing of current files in this directory
+	$file_list = scandir(getcwd());
+
+	// loop through the files, and print those that appear to be core files
+	foreach($file_list as $key => $value)
+	{
+		// is this a core file?
+		if(substr($value,0,5) == "core.")
+		{
+			// yes, this is a core file. print a link to it
+			echo "	<div>
+					<a href='?core=$value'>$value</a>
+				</div>
+			";
+			// keep track of whether we found core files or not
+			$found_core_file = true;
+		}
+	}
+
+	// print a message if no core files are found
+	if(!$found_core_file)
+	{
+		echo "<h2>No core dumps found.</h2>";
+	}
+
+	// if the user clicks a core dump, show them the bdg results
+	//
+	// begin with some security checking
+	//
+	// does the string begin with "core."?
+	if(substr($_GET['core'],0,5) == "core.")
+	{
+		// is the string after the . a string
+		if(is_numeric(str_replace("core.","",$_GET['core'])))
+		{
+			// doesn't appear to be any hackish activity, scan the
+			// core file and print the results
+
+			$command = "gdb -c " . $_GET['core'];
+			echo "	<h2>RUNNING: $command</h2>
+				<div class='results'>
+					<pre>" . shell_exec($command) . "</pre>
+				</div>
+			";
+
+			$command = "strings " . $_GET['core'];
+                        echo "	<h2>RUNNING: $command</h2>
+	                        <div class='results'>
+					<pre>" . shell_exec($command) . "</pre>
+				</div>
+			";
+		}
+	}
+
+?>
+
+</body>
+
+</html>
