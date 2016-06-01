@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:43608:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:43475:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -334,8 +334,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -466,7 +464,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/opencart/setting-up-payment-gateways/reward-points'>Working with Reward Points in OpenCart 1.5</a>
 					<div>This guide show you how to use Reward Points as a payment method in OpenCart.</div>
-					<div class='smallgrey'>Hits: 9,282</div>
+					<div class='smallgrey'>Hits: 9,284</div>
 				</td>
 			</tr>
 			<tr>
@@ -475,7 +473,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/opencart/setting-up-payment-gateways/setting-up-payment-modules-in-opencart'>Setting up Payment Modules in OpenCart</a>
 					<div>In this tutorial you'll learn how to set up PayPal to process payments from your OpenCart website. </div>
-					<div class='smallgrey'>Hits: 22,733</div>
+					<div class='smallgrey'>Hits: 22,737</div>
 				</td>
 			</tr>
 			<tr>
@@ -484,7 +482,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/opencart/setting-up-payment-gateways/how-to-enable-ssl-connection-in-opencart'>How to enable SSL connection in OpenCart</a>
 					<div>Learn how to enable SSL connections to your OpenCart shopping cart.</div>
-					<div class='smallgrey'>Hits: 58,911</div>
+					<div class='smallgrey'>Hits: 58,923</div>
 				</td>
 			</tr>
 			</table>

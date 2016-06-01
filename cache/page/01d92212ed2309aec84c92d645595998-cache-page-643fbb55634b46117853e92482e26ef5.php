@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:157302:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:157165:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -221,11 +221,11 @@ window.setInterval(function(){var r;try{r=window.XMLHttpRequest?new XMLHttpReque
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-23']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '73.253.158.166']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '52.71.155.178']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '73.253.158.166']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '52.71.155.178']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -338,8 +338,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -467,9 +465,9 @@ var WRInitTime=(new Date()).getTime();
 				
 					<div style='font-size:12px; color:#aaa; margin-bottom:-10px; padding-top:5px;'>
 							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Written by </span><a href='https://plus.google.com/u/0/103891980085974966828/?rel=author'>Scott Mitchell</a></div>
-							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Views:</span> <span name='page_views' id='page_views'>40,944</span></div>
+							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Views:</span> <span name='page_views' id='page_views'>40,961</span></div>
 							<div style='float:left; margin-right:20px;' title='Originally published: Mar 12, 2015'><span style='color:#606060;'>Published:</span> Mar 12, 2015</div>
-							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Comments:</span> <a href='#comments'>44</a></div>
+							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Comments:</span> <a href='#comments'>45</a></div>
 							<div style='clear:both;'></div>
 						</div>
 						</div>
@@ -674,7 +672,7 @@ var WRInitTime=(new Date()).getTime();
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZjYXRpZD0xMzYmaWQ9MzUxOCZ2aWV3PWFydGljbGUmSXRlbWlkPTEwMQ==" />
-		<input type="hidden" name="4838274bcf0507bc350b77a40eb6ad96" value="1" />	</div>
+		<input type="hidden" name="d3345f3fdd09e9129f82ba3b0730cfc7" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -904,7 +902,7 @@ John-Paul</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -1368,7 +1366,7 @@ John-Paul</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -1480,7 +1478,7 @@ TJ Edens</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -1826,7 +1824,7 @@ John-Paul</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -2066,7 +2064,7 @@ John-Paul</div>
 			</div>
 	<div name='fixComments' id='fixComments' style='width:220px; margin:0px; float:right;'>
 		<div class='moduletable'>
-			<h3><span class='comment-count'>44</span> Questions & <span class='comment-text'>Comments</span></h3>
+			<h3><span class='comment-count'>45</span> Questions & <span class='comment-text'>Comments</span></h3>
 						<p class='post-a-comment'><a href='#post_a_comment' class='btn btn-primary small'>Post a comment</a></p>
 			<p class='back-to'>Back to <a href='#first-comment'>first comment</a> | <a href='#top-of-page'>top</a></p>
 		</div>
@@ -2449,11 +2447,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-23']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '73.253.158.166']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '52.71.155.178']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '73.253.158.166']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '52.71.155.178']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

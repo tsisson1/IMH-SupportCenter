@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:53285:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:53144:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -222,11 +222,11 @@ window.setInterval(function(){var r;try{r=window.XMLHttpRequest?new XMLHttpReque
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-25']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '68.177.216.68']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '70.75.89.47']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '68.177.216.68']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '70.75.89.47']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -339,8 +339,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -436,9 +434,9 @@ var WRInitTime=(new Date()).getTime();
 </div>
 </div></li><li class='bc_arrow'>&gt;&gt;</li><li class='bc_with_dd' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'><a href='/support/news' itemprop='url'><span itemprop='title'>News / Announcements<span></a><div class='dropdown_2columns'><div class='col_2'><div><a href='/support/news/archived'>Archived News</a> (67)</div><div><a href='/support/news/general'>General</a> (127)</div></div></div></li><li class='bc_arrow'>&gt;&gt;</li><li class='bc_with_dd' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'><a href='/support/news/general' itemprop='url'><span itemprop='title'>General<span></a>
 			<div class='dropdown_3columns' style='width:900px; margin-left:-250px;'>
-				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/news/general/err-too-many-redirects'>Chrome error: ERR_TOO_MANY_REDIRECTS</a> (12,736 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/news/general/east-coast-data-center'>East Coast Data Center</a> (7,867 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/news/general/wordpress-w3-total-cache-and-wp-super-cache-vulnerability'>WordPress W3 Total Cache and WP Super Cache Vulnerability</a> (7,577 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/news/general/connectivity-problems-on-the-east-coast'>Connectivity Problems on the East Coast</a> (6,862 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/news/general/biz82-server-change-of-ip-address'>Biz82 server - Change of IP Address</a> (6,690 hits)</div></div>
+				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/news/general/err-too-many-redirects'>Chrome error: ERR_TOO_MANY_REDIRECTS</a> (12,742 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/news/general/east-coast-data-center'>East Coast Data Center</a> (7,867 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/news/general/wordpress-w3-total-cache-and-wp-super-cache-vulnerability'>WordPress W3 Total Cache and WP Super Cache Vulnerability</a> (7,577 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/news/general/connectivity-problems-on-the-east-coast'>Connectivity Problems on the East Coast</a> (6,862 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/news/general/biz82-server-change-of-ip-address'>Biz82 server - Change of IP Address</a> (6,690 hits)</div></div>
 				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/news/general/east-coast-datacenter-outage'>East Coast Datacenter Outage</a> (8,077 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/news/general/javascript-failure-jquery-update'>Javascript failure due to jQuery update</a> (7,863 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/news/general/biz117-and-biz82-servers-affected-by-ddos-attack'>biz117 and biz82 Servers affected by DDOS Attack</a> (7,539 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/news/general/builder-maintenance-051012'>Premium Website Builder Maintenance</a> (6,785 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/news/general/connection-issue'>Connection Issue</a> (6,634 hits)</div></div>
-				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/news/general/cpanel-updates-in-progress-across-network'>cPanel updates in progress across network</a> (7,996 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/news/general/outlook-issues-after-windows-10-upgrade'>Outlook not working after installing Windows 10</a> (7,683 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/news/general/mac-osx-java-exploit-found'>Mac OSX Java Exploit Found</a> (7,445 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/news/general/ecbiz91-server-performance-issues'>ecbiz91 Server Performance Issues</a> (6,756 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/news/general/heartbleed-0-day-openssl-security-bug'>Heartbleed 0-day OpenSSL security bug</a> (6,607 hits)</div></div>
+				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/news/general/cpanel-updates-in-progress-across-network'>cPanel updates in progress across network</a> (7,996 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/news/general/outlook-issues-after-windows-10-upgrade'>Outlook not working after installing Windows 10</a> (7,693 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/news/general/mac-osx-java-exploit-found'>Mac OSX Java Exploit Found</a> (7,445 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/news/general/ecbiz91-server-performance-issues'>ecbiz91 Server Performance Issues</a> (6,756 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/news/general/heartbleed-0-day-openssl-security-bug'>Heartbleed 0-day OpenSSL security bug</a> (6,607 hits)</div></div>
 			</div>
 		</li><li class='bc_arrow'>&gt;&gt;</li><li class='bc_no_dd' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'><span itemprop='title'>Outlook not working after installing Windows 10</span></li>			</ul>
 		</div>
@@ -474,7 +472,7 @@ var WRInitTime=(new Date()).getTime();
 				
 					<div style='font-size:12px; color:#aaa; margin-bottom:-10px; padding-top:5px;'>
 							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Written by </span><a href='https://plus.google.com/u/0/114162951489960418846?rel=author'>John-Paul Briones</a></div>
-							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Views:</span> <span name='page_views' id='page_views'>7,683</span></div>
+							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Views:</span> <span name='page_views' id='page_views'>7,693</span></div>
 							<div style='float:left; margin-right:20px;' title='Originally published: Aug 11, 2015'><span style='color:#606060;'>Published:</span> Aug 11, 2015</div>
 							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Comments:</span> <a href='#comments'>0</a></div>
 							<div style='clear:both;'></div>
@@ -599,7 +597,7 @@ var WRInitTime=(new Date()).getTime();
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZjYXRpZD01MCZpZD0zNjM4JnZpZXc9YXJ0aWNsZSZJdGVtaWQ9MTAx" />
-		<input type="hidden" name="e46d06f8651c85e0e1321c46ba68c012" value="1" />	</div>
+		<input type="hidden" name="a70272deb689142f1d7a8aeffb30ef1e" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -1117,11 +1115,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-25']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '68.177.216.68']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '70.75.89.47']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '68.177.216.68']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '70.75.89.47']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

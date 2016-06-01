@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:54864:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:54731:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -225,11 +225,11 @@ jQuery(function($) {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-25']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '94.253.129.190']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '196.12.225.242']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '94.253.129.190']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '196.12.225.242']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -342,8 +342,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -599,11 +597,11 @@ var WRInitTime=(new Date()).getTime();
                         </tr>
           <tr>
                                 <td style='padding-right:20px;'><a href='/support/reseller/custom-name-server'>Using Custom Nameservers as a Reseller</a></td>
-                                <td>23,108</td>
+                                <td>23,114</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/reseller/whmcs'>What is & how to use WHMCS</a></td>
-                                <td>10,028</td>
+                                <td>10,031</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/reseller/request-whmcs-license'>How to Request a License for WHMCS in AMP</a></td>
@@ -611,11 +609,11 @@ var WRInitTime=(new Date()).getTime();
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/reseller/imhstore-login'>How to Login to the InMotion Store</a></td>
-                                <td>4,661</td>
+                                <td>4,662</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/reseller/faq'>What is Reseller Hosting?</a></td>
-                                <td>4,634</td>
+                                <td>4,635</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/reseller/sub-accounts'>What is the difference between eNom Sub-Retail and Sub-Reseller account in the InMotion Store?</a></td>
@@ -631,7 +629,7 @@ var WRInitTime=(new Date()).getTime();
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/reseller/custom-default-page'>Using a Custom Landing Page</a></td>
-                                <td>2,685</td>
+                                <td>2,686</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/reseller/how-to-force-a-password-change-in-whm'>How to force a password change in WHM</a></td>
@@ -643,7 +641,7 @@ var WRInitTime=(new Date()).getTime();
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/reseller/edit-zone'>Modifying DNS in WHM</a></td>
-                                <td>1,605</td>
+                                <td>1,606</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/reseller/purchase-ssl'>Purchasing an SSL Certificate from the InMotion Store</a></td>
@@ -733,7 +731,7 @@ var WRInitTime=(new Date()).getTime();
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZjYXRpZD00MjQmaWQ9NDI0JnZpZXc9Y2F0ZWdvcnkmSXRlbWlkPTEwMQ==" />
-		<input type="hidden" name="066b31201691382e087b4dbc2e01503a" value="1" />	</div>
+		<input type="hidden" name="7bf3e7d3a3244ee2755eb4db8e09c07b" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -1120,11 +1118,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-25']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '94.253.129.190']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '196.12.225.242']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '94.253.129.190']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '196.12.225.242']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

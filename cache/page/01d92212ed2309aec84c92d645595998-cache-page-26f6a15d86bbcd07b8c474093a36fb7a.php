@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:73860:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:73723:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -221,11 +221,11 @@ window.setInterval(function(){var r;try{r=window.XMLHttpRequest?new XMLHttpReque
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-20']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '96.57.155.122']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '38.94.167.10']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '96.57.155.122']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '38.94.167.10']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -338,8 +338,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -440,9 +438,9 @@ var WRInitTime=(new Date()).getTime();
 			</div>
 		</li><li class='bc_arrow'>&gt;&gt;</li><li class='bc_with_dd' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'><a href='/support/email/email-client-setup' itemprop='url'><span itemprop='title'>Email Client Setup<span></a>
 			<div class='dropdown_3columns' style='width:900px; margin-left:-250px;'>
-				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/email-client-setup/galaxy'>How to set up email on a Galaxy S phone</a> (122,203 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/email-client-setup/setting-up-an-android-device-to-send-a-receive-email'>Setting up an Android Device to Send & Receive Email</a> (45,155 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/email-client-setup/email-client-configuration-email-over-ssl'>Email Client Configuration - Email Over SSL</a> (17,710 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/email-client-setup/thunderbird-leaving-a-copy-of-an-email-message-on-the-server-using-pop3'>Thunderbird: Leaving a copy of an email message on the server using POP3</a> (7,145 hits)</div></div>
-				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/email-client-setup/setting-up-gmail-for-pop3-and-smtp'>Setting up Gmail for POP3 and SMTP</a> (117,920 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/email-client-setup/subscribe-imap-email'>Subscribe IMAP Email folders in Mac Mail</a> (42,300 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/email-client-setup/outlook-2010-leaving-a-copy-of-the-message-on-the-server-using-pop3'>Outlook 2010: Leaving a copy of the message on the server using POP3</a> (11,616 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/email-client-setup/common-3rd-party-smtp-settings'>Common 3rd party SMTP settings</a> (1,836 hits)</div></div>
-				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/email-client-setup/configure-iphone6-email'>Configuring your iPhone 6 for Email</a> (62,567 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/email-client-setup/mac-mail-mavericks-os'>Updated: How to Set Up Mac Mail</a> (19,798 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/email-client-setup/setting-up-windows-live-mail'>Setting up Windows Live Mail</a> (9,915 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/email-client-setup/installing-opera-mail-client'>Setting up the Opera Mail Client</a> (254 hits)</div></div>
+				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/email-client-setup/galaxy'>How to set up email on a Galaxy S phone</a> (122,230 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/email-client-setup/setting-up-an-android-device-to-send-a-receive-email'>Setting up an Android Device to Send & Receive Email</a> (45,160 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/email-client-setup/email-client-configuration-email-over-ssl'>Email Client Configuration - Email Over SSL</a> (17,717 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/email-client-setup/thunderbird-leaving-a-copy-of-an-email-message-on-the-server-using-pop3'>Thunderbird: Leaving a copy of an email message on the server using POP3</a> (7,145 hits)</div></div>
+				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/email-client-setup/setting-up-gmail-for-pop3-and-smtp'>Setting up Gmail for POP3 and SMTP</a> (117,946 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/email-client-setup/subscribe-imap-email'>Subscribe IMAP Email folders in Mac Mail</a> (42,308 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/email-client-setup/outlook-2010-leaving-a-copy-of-the-message-on-the-server-using-pop3'>Outlook 2010: Leaving a copy of the message on the server using POP3</a> (11,616 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/email-client-setup/common-3rd-party-smtp-settings'>Common 3rd party SMTP settings</a> (1,836 hits)</div></div>
+				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/email-client-setup/configure-iphone6-email'>Configuring your iPhone 6 for Email</a> (62,605 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/email-client-setup/mac-mail-mavericks-os'>Updated: How to Set Up Mac Mail</a> (19,803 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/email-client-setup/setting-up-windows-live-mail'>Setting up Windows Live Mail</a> (9,918 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/email-client-setup/installing-opera-mail-client'>Setting up the Opera Mail Client</a> (254 hits)</div></div>
 			</div>
 		</li><li class='bc_arrow'>&gt;&gt;</li><li class='bc_no_dd' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'><span itemprop='title'>Configuring your iPhone 6 for Email</span></li>			</ul>
 		</div>
@@ -478,7 +476,7 @@ var WRInitTime=(new Date()).getTime();
 				
 					<div style='font-size:12px; color:#aaa; margin-bottom:-10px; padding-top:5px;'>
 							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Written by </span><a href='https://plus.google.com/u/3/113040903535329496534?rel=author'>Arnel Custodio</a></div>
-							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Views:</span> <span name='page_views' id='page_views'>62,567</span></div>
+							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Views:</span> <span name='page_views' id='page_views'>62,605</span></div>
 							<div style='float:left; margin-right:20px;' title='Originally published: Dec 31, 2014'><span style='color:#606060;'>Published:</span> Apr 1, 2016</div>
 							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Comments:</span> <a href='#comments'>7</a></div>
 							<div style='clear:both;'></div>
@@ -678,7 +676,7 @@ var WRInitTime=(new Date()).getTime();
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZjYXRpZD00NyZpZD0zNDgwJnZpZXc9YXJ0aWNsZSZJdGVtaWQ9MTAx" />
-		<input type="hidden" name="6bb2165d994a2a0d1e94a54c94b81588" value="1" />	</div>
+		<input type="hidden" name="3d6220792421c245588c16560d36877f" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -1392,11 +1390,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-20']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '96.57.155.122']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '38.94.167.10']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '96.57.155.122']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '38.94.167.10']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

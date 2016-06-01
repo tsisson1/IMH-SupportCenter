@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:44159:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:44026:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -335,8 +335,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -467,7 +465,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/everything-email/email-features/how-to-setup-an-autoresponder'>How to Create an Email Autoresponder in Webmail</a>
 					<div></div>
-					<div class='smallgrey'>Hits: 3,236</div>
+					<div class='smallgrey'>Hits: 3,239</div>
 				</td>
 			</tr>
 			<tr>
@@ -503,7 +501,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/everything-email/email-features/set-up-email-forwarder'>How to Setup an Email Forwarder in cPanel & Webmail</a>
 					<div>Setting up an Email Forwarder in cPanel & Webmail. </div>
-					<div class='smallgrey'>Hits: 37,727</div>
+					<div class='smallgrey'>Hits: 37,740</div>
 				</td>
 			</tr>
 			<tr>

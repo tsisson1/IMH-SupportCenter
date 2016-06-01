@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:414095:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:414196:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -219,11 +219,11 @@ window.setInterval(function(){var r;try{r=window.XMLHttpRequest?new XMLHttpReque
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-38']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '217.58.0.74']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '::1']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '217.58.0.74']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '::1']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -249,7 +249,7 @@ var WRInitTime=(new Date()).getTime();
 <header role="banner">
         <div class="container">
             <div class="row">
-                <a href="/" class="span3"><img class='imhLogo' src="//cdn.inmotionhosting.com/img/logo-imh.png" alt="InMotion Hosting" /></a>
+                <a href="/" class="span3"><img class='imhLogo' src="//imh01-inmotionhosting1.netdna-ssl.com/img/logo-imh.png" alt="InMotion Hosting" /></a>
 		<div class="span6 offset3">
 			<ul class="nav nav-pills nav-pills-contact pull-right contactListHeader">
 				<li class="pull-right sales-label">Questions? Contact Support:</li>
@@ -314,7 +314,7 @@ var WRInitTime=(new Date()).getTime();
   
     <div id="main" class="main-container" role="main" style='background:#f9f9f9;'>
 
-	<div style="background:url('//cdn.inmotionhosting.com/img/rednoise.gif');">
+	<div style="background:url('//imh01-inmotionhosting1.netdna-ssl.com/img/rednoise.gif');">
 		<div class='container'>
 			<img src='/support/templates/supportcentertemplate/images/logo.png.old?v=201507291301' class='MainLogo' usemap='#sclogo' />
 			<map name='sclogo'><area shape='rect' coords='130,25,430,60' href='/support' alt='InMotion Hosting Support Center'></map>
@@ -336,8 +336,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -438,9 +436,9 @@ var WRInitTime=(new Date()).getTime();
 			</div>
 		</li><li class='bc_arrow'>&gt;&gt;</li><li class='bc_with_dd' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'><a href='/support/website/wordpress' itemprop='url'><span itemprop='title'>WordPress<span></a>
 			<div class='dropdown_3columns' style='width:900px; margin-left:-250px;'>
-				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress/wordpress-changing-the-site-url-and-home-settings'>WordPress - Changing the Site URL and Home Settings</a> (185,553 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress/disabling-the-wp-cronphp-in-wordpress'>Disabling the wp-cron.php in WordPress</a> (112,002 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress/resetting-your-wordpress-admin-password'>Resetting your WordPress Admin Password</a> (68,588 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress/how-to-optimize-wordpress'>How to optimize Wordpress</a> (29,543 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress/disable-xml-rpc-requests'>Disable WordPress XML-RPC requests</a> (25,293 hits)</div></div>
-				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress/lock-down-wordpress-admin-login-with-htaccess'>Lock down WordPress admin login with .htaccess</a> (135,767 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress/duplicate-wordpress-site-for-testing'>Making a duplicate Wordpress site for development and testing</a> (96,469 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress/change-wordpress-admin-username-for-security'>Change WordPress admin username for security</a> (42,826 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress/limit-or-disable-wordpress-revisions'>Limit or disable WordPress revisions</a> (28,258 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress/show-author-avatar'>How to show an author's avatar within WordPress</a> (24,913 hits)</div></div>
-				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress/prevent-unauthorized-wp-admin-wp-login-php-attempts'>Prevent unauthorized WordPress wp-admin and wp-login.php attempts</a> (129,777 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress/heartbeat-ajax-php-usage'>WordPress Heartbeat and heavy admin-ajax.php usage</a> (88,366 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress/reinstall-wordpress-after-a-hack'>How to Re-Install WordPress after a Hack </a> (32,244 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress/fix-download-failed-errors-on-update'>Fix WordPress Download failed errors on update</a> (27,632 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress/wordpress-security-preventing-brute-force-attacks-on-admin-login'>Wordpress Security - Preventing Brute Force Attacks on Admin Login</a> (24,430 hits)</div></div>
+				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress/wordpress-changing-the-site-url-and-home-settings'>WordPress - Changing the Site URL and Home Settings</a> (185,605 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress/disabling-the-wp-cronphp-in-wordpress'>Disabling the wp-cron.php in WordPress</a> (112,012 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress/resetting-your-wordpress-admin-password'>Resetting your WordPress Admin Password</a> (68,596 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress/how-to-optimize-wordpress'>How to optimize Wordpress</a> (29,544 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress/disable-xml-rpc-requests'>Disable WordPress XML-RPC requests</a> (25,296 hits)</div></div>
+				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress/lock-down-wordpress-admin-login-with-htaccess'>Lock down WordPress admin login with .htaccess</a> (135,784 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress/duplicate-wordpress-site-for-testing'>Making a duplicate Wordpress site for development and testing</a> (96,491 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress/change-wordpress-admin-username-for-security'>Change WordPress admin username for security</a> (42,828 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress/limit-or-disable-wordpress-revisions'>Limit or disable WordPress revisions</a> (28,259 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress/show-author-avatar'>How to show an author's avatar within WordPress</a> (24,918 hits)</div></div>
+				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress/prevent-unauthorized-wp-admin-wp-login-php-attempts'>Prevent unauthorized WordPress wp-admin and wp-login.php attempts</a> (129,785 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress/heartbeat-ajax-php-usage'>WordPress Heartbeat and heavy admin-ajax.php usage</a> (88,388 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress/reinstall-wordpress-after-a-hack'>How to Re-Install WordPress after a Hack </a> (32,247 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress/fix-download-failed-errors-on-update'>Fix WordPress Download failed errors on update</a> (27,633 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress/wordpress-security-preventing-brute-force-attacks-on-admin-login'>Wordpress Security - Preventing Brute Force Attacks on Admin Login</a> (24,433 hits)</div></div>
 			</div>
 		</li><li class='bc_arrow'>&gt;&gt;</li><li class='bc_no_dd' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'><span itemprop='title'>WordPress Heartbeat and heavy admin-ajax.php usage</span></li>			</ul>
 		</div>
@@ -476,7 +474,7 @@ var WRInitTime=(new Date()).getTime();
 				
 					<div style='font-size:12px; color:#aaa; margin-bottom:-10px; padding-top:5px;'>
 							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Written by </span><a href='https://plus.google.com/+JeffMatson?rel=author'>Jeff Matson</a></div>
-							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Views:</span> <span name='page_views' id='page_views'>88,366</span></div>
+							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Views:</span> <span name='page_views' id='page_views'>88,388</span></div>
 							<div style='float:left; margin-right:20px;' title='Originally published: Feb 19, 2014'><span style='color:#606060;'>Published:</span> Dec 9, 2015</div>
 							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Comments:</span> <a href='#comments'>148</a></div>
 							<div style='clear:both;'></div>
@@ -589,18 +587,18 @@ php-cgi 0.23 secs Wed Feb 19 01:03</p>
 
 <ol class="article_list">
   <li style='clear:both;'><p>First, <a href="http://www.inmotionhosting.com/support/edu/wordpress/wordpress-introduction/logging-into-wordpress-dashboard">log into your WordPress admin dashboard</a>.</p></li>
-  <li style='clear:both;'><a class="std_ss" href="//cdn.inmotionhosting.com/support/images/stories/wordpress/heartbeat-control-1.png"><img src="//cdn.inmotionhosting.com/support/images/stories/wordpress/heartbeat-control-1.png"  style='float:right; margin:15px 15px 15px 15px;'></a><p>Within your dashboard, hover over <strong>Plugins</strong> and click on <strong>Add New</strong>.</p></li>
-  <li style='clear:both;'><a class="std_ss" href="//cdn.inmotionhosting.com/support/images/stories/wordpress/heartbeat-control-2.png"><img src="//cdn.inmotionhosting.com/support/images/stories/wordpress/heartbeat-control-2.png"  style='float:right; margin:15px 15px 15px 15px;'></a><p>On this page, enter <strong>Heartbeat Control</strong> into the search box At the top and press the <strong>Enter</strong> key on your keyboard to perform the search.</p></li>
-  <li style='clear:both;'><a class="std_ss" href="//cdn.inmotionhosting.com/support/images/stories/wordpress/heartbeat-control-3.png"><img src="//cdn.inmotionhosting.com/support/images/stories/wordpress/heartbeat-control-3.png"  style='float:right; margin:15px 15px 15px 15px;'></a><p>As you have searched for the exact name of the plugin, it should be the first result that appears.  To install it, click on the <strong>Install Now</strong> button.</p></li>
-  <li style='clear:both;'><a class="std_ss" href="//cdn.inmotionhosting.com/support/images/stories/wordpress/heartbeat-control-4.png"><img src="//cdn.inmotionhosting.com/support/images/stories/wordpress/heartbeat-control-4.png"  style='float:right; margin:15px 15px 15px 15px;'></a><p>WordPress will now handle the download and installation of the Heartbeat Control plugin.  Of course, be sure to click on <strong>Activate Plugin</strong> when complete.</p></li>
+  <li style='clear:both;'><a class="std_ss" href="//imh01-inmotionhosting1.netdna-ssl.com/support/images/stories/wordpress/heartbeat-control-1.png"><img src="//imh01-inmotionhosting1.netdna-ssl.com/support/images/stories/wordpress/heartbeat-control-1.png"  style='float:right; margin:15px 15px 15px 15px;'></a><p>Within your dashboard, hover over <strong>Plugins</strong> and click on <strong>Add New</strong>.</p></li>
+  <li style='clear:both;'><a class="std_ss" href="//imh01-inmotionhosting1.netdna-ssl.com/support/images/stories/wordpress/heartbeat-control-2.png"><img src="//imh01-inmotionhosting1.netdna-ssl.com/support/images/stories/wordpress/heartbeat-control-2.png"  style='float:right; margin:15px 15px 15px 15px;'></a><p>On this page, enter <strong>Heartbeat Control</strong> into the search box At the top and press the <strong>Enter</strong> key on your keyboard to perform the search.</p></li>
+  <li style='clear:both;'><a class="std_ss" href="//imh01-inmotionhosting1.netdna-ssl.com/support/images/stories/wordpress/heartbeat-control-3.png"><img src="//imh01-inmotionhosting1.netdna-ssl.com/support/images/stories/wordpress/heartbeat-control-3.png"  style='float:right; margin:15px 15px 15px 15px;'></a><p>As you have searched for the exact name of the plugin, it should be the first result that appears.  To install it, click on the <strong>Install Now</strong> button.</p></li>
+  <li style='clear:both;'><a class="std_ss" href="//imh01-inmotionhosting1.netdna-ssl.com/support/images/stories/wordpress/heartbeat-control-4.png"><img src="//imh01-inmotionhosting1.netdna-ssl.com/support/images/stories/wordpress/heartbeat-control-4.png"  style='float:right; margin:15px 15px 15px 15px;'></a><p>WordPress will now handle the download and installation of the Heartbeat Control plugin.  Of course, be sure to click on <strong>Activate Plugin</strong> when complete.</p></li>
 </ol>
 
 <h3>Configuring the Heartbeat Control plugin</h3>
 
 <ol class="article_list">
-  <li style='clear:both;'><a class="std_ss" href="//cdn.inmotionhosting.com/support/images/stories/wordpress/heartbeat-control-5.png"><img src="//cdn.inmotionhosting.com/support/images/stories/wordpress/heartbeat-control-5.png"  style='float:right; margin:15px 15px 15px 15px;'></a><p>Now that you have the Heartbeat Control plugin installed, you will need to configure its settings.  To access the settings page, hover over <strong>Tools</strong> on the left side menu bar and click on <stong>Heartbeat Control</stong>.</p></li>
-  <li style='clear:both;'><a class="std_ss" href="//cdn.inmotionhosting.com/support/images/stories/wordpress/heartbeat-control-6.png"><img src="//cdn.inmotionhosting.com/support/images/stories/wordpress/heartbeat-control-6.png"  style='float:right; margin:15px 15px 15px 15px;'></a><p>Once on the settings page, you will notice 2 different dropdown boxes.  The first box will allow you to disable the WordPress heartbeat on the entire site or on specific locations.  Depending on your needs, you may disable the WordPress heartbeat completely, or only allow it on specific locations such as on the post edit page.</p></li>
-  <li style='clear:both;'><a class="std_ss" href="//cdn.inmotionhosting.com/support/images/stories/wordpress/heartbeat-control-7.png"><img src="//cdn.inmotionhosting.com/support/images/stories/wordpress/heartbeat-control-7.png"  style='float:right; margin:15px 15px 15px 15px;'></a><p>The second box allows you to determine how often the WordPress heartbeat API will make a request.  For example, on post edit pages it makes a POST request every 15 seconds.  This can be modified within the <strong>heartbeat frequency</strong> dropdown to delay it up to 60 seconds between requests which would cut down server resources caused by admin-ajax requests by 75%.</p></li>
+  <li style='clear:both;'><a class="std_ss" href="//imh01-inmotionhosting1.netdna-ssl.com/support/images/stories/wordpress/heartbeat-control-5.png"><img src="//imh01-inmotionhosting1.netdna-ssl.com/support/images/stories/wordpress/heartbeat-control-5.png"  style='float:right; margin:15px 15px 15px 15px;'></a><p>Now that you have the Heartbeat Control plugin installed, you will need to configure its settings.  To access the settings page, hover over <strong>Tools</strong> on the left side menu bar and click on <stong>Heartbeat Control</stong>.</p></li>
+  <li style='clear:both;'><a class="std_ss" href="//imh01-inmotionhosting1.netdna-ssl.com/support/images/stories/wordpress/heartbeat-control-6.png"><img src="//imh01-inmotionhosting1.netdna-ssl.com/support/images/stories/wordpress/heartbeat-control-6.png"  style='float:right; margin:15px 15px 15px 15px;'></a><p>Once on the settings page, you will notice 2 different dropdown boxes.  The first box will allow you to disable the WordPress heartbeat on the entire site or on specific locations.  Depending on your needs, you may disable the WordPress heartbeat completely, or only allow it on specific locations such as on the post edit page.</p></li>
+  <li style='clear:both;'><a class="std_ss" href="//imh01-inmotionhosting1.netdna-ssl.com/support/images/stories/wordpress/heartbeat-control-7.png"><img src="//imh01-inmotionhosting1.netdna-ssl.com/support/images/stories/wordpress/heartbeat-control-7.png"  style='float:right; margin:15px 15px 15px 15px;'></a><p>The second box allows you to determine how often the WordPress heartbeat API will make a request.  For example, on post edit pages it makes a POST request every 15 seconds.  This can be modified within the <strong>heartbeat frequency</strong> dropdown to delay it up to 60 seconds between requests which would cut down server resources caused by admin-ajax requests by 75%.</p></li>
   <li style='clear:both;'><p>Once your changes are made, click on <strong>Save Changes</strong>.</p></li>
 </ol>
 
@@ -704,7 +702,7 @@ php-cgi 0.23 secs Wed Feb 19 01:03</p>
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZjYXRpZD02MyZpZD0zMTA4JnZpZXc9YXJ0aWNsZSZJdGVtaWQ9MTAx" />
-		<input type="hidden" name="f01a448e04704a760a3e80afa5438048" value="1" />	</div>
+		<input type="hidden" name="7ddaedb96312ea6a0691ef026b45b3a6" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -862,7 +860,7 @@ php-cgi 0.23 secs Wed Feb 19 01:03</p>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -1454,7 +1452,7 @@ Arnel C.</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -1910,7 +1908,7 @@ Arnel C.</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -3147,7 +3145,7 @@ Please let us know if you have any further questions.<br />
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -3199,7 +3197,7 @@ Scott M</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -3251,7 +3249,7 @@ Scott M</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -3625,7 +3623,7 @@ Also, be sure that if you are going to continue using Revolution Slider, that it
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -3702,7 +3700,7 @@ Scott M<br />
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -3953,7 +3951,7 @@ Scott M</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -4059,7 +4057,7 @@ Great Post.  My host told me about this problem.  Took me a while to find a rele
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -4625,7 +4623,7 @@ Arnel C.</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -4707,7 +4705,7 @@ Scott M</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -4819,7 +4817,7 @@ John-Paul</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -4953,7 +4951,7 @@ TJ Edens</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/christopherm'>christopherm</a></div>
 						<div><a href='https://myaccount.google.com/?utm_source=OGB' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>3,380 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>3,390 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -5055,7 +5053,7 @@ John-Paul</div>
 					<th>Comment:</th>
 					<td>
 						
-						<script type='text/javascript' src='//cdn.inmotionhosting.com/support/components/com_pup/tinymce/js/tinymce/tinymce.min.js'></script>
+						<script type='text/javascript' src='//imh01-inmotionhosting1.netdna-ssl.com/support/components/com_pup/tinymce/js/tinymce/tinymce.min.js'></script>
 						<script type='text/javascript'>
 							tinymce.init({
 							    selector: 'textarea.acomment_comment',
@@ -5116,7 +5114,7 @@ John-Paul</div>
 
 
 
-	<div style="background:url('//cdn.inmotionhosting.com/img/pattern.gif');padding-top:20px;">
+	<div style="background:url('//imh01-inmotionhosting1.netdna-ssl.com/img/pattern.gif');padding-top:20px;">
 		<div style=' margin:0px; padding:10px 0px 10px 0px; margin-left:auto; margin-right:auto;'>
 			<h2 style='text-align:center;margin-bottom:10px;'>Need more Help?</h2>
 
@@ -5475,7 +5473,7 @@ $(document).ready(function() {
 
 
 
-<script src="//cdn.inmotionhosting.com/support/templates/supportcentertemplate/js/combined.js?v=2016052509" type="text/javascript"></script>
+<script src="//imh01-inmotionhosting1.netdna-ssl.com/support/templates/supportcentertemplate/js/combined.js?v=2016052509" type="text/javascript"></script>
 
 <!-- <div name='853_overlay_join_community' id='853_overlay_join_community'></div> -->
 
@@ -5487,11 +5485,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-38']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '217.58.0.74']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '::1']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '217.58.0.74']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '::1']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

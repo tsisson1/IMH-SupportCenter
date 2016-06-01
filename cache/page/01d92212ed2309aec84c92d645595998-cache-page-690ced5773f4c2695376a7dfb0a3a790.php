@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:50060:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:49927:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -342,8 +342,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -507,19 +505,19 @@ var WRInitTime=(new Date()).getTime();
                         </tr>
           <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/modsecurity/what-is-modsecurity-and-why-is-it-important'>What is Mod_Security and why is it important</a></td>
-                                <td>73,254</td>
+                                <td>73,262</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/modsecurity/disable-mod-security-via-modsec-manager'>How to Disable mod_security via cPanel Modsec Manager</a></td>
-                                <td>38,271</td>
+                                <td>38,282</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/modsecurity/find-and-disable-specific-modsecurity-rules'>Find and disable specific ModSecurity rules</a></td>
-                                <td>35,246</td>
+                                <td>35,249</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/modsecurity/disable-modsecurity-for-a-domain'>Disable ModSecurity for a domain</a></td>
-                                <td>18,479</td>
+                                <td>18,480</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/modsecurity/mod-security-multipart-request-body-failed-strict-validation-error'>Mod Security Multipart request body failed strict validation error</a></td>
@@ -527,7 +525,7 @@ var WRInitTime=(new Date()).getTime();
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/modsecurity/whitelisting-an-ip-in-mod-security'>Whitelisting an IP in Mod Security</a></td>
-                                <td>2,290</td>
+                                <td>2,292</td>
                         </tr>
                   </table>
 	</form>

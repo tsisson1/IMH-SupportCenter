@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:54399:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:54266:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -221,11 +221,11 @@ jQuery(function($) {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-38']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '206.70.236.253']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '104.163.130.68']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '206.70.236.253']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '104.163.130.68']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -338,8 +338,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -503,11 +501,11 @@ var WRInitTime=(new Date()).getTime();
                         </tr>
           <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/wordpress-plugins/hc-custom-wp-admin-url'>Change WordPress admin URL with HC Custom WP-Admin URL</a></td>
-                                <td>41,728</td>
+                                <td>41,739</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/wordpress-plugins/instagram-picture-plugin-for-wordpress'>WordPress Instagram Plugins - Instagram Picture</a></td>
-                                <td>23,080</td>
+                                <td>23,081</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/wordpress-plugins/paypal-woocommerce'>How to Accept PayPal in WooCommerce</a></td>
@@ -515,11 +513,11 @@ var WRInitTime=(new Date()).getTime();
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/wordpress-plugins/optimize-wordpress-images'>How to Optimize WordPress images with the EWWW Image Optimizer plugin</a></td>
-                                <td>8,332</td>
+                                <td>8,335</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/wordpress-plugins/opening-hours-plugin-for-wordpress'>Opening Hours plugin for Wordpress</a></td>
-                                <td>8,143</td>
+                                <td>8,146</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/wordpress-plugins/sexy-contact-form-wordpress-plugin'>Sexy Contact Form Wordpress Plugin</a></td>
@@ -527,7 +525,7 @@ var WRInitTime=(new Date()).getTime();
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/wordpress-plugins/building-your-first-android-iphone-app-with-apppresser-and-wordpress'>Building your first Android/iPhone app with AppPresser and WordPress</a></td>
-                                <td>7,349</td>
+                                <td>7,350</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/wordpress-plugins/sp-news-and-widget-plugin-for-wordpress'>WordPress news plugins - SP News and Widget</a></td>
@@ -535,7 +533,7 @@ var WRInitTime=(new Date()).getTime();
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/wordpress-plugins/change-wordpress-admin-url-with-lockdown-wp-admin'>How to Change your WordPress admin URL with Lockdown WP Admin</a></td>
-                                <td>5,590</td>
+                                <td>5,591</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/wordpress-plugins/backing-up-your-wordpress-database-with-the-wp-db-backup-plugin'>How to Backup your Wordpress Database with WP-DB-Backup</a></td>
@@ -551,7 +549,7 @@ var WRInitTime=(new Date()).getTime();
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/wordpress-plugins/generating-xml-sitemaps'>How to Generate XML Sitemaps in WordPress using Google XML Sitemaps</a></td>
-                                <td>2,579</td>
+                                <td>2,580</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/wordpress-plugins/adding-a-social-media-feed-to-wordpress-with-the-twine-social-plugin'>How to Add a Social Media feed to Wordpress with the Twine Social plugin</a></td>
@@ -630,7 +628,7 @@ var WRInitTime=(new Date()).getTime();
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZjYXRpZD00NjcmaWQ9NDY3JnZpZXc9Y2F0ZWdvcnkmSXRlbWlkPTEwMQ==" />
-		<input type="hidden" name="61bd0779e7fb9be9603a5e3f3d961192" value="1" />	</div>
+		<input type="hidden" name="fea92e820d49825ff15b0808149d87fc" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -1035,11 +1033,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-38']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '206.70.236.253']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '104.163.130.68']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '206.70.236.253']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '104.163.130.68']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

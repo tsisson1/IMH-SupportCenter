@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:55561:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:55428:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -217,11 +217,11 @@ window.setInterval(function(){var r;try{r=window.XMLHttpRequest?new XMLHttpReque
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-25']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '76.108.217.152']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '189.123.242.62']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '76.108.217.152']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '189.123.242.62']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -334,8 +334,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -724,7 +722,7 @@ But on my new website https://...</div>
 	</td>
 </tr>
 			</table>	<div class='pagination'>
-			<p class='counter pull-right'>Page 1 of 21</p>
+			<p class='counter pull-right'>Page 1 of 20</p>
 			<ul>
 				<li class='pagination-start'><span class='pagenav'>Start</span></li>
 				<li class='pagination-prev'><span class='pagenav'>Prev</span></li>
@@ -738,7 +736,7 @@ But on my new website https://...</div>
 <li><a title='7' href='/support/community-support/general-information/page-7' class='pagenav'>7</a></li>
 <li><a title='8' href='/support/community-support/general-information/page-8' class='pagenav'>8</a></li>
 <li><a title='9' href='/support/community-support/general-information/page-9' class='pagenav'>9</a></li>			<li class='pagination-next'><a title='Next' href='/support/community-support/general-information/page-2' class='pagenav' rel='next'>Next</a></li>
-				<li class='pagination-end'><a title='End' href='/support/community-support/general-information/page-21' class='pagenav'>End</a></li>
+				<li class='pagination-end'><a title='End' href='/support/community-support/general-information/page-20' class='pagenav'>End</a></li>
 			</ul>
 		</div>
 	</div>
@@ -800,7 +798,7 @@ But on my new website https://...</div>
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP0l0ZW1pZD0xMDAwMg==" />
-		<input type="hidden" name="8773c470ccb78e871ab5aa267f7b054e" value="1" />	</div>
+		<input type="hidden" name="94eaf23471ca0123c43dfa7369ff60fb" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -1187,11 +1185,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-25']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '76.108.217.152']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '189.123.242.62']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '76.108.217.152']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '189.123.242.62']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

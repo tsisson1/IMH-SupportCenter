@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:50633:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:50488:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -218,11 +218,11 @@ window.setInterval(function(){var r;try{r=window.XMLHttpRequest?new XMLHttpReque
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-19']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '79.201.22.174']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '2.49.94.36']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '79.201.22.174']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '2.49.94.36']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -335,8 +335,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -467,7 +465,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/wordpress/wordpress-introduction/what-is-wordpress'>What is WordPress? </a>
 					<div>In this educational channel we will discuss WordPress, what is it used for, and  </div>
-					<div class='smallgrey'>Hits: 19,692</div>
+					<div class='smallgrey'>Hits: 19,695</div>
 				</td>
 			</tr>
 			<tr>
@@ -485,7 +483,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/wordpress/wordpress-introduction/wordpress-site-structure-explained'>The WordPress Site Structure Explained</a>
 					<div>WordPress heavily relies on themes, and understanding the basic layout of themes is very helpful when structuring your site.</div>
-					<div class='smallgrey'>Hits: 19,258</div>
+					<div class='smallgrey'>Hits: 19,259</div>
 				</td>
 			</tr>
 		<tr><td colspan='3' style='padding-top:20px;'><h2>Installing Wordpress</h2><div>There's more than one way to install WordPress.</div></td></tr>	<tr>
@@ -494,7 +492,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/wordpress/wordpress-introduction/install-wordpress'>Getting Started: How to install Wordpress</a>
 					<div>WordPress is free and can be installed on your server. This article explains the methods for installing WordPress on your server.</div>
-					<div class='smallgrey'>Hits: 59,629</div>
+					<div class='smallgrey'>Hits: 59,632</div>
 				</td>
 			</tr>
 			<tr>
@@ -503,7 +501,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/wordpress/wordpress-introduction/install-wordpress-using-softaculous'>How to install WordPress using Softaculous</a>
 					<div>This article will teach you how to install WordPress using Softaculous.</div>
-					<div class='smallgrey'>Hits: 34,749</div>
+					<div class='smallgrey'>Hits: 34,755</div>
 				</td>
 			</tr>
 			<tr>
@@ -521,7 +519,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/wordpress/wordpress-introduction/installing-wordpress-on-an-add-on-domain'>How to Install WordPress on an Addon Domain</a>
 					<div>This tutorial shows you how to install Wordpress on an Addon domain using Softaculous.</div>
-					<div class='smallgrey'>Hits: 21,448</div>
+					<div class='smallgrey'>Hits: 21,455</div>
 				</td>
 			</tr>
 			<tr>
@@ -530,7 +528,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/wordpress/wordpress-introduction/installing-wordpress-using-your-temporary-url'>Installing WordPress using your Temporary URL</a>
 					<div>You can install WordPress using your temporary URL. This can allow you to develope your WordPress driven website without having to point your domain name during the process.</div>
-					<div class='smallgrey'>Hits: 47,113</div>
+					<div class='smallgrey'>Hits: 47,119</div>
 				</td>
 			</tr>
 		<tr><td colspan='3' style='padding-top:20px;'><h2>Configuring WordPress</h2></td></tr>	<tr>
@@ -539,7 +537,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/wordpress/wordpress-introduction/logging-into-wordpress-dashboard'>How to Log in to your WordPress Dashboard</a>
 					<div>Learn how to log into your WordPress Dashboard once you have successfully installed WordPress onto your InMotion Hosting account. </div>
-					<div class='smallgrey'>Hits: 128,339</div>
+					<div class='smallgrey'>Hits: 128,374</div>
 				</td>
 			</tr>
 			<tr>
@@ -548,7 +546,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/wordpress/wordpress-introduction/configuring-your-wordpress-home-page'>Configuring your WordPress Home Page</a>
 					<div>Learn how to configure the home page of your WordPress website.</div>
-					<div class='smallgrey'>Hits: 10,687</div>
+					<div class='smallgrey'>Hits: 10,690</div>
 				</td>
 			</tr>
 		<tr><td colspan='3' style='padding-top:20px;'><h2>Managing WordPress content</h2></td></tr>	<tr>
@@ -557,7 +555,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/wordpress/wordpress-introduction/pages-vs-posts'>Wordpress Pages vs Posts</a>
 					<div>Do pages and posts have you confused? Learn the difference between the two in this WordPress article.</div>
-					<div class='smallgrey'>Hits: 6,212</div>
+					<div class='smallgrey'>Hits: 6,213</div>
 				</td>
 			</tr>
 			<tr>
@@ -566,7 +564,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/wordpress/wordpress-introduction/adding-html-wordpress'>Adding HTML to a Wordpress Page/Post</a>
 					<div>This is a guide on how to add HTML code to a Wordpress page or post.</div>
-					<div class='smallgrey'>Hits: 75,660</div>
+					<div class='smallgrey'>Hits: 75,677</div>
 				</td>
 			</tr>
 			<tr>
@@ -584,7 +582,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/wordpress/wordpress-introduction/allowing-user-registration-wordpress'>Allowing User Registration in Wordpress</a>
 					<div>This is a tutorial on setting up the user registration option in Wordpress.</div>
-					<div class='smallgrey'>Hits: 4,990</div>
+					<div class='smallgrey'>Hits: 4,991</div>
 				</td>
 			</tr>
 			<tr>
@@ -659,7 +657,7 @@ var WRInitTime=(new Date()).getTime();
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZjYXRpZD0xMzgmaWQ9MTM4JnZpZXc9Y2F0ZWdvcnkmSXRlbWlkPTEwMQ==" />
-		<input type="hidden" name="103349b295656a05aa56faf7610af5f9" value="1" />	</div>
+		<input type="hidden" name="adf80bbb7903125c529871eccb4d5073" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -1064,11 +1062,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-19']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '79.201.22.174']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '2.49.94.36']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '79.201.22.174']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '2.49.94.36']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

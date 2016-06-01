@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:49779:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:49646:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -339,8 +339,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -504,11 +502,11 @@ var WRInitTime=(new Date()).getTime();
                         </tr>
           <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/protecting-files/using-the-ip-deny-manager'>Restrict access with .htaccess and the IP Deny Manager</a></td>
-                                <td>47,472</td>
+                                <td>47,479</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/protecting-files/how-do-i-password-protect-a-directory-in-my-control-panel-cpanel'>How do I Password Protect a directory in my control panel (cPanel)?</a></td>
-                                <td>38,305</td>
+                                <td>38,312</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/protecting-files/how-do-i-enable-hotlink-protection-in-my-control-panel-cpanel'>cPanel Hotlink Protection video</a></td>
@@ -520,7 +518,7 @@ var WRInitTime=(new Date()).getTime();
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/protecting-files/restrict-public-access-php-ini'>Restrict public access to your php.ini</a></td>
-                                <td>5,559</td>
+                                <td>5,560</td>
                         </tr>
                   </table>
 	</form>

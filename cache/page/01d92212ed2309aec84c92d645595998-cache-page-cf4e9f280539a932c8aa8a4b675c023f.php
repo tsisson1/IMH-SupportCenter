@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:46313:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:46188:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -224,11 +224,11 @@ jQuery(function($) {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-23']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '87.224.91.87']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '37.153.195.182']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '87.224.91.87']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '37.153.195.182']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -341,8 +341,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -501,35 +499,35 @@ var WRInitTime=(new Date()).getTime();
                         </tr>
           <tr>
                                 <td style='padding-right:20px;'><a href='/support/prestashop-16/admin-login'>Logging into the PrestaShop 1.6 admin dashboard</a></td>
-                                <td>63,591</td>
+                                <td>63,608</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/prestashop-16/blank-screen'>Fixing the blank white screen error on PrestaShop 1.6</a></td>
-                                <td>59,040</td>
+                                <td>59,048</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/prestashop-16/install-theme'>Installing a theme in PrestaShop 1.6</a></td>
-                                <td>44,197</td>
+                                <td>44,207</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/prestashop-16/change-logo'>Changing your logo image in PrestaShop 1.6</a></td>
-                                <td>24,862</td>
+                                <td>24,865</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/prestashop-16/prestashop-upgrade-15-16'>How to Upgrade PrestaShop</a></td>
-                                <td>22,067</td>
+                                <td>22,071</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/prestashop-16/display-category-on-left-column'>Display categories in the left panel in PrestaShop 1.6</a></td>
-                                <td>20,766</td>
+                                <td>20,771</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/prestashop-16/make-prestashop16-load-faster'>Improve PrestaShop 1.6 Performance</a></td>
-                                <td>19,393</td>
+                                <td>19,394</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/prestashop-16/enable-error-reporting'>How to enable error reporting in PrestaShop 1.6</a></td>
-                                <td>18,780</td>
+                                <td>18,783</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/prestashop-16/move-cart-block-after-upgrade'>Positioning the Cart block after PrestaShop 1.6 upgrade</a></td>
@@ -537,27 +535,27 @@ var WRInitTime=(new Date()).getTime();
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/prestashop-16/catalog-mode'>Setting catalog mode in PrestaShop 1.6</a></td>
-                                <td>16,153</td>
+                                <td>16,156</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/prestashop-16/set-pricing'>Setting pricing for your products in PrestaShop 1.6</a></td>
-                                <td>14,682</td>
+                                <td>14,689</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/prestashop-16/set-maintenance-mode'>Setting Maintenance Mode in PrestaShop 1.6</a></td>
-                                <td>13,111</td>
+                                <td>13,113</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/prestashop-16/product-sale'>Setting a product On Sale in PrestaShop 1.6</a></td>
-                                <td>12,584</td>
+                                <td>12,585</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/prestashop-16/change-shop-name'>How to change your shop name in PrestaShop 1.6</a></td>
-                                <td>9,368</td>
+                                <td>9,370</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/prestashop-16/manual-install'>How to manually install PrestaShop 1.6</a></td>
-                                <td>7,196</td>
+                                <td>7,197</td>
                         </tr>
                   </table>
 		<div class="pagination">
@@ -628,7 +626,7 @@ var WRInitTime=(new Date()).getTime();
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZjYXRpZD00OTMmaWQ9NDkzJnZpZXc9Y2F0ZWdvcnkmSXRlbWlkPTEwMQ==" />
-		<input type="hidden" name="6c55fd3342bb44a4142de605fc606d8c" value="1" />	</div>
+		<input type="hidden" name="4cd9d8262eda89a23f6e4682c957a117" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -1015,11 +1013,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-23']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '87.224.91.87']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '37.153.195.182']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '87.224.91.87']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '37.153.195.182']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

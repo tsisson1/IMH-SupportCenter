@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:67737:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:67574:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -217,11 +217,11 @@ window.setInterval(function(){var r;try{r=window.XMLHttpRequest?new XMLHttpReque
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-25']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '36.227.78.185']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '181.64.52.100']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '36.227.78.185']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '181.64.52.100']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -334,8 +334,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -515,12 +513,43 @@ var WRInitTime=(new Date()).getTime();
 		<tr style='border-bottom:1px solid #ddd;'>
 			<td valign='top' style='padding:15px 0px; width:75px;'><img src='/support/images/avatars/default_avatar.jpg' style='width:60px;' class='sc_rc' /></td>
 		        <td style='padding:15px 0px;'>
+                		<div class='question_title'><a href='/support/community-support/email-troubleshooting/emails-logins-no-longer-work-on-the-sites-i-am-hosting'>Emails logins  no longer work on the sites i am hosting</a></div>
+				<div class='question_description'><a href='/support/community-support/users/larryb'>larryb</a> asks: I have set up email accounts on the sites that i host on my inMotion VPS. They have been working fine for quite some time, but about 1-2 weeks ago use...</div>
+				<div class='answer_count'>1 Answer</div>
+				<div style='float:right; color:#bbb;'>Asked 2016-06-01 09:44 am EST</div>
+		        </td>
+		</tr>
+	
+		<tr style='border-bottom:1px solid #ddd;'>
+			<td valign='top' style='padding:15px 0px; width:75px;'><img src='/support/images/avatars/default_avatar.jpg' style='width:60px;' class='sc_rc' /></td>
+		        <td style='padding:15px 0px;'>
+                		<div class='question_title'><a href='/support/community-support/website/best-method-to-redirect-without-losing-history-in-google'>Best method to redirect without losing history in Google</a></div>
+				<div class='question_description'><a href='/support/community-support/users/bethanie'>bethanie</a> asks: Hello, 
+I have a question. I would like to permanently redirect traffic from old site  to new site.  But I don&#039;t want to lose the domain age or ...</div>
+				<div class='answer_count'>1 Answer</div>
+				<div style='float:right; color:#bbb;'>Asked 2016-06-01 09:40 am EST</div>
+		        </td>
+		</tr>
+	
+		<tr style='border-bottom:1px solid #ddd;'>
+			<td valign='top' style='padding:15px 0px; width:75px;'><img src='/support/images/avatars/default_avatar.jpg' style='width:60px;' class='sc_rc' /></td>
+		        <td style='padding:15px 0px;'>
                 		<div class='question_title'><a href='/support/community-support/opencart/unsafe-scripts-on-my-site'>Unsafe Scripts on My Site</a></div>
 				<div class='question_description'><a href='/support/community-support/users/ramicraft'>ramicraft</a> asks: how do I get rid of the unsafe script?  Which file in OpenCart needs to be edited?  See error message below.  Thanks for your help.
 
 Mixed Content: ...</div>
 				<div class='answer_count'>1 Answer</div>
 				<div style='float:right; color:#bbb;'>Asked 2016-06-01 04:46 am EST</div>
+		        </td>
+		</tr>
+	
+		<tr style='border-bottom:1px solid #ddd;'>
+			<td valign='top' style='padding:15px 0px; width:75px;'><img src='https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=90' style='width:60px;' class='sc_rc' /></td>
+		        <td style='padding:15px 0px;'>
+                		<div class='question_title'><a href='/support/community-support/general-information/when-will-mysql-upgrade-to-57'>when will mysql upgrade to 5.7?</a></div>
+				<div class='question_description'><a href='/support/community-support/users/InMotionFans'>InMotionFans</a> asks: Hi, I would like to know when will mysql upgrade to 5.7?</div>
+				<div class='answer_count'>1 Answer</div>
+				<div style='float:right; color:#bbb;'>Asked 2016-05-31 08:37 pm EST</div>
 		        </td>
 		</tr>
 	
@@ -806,39 +835,6 @@ Is there a way to get this done?</div>
 				<div style='float:right; color:#bbb;'>Asked 2016-05-27 03:51 am EST</div>
 		        </td>
 		</tr>
-	
-		<tr style='border-bottom:1px solid #ddd;'>
-			<td valign='top' style='padding:15px 0px; width:75px;'><img src='https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=90' style='width:60px;' class='sc_rc' /></td>
-		        <td style='padding:15px 0px;'>
-                		<div class='question_title'><a href='/support/community-support/domain-names/subdomain-is-not-accessible'>Subdomain is not accessible</a></div>
-				<div class='question_description'><a href='/support/community-support/users/InMotionFans'>InMotionFans</a> asks: Main domain (hypersold.com) is live &amp; accessible and points to inmotion nameservers. Subdomain (listing.hypersold.com) is not. Any ideas?</div>
-				<div class='answer_count'>1 Answer</div>
-				<div style='float:right; color:#bbb;'>Asked 2016-05-26 10:28 pm EST</div>
-		        </td>
-		</tr>
-	
-		<tr style='border-bottom:1px solid #ddd;'>
-			<td valign='top' style='padding:15px 0px; width:75px;'><img src='https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=90' style='width:60px;' class='sc_rc' /></td>
-		        <td style='padding:15px 0px;'>
-                		<div class='question_title'><a href='/support/community-support/how-to/ip-cononicalization-seo-error'>IP Canonicalization  - SEO error</a></div>
-				<div class='question_description'><a href='/support/community-support/users/InMotionFans'>InMotionFans</a> asks: I did an onpage.org crawl on my website to optimize the SEO and I received this error.
-
-IP Canonicalization	If the IP (192.249.122.228) of this doma...</div>
-				<div class='answer_count'>1 Answer</div>
-				<div style='float:right; color:#bbb;'>Asked 2016-05-26 10:38 am EST</div>
-		        </td>
-		</tr>
-	
-		<tr style='border-bottom:1px solid #ddd;'>
-			<td valign='top' style='padding:15px 0px; width:75px;'><img src='/support/images/avatars/default_avatar.jpg' style='width:60px;' class='sc_rc' /></td>
-		        <td style='padding:15px 0px;'>
-                		<div class='question_title'><a href='/support/community-support/wordpress/i-cant-find-the-htaccess-file'>I can&#039;t find the .htaccess file</a></div>
-				<div class='question_description'><a href='/support/community-support/users/UEAdmin'>UEAdmin</a> asks: Hi,
-I&#039;m looking for the .htaccess file to delete some entries. My Server causes an Error 500 - Internal Server Error. I&#039;ve Installed the W3...</div>
-				<div class='answer_count'>1 Answer</div>
-				<div style='float:right; color:#bbb;'>Asked 2016-05-26 06:54 am EST</div>
-		        </td>
-		</tr>
 	</table></div>
 	</div>
 	<div name='sc_right' id='sc_right'>
@@ -898,7 +894,7 @@ I&#039;m looking for the .htaccess file to delete some entries. My Server causes
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP0l0ZW1pZD0xMDAwMg==" />
-		<input type="hidden" name="aac7e1119556391bed49acf753781f7b" value="1" />	</div>
+		<input type="hidden" name="046b06089084f2c130e7982910a8a086" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -1285,11 +1281,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-25']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '36.227.78.185']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '181.64.52.100']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '36.227.78.185']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '181.64.52.100']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

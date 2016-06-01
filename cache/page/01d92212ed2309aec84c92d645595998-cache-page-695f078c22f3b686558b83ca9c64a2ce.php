@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:202310:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:202173:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -222,11 +222,11 @@ window.setInterval(function(){var r;try{r=window.XMLHttpRequest?new XMLHttpReque
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-19']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '41.75.203.178']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '69.24.182.94']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '41.75.203.178']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '69.24.182.94']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -339,8 +339,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -439,7 +437,7 @@ var WRInitTime=(new Date()).getTime();
 				<div class='col_2'><div><a href='/support/website/htaccess'>.htaccess</a> (17)</div><div><a href='/support/website/adobe-flash'>Adobe Flash</a> (2)</div><div><a href='/support/website/api'>APIs</a> (2)</div><div><a href='/support/website/backup-and-restore'>Backup and Restore</a> (15)</div><div><a href='/support/website/billing'>Billing</a> (8)</div><div><a href='/support/website/browser-issues'>Browser Issues</a> (2)</div><div><a href='/support/website/database-connections'>Connecting to a Database</a> (5)</div><div><a href='/support/website/cpanel'>cPanel</a> (26)</div><div><a href='/support/website/cpanel-account-management'>cPanel Account Management</a> (15)</div><div><a href='/support/website/cron-jobs'>Cron Jobs</a> (4)</div><div><a href='/support/website/cube-cart'>Cube Cart</a> (2)</div><div><a href='/support/website/database-setup'>Database Setup</a> (4)</div><div><a href='/support/website/database-troubleshooting'>Database Troubleshooting</a> (6)</div><div><a href='/support/website/domain-management'>Domain Management</a> (2)</div><div><a href='/support/website/dreamweaver'>Dreamweaver</a> (12)</div><div><a href='/support/website/drush'>Drush</a> (2)</div><div><a href='/support/website/ecommerce'>eCommerce</a> (7)</div><div><a href='/support/website/elasticsearch'>Elasticsearch</a> (4)</div><div><a href='/support/website/fantastico'>Fantastico</a> (4)</div><div><a href='/support/website/file-management'>File Management</a> (16)</div><div><a href='/support/website/file-manager'>File Manager</a> (6)</div><div><a href='/support/website/ftp'>FTP</a> (10)</div><div><a href='/support/website/ftp-client-setup'>FTP Client Setup</a> (21)</div><div><a href='/support/website/general-server-setup'>General Server Setup / Management</a> (15)</div><div><a href='/support/website/getting-started-guides'>Getting Started Guides</a> (18)</div><div><a href='/support/website/ghost'>Ghost</a> (3)</div><div><a href='/support/website/google-tools'>Google Tools</a> (21)</div><div><a href='/support/website/how-to'>How To</a> (22)</div><div><a href='/support/website/html'>HTML</a> (2)</div><div><a href='/support/website/image-editing'>Image Editing</a> (2)</div><div><a href='/support/website/ip-addresses'>IP Addresses</a> (3)</div><div><a href='/support/website/iweb'>iWeb</a> (1)</div><div><a href='/support/website/javascript'>JavaScript</a> (2)</div><div><a href='/support/website/joomla'>Joomla</a> (10)</div><div><a href='/support/website/joomla-25'>Joomla 2.5</a> (36)</div><div><a href='/support/website/koken'>Koken</a> (11)</div><div><a href='/support/website/linux'>Linux</a> (27)</div><div><a href='/support/website/logaholic'>Logaholic</a> (5)</div><div><a href='/support/website/magento'>Magento</a> (2)</div><div><a href='/support/website/maintain'>Maintaining Your Website</a> (1)</div><div><a href='/support/website/managing-files'>Managing Files</a> (7)</div><div><a href='/support/website/frontpage'>Microsoft FrontPage</a> (11)</div><div><a href='/support/website/microsoft-publisher'>Microsoft Publisher</a> (1)</div><div><a href='/support/website/modsecurity'>ModSecurity</a> (6)</div></div>
 				<div class='col_2'><div><a href='/support/website/modx'>MODx</a> (3)</div><div><a href='/support/website/new-customers'>New Customers</a> (7)</div><div><a href='/support/website/open-classifieds'>Open Classifieds</a> (1)</div><div><a href='/support/website/pci-compliance'>PCI Compliance</a> (7)</div><div><a href='/support/website/php'>PHP</a> (15)</div><div><a href='/support/website/php-configuration'>PHP Configuration</a> (7)</div><div><a href='/support/website/php-troubleshooting'>PHP Troubleshooting</a> (6)</div><div><a href='/support/website/phpbb'>phpBB</a> (25)</div><div><a href='/support/website/phpmyadmin'>phpMyAdmin</a> (10)</div><div><a href='/support/website/pwb'>Premium Website Builder</a> (22)</div><div><a href='/support/website/prestashop'>Prestashop</a> (1)</div><div><a href='/support/website/protecting-files'>Protecting Files</a> (5)</div><div><a href='/support/website/publishing'>Publishing Your Site</a> (2)</div><div><a href='/support/website/python'>Python</a> (1)</div><div><a href='/support/website/redirects'>Redirects</a> (4)</div><div><a href='/support/website/restricting-bots'>Restricting Bots</a> (5)</div><div><a href='/support/website/seo'>Search Engine Optimization</a> (1)</div><div><a href='/support/website/ssl'>Secure Socket Layer (SSL) Tutorials</a> (12)</div><div><a href='/support/website/security'>Security</a> (12)</div><div><a href='/support/website/sending-email-from-site'>Sending Email From Websites</a> (2)</div><div><a href='/support/website/server-security'>Server Security</a> (2)</div><div><a href='/support/website/server-usage'>Server Usage</a> (21)</div><div><a href='/support/website/slow-websites'>Slow Websites</a> (7)</div><div><a href='/support/website/social-media'>Social Media</a> (4)</div><div><a href='/support/website/software'>Software FAQs</a> (11)</div><div><a href='/support/website/soho-web-builder'>Soho Web Builder</a> (18)</div><div><a href='/support/website/ssh'>SSH and Root access</a> (20)</div><div><a href='/support/website/stats-logging'>Statistics/Logging</a> (12)</div><div><a href='/support/website/comment-spam'>Troubleshooting Comment Spam</a> (3)</div><div><a href='/support/website/hacks'>Troubleshooting Hacked Websites</a> (9)</div><div><a href='/support/website/whm'>Web Host Manager</a> (7)</div><div><a href='/support/website/error-numbers'>Website Error Numbers</a> (4)</div><div><a href='/support/website/website-unavailable'>Website Is Unavailable</a> (3)</div><div><a href='/support/website/website-transfers'>Website Transfers</a> (6)</div><div><a href='/support/website/website-troubleshooting'>Website Troubleshooting</a> (26)</div><div><a href='/support/website/amp'>Welcome to AMP</a> (22)</div><div><a href='/support/website/what-is'>What Is...</a> (9)</div><div><a href='/support/website/woocommerce'>WooCommerce</a> (4)</div><div><a href='/support/website/wordpress'>WordPress</a> (102)</div><div><a href='/support/website/wordpress-development'>WordPress Development</a> (12)</div><div><a href='/support/website/wordpress-plugins'>Wordpress Plugins</a> (59)</div><div><a href='/support/website/wordpress-themes'>Wordpress Themes</a> (6)</div><div><a href='/support/website/databases'>Working with Databases</a> (15)</div><div><a href='/support/website/zen-cart'>Zen Cart</a> (8)</div><div><a href='/support/website/zend'>Zend</a> (4)</div></div>
 			</div>
-		</li><li class='bc_arrow'>&gt;&gt;</li><li class='bc_with_dd' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'><a href='/support/website/ftp' itemprop='url'><span itemprop='title'>FTP<span></a><div class='dropdown_3columns'><div class='col_3'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/ftp/getting-started-guide'>Getting Started Guide: FTP</a> (144554 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/ftp/too-many-simultaneous-connections'>421 Too many connections</a> (54116 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/ftp/resetting-your-ftp-password-in-cpanel'>Resetting your FTP Password in cPanel</a> (20950 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/ftp/create-delete-account'>How to Create / Delete an FTP Account in cPanel</a> (15322 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/ftp/using-ftp-with-your-addon-domain'>Using FTP with your Addon domain</a> (10869 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/ftp/connecting-scp-sftp'>Connecting with SCP and SFTP</a> (9537 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/ftp/how-to-use-your-publicftp-folder'>How to use your Public_FTP folder</a> (7316 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/ftp/shared-sftp-setup'>Connecting to SFTP for Shared Accounts</a> (5218 hits)</div></div></div></li><li class='bc_arrow'>&gt;&gt;</li><li class='bc_no_dd' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'><span itemprop='title'>Getting Started Guide: FTP</span></li>			</ul>
+		</li><li class='bc_arrow'>&gt;&gt;</li><li class='bc_with_dd' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'><a href='/support/website/ftp' itemprop='url'><span itemprop='title'>FTP<span></a><div class='dropdown_3columns'><div class='col_3'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/ftp/getting-started-guide'>Getting Started Guide: FTP</a> (144567 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/ftp/too-many-simultaneous-connections'>421 Too many connections</a> (54131 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/ftp/resetting-your-ftp-password-in-cpanel'>Resetting your FTP Password in cPanel</a> (20952 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/ftp/create-delete-account'>How to Create / Delete an FTP Account in cPanel</a> (15322 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/ftp/using-ftp-with-your-addon-domain'>Using FTP with your Addon domain</a> (10870 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/ftp/connecting-scp-sftp'>Connecting with SCP and SFTP</a> (9539 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/ftp/how-to-use-your-publicftp-folder'>How to use your Public_FTP folder</a> (7316 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/ftp/shared-sftp-setup'>Connecting to SFTP for Shared Accounts</a> (5222 hits)</div></div></div></li><li class='bc_arrow'>&gt;&gt;</li><li class='bc_no_dd' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'><span itemprop='title'>Getting Started Guide: FTP</span></li>			</ul>
 		</div>
 	</div>
 </div>
@@ -473,7 +471,7 @@ var WRInitTime=(new Date()).getTime();
 				
 					<div style='font-size:12px; color:#aaa; margin-bottom:-10px; padding-top:5px;'>
 							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Written by </span><a href='https://plus.google.com/102670474114655224886?rel=author'>Brad Markle</a></div>
-							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Views:</span> <span name='page_views' id='page_views'>144,554</span></div>
+							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Views:</span> <span name='page_views' id='page_views'>144,567</span></div>
 							<div style='float:left; margin-right:20px;' title='Originally published: Aug 25, 2011'><span style='color:#606060;'>Published:</span> Apr 21, 2016</div>
 							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Comments:</span> <a href='#comments'>62</a></div>
 							<div style='clear:both;'></div>
@@ -718,7 +716,7 @@ var WRInitTime=(new Date()).getTime();
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZjYXRpZD00MDImaWQ9Mzgmdmlldz1hcnRpY2xlJkl0ZW1pZD0xMDE=" />
-		<input type="hidden" name="aa14d22b7984e2e0d46da291e471084a" value="1" />	</div>
+		<input type="hidden" name="dbc23dc9c81a6a62fa3856dfd25e8788" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -1013,7 +1011,7 @@ Arnel C.</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -1167,7 +1165,7 @@ Thank you,<br />
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -1362,7 +1360,7 @@ Arnel C.</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -1956,7 +1954,7 @@ John-Paul</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -2014,7 +2012,7 @@ Scott M</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -2104,7 +2102,7 @@ Scott M</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -2259,7 +2257,7 @@ John-Paul</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -2477,7 +2475,7 @@ TJ Edens</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -2934,11 +2932,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-19']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '41.75.203.178']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '69.24.182.94']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '41.75.203.178']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '69.24.182.94']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

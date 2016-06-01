@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:514181:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:514056:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -222,11 +222,11 @@ window.setInterval(function(){var r;try{r=window.XMLHttpRequest?new XMLHttpReque
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-19']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '72.143.52.242']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '104.232.168.226']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '72.143.52.242']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '104.232.168.226']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -339,8 +339,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -441,9 +439,9 @@ var WRInitTime=(new Date()).getTime();
 			</div>
 		</li><li class='bc_arrow'>&gt;&gt;</li><li class='bc_with_dd' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'><a href='/support/email/email-troubleshooting' itemprop='url'><span itemprop='title'>Email Troubleshooting<span></a>
 			<div class='dropdown_3columns' style='width:900px; margin-left:-250px;'>
-				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/email-troubleshooting/problems-sending-mail-receiving-is-fine'>Problems Sending Mail - Receiving is Fine</a> (467,143 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/email-troubleshooting/why-do-mail-servers-get-blacklisted'>Why do mail servers get blacklisted?</a> (75,940 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/email-troubleshooting/one-or-more-outbox-windows-live-error'>Windows Live "One or more messages in your Outbox" error</a> (23,686 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/email-troubleshooting/typical-email-error-messages'>Typical Email Error Messages</a> (18,374 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/email-troubleshooting/imap-archiving'>How our automated IMAP archiving works</a> (9,954 hits)</div></div>
-				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/email-troubleshooting/imap-issues-affecting-outlook-2013-and-office-365-functionality'>IMAP issues affecting Outlook 2013 and Office 365 functionality</a> (310,151 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/email-troubleshooting/invalid-helo-name-email'>Invalid HELO name (Email Authentication)</a> (66,647 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/email-troubleshooting/smtp-and-esmtp-error-code-list'>SMTP and ESMTP error code list</a> (23,559 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/email-troubleshooting/imap-resource-usage'>Possible server resource usage problems when using IMAP</a> (18,016 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/email-troubleshooting/communicating-email-server-telnet'>Communicating with an email server using TELNET</a> (7,964 hits)</div></div>
-				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/email-troubleshooting/problems-receiving-email'>How to Troubleshoot Problems Receiving Email</a> (113,597 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/email-troubleshooting/request-a-delisting-from-a-blacklist'>Request a delisting from a blacklist</a> (27,509 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/email-troubleshooting/send-mail-via-gmail-when-server-ip-is-blocked'>Send mail via Gmail when server IP is blocked</a> (20,879 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/email-troubleshooting/no-such-file-or-directory'>Create email account error: No such file or directory</a> (13,859 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/email-troubleshooting/max-email-size'>What is the max email attachment limit ?</a> (7,866 hits)</div></div>
+				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/email-troubleshooting/problems-sending-mail-receiving-is-fine'>Problems Sending Mail - Receiving is Fine</a> (467,191 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/email-troubleshooting/why-do-mail-servers-get-blacklisted'>Why do mail servers get blacklisted?</a> (75,952 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/email-troubleshooting/one-or-more-outbox-windows-live-error'>Windows Live "One or more messages in your Outbox" error</a> (23,692 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/email-troubleshooting/typical-email-error-messages'>Typical Email Error Messages</a> (18,374 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/email-troubleshooting/imap-archiving'>How our automated IMAP archiving works</a> (9,956 hits)</div></div>
+				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/email-troubleshooting/imap-issues-affecting-outlook-2013-and-office-365-functionality'>IMAP issues affecting Outlook 2013 and Office 365 functionality</a> (310,204 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/email-troubleshooting/invalid-helo-name-email'>Invalid HELO name (Email Authentication)</a> (66,654 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/email-troubleshooting/smtp-and-esmtp-error-code-list'>SMTP and ESMTP error code list</a> (23,564 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/email-troubleshooting/imap-resource-usage'>Possible server resource usage problems when using IMAP</a> (18,017 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/email-troubleshooting/communicating-email-server-telnet'>Communicating with an email server using TELNET</a> (7,964 hits)</div></div>
+				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/email-troubleshooting/problems-receiving-email'>How to Troubleshoot Problems Receiving Email</a> (113,638 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/email-troubleshooting/request-a-delisting-from-a-blacklist'>Request a delisting from a blacklist</a> (27,513 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/email-troubleshooting/send-mail-via-gmail-when-server-ip-is-blocked'>Send mail via Gmail when server IP is blocked</a> (20,880 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/email-troubleshooting/no-such-file-or-directory'>Create email account error: No such file or directory</a> (13,862 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/email-troubleshooting/max-email-size'>What is the max email attachment limit ?</a> (7,866 hits)</div></div>
 			</div>
 		</li><li class='bc_arrow'>&gt;&gt;</li><li class='bc_no_dd' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'><span itemprop='title'>Problems Sending Mail - Receiving is Fine</span></li>			</ul>
 		</div>
@@ -479,7 +477,7 @@ var WRInitTime=(new Date()).getTime();
 				
 					<div style='font-size:12px; color:#aaa; margin-bottom:-10px; padding-top:5px;'>
 							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Written by </span><a href='https://plus.google.com/102670474114655224886?rel=author'>Brad Markle</a></div>
-							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Views:</span> <span name='page_views' id='page_views'>467,143</span></div>
+							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Views:</span> <span name='page_views' id='page_views'>467,191</span></div>
 							<div style='float:left; margin-right:20px;' title='Originally published: Aug 29, 2011'><span style='color:#606060;'>Published:</span> Apr 21, 2016</div>
 							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Comments:</span> <a href='#comments'>195</a></div>
 							<div style='clear:both;'></div>
@@ -851,7 +849,7 @@ Secure Authentication or SPA needs to be turned off</td>
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZjYXRpZD00NSZpZD02ODcmdmlldz1hcnRpY2xlJkl0ZW1pZD0xMDE=" />
-		<input type="hidden" name="10d9e3b3064f2836379c0e63cb5d258d" value="1" />	</div>
+		<input type="hidden" name="138d9e86c6c724257c76fff62d923508" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -1718,7 +1716,7 @@ Arnel C.</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -1890,7 +1888,7 @@ recipients. This is a temporary error. The following address(es) deferred:
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -2239,7 +2237,7 @@ Meaning that either your email address, or your entire domain name has been adde
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -2306,7 +2304,7 @@ Rediff.com</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -2359,7 +2357,7 @@ Scott M</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -2573,7 +2571,7 @@ Arnel C.</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -2624,7 +2622,7 @@ Scott M</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -2735,7 +2733,7 @@ Arnel C.</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -2795,7 +2793,7 @@ Scott M</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -2871,7 +2869,7 @@ Scott M</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -3683,7 +3681,7 @@ Thank you,<br />
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -3736,7 +3734,7 @@ Scott M<br />
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -3813,7 +3811,7 @@ I hope that helps. The thread here is particularly long, so a lot of people are 
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -3918,7 +3916,7 @@ John-Paul</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -4135,7 +4133,7 @@ there is nothing  struck in outbox, idid not recreate mail account, i did restar
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -4186,7 +4184,7 @@ Scott M</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -4299,7 +4297,7 @@ With some many people now having many many addresses, including several of their
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -4352,7 +4350,7 @@ this link does not work.</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -4591,7 +4589,7 @@ Arnel C.</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -4922,7 +4920,7 @@ Arnel C.</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -5051,7 +5049,7 @@ John-Paul</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -5707,7 +5705,7 @@ TJ Edens</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -6770,11 +6768,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-19']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '72.143.52.242']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '104.232.168.226']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '72.143.52.242']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '104.232.168.226']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

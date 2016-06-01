@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:61668:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:61621:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -222,11 +222,11 @@ window.setInterval(function(){var r;try{r=window.XMLHttpRequest?new XMLHttpReque
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-25']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '41.174.166.84']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '::1']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '41.174.166.84']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '::1']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -252,7 +252,7 @@ var WRInitTime=(new Date()).getTime();
 <header role="banner">
         <div class="container">
             <div class="row">
-                <a href="/" class="span3"><img class='imhLogo' src="//cdn.inmotionhosting.com/img/logo-imh.png" alt="InMotion Hosting" /></a>
+                <a href="/" class="span3"><img class='imhLogo' src="//imh01-inmotionhosting1.netdna-ssl.com/img/logo-imh.png" alt="InMotion Hosting" /></a>
 		<div class="span6 offset3">
 			<ul class="nav nav-pills nav-pills-contact pull-right contactListHeader">
 				<li class="pull-right sales-label">Questions? Contact Support:</li>
@@ -317,7 +317,7 @@ var WRInitTime=(new Date()).getTime();
   
     <div id="main" class="main-container" role="main" style='background:#f9f9f9;'>
 
-	<div style="background:url('//cdn.inmotionhosting.com/img/rednoise.gif');">
+	<div style="background:url('//imh01-inmotionhosting1.netdna-ssl.com/img/rednoise.gif');">
 		<div class='container'>
 			<img src='/support/templates/supportcentertemplate/images/logo.png.old?v=201507291301' class='MainLogo' usemap='#sclogo' />
 			<map name='sclogo'><area shape='rect' coords='130,25,430,60' href='/support' alt='InMotion Hosting Support Center'></map>
@@ -339,8 +339,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -468,7 +466,7 @@ var WRInitTime=(new Date()).getTime();
 				
 					<div style='font-size:12px; color:#aaa; margin-bottom:-10px; padding-top:5px;'>
 							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Written by </span><a href='https://plus.google.com/u/0/114162951489960418846?rel=author'>John-Paul Briones</a></div>
-							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Views:</span> <span name='page_views' id='page_views'>7,706</span></div>
+							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Views:</span> <span name='page_views' id='page_views'>7,708</span></div>
 							<div style='float:left; margin-right:20px;' title='Originally published: Jun 20, 2014'><span style='color:#606060;'>Published:</span> Jan 27, 2015</div>
 							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Comments:</span> <a href='#comments'>1</a></div>
 							<div style='clear:both;'></div>
@@ -480,7 +478,7 @@ var WRInitTime=(new Date()).getTime();
 
 	
 
-								<a class="std_ss" href="//cdn.inmotionhosting.com/support/images/stories/moodle/exceed-post-max-size-error/moodle-error-exceed-post-max-size.png"><img  src="//cdn.inmotionhosting.com/support/images/stories/moodle/exceed-post-max-size-error/moodle-error-exceed-post-max-size.png" alt="post_max_size directing in php.ini error" align="right" title="Moodle error when installing add-ons" /></a>
+								<a class="std_ss" href="//imh01-inmotionhosting1.netdna-ssl.com/support/images/stories/moodle/exceed-post-max-size-error/moodle-error-exceed-post-max-size.png"><img  src="//imh01-inmotionhosting1.netdna-ssl.com/support/images/stories/moodle/exceed-post-max-size-error/moodle-error-exceed-post-max-size.png" alt="post_max_size directing in php.ini error" align="right" title="Moodle error when installing add-ons" /></a>
 If you are working in <a href="/support/edu/moodle">Moodle</a> you may see the error "<strong>The uploaded file may exceed the post_max_size directive in php.ini.</strong>" This error is caused by a PHP limitation when trying to <strong>post</strong> data. The <strong>php.ini</strong> file controls your local <a href="/support/website/php/update-local-php-settings">PHP settings</a>, and can be changed at any time.  In this tutorial I will show you how this issue can easily be fixed in cPanel. In my tests, I got this error when <a href="/support/edu/moodle/moodle-plugins/install-plugin">installing a plugin</a> from the Moodle Admin Dashboard.
 
 <h2>Fixing the "exceed the post_max_size directive" error</h2>
@@ -491,7 +489,7 @@ If you are working in <a href="/support/edu/moodle">Moodle</a> you may see the e
   <li>You will then see the php.ini code displayed. Locate the line starting with:
     <p class='code_block'>post_max_size</p>
   (In my tests it was around line 374)<br>
-  <a class="std_ss" href="//cdn.inmotionhosting.com/support/images/stories/moodle/exceed-post-max-size-error/post_max_size-php-ini-file.png"><img  src="//cdn.inmotionhosting.com/support/images/stories/moodle/exceed-post-max-size-error/post_max_size-php-ini-file.png" alt="view of the Moodle settings causing issues" title="view of the post_max_size directive in the php.ini file" /></a></li>
+  <a class="std_ss" href="//imh01-inmotionhosting1.netdna-ssl.com/support/images/stories/moodle/exceed-post-max-size-error/post_max_size-php-ini-file.png"><img  src="//imh01-inmotionhosting1.netdna-ssl.com/support/images/stories/moodle/exceed-post-max-size-error/post_max_size-php-ini-file.png" alt="view of the Moodle settings causing issues" title="view of the post_max_size directive in the php.ini file" /></a></li>
   <li>Increase the value in the line, the size will differ based on what you are trying to accomplish. In my test it was set to <strong>8MB</strong>, which I increased to <strong>32M</strong>. The line looked like this when I was finished:<br>
   <p class='code_block'>post_max_size = 32M</p></li>
   <li>Click the <strong>Save</strong> button, then refresh your web page. Test what you were doing again, and it should work without the <em>exceed the post_max_size directive in php.ini</em> error. If you still get the error, you may have to increase the value to a higher number, or make the <strong>php.ini</strong> file <em><a href="/support/website/php/recursive-php-ini">recursive</a></em>.</li>
@@ -615,7 +613,7 @@ If you are working in <a href="/support/edu/moodle">Moodle</a> you may see the e
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZjYXRpZD00ODcmaWQ9MzMxNiZ2aWV3PWFydGljbGUmSXRlbWlkPTEwMQ==" />
-		<input type="hidden" name="d023be945872194e9ee4e103930f5ea4" value="1" />	</div>
+		<input type="hidden" name="7c8478a61be7f8f7ce9ff5c9d65e7ed0" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -796,7 +794,7 @@ If you are working in <a href="/support/edu/moodle">Moodle</a> you may see the e
 					<th>Comment:</th>
 					<td>
 						
-						<script type='text/javascript' src='//cdn.inmotionhosting.com/support/components/com_pup/tinymce/js/tinymce/tinymce.min.js'></script>
+						<script type='text/javascript' src='//imh01-inmotionhosting1.netdna-ssl.com/support/components/com_pup/tinymce/js/tinymce/tinymce.min.js'></script>
 						<script type='text/javascript'>
 							tinymce.init({
 							    selector: 'textarea.acomment_comment',
@@ -853,7 +851,7 @@ If you are working in <a href="/support/edu/moodle">Moodle</a> you may see the e
 
 
 
-	<div style="background:url('//cdn.inmotionhosting.com/img/pattern.gif');padding-top:20px;">
+	<div style="background:url('//imh01-inmotionhosting1.netdna-ssl.com/img/pattern.gif');padding-top:20px;">
 		<div style=' margin:0px; padding:10px 0px 10px 0px; margin-left:auto; margin-right:auto;'>
 			<h2 style='text-align:center;margin-bottom:10px;'>Need more Help?</h2>
 
@@ -1194,7 +1192,7 @@ $(document).ready(function() {
 
 
 
-<script src="//cdn.inmotionhosting.com/support/templates/supportcentertemplate/js/combined.js?v=2016052509" type="text/javascript"></script>
+<script src="//imh01-inmotionhosting1.netdna-ssl.com/support/templates/supportcentertemplate/js/combined.js?v=2016052509" type="text/javascript"></script>
 
 <!-- <div name='853_overlay_join_community' id='853_overlay_join_community'></div> -->
 
@@ -1206,11 +1204,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-25']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '41.174.166.84']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '::1']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '41.174.166.84']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '::1']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

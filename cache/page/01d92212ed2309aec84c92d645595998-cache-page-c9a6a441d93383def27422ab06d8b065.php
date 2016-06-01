@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:44012:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:43875:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -218,11 +218,11 @@ window.setInterval(function(){var r;try{r=window.XMLHttpRequest?new XMLHttpReque
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-19']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '178.74.109.46']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '31.43.48.137']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '178.74.109.46']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '31.43.48.137']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -335,8 +335,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -468,7 +466,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/website-design/using-css/simple-css-drop-down-menu'>Simple CSS Drop Down Menu</a>
 					<div>Interested in creating a menu for you website? Checkout the  Simple CSS Drop Down Menu. Our tutorial teaches provides step-by-step directions to create this menu to enhance your website.</div>
-					<div class='smallgrey'>Hits: 318,191</div>
+					<div class='smallgrey'>Hits: 318,243</div>
 				</td>
 			</tr>
 			<tr>
@@ -477,7 +475,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/website-design/using-css/the-benefits-of-css'>Introduction to CSS</a>
 					<div>Learn what CSS is and how it is applies to HTML.</div>
-					<div class='smallgrey'>Hits: 5,000</div>
+					<div class='smallgrey'>Hits: 5,001</div>
 				</td>
 			</tr>
 			<tr>
@@ -486,7 +484,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/website-design/using-css/linking-your-css-to-your-website'>External, Internal, and Inline CSS styles</a>
 					<div>In this tutorial you will learn the basics behind CSS syntax and some popular tags.</div>
-					<div class='smallgrey'>Hits: 53,562</div>
+					<div class='smallgrey'>Hits: 53,575</div>
 				</td>
 			</tr>
 			<tr>
@@ -561,7 +559,7 @@ var WRInitTime=(new Date()).getTime();
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZjYXRpZD0xMjQmaWQ9MTI0JnZpZXc9Y2F0ZWdvcnkmSXRlbWlkPTEwMQ==" />
-		<input type="hidden" name="f79465a261ac43ed4029b65b4448e055" value="1" />	</div>
+		<input type="hidden" name="733644d3e8eaf4a68feb197625762cee" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -948,11 +946,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-19']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '178.74.109.46']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '31.43.48.137']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '178.74.109.46']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '31.43.48.137']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:60804:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:60667:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -222,11 +222,11 @@ window.setInterval(function(){var r;try{r=window.XMLHttpRequest?new XMLHttpReque
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-25']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '73.17.232.53']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '70.75.89.47']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '73.17.232.53']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '70.75.89.47']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -339,8 +339,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -441,9 +439,9 @@ var WRInitTime=(new Date()).getTime();
 			</div>
 		</li><li class='bc_arrow'>&gt;&gt;</li><li class='bc_with_dd' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'><a href='/support/website/website-troubleshooting' itemprop='url'><span itemprop='title'>Website Troubleshooting<span></a>
 			<div class='dropdown_3columns' style='width:900px; margin-left:-250px;'>
-				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/website-troubleshooting/how-to-get-great-technical-support'>How To Contact Technical Support</a> (83,102 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/website-troubleshooting/common-website-issues'>Common Website Issues</a> (11,747 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/website-troubleshooting/common-wordpress-troubleshooting-techniques'>Common WordPress Troubleshooting Techniques</a> (7,456 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/website-troubleshooting/disable-cpanel-scgi-bin-directory'>Disable cPanel /scgi-bin directory</a> (3,560 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/website-troubleshooting/traffic-surge-to-site-not-optimized-for-that-level-of-traffic'>Large surges in traffic going to a site not optimized for that level of traffic.</a> (2,812 hits)</div></div>
-				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/website-troubleshooting/my-wordpress-site-is-displaying-a-blank-page'>My WordPress site is displaying a blank page</a> (24,489 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/website-troubleshooting/determine-cause-of-server-usage-spike'>Determine cause of server usage spike</a> (10,419 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/website-troubleshooting/disable-problematic-site-for-troubleshooting'>Disable problematic site for troubleshooting</a> (4,475 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/website-troubleshooting/excessive-spam-filtering-forwarding-boxtrapper-usage'>Excessive spam filtering, forwarding, and BoxTrapper usage</a> (3,505 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/website-troubleshooting/chat-software-can-cause-high-usage'>Chat software can cause high usage</a> (2,769 hits)</div></div>
-				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/website-troubleshooting/fatal-error-class-pdo-not-found'>Fatal error: Class 'PDO' not found</a> (20,767 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/website-troubleshooting/disable-directory-indexes-server-wide'>Disable directory indexes server wide</a> (8,133 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/website-troubleshooting/twitter-users'>Twitter users, we can help!</a> (3,627 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/website-troubleshooting/excessive-cpu-processing-especially-image-manipulation'>Excessive amounts of CPU processing especially related to image manipulation</a> (2,843 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/website-troubleshooting/run-system-file-checker'>How to Run the Windows 10 System File Checker </a> (2,573 hits)</div></div>
+				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/website-troubleshooting/how-to-get-great-technical-support'>How To Contact Technical Support</a> (83,110 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/website-troubleshooting/common-website-issues'>Common Website Issues</a> (11,748 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/website-troubleshooting/common-wordpress-troubleshooting-techniques'>Common WordPress Troubleshooting Techniques</a> (7,457 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/website-troubleshooting/disable-cpanel-scgi-bin-directory'>Disable cPanel /scgi-bin directory</a> (3,560 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/website-troubleshooting/traffic-surge-to-site-not-optimized-for-that-level-of-traffic'>Large surges in traffic going to a site not optimized for that level of traffic.</a> (2,812 hits)</div></div>
+				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/website-troubleshooting/my-wordpress-site-is-displaying-a-blank-page'>My WordPress site is displaying a blank page</a> (24,491 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/website-troubleshooting/determine-cause-of-server-usage-spike'>Determine cause of server usage spike</a> (10,421 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/website-troubleshooting/disable-problematic-site-for-troubleshooting'>Disable problematic site for troubleshooting</a> (4,478 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/website-troubleshooting/excessive-spam-filtering-forwarding-boxtrapper-usage'>Excessive spam filtering, forwarding, and BoxTrapper usage</a> (3,505 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/website-troubleshooting/chat-software-can-cause-high-usage'>Chat software can cause high usage</a> (2,769 hits)</div></div>
+				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/website-troubleshooting/fatal-error-class-pdo-not-found'>Fatal error: Class 'PDO' not found</a> (20,772 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/website-troubleshooting/disable-directory-indexes-server-wide'>Disable directory indexes server wide</a> (8,134 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/website-troubleshooting/twitter-users'>Twitter users, we can help!</a> (3,627 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/website-troubleshooting/excessive-cpu-processing-especially-image-manipulation'>Excessive amounts of CPU processing especially related to image manipulation</a> (2,843 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/website-troubleshooting/run-system-file-checker'>How to Run the Windows 10 System File Checker </a> (2,576 hits)</div></div>
 			</div>
 		</li><li class='bc_arrow'>&gt;&gt;</li><li class='bc_no_dd' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'><span itemprop='title'>How to Run the Windows 10 System File Checker </span></li>			</ul>
 		</div>
@@ -479,7 +477,7 @@ var WRInitTime=(new Date()).getTime();
 				
 					<div style='font-size:12px; color:#aaa; margin-bottom:-10px; padding-top:5px;'>
 							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Written by </span><a href='https://plus.google.com/u/0/114162951489960418846?rel=author'>John-Paul Briones</a></div>
-							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Views:</span> <span name='page_views' id='page_views'>2,573</span></div>
+							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Views:</span> <span name='page_views' id='page_views'>2,576</span></div>
 							<div style='float:left; margin-right:20px;' title='Originally published: Aug 11, 2015'><span style='color:#606060;'>Published:</span> Aug 11, 2015</div>
 							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Comments:</span> <a href='#comments'>0</a></div>
 							<div style='clear:both;'></div>
@@ -610,7 +608,7 @@ You are finished when you see a <em>completed</em> message. It will also tell yo
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZjYXRpZD0zNCZpZD0zNjM5JnZpZXc9YXJ0aWNsZSZJdGVtaWQ9MTAx" />
-		<input type="hidden" name="2a934c79a1918432fd3a4a7ce3d34648" value="1" />	</div>
+		<input type="hidden" name="a70272deb689142f1d7a8aeffb30ef1e" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -1128,11 +1126,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-25']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '73.17.232.53']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '70.75.89.47']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '73.17.232.53']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '70.75.89.47']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

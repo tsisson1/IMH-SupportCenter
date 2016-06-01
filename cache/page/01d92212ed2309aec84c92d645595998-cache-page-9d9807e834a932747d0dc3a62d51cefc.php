@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:288101:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:287964:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -218,11 +218,11 @@ window.setInterval(function(){var r;try{r=window.XMLHttpRequest?new XMLHttpReque
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-38']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '86.101.200.176']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '98.243.166.65']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '86.101.200.176']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '98.243.166.65']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -335,8 +335,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -437,9 +435,9 @@ var WRInitTime=(new Date()).getTime();
 			</div>
 		</li><li class='bc_arrow'>&gt;&gt;</li><li class='bc_with_dd' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'><a href='/support/website/htaccess' itemprop='url'><span itemprop='title'>.htaccess<span></a>
 			<div class='dropdown_3columns' style='width:900px; margin-left:-250px;'>
-				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/htaccess/redirect-without-changing-url'>How to redirect a domain without changing the URL</a> (143,754 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/htaccess/apache-module-mod-expires'>How to add Apache Module mod_expires to your .htaccess</a> (95,701 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/htaccess/block-country-ips'>Block a country from your site using htaccess </a> (38,270 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/htaccess/access-protected-dir'>Allow public access to a file in a protected directory using .htaccess</a> (15,198 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/htaccess/force-download-htaccess'>Forcing a file to download in a browser via htaccess </a> (9,051 hits)</div></div>
-				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/htaccess/htaccess-change-index-page'>How to change your default Index page in htaccess</a> (126,768 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/htaccess/where-is-my-htaccess-file'>Where is my .htaccess file?</a> (68,890 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/htaccess/what-is-the-htaccess-file-and-what-do-i-use-it-for'>What is the .htaccess file and what do I use it for?</a> (32,916 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/htaccess/password-single-file-htaccess'>How to password protect a single file with htaccess</a> (14,555 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/htaccess/access-specific-filetype'>Allow access to specific file types in a protected directory</a> (8,599 hits)</div></div>
-				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/htaccess/force-www-htaccess'>How to force www or non-www in htaccess</a> (124,444 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/htaccess/remove-file-extensions'>Removing file extensions using htaccess </a> (52,044 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/htaccess/htacess-change-timezone'>How to Change your Default Timezone in htaccess</a> (16,265 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/htaccess/htaccess-prevent-access'>How to prevent access to a specific file in htaccess</a> (11,138 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/htaccess/htaccess-reference-list'>.htaccess file reference list</a> (6,675 hits)</div></div>
+				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/htaccess/redirect-without-changing-url'>How to redirect a domain without changing the URL</a> (143,802 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/htaccess/apache-module-mod-expires'>How to add Apache Module mod_expires to your .htaccess</a> (95,715 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/htaccess/block-country-ips'>Block a country from your site using htaccess </a> (38,274 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/htaccess/access-protected-dir'>Allow public access to a file in a protected directory using .htaccess</a> (15,200 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/htaccess/force-download-htaccess'>Forcing a file to download in a browser via htaccess </a> (9,051 hits)</div></div>
+				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/htaccess/htaccess-change-index-page'>How to change your default Index page in htaccess</a> (126,791 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/htaccess/where-is-my-htaccess-file'>Where is my .htaccess file?</a> (68,905 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/htaccess/what-is-the-htaccess-file-and-what-do-i-use-it-for'>What is the .htaccess file and what do I use it for?</a> (32,917 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/htaccess/password-single-file-htaccess'>How to password protect a single file with htaccess</a> (14,558 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/htaccess/access-specific-filetype'>Allow access to specific file types in a protected directory</a> (8,601 hits)</div></div>
+				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/htaccess/force-www-htaccess'>How to force www or non-www in htaccess</a> (124,481 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/htaccess/remove-file-extensions'>Removing file extensions using htaccess </a> (52,054 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/htaccess/htacess-change-timezone'>How to Change your Default Timezone in htaccess</a> (16,265 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/htaccess/htaccess-prevent-access'>How to prevent access to a specific file in htaccess</a> (11,139 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/htaccess/htaccess-reference-list'>.htaccess file reference list</a> (6,677 hits)</div></div>
 			</div>
 		</li><li class='bc_arrow'>&gt;&gt;</li><li class='bc_no_dd' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'><span itemprop='title'>How to redirect a domain without changing the URL</span></li>			</ul>
 		</div>
@@ -475,7 +473,7 @@ var WRInitTime=(new Date()).getTime();
 				
 					<div style='font-size:12px; color:#aaa; margin-bottom:-10px; padding-top:5px;'>
 							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Written by </span><a href='https://plus.google.com/+JeffMatson?rel=author'>Jeff Matson</a></div>
-							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Views:</span> <span name='page_views' id='page_views'>143,754</span></div>
+							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Views:</span> <span name='page_views' id='page_views'>143,802</span></div>
 							<div style='float:left; margin-right:20px;' title='Originally published: Sep 11, 2013'><span style='color:#606060;'>Published:</span> Jul 28, 2014</div>
 							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Comments:</span> <a href='#comments'>101</a></div>
 							<div style='clear:both;'></div>
@@ -632,7 +630,7 @@ RewriteRule (.*) http://domain_name.com/$1 [R=301,L]<br />
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZjYXRpZD00MTMmaWQ9MjgyOCZ2aWV3PWFydGljbGUmSXRlbWlkPTEwMQ==" />
-		<input type="hidden" name="fef94918c0cff77ca0277411188b804e" value="1" />	</div>
+		<input type="hidden" name="3f60762c9b6353a632358a2699fd5c9d" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -1135,7 +1133,7 @@ John-Paul</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -1542,7 +1540,7 @@ John-Paul</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -1789,7 +1787,7 @@ John-Paul</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -1858,7 +1856,7 @@ Can you help?</pre></div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -2364,7 +2362,7 @@ Arnel C.</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -2478,7 +2476,7 @@ Arnel C.</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -2587,7 +2585,7 @@ John-Paul</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -2638,7 +2636,7 @@ Scott M</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -2753,7 +2751,7 @@ Arnel C.</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -2930,7 +2928,7 @@ Arnel C.</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -3116,7 +3114,7 @@ John-Paul</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -3171,7 +3169,7 @@ Scott M</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -3223,7 +3221,7 @@ Scott M</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -3388,7 +3386,7 @@ Tim S. </div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -3501,7 +3499,7 @@ Arnel C.</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -4128,11 +4126,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-38']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '86.101.200.176']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '98.243.166.65']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '86.101.200.176']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '98.243.166.65']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

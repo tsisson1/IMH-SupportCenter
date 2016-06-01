@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:73292:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:73163:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -222,11 +222,11 @@ window.setInterval(function(){var r;try{r=window.XMLHttpRequest?new XMLHttpReque
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-19']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '216.54.31.82']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '58.187.69.160']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '216.54.31.82']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '58.187.69.160']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -339,8 +339,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -441,9 +439,9 @@ var WRInitTime=(new Date()).getTime();
 			</div>
 		</li><li class='bc_arrow'>&gt;&gt;</li><li class='bc_with_dd' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'><a href='/support/website/how-to' itemprop='url'><span itemprop='title'>How To<span></a>
 			<div class='dropdown_3columns' style='width:900px; margin-left:-250px;'>
-				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/how-to/setting-a-404-error-page-via-htaccess'>Setting a 404 error page via .htaccess</a> (147,342 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/how-to/using-your-temporary-url'>Testing your website using your Temporary URL</a> (68,108 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/how-to/clear-browser-cache'>How to Clear your Browser cache</a> (41,312 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/how-to/how-to-create-a-favicon-for-your-website'>How to add a Favicon for your Website</a> (24,846 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/how-to/find-config-files'>How to find program configuration files</a> (10,786 hits)</div></div>
-				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/how-to/how-to-edit-your-hosts-file-on-a-mac'>How to edit your hosts file on a mac</a> (118,425 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/how-to/read-traceroute'>How to read a traceroute</a> (63,938 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/how-to/how-do-i-restart-my-server'>How do I restart my server?</a> (26,969 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/how-to/add-calendar'>Calendar options for your website</a> (23,635 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/how-to/how-to-view-the-source-code-of-your-website'>How to view the source code of your website</a> (9,871 hits)</div></div>
-				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/how-to/modifying-your-hosts-file'>Modifying Your Hosts File</a> (112,522 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/how-to/how-to-add-a-pdf-file-to-your-website'>How to add a PDF file to your website</a> (57,982 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/how-to/creating-a-custom-404-error-page'>Creating a custom 404 error page</a> (26,180 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/how-to/enable-telnet'>Enabling telnet on a Windows computer</a> (14,052 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/how-to/external-help'>How to get help for programs from external forums</a> (8,508 hits)</div></div>
+				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/how-to/setting-a-404-error-page-via-htaccess'>Setting a 404 error page via .htaccess</a> (147,360 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/how-to/using-your-temporary-url'>Testing your website using your Temporary URL</a> (68,110 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/how-to/clear-browser-cache'>How to Clear your Browser cache</a> (41,315 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/how-to/how-to-create-a-favicon-for-your-website'>How to add a Favicon for your Website</a> (24,846 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/how-to/find-config-files'>How to find program configuration files</a> (10,786 hits)</div></div>
+				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/how-to/how-to-edit-your-hosts-file-on-a-mac'>How to edit your hosts file on a mac</a> (118,456 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/how-to/read-traceroute'>How to read a traceroute</a> (63,957 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/how-to/how-do-i-restart-my-server'>How do I restart my server?</a> (26,972 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/how-to/add-calendar'>Calendar options for your website</a> (23,638 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/how-to/how-to-view-the-source-code-of-your-website'>How to view the source code of your website</a> (9,871 hits)</div></div>
+				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/how-to/modifying-your-hosts-file'>Modifying Your Hosts File</a> (112,535 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/how-to/how-to-add-a-pdf-file-to-your-website'>How to add a PDF file to your website</a> (57,991 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/how-to/creating-a-custom-404-error-page'>Creating a custom 404 error page</a> (26,182 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/how-to/enable-telnet'>Enabling telnet on a Windows computer</a> (14,056 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/how-to/external-help'>How to get help for programs from external forums</a> (8,508 hits)</div></div>
 			</div>
 		</li><li class='bc_arrow'>&gt;&gt;</li><li class='bc_no_dd' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'><span itemprop='title'>How to Clear your Browser cache</span></li>			</ul>
 		</div>
@@ -479,7 +477,7 @@ var WRInitTime=(new Date()).getTime();
 				
 					<div style='font-size:12px; color:#aaa; margin-bottom:-10px; padding-top:5px;'>
 							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Written by </span><a href='https://plus.google.com/102670474114655224886?rel=author'>Brad Markle</a></div>
-							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Views:</span> <span name='page_views' id='page_views'>41,312</span></div>
+							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Views:</span> <span name='page_views' id='page_views'>41,315</span></div>
 							<div style='float:left; margin-right:20px;' title='Originally published: Nov 11, 2011'><span style='color:#606060;'>Published:</span> Aug 27, 2015</div>
 							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Comments:</span> <a href='#comments'>5</a></div>
 							<div style='clear:both;'></div>
@@ -720,7 +718,7 @@ var WRInitTime=(new Date()).getTime();
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZjYXRpZD0zNSZpZD0yOTYmdmlldz1hcnRpY2xlJkl0ZW1pZD0xMDE=" />
-		<input type="hidden" name="0a02d7054d417a2c3d4fe2499c69ffa9" value="1" />	</div>
+		<input type="hidden" name="a627d72a83603d10a01eb35dbcbbebf9" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -1310,11 +1308,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-19']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '216.54.31.82']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '58.187.69.160']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '216.54.31.82']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '58.187.69.160']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

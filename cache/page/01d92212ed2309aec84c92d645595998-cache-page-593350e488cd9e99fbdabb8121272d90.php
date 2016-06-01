@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:76790:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:76653:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -222,11 +222,11 @@ window.setInterval(function(){var r;try{r=window.XMLHttpRequest?new XMLHttpReque
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-21']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '68.180.230.125']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '200.31.103.57']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '68.180.230.125']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '200.31.103.57']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -339,8 +339,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -441,9 +439,9 @@ var WRInitTime=(new Date()).getTime();
 			</div>
 		</li><li class='bc_arrow'>&gt;&gt;</li><li class='bc_with_dd' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'><a href='/support/website/general-server-setup' itemprop='url'><span itemprop='title'>General Server Setup / Management<span></a>
 			<div class='dropdown_3columns' style='width:900px; margin-left:-250px;'>
-				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/general-server-setup/edit-mysql-my-cnf'>How to edit the MySQL my.cnf file</a> (97,597 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/general-server-setup/uid-smaller-than-min-uid'>SoftException UID is smaller than min_uid</a> (23,169 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/general-server-setup/incrrease-file-display-limit'>How to increase the FTP visible file limits via command line</a> (11,823 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/general-server-setup/understanding-linux-inodes'>Understanding Linux Inode basics</a> (6,765 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/general-server-setup/who-command'>How to tell who is logged into your VPS or Dedicated server</a> (2,517 hits)</div></div>
-				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/general-server-setup/check-disk-space-through-shell'>How to find what is using the most disk space on my server</a> (58,159 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/general-server-setup/view-bandwidth-and-disk-usage'>How to Monitor Disk Space and Bandwidth Usage</a> (20,843 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/general-server-setup/different-version-of-phpmysql'>I need a different version of PHP/MySQL</a> (11,193 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/general-server-setup/tz-ref-table'>Time zone reference list</a> (5,652 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/general-server-setup/controlling-user-executions-with-suexec'>Controlling user executions with suEXEC</a> (2,399 hits)</div></div>
-				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/general-server-setup/install-mbstring-easy-apache'>Installing the mbstring extension with Easy Apache</a> (23,973 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/general-server-setup/how-to-open-a-port-in-your-firewall'>How to open a port in your firewall</a> (13,612 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/general-server-setup/server-security-best-practices'>Server security best practices</a> (7,399 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/general-server-setup/disable-pop3-mail-service-on-server'>Disable POP3 mail service on server</a> (3,308 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/general-server-setup/how-to-run-exim-on-an-additional-port'>How to run Exim on an additional port</a> (2,334 hits)</div></div>
+				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/general-server-setup/edit-mysql-my-cnf'>How to edit the MySQL my.cnf file</a> (97,611 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/general-server-setup/uid-smaller-than-min-uid'>SoftException UID is smaller than min_uid</a> (23,170 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/general-server-setup/incrrease-file-display-limit'>How to increase the FTP visible file limits via command line</a> (11,826 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/general-server-setup/understanding-linux-inodes'>Understanding Linux Inode basics</a> (6,765 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/general-server-setup/who-command'>How to tell who is logged into your VPS or Dedicated server</a> (2,517 hits)</div></div>
+				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/general-server-setup/check-disk-space-through-shell'>How to find what is using the most disk space on my server</a> (58,169 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/general-server-setup/view-bandwidth-and-disk-usage'>How to Monitor Disk Space and Bandwidth Usage</a> (20,845 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/general-server-setup/different-version-of-phpmysql'>I need a different version of PHP/MySQL</a> (11,193 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/general-server-setup/tz-ref-table'>Time zone reference list</a> (5,652 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/general-server-setup/controlling-user-executions-with-suexec'>Controlling user executions with suEXEC</a> (2,399 hits)</div></div>
+				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/general-server-setup/install-mbstring-easy-apache'>Installing the mbstring extension with Easy Apache</a> (23,978 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/general-server-setup/how-to-open-a-port-in-your-firewall'>How to open a port in your firewall</a> (13,619 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/general-server-setup/server-security-best-practices'>Server security best practices</a> (7,399 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/general-server-setup/disable-pop3-mail-service-on-server'>Disable POP3 mail service on server</a> (3,308 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/general-server-setup/how-to-run-exim-on-an-additional-port'>How to run Exim on an additional port</a> (2,335 hits)</div></div>
 			</div>
 		</li><li class='bc_arrow'>&gt;&gt;</li><li class='bc_no_dd' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'><span itemprop='title'>How to edit the MySQL my.cnf file</span></li>			</ul>
 		</div>
@@ -479,7 +477,7 @@ var WRInitTime=(new Date()).getTime();
 				
 					<div style='font-size:12px; color:#aaa; margin-bottom:-10px; padding-top:5px;'>
 							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Written by James Richardson</div>
-							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Views:</span> <span name='page_views' id='page_views'>97,597</span></div>
+							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Views:</span> <span name='page_views' id='page_views'>97,611</span></div>
 							<div style='float:left; margin-right:20px;' title='Originally published: Dec 28, 2012'><span style='color:#606060;'>Published:</span> Jul 14, 2014</div>
 							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Comments:</span> <a href='#comments'>6</a></div>
 							<div style='clear:both;'></div>
@@ -634,7 +632,7 @@ var WRInitTime=(new Date()).getTime();
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZjYXRpZD00NCZpZD01MDImdmlldz1hcnRpY2xlJkl0ZW1pZD0xMDE=" />
-		<input type="hidden" name="6cb8b4b1f513697f2867839d941f9870" value="1" />	</div>
+		<input type="hidden" name="7a94f1b2521b3659e318990146172bce" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -745,7 +743,7 @@ var WRInitTime=(new Date()).getTime();
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -1317,11 +1315,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-21']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '68.180.230.125']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '200.31.103.57']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '68.180.230.125']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '200.31.103.57']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

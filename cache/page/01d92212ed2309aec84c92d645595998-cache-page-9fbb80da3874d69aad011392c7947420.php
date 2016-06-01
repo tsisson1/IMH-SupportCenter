@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:61066:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:60848:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -226,11 +226,11 @@ jQuery(function($) {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-19']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '45.117.156.106']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '113.210.73.118']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '45.117.156.106']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '113.210.73.118']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -343,8 +343,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -482,7 +480,6 @@ var WRInitTime=(new Date()).getTime();
 <li><a href="http://www.inmotionhosting.com/support/website/new-customers/new-customer-website-getting-started-guide">Getting Started Guide: Website</a></li>
 <li> What software are you using?                                                                                                      
 <ul>
-<li><a href="/support/edu/premium-website-builder">Premium Website Builder</a></li>
 <li><a href="/support/edu/wordpress">WordPress</a></li>
 <li><a href="/support/website/dreamweaver/getting-started-guide-dreamweaver">Dreamweaver</a></li>
 <li><a href="/support/edu/joomla-25">Joomla</a></li>
@@ -615,11 +612,11 @@ var WRInitTime=(new Date()).getTime();
                         </tr>
           <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/difference-between-shared-vps-dedicated-hosting'>Differences between Shared Hosting, VPS Hosting, and Dedicated Hosting</a></td>
-                                <td>125,440</td>
+                                <td>125,457</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/what-is-vps-hosting'>What is VPS Hosting?</a></td>
-                                <td>50,652</td>
+                                <td>50,656</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/cpanel-vs-whm'>cPanel vs. WHM ( Web Host Manager )</a></td>
@@ -728,7 +725,7 @@ var WRInitTime=(new Date()).getTime();
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZjYXRpZD05JmlkPTkmdmlldz1jYXRlZ29yeSZJdGVtaWQ9MTAx" />
-		<input type="hidden" name="782f67635a86a87cf0d2e32ae4b4eec7" value="1" />	</div>
+		<input type="hidden" name="1085d7caed310d25fa8c127f9828037f" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -1115,11 +1112,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-19']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '45.117.156.106']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '113.210.73.118']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '45.117.156.106']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '113.210.73.118']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

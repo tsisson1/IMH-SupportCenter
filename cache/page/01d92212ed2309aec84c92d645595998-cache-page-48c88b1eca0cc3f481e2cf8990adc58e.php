@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:53029:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:52896:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -224,11 +224,11 @@ jQuery(function($) {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-25']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '80.122.62.182']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '154.70.145.25']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '80.122.62.182']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '154.70.145.25']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -341,8 +341,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -506,35 +504,35 @@ var WRInitTime=(new Date()).getTime();
                         </tr>
           <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/htaccess/redirect-without-changing-url'>How to redirect a domain without changing the URL</a></td>
-                                <td>143,754</td>
+                                <td>143,802</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/htaccess/htaccess-change-index-page'>How to change your default Index page in htaccess</a></td>
-                                <td>126,768</td>
+                                <td>126,791</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/htaccess/force-www-htaccess'>How to force www or non-www in htaccess</a></td>
-                                <td>124,438</td>
+                                <td>124,481</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/htaccess/apache-module-mod-expires'>How to add Apache Module mod_expires to your .htaccess</a></td>
-                                <td>95,699</td>
+                                <td>95,715</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/htaccess/where-is-my-htaccess-file'>Where is my .htaccess file?</a></td>
-                                <td>68,890</td>
+                                <td>68,905</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/htaccess/remove-file-extensions'>Removing file extensions using htaccess </a></td>
-                                <td>52,044</td>
+                                <td>52,054</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/htaccess/block-country-ips'>Block a country from your site using htaccess </a></td>
-                                <td>38,269</td>
+                                <td>38,274</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/htaccess/what-is-the-htaccess-file-and-what-do-i-use-it-for'>What is the .htaccess file and what do I use it for?</a></td>
-                                <td>32,916</td>
+                                <td>32,917</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/htaccess/htacess-change-timezone'>How to Change your Default Timezone in htaccess</a></td>
@@ -542,27 +540,27 @@ var WRInitTime=(new Date()).getTime();
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/htaccess/access-protected-dir'>Allow public access to a file in a protected directory using .htaccess</a></td>
-                                <td>15,198</td>
+                                <td>15,200</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/htaccess/password-single-file-htaccess'>How to password protect a single file with htaccess</a></td>
-                                <td>14,555</td>
+                                <td>14,558</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/htaccess/htaccess-prevent-access'>How to prevent access to a specific file in htaccess</a></td>
-                                <td>11,138</td>
+                                <td>11,139</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/htaccess/force-download-htaccess'>Forcing a file to download in a browser via htaccess </a></td>
-                                <td>9,050</td>
+                                <td>9,051</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/htaccess/access-specific-filetype'>Allow access to specific file types in a protected directory</a></td>
-                                <td>8,599</td>
+                                <td>8,601</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/htaccess/htaccess-reference-list'>.htaccess file reference list</a></td>
-                                <td>6,675</td>
+                                <td>6,677</td>
                         </tr>
                   </table>
 		<div class="pagination">
@@ -633,7 +631,7 @@ var WRInitTime=(new Date()).getTime();
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZjYXRpZD00MTMmaWQ9NDEzJnZpZXc9Y2F0ZWdvcnkmSXRlbWlkPTEwMQ==" />
-		<input type="hidden" name="6b137b8ca3758692c6f951e77c65ed4b" value="1" />	</div>
+		<input type="hidden" name="a5f52bc3ed8305b7bbe96027251fa4d2" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -1020,11 +1018,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-25']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '80.122.62.182']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '154.70.145.25']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '80.122.62.182']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '154.70.145.25']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

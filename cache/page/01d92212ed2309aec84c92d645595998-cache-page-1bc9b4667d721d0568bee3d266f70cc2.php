@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:187540:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:187407:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -222,11 +222,11 @@ window.setInterval(function(){var r;try{r=window.XMLHttpRequest?new XMLHttpReque
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-19']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '99.67.126.206']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '71.90.186.135']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '99.67.126.206']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '71.90.186.135']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -339,8 +339,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -441,9 +439,9 @@ var WRInitTime=(new Date()).getTime();
 			</div>
 		</li><li class='bc_arrow'>&gt;&gt;</li><li class='bc_with_dd' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'><a href='/support/email/outlook' itemprop='url'><span itemprop='title'>Outlook<span></a>
 			<div class='dropdown_3columns' style='width:900px; margin-left:-250px;'>
-				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/outlook/2013'>How to Setup Outlook 2013 to Check Your Email</a> (133,422 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/outlook/create-signature-2007'>How to create an email signature in Outlook 2007</a> (42,730 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/outlook/create-signature-2010'>How to create an email signature in Outlook 2010</a> (31,578 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/outlook/email-signature-2003'>How to create an email signature in Outlook 2003</a> (26,462 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/outlook/outlook-2010-accessing-account-settings'>Outlook 2010: Accessing Account Settings</a> (13,216 hits)</div></div>
-				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/outlook/creating-an-email-account-in-outlook-2007'>Setting up Microsoft Outlook 2007 to check your email</a> (115,346 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/outlook/create-mac-signature-2011'>How to create an email signature for  Mac in Outlook 2011</a> (35,342 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/outlook/prevent-winmaildat'>Preventing Outlook from formatting mail as winmail.dat</a> (31,106 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/outlook/how-to-subscribe-to-specific-imap-folders-in-outlook-2010'>How to subscribe to specific IMAP folders in Outlook 2010</a> (25,496 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/outlook/creating-an-email-account-innoutlook-2002'>Creating an email account in Outlook 2002 </a> (13,093 hits)</div></div>
-				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/outlook/how-to-set-up-outlook-2010'>How to Set Up your Email in Outlook 2010</a> (67,274 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/outlook/outlook-2013-omapi32-wwlib-errors'>How to fix OLMAPI32.dll and WWLIB.dll error in Outlook 2013</a> (35,210 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/outlook/how-to-set-up-outlook-2011'>How to Set Up your Email in Outlook 2011 for the Mac</a> (29,780 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/outlook/creating-an-email-account-in-outlook-2003'>Creating an email account in Outlook 2003 </a> (15,581 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/outlook/inbox-subscribe'>Outlook 2013/Office 365 - Subscribing to your Inbox</a> (12,340 hits)</div></div>
+				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/outlook/2013'>How to Setup Outlook 2013 to Check Your Email</a> (133,447 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/outlook/create-signature-2007'>How to create an email signature in Outlook 2007</a> (42,735 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/outlook/create-signature-2010'>How to create an email signature in Outlook 2010</a> (31,588 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/outlook/email-signature-2003'>How to create an email signature in Outlook 2003</a> (26,464 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/outlook/outlook-2010-accessing-account-settings'>Outlook 2010: Accessing Account Settings</a> (13,216 hits)</div></div>
+				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/outlook/creating-an-email-account-in-outlook-2007'>Setting up Microsoft Outlook 2007 to check your email</a> (115,370 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/outlook/create-mac-signature-2011'>How to create an email signature for  Mac in Outlook 2011</a> (35,353 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/outlook/prevent-winmaildat'>Preventing Outlook from formatting mail as winmail.dat</a> (31,116 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/outlook/how-to-subscribe-to-specific-imap-folders-in-outlook-2010'>How to subscribe to specific IMAP folders in Outlook 2010</a> (25,499 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/outlook/creating-an-email-account-innoutlook-2002'>Creating an email account in Outlook 2002 </a> (13,093 hits)</div></div>
+				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/outlook/how-to-set-up-outlook-2010'>How to Set Up your Email in Outlook 2010</a> (67,286 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/outlook/outlook-2013-omapi32-wwlib-errors'>How to fix OLMAPI32.dll and WWLIB.dll error in Outlook 2013</a> (35,213 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/outlook/how-to-set-up-outlook-2011'>How to Set Up your Email in Outlook 2011 for the Mac</a> (29,783 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/outlook/creating-an-email-account-in-outlook-2003'>Creating an email account in Outlook 2003 </a> (15,581 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/outlook/inbox-subscribe'>Outlook 2013/Office 365 - Subscribing to your Inbox</a> (12,340 hits)</div></div>
 			</div>
 		</li><li class='bc_arrow'>&gt;&gt;</li><li class='bc_no_dd' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'><span itemprop='title'>How to Set Up your Email in Outlook 2010</span></li>			</ul>
 		</div>
@@ -479,7 +477,7 @@ var WRInitTime=(new Date()).getTime();
 				
 					<div style='font-size:12px; color:#aaa; margin-bottom:-10px; padding-top:5px;'>
 							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Written by </span><a href='https://plus.google.com/102670474114655224886?rel=author'>Brad Markle</a></div>
-							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Views:</span> <span name='page_views' id='page_views'>67,274</span></div>
+							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Views:</span> <span name='page_views' id='page_views'>67,286</span></div>
 							<div style='float:left; margin-right:20px;' title='Originally published: Aug 23, 2011'><span style='color:#606060;'>Published:</span> Jan 28, 2016</div>
 							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Comments:</span> <a href='#comments'>58</a></div>
 							<div style='clear:both;'></div>
@@ -651,7 +649,7 @@ var WRInitTime=(new Date()).getTime();
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZjYXRpZD01NSZpZD02OTYmdmlldz1hcnRpY2xlJkl0ZW1pZD0xMDE=" />
-		<input type="hidden" name="54191f33abaa53c5516e78ea421b9ec6" value="1" />	</div>
+		<input type="hidden" name="11a6bcc4a60b04c7705f4119fcdaba55" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -762,7 +760,7 @@ var WRInitTime=(new Date()).getTime();
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -1104,7 +1102,7 @@ Thank you,<br />
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -1155,7 +1153,7 @@ Scott M</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -1206,7 +1204,7 @@ Scott M</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -1817,7 +1815,7 @@ TJ Edens</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -2000,7 +1998,7 @@ John-Paul</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -2132,7 +2130,7 @@ Scott M</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -2696,11 +2694,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-19']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '99.67.126.206']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '71.90.186.135']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '99.67.126.206']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '71.90.186.135']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:52977:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:52844:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -217,11 +217,11 @@ window.setInterval(function(){var r;try{r=window.XMLHttpRequest?new XMLHttpReque
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-19']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '109.65.182.232']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '79.250.180.221']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '109.65.182.232']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '79.250.180.221']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -334,8 +334,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -493,7 +491,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/prestashop-15/pshop15-price-rules/set-cart-rule-priority'>Setting the priority for cart rules in PrestaShop 1.5</a>
 					<div>In this PrestaShop 1.5 article you will walk through setting a priority on your cart rules and learn why it is important.</div>
-					<div class='smallgrey'>Hits: 1,640</div>
+					<div class='smallgrey'>Hits: 1,641</div>
 				</td>
 			</tr>
 			<tr>
@@ -556,7 +554,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/prestashop-15/pshop15-price-rules/specific-customer-group'>Restrict cart rules to work with certain groups in PrestaShop 1.5</a>
 					<div>This article teaches you how to set cart rules to work with specific customer groups in PrestaShop 1.5</div>
-					<div class='smallgrey'>Hits: 2,818</div>
+					<div class='smallgrey'>Hits: 2,819</div>
 				</td>
 			</tr>
 			<tr>
@@ -658,7 +656,7 @@ var WRInitTime=(new Date()).getTime();
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZjYXRpZD0yNTImaWQ9MjUyJnZpZXc9Y2F0ZWdvcnkmSXRlbWlkPTEwMQ==" />
-		<input type="hidden" name="b0e99c747ac6904dd46e1e9453309c38" value="1" />	</div>
+		<input type="hidden" name="a6ff23d8ff1479283dfbae3d41cd272b" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -1045,11 +1043,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-19']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '109.65.182.232']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '79.250.180.221']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '109.65.182.232']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '79.250.180.221']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

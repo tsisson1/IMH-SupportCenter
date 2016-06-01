@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:54327:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:54194:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -342,8 +342,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -507,63 +505,63 @@ var WRInitTime=(new Date()).getTime();
                         </tr>
           <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/wordpress/wordpress-changing-the-site-url-and-home-settings'>WordPress - Changing the Site URL and Home Settings</a></td>
-                                <td>185,549</td>
+                                <td>185,605</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/wordpress/lock-down-wordpress-admin-login-with-htaccess'>Lock down WordPress admin login with .htaccess</a></td>
-                                <td>135,767</td>
+                                <td>135,784</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/wordpress/prevent-unauthorized-wp-admin-wp-login-php-attempts'>Prevent unauthorized WordPress wp-admin and wp-login.php attempts</a></td>
-                                <td>129,777</td>
+                                <td>129,785</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/wordpress/disabling-the-wp-cronphp-in-wordpress'>Disabling the wp-cron.php in WordPress</a></td>
-                                <td>112,001</td>
+                                <td>112,013</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/wordpress/duplicate-wordpress-site-for-testing'>Making a duplicate Wordpress site for development and testing</a></td>
-                                <td>96,466</td>
+                                <td>96,491</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/wordpress/heartbeat-ajax-php-usage'>WordPress Heartbeat and heavy admin-ajax.php usage</a></td>
-                                <td>88,365</td>
+                                <td>88,389</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/wordpress/resetting-your-wordpress-admin-password'>Resetting your WordPress Admin Password</a></td>
-                                <td>68,588</td>
+                                <td>68,596</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/wordpress/change-wordpress-admin-username-for-security'>Change WordPress admin username for security</a></td>
-                                <td>42,826</td>
+                                <td>42,828</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/wordpress/reinstall-wordpress-after-a-hack'>How to Re-Install WordPress after a Hack </a></td>
-                                <td>32,244</td>
+                                <td>32,247</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/wordpress/how-to-optimize-wordpress'>How to optimize Wordpress</a></td>
-                                <td>29,543</td>
+                                <td>29,544</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/wordpress/limit-or-disable-wordpress-revisions'>Limit or disable WordPress revisions</a></td>
-                                <td>28,258</td>
+                                <td>28,259</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/wordpress/fix-download-failed-errors-on-update'>Fix WordPress Download failed errors on update</a></td>
-                                <td>27,632</td>
+                                <td>27,633</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/wordpress/disable-xml-rpc-requests'>Disable WordPress XML-RPC requests</a></td>
-                                <td>25,293</td>
+                                <td>25,296</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/wordpress/show-author-avatar'>How to show an author's avatar within WordPress</a></td>
-                                <td>24,913</td>
+                                <td>24,918</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/wordpress/wordpress-security-preventing-brute-force-attacks-on-admin-login'>Wordpress Security - Preventing Brute Force Attacks on Admin Login</a></td>
-                                <td>24,430</td>
+                                <td>24,433</td>
                         </tr>
                   </table>
 		<div class="pagination">

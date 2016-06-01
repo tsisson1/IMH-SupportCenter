@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:44532:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:44399:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -335,8 +335,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -467,7 +465,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/website-design/insert-images-website/inserting-images-using-html'>Inserting Images using HTML</a>
 					<div>Here we will show you how to insert an image into your webpage using an HTML tag. </div>
-					<div class='smallgrey'>Hits: 10,302</div>
+					<div class='smallgrey'>Hits: 10,305</div>
 				</td>
 			</tr>
 			<tr>
@@ -494,7 +492,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/website-design/insert-images-website/how-to-make-an-image-a-link'>How to make an Image a Link</a>
 					<div>In this tutorial we will cover how to turn an image into a link to another webpage.</div>
-					<div class='smallgrey'>Hits: 6,531</div>
+					<div class='smallgrey'>Hits: 6,532</div>
 				</td>
 			</tr>
 			<tr>
@@ -503,7 +501,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/website-design/insert-images-website/align-float-images-css'>Align and float images with CSS</a>
 					<div>Learn how to float and align your images with CSS. Images can be positioned using align and float CSS code. </div>
-					<div class='smallgrey'>Hits: 498,535</div>
+					<div class='smallgrey'>Hits: 498,633</div>
 				</td>
 			</tr>
 			</table>

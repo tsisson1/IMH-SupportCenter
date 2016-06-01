@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:48851:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:48722:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -222,11 +222,11 @@ jQuery(function($) {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-38']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '199.36.96.66']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '99.243.146.56']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '199.36.96.66']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '99.243.146.56']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -339,8 +339,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -504,7 +502,7 @@ var WRInitTime=(new Date()).getTime();
                         </tr>
           <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/domain-management/domain-transfer-in-amp'>How to transfer domains in AMP</a></td>
-                                <td>56,325</td>
+                                <td>56,350</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/domain-management/how-do-i-create-an-add-on-domain-in-my-control-panel-cpanel'>How do I create an add-on domain in my control panel (cpanel)?</a></td>
@@ -573,7 +571,7 @@ var WRInitTime=(new Date()).getTime();
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZjYXRpZD00NDkmaWQ9NDQ5JnZpZXc9Y2F0ZWdvcnkmSXRlbWlkPTEwMQ==" />
-		<input type="hidden" name="8d9d36e7d2fcb982d724bf61a69414ac" value="1" />	</div>
+		<input type="hidden" name="aefbcd189eaebf36a9ddd0691559622c" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -960,11 +958,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-38']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '199.36.96.66']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '99.243.146.56']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '199.36.96.66']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '99.243.146.56']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

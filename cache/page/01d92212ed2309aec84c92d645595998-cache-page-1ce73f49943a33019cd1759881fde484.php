@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:47932:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:47799:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -226,11 +226,11 @@ jQuery(function($) {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-19']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '218.81.206.208']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '24.249.109.177']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '218.81.206.208']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '24.249.109.177']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -343,8 +343,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -507,15 +505,15 @@ var WRInitTime=(new Date()).getTime();
                         </tr>
           <tr>
                                 <td style='padding-right:20px;'><a href='/support/email/general-information/getting-started-guide-email'>Getting Started Guide: Email</a></td>
-                                <td>229,180</td>
+                                <td>229,229</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/email/general-information/transferring-emails-from-your-old-host-to-inmotion-hosting'>Transferring Emails from your old host to InMotion Hosting</a></td>
-                                <td>45,636</td>
+                                <td>45,644</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/email/general-information/host-my-email-different-email-server'>What should I do if I host my email with a different email server</a></td>
-                                <td>18,448</td>
+                                <td>18,451</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/email/general-information/what-is-the-path-to-sendmail'>What is the path to sendmail?</a></td>
@@ -523,15 +521,15 @@ var WRInitTime=(new Date()).getTime();
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/email/general-information/webmail-how-to-send-receive-email-with-your-web-browser'>Webmail - sending and receiving email with your web browser</a></td>
-                                <td>12,933</td>
+                                <td>12,934</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/email/general-information/microsoft-exchange-server'>Microsoft Exchange Servers and your cPanel Hosting Account</a></td>
-                                <td>11,877</td>
+                                <td>11,878</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/email/general-information/third-party-mx'>Changing MX records to point to InMotion servers from third party DNS</a></td>
-                                <td>11,468</td>
+                                <td>11,474</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/email/general-information/default-catch-all-address'>Default / Catch-All Address</a></td>
@@ -555,7 +553,7 @@ var WRInitTime=(new Date()).getTime();
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/email/general-information/updating-your-mx-records-if-you-use-a-third-party-filtering-service'>Updating your MX records if you use a Third Party Filtering Service</a></td>
-                                <td>4,491</td>
+                                <td>4,492</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/email/general-information/copy-all-mail-to-a-email-address-in-exim'>Copy all mail to a email address in Exim</a></td>
@@ -628,7 +626,7 @@ var WRInitTime=(new Date()).getTime();
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZjYXRpZD0yNiZpZD0yNiZ2aWV3PWNhdGVnb3J5Jkl0ZW1pZD0xMDE=" />
-		<input type="hidden" name="4a6002875f17daaa5a7ea70730689402" value="1" />	</div>
+		<input type="hidden" name="cda068158c0357e60962b3f5500d3430" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -1015,11 +1013,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-19']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '218.81.206.208']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '24.249.109.177']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '218.81.206.208']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '24.249.109.177']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

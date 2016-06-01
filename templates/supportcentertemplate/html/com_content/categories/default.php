@@ -118,7 +118,7 @@ if($_GET['test'] == "5" OR "enable" == "enable")
 }
 ?>
 
-<div class="white_box" style='float:left; width:45%;margin-bottom:15px'>
+<? /*<div class="white_box" style='float:left; width:45%;margin-bottom:15px'>
         <h2 class='hp_bg'>BoldGrid</h2>
         <p>BoldGrid will help you create a beautfiul website that looks great and is powered by WordPress.</p>
         <ul>
@@ -129,18 +129,31 @@ if($_GET['test'] == "5" OR "enable" == "enable")
         </ul>
       <a style='display:block; text-align:right;' href='/support/edu/boldgrid'>More BoldGrid Support</a>
     </div>
+*/ ?>
 
+<div class='white_box' style='margin-bottom:15px; float:left; width: 45%;'>
+
+            <h2 class='hp_dn'>Domain Names</h2>
+        <p>We offer registration of new domain names, and we can help transfer your current domain name too.</p>
+        <ul>
+            <li><a href='/support/domain-names/registrations-and-transfers/registering-a-new-domain-name'>Register a new Domain</a></li>
+            <li><a href='/support/domain-names/registrations-and-transfers/transfer-domain-name-to-inmotion-hosting'>Transfer a current Domain</a></li>
+            <li><a href='/support/domain-names/registrations-and-transfers/add-another-domain-name-account'>Configuring a new Domain within your cPanel</a></li>
+            <li><a href='/support/domain-names/dns-nameserver-changes'>Updating your nameservers</a></li>
+        </ul>
+        <a style='display:block; text-align:right;' href='/support/domain-names'>More Domain Name Support</a>
+    </div>
 
 
     <div class="white_box" style='float:right; width:45%;'>
           <h2 style="background:url('http://cdn.inmotionhosting.com/support/templates/supportcentertemplate/images/red_icons/two_pages.png') no-repeat; padding-left: 30px; font-size:21px; ">Product Guides</h2>
-<p>Learn how to get started to use our hosting products and buld your online presence.</p>
+<p>Learn how to get started with our hosting products and build your online presence.</p>
         <ul>
 
             <li><a href="http://www.inmotionhosting.com/support/product-guides/reseller-hosting">Reseller Hosting</a></li>
             <li><a href="http://www.inmotionhosting.com/support/product-guides/dedicated-hosting">Dedicated Hosting</a></li>
-            <li>Shared Hosting (Coming Soon!)</li>
-            <li>VPS Hosting (Coming Soon!)</li>
+            <li><a href="http://www.inmotionhosting.com/support/website">Business Hosting</a> (Coming Soon!)</li>
+            <li><a href="http://www.inmotionhosting.com/support/getting-started/InMotion_Managing_Your_VPS.pdf">VPS Hosting</a> (Coming Soon!)</li>
         </ul>
 <br>    </div>
 
@@ -241,73 +254,6 @@ if($_GET['test'] == "5" OR "enable" == "enable")
 </div>
 
 <div class='white_box' style='margin-bottom:15px;'>
-
-	<div style='float:left; width:45%;'>
-        	<h2 class='hp_dn'>Domain Names</h2>
-		<p>We offer registration of new domain names, and we can help transfer your current domain name too.</p>
-		<ul>
-			<li><a href='/support/domain-names/registrations-and-transfers/registering-a-new-domain-name'>Register a new Domain</a></li>
-			<li><a href='/support/domain-names/registrations-and-transfers/transfer-domain-name-to-inmotion-hosting'>Transfer a current Domain</a></li>
-			<li><a href='/support/domain-names/registrations-and-transfers/add-another-domain-name-account'>Configuring a new Domain within your cPanel</a></li>
-			<li><a href='/support/domain-names/dns-nameserver-changes'>Updating your nameservers</a></li>
-		</ul>
-		<a style='display:block; text-align:right;' href='/support/domain-names'>More Domain Name Support</a>
-	</div>
-
-
-<div style='float:right; width:45%;'>
-            <h2 class='hp_cs'>Community Support</h2>
-        <p>Ask questions and receive help from the community.</>
-        <ul>
-            <li><a href='/support/community-support'>Browse Questions</a></li>
-            <li><a href='/support/community-support/ask-a-question'>Ask a Question</a></li>
-        </ul>
-        <a style='display:block; text-align:right;' href='/support/community-support'>Community Support Homepage</a>
-<h2 style="background:url('//<? echo $cdn_subdomain; ?>/support/templates/supportcentertemplate/images/red_icons/youtube-icon.png') no-repeat; padding-left:40px; font-weight:500; font-size:21px;" />Youtube Channel</h2>
-        <p>We regularly record video tutorials to help with web hosting questions. Subscribe to our <a href='https://www.youtube.com/subscription_center?add_user=InMotionSupport'>YouTube Channel</a>.</p>
-
-</div>
-
-
-<? /* <div style='float:right; width:45%;'>
-        <h2 class='hp_et'>Email Tutorials</h2>
-        <p>All hosting accounts come with email addresses. Let's help get you setup!</p>
-        <ul>
-            <li><a href='/support/email/general-information/getting-started-guide-email'>Getting started with your Email</a></li>
-            <li>
-                <a onClick="jQuery('#what_software_check_email').slideToggle('slow');" style='cursor:pointer;'>What software will you use to check your email?</a>
-                <ul id='what_software_check_email' style='display:none;'>
-                    <li><a href='/support/email/outlook/how-to-set-up-outlook-2010'>Outlook 2010</a></li>
-                    <li><a href='/support/email/outlook/creating-an-email-account-in-outlook-2007'>Outlook 2007</a></li>
-                    <li><a href='/support/email/outlook/creating-an-email-account-in-outlook-2003'>Outlook 2003</a></li>
-                    <li><a href='/support/email/outlook/creating-an-email-account-innoutlook-2002'>Outlook 2022</a></li>
-                    <li><a href='/support/email/mac-mail/set-up-mac-mail'>Mac Mail</a></li>
-                    <li><a href='/support/email/thunderbird/creating-an-email-account-in-thunderbird'>Thunderbird</a></li>
-                    <li><a href='/support/email/horde-webmail/logging-into-horde'>Webmail - Horde</a></li>
-                    <li><a href='/support/email/squirrelmail-webmail/logging-in-to-squirrelmail'>Webmail - Squirrel</a></li>
-                    <li><a href='/support/email/roundcube-webmail'>Webmail Roundcube'></a></li>
-                    <a class='hide_this_list' onClick="jQuery('#what_software_check_email').slideToggle('slow');" style='cursor:pointer;'>Hide this list</a>
-                </ul>
-            </li>
-            <li>
-                <a onClick="jQuery('#email_troubleshooting').slideToggle('slow');" style='cursor:pointer;'>Troubleshooting a problem with your email?</a>
-                <ul id='email_troubleshooting' style='display:none;'>
-                    <li><a href='/support/email/email-troubleshooting/problems-sending-mail-receiving-is-fine'>I cannot send email</a></li>
-                    <li><a href='/support/email/email-troubleshooting/problems-receiving-email'>I cannot receive email</a></li>
-                    <li><a href='/support/email/email-troubleshooting/what-to-do-if-an-email-is-returned'>I sent an email and it was returned to me</a></li>
-                    <li><a href='/support/email/email-troubleshooting/typical-email-error-messages'>Email error messages</a></li>
-                    <a class='hide_this_list' onClick="jQuery('#email_troubleshooting').slideToggle('slow');" style='cursor:pointer;'>Hide this list</a>
-                </ul>
-            </li>
-        </ul>
-        <a style='display:block; text-align:right;' href='/support/email'>More Email Support</a>
-    </div> */ ?>
-
-	<div style='clear:both;'></div>
-
-</div>
-
-<div class='white_box' style='margin-bottom:15px;'>
 	<h2 class='hp_ec'>Education Channels</h2>
 	<p>Work step by step and get things done right the first time! Browse our Education Channels and view ground level courses to more advanced topics.</p>
 	<ul style='width:175px; float:left; margin-right:15px;'>
@@ -399,6 +345,28 @@ if($_GET['test'] == "5" OR "enable" == "enable")
 		</div>
 
 	<div style='clear:both;'></div>
+
+</div>
+
+<div class='white_box' style='margin-bottom:15px;'>
+
+    <div style='float:right; width:45%;'>
+             <h2 class='hp_cs'>Community Support</h2>
+        <p>Ask questions and receive help from the community.</>
+        <ul>
+            <li><a href='/support/community-support'>Browse Questions</a></li>
+            <li><a href='/support/community-support/ask-a-question'>Ask a Question</a></li>
+        </ul>
+        <a style='display:block; text-align:right;' href='/support/community-support'>Community Support Homepage</a>
+</div>
+
+
+<div style='float:left; width:45%;'>
+<h2 style="background:url('//<? echo $cdn_subdomain; ?>/support/templates/supportcentertemplate/images/red_icons/youtube-icon.png') no-repeat; padding-left:40px; font-weight:500; font-size:21px;" />Youtube Channel</h2>
+        <p>We regularly record video tutorials to help with web hosting questions. Subscribe to our <a href='https://www.youtube.com/subscription_center?add_user=InMotionSupport'>YouTube Channel</a>.</p>
+
+</div>
+  <div style='clear:both;'></div>
 
 </div>
 

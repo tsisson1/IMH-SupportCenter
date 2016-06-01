@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:49513:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:49380:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -339,8 +339,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -504,19 +502,19 @@ var WRInitTime=(new Date()).getTime();
                         </tr>
           <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/database-setup/how-do-i-create-a-mysql-database-in-my-control-panel-cpanel'>How do I create a MySQL database in my control panel (cpanel)?</a></td>
-                                <td>71,783</td>
+                                <td>71,793</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/database-setup/how-do-i-manage-a-mysql-database-in-phpmyadmin-in-my-control-panel-cpanel'>How do I manage a MySQL database in PHPMyAdmin in my control panel (cpanel)?</a></td>
-                                <td>30,650</td>
+                                <td>30,653</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/database-setup/upload-large-database-over-50-mb'>How to upload a database that's larger than 50mb</a></td>
-                                <td>27,325</td>
+                                <td>27,327</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/database-setup/how-to-delete-a-database-in-cpanel'>How to Delete a Database in cPanel</a></td>
-                                <td>16,769</td>
+                                <td>16,770</td>
                         </tr>
                   </table>
 	</form>

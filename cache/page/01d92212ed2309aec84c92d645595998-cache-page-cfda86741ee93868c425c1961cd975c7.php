@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:54970:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:54833:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -217,11 +217,11 @@ window.setInterval(function(){var r;try{r=window.XMLHttpRequest?new XMLHttpReque
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-25']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '212.159.108.143']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '201.217.23.114']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '212.159.108.143']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '201.217.23.114']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -334,8 +334,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -503,7 +501,7 @@ var WRInitTime=(new Date()).getTime();
 <h2>Questions</h2><table>
 <tr style='border-bottom:1px solid #ddd;'>
 	<td style='width:100px; padding-top:15px;' valign='top'>
-		<div>53,790 Views</div>
+		<div>53,797 Views</div>
 		<div>1 Answer</div>
 	</td>
 	<td style='padding-bottom:15px; padding-top:15px;'>
@@ -517,7 +515,7 @@ var WRInitTime=(new Date()).getTime();
 			
 <tr style='border-bottom:1px solid #ddd;'>
 	<td style='width:100px; padding-top:15px;' valign='top'>
-		<div>46,113 Views</div>
+		<div>46,115 Views</div>
 		<div>1 Answer</div>
 	</td>
 	<td style='padding-bottom:15px; padding-top:15px;'>
@@ -531,7 +529,7 @@ var WRInitTime=(new Date()).getTime();
 			
 <tr style='border-bottom:1px solid #ddd;'>
 	<td style='width:100px; padding-top:15px;' valign='top'>
-		<div>34,451 Views</div>
+		<div>34,458 Views</div>
 		<div>1 Answer</div>
 	</td>
 	<td style='padding-bottom:15px; padding-top:15px;'>
@@ -547,7 +545,7 @@ var WRInitTime=(new Date()).getTime();
 			
 <tr style='border-bottom:1px solid #ddd;'>
 	<td style='width:100px; padding-top:15px;' valign='top'>
-		<div>25,359 Views</div>
+		<div>25,362 Views</div>
 		<div>1 Answer</div>
 	</td>
 	<td style='padding-bottom:15px; padding-top:15px;'>
@@ -636,7 +634,7 @@ From what I was told by your helpdesk ...</div>
 			
 <tr style='border-bottom:1px solid #ddd;'>
 	<td style='width:100px; padding-top:15px;' valign='top'>
-		<div>16,207 Views</div>
+		<div>16,208 Views</div>
 		<div>1 Answer</div>
 	</td>
 	<td style='padding-bottom:15px; padding-top:15px;'>
@@ -805,7 +803,7 @@ i thought life would be wonderful if i could have just one jqu...</div>
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP0l0ZW1pZD0xMDAwMg==" />
-		<input type="hidden" name="8e9d0c8b099e3d6140defff0af0b3c3c" value="1" />	</div>
+		<input type="hidden" name="6c6c3afd656722c4023d73d58990280d" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -1192,11 +1190,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-25']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '212.159.108.143']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '201.217.23.114']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '212.159.108.143']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '201.217.23.114']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

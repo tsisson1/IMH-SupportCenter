@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:68278:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:68145:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -222,11 +222,11 @@ window.setInterval(function(){var r;try{r=window.XMLHttpRequest?new XMLHttpReque
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-21']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '23.232.147.211']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '188.143.232.21']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '23.232.147.211']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '188.143.232.21']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -339,8 +339,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -441,9 +439,9 @@ var WRInitTime=(new Date()).getTime();
 			</div>
 		</li><li class='bc_arrow'>&gt;&gt;</li><li class='bc_with_dd' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'><a href='/support/website/amp' itemprop='url'><span itemprop='title'>Welcome to AMP<span></a>
 			<div class='dropdown_3columns' style='width:900px; margin-left:-250px;'>
-				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/amp/how-to-log-into-amp'>How to log into AMP</a> (181,862 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/amp/cancel-hosting'>How can I cancel my hosting account?</a> (57,455 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/amp/what-is-my-hostname'>What is my hostname ?</a> (35,046 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/amp/locate-primary-domain-name'>How to find your Primary Domain name</a> (13,533 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/amp/my-account-has-been-moved-to-another-server'>My Account has been moved to another server</a> (6,023 hits)</div></div>
-				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/amp/how-to-check-your-server-information-on-a-vps-or-dedicated-server'>How to check your Server Information on a VPS or Dedicated hosting account</a> (105,754 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/amp/amp-vs-cpanel'>AMP vs. cPanel</a> (54,734 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/amp/upgrade-downgrade-hosting-plan'>How to Upgrade/Downgrade your Hosting Plan in AMP</a> (31,514 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/amp/change-amp-password'>How to change your AMP Password</a> (12,831 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/amp/i-forgot-my-account-management-panel-amp-password'>I forgot my Account Management Panel (AMP ) password</a> (5,079 hits)</div></div>
-				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/amp/viewing-account-technicial-information-in-amp'>Viewing Your Account's Technical Information in AMP</a> (63,049 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/amp/what-is-my-username-and-password'>What is my username and password (I forgot)?</a> (52,211 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/amp/finding-login-information'>New Users: Finding your login information </a> (15,938 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/amp/wtr'>Request a website transfer in AMP</a> (10,838 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/amp/change-hosting-term-subscription'>How to change the Term of your Hosting Subscription</a> (1,810 hits)</div></div>
+				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/amp/how-to-log-into-amp'>How to log into AMP</a> (181,883 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/amp/cancel-hosting'>How can I cancel my hosting account?</a> (57,463 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/amp/what-is-my-hostname'>What is my hostname ?</a> (35,054 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/amp/locate-primary-domain-name'>How to find your Primary Domain name</a> (13,534 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/amp/my-account-has-been-moved-to-another-server'>My Account has been moved to another server</a> (6,023 hits)</div></div>
+				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/amp/how-to-check-your-server-information-on-a-vps-or-dedicated-server'>How to check your Server Information on a VPS or Dedicated hosting account</a> (105,754 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/amp/amp-vs-cpanel'>AMP vs. cPanel</a> (54,740 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/amp/upgrade-downgrade-hosting-plan'>How to Upgrade/Downgrade your Hosting Plan in AMP</a> (31,517 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/amp/change-amp-password'>How to change your AMP Password</a> (12,831 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/amp/i-forgot-my-account-management-panel-amp-password'>I forgot my Account Management Panel (AMP ) password</a> (5,079 hits)</div></div>
+				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/amp/viewing-account-technicial-information-in-amp'>Viewing Your Account's Technical Information in AMP</a> (63,049 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/amp/what-is-my-username-and-password'>What is my username and password (I forgot)?</a> (52,216 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/amp/finding-login-information'>New Users: Finding your login information </a> (15,939 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/amp/wtr'>Request a website transfer in AMP</a> (10,838 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/amp/change-hosting-term-subscription'>How to change the Term of your Hosting Subscription</a> (1,812 hits)</div></div>
 			</div>
 		</li><li class='bc_arrow'>&gt;&gt;</li><li class='bc_no_dd' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'><span itemprop='title'>How to check your Server Information on a VPS or Dedicated hosting acc...</span></li>			</ul>
 		</div>
@@ -615,7 +613,7 @@ var WRInitTime=(new Date()).getTime();
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZjYXRpZD00MjcmaWQ9MjUzNCZ2aWV3PWFydGljbGUmSXRlbWlkPTEwMQ==" />
-		<input type="hidden" name="4193653c879d92ebbfb6f1136f78607b" value="1" />	</div>
+		<input type="hidden" name="d662275340208397ee87fa0b2082223f" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -747,7 +745,7 @@ var WRInitTime=(new Date()).getTime();
 						<div><a style='font-size:16px;' href='/support/community-support/users/christopherm'>christopherm</a></div>
 						<div><a href='https://myaccount.google.com/?utm_source=OGB' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>3,380 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>3,390 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -1204,11 +1202,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-21']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '23.232.147.211']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '188.143.232.21']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '23.232.147.211']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '188.143.232.21']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

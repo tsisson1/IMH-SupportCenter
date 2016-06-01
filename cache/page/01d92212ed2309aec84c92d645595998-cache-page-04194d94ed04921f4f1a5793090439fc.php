@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:67640:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:67507:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -218,11 +218,11 @@ window.setInterval(function(){var r;try{r=window.XMLHttpRequest?new XMLHttpReque
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-38']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '66.162.212.19']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '116.118.69.92']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '66.162.212.19']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '116.118.69.92']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -335,8 +335,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -437,8 +435,8 @@ var WRInitTime=(new Date()).getTime();
 			</div>
 		</li><li class='bc_arrow'>&gt;&gt;</li><li class='bc_with_dd' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'><a href='/support/website/wordpress-plugins' itemprop='url'><span itemprop='title'>Wordpress Plugins<span></a>
 			<div class='dropdown_3columns' style='width:900px; margin-left:-250px;'>
-				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress-plugins/hc-custom-wp-admin-url'>Change WordPress admin URL with HC Custom WP-Admin URL</a> (41,731 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress-plugins/optimize-wordpress-images'>How to Optimize WordPress images with the EWWW Image Optimizer plugin</a> (8,333 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress-plugins/building-your-first-android-iphone-app-with-apppresser-and-wordpress'>Building your first Android/iPhone app with AppPresser and WordPress</a> (7,349 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress-plugins/backing-up-your-wordpress-database-with-the-wp-db-backup-plugin'>How to Backup your Wordpress Database with WP-DB-Backup</a> (3,894 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress-plugins/generating-xml-sitemaps'>How to Generate XML Sitemaps in WordPress using Google XML Sitemaps</a> (2,579 hits)</div></div>
-				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress-plugins/instagram-picture-plugin-for-wordpress'>WordPress Instagram Plugins - Instagram Picture</a> (23,080 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress-plugins/opening-hours-plugin-for-wordpress'>Opening Hours plugin for Wordpress</a> (8,144 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress-plugins/sp-news-and-widget-plugin-for-wordpress'>WordPress news plugins - SP News and Widget</a> (7,015 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress-plugins/apppresser-push-notifications'>How to Send Android push notifications in AppPresser</a> (3,600 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress-plugins/adding-a-social-media-feed-to-wordpress-with-the-twine-social-plugin'>How to Add a Social Media feed to Wordpress with the Twine Social plugin</a> (2,339 hits)</div></div>
+				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress-plugins/hc-custom-wp-admin-url'>Change WordPress admin URL with HC Custom WP-Admin URL</a> (41,739 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress-plugins/optimize-wordpress-images'>How to Optimize WordPress images with the EWWW Image Optimizer plugin</a> (8,335 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress-plugins/building-your-first-android-iphone-app-with-apppresser-and-wordpress'>Building your first Android/iPhone app with AppPresser and WordPress</a> (7,350 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress-plugins/backing-up-your-wordpress-database-with-the-wp-db-backup-plugin'>How to Backup your Wordpress Database with WP-DB-Backup</a> (3,894 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress-plugins/generating-xml-sitemaps'>How to Generate XML Sitemaps in WordPress using Google XML Sitemaps</a> (2,580 hits)</div></div>
+				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress-plugins/instagram-picture-plugin-for-wordpress'>WordPress Instagram Plugins - Instagram Picture</a> (23,081 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress-plugins/opening-hours-plugin-for-wordpress'>Opening Hours plugin for Wordpress</a> (8,146 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress-plugins/sp-news-and-widget-plugin-for-wordpress'>WordPress news plugins - SP News and Widget</a> (7,015 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress-plugins/apppresser-push-notifications'>How to Send Android push notifications in AppPresser</a> (3,600 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress-plugins/adding-a-social-media-feed-to-wordpress-with-the-twine-social-plugin'>How to Add a Social Media feed to Wordpress with the Twine Social plugin</a> (2,339 hits)</div></div>
 				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress-plugins/paypal-woocommerce'>How to Accept PayPal in WooCommerce</a> (13,654 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress-plugins/sexy-contact-form-wordpress-plugin'>Sexy Contact Form Wordpress Plugin</a> (7,475 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress-plugins/change-wordpress-admin-url-with-lockdown-wp-admin'>How to Change your WordPress admin URL with Lockdown WP Admin</a> (5,591 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress-plugins/editing-wordpress-fonts-with-the-wp-google-fonts-plugin'>WordPress font plugins - WP Google Fonts</a> (3,224 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress-plugins/p3-plugin-performance-plugin-for-wordpress'>How to Identify Intensive Plugins in WordPress with the P3 (Plugin Performance Profiler)</a> (2,301 hits)</div></div>
 			</div>
 		</li><li class='bc_arrow'>&gt;&gt;</li><li class='bc_no_dd' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'><span itemprop='title'>How to Hide your WordPress Admin URL with iThemes Security</span></li>			</ul>
@@ -475,7 +473,7 @@ var WRInitTime=(new Date()).getTime();
 				
 					<div style='font-size:12px; color:#aaa; margin-bottom:-10px; padding-top:5px;'>
 							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Written by </span><a href='https://plus.google.com/+JeffMatson?rel=author'>Jeff Matson</a></div>
-							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Views:</span> <span name='page_views' id='page_views'>1,328</span></div>
+							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Views:</span> <span name='page_views' id='page_views'>1,332</span></div>
 							<div style='float:left; margin-right:20px;' title='Originally published: Nov 10, 2014'><span style='color:#606060;'>Published:</span> Apr 26, 2016</div>
 							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Comments:</span> <a href='#comments'>2</a></div>
 							<div style='clear:both;'></div>
@@ -597,7 +595,7 @@ var WRInitTime=(new Date()).getTime();
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZjYXRpZD00NjcmaWQ9MzQ0NSZ2aWV3PWFydGljbGUmSXRlbWlkPTEwMQ==" />
-		<input type="hidden" name="3efb973ea53ad91cffe035042b4596a1" value="1" />	</div>
+		<input type="hidden" name="d127683ee4b6a5d695f60de8ed6e1a39" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -1184,11 +1182,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-38']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '66.162.212.19']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '116.118.69.92']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '66.162.212.19']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '116.118.69.92']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

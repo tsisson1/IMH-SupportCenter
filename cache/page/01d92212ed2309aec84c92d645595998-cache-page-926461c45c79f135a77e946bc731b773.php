@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:55622:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:55489:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -335,8 +335,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -502,23 +500,23 @@ var WRInitTime=(new Date()).getTime();
 	<h2>Most Popular Articles</h2>
 		<div style='width:300px; height:75px; float:left; margin-right:20px;'>
 							<a href='/support/edu/drupal-7/getting-started/how-to-log-into-the-drupal-admin-dashboard'>How to log into the Drupal 7 Administrator Dashboard</a>
-							<div class='smallgrey'>Hits: 79,123</div>
+							<div class='smallgrey'>Hits: 79,136</div>
 						</div>
 						<div style='width:300px; height:75px; float:left; margin-right:20px;'>
 							<a href='/support/edu/drupal-7/homepage/change-front-page'>Changing your Drupal 7 frontpage</a>
-							<div class='smallgrey'>Hits: 61,757</div>
+							<div class='smallgrey'>Hits: 61,758</div>
 						</div>
 						<div style='width:300px; height:75px; float:left; margin-right:20px;'>
 							<a href='/support/edu/drupal-7/customize-theme/upload-custom-logo'>How to upload your custom logo in your Drupal 7 theme</a>
-							<div class='smallgrey'>Hits: 34,629</div>
+							<div class='smallgrey'>Hits: 34,635</div>
 						</div>
 						<div style='width:300px; height:75px; float:left; margin-right:20px;'>
 							<a href='/support/edu/drupal-7/contact-us-page/configuring-the-contact-form-in-drupal'>Configuring the Contact Form in Drupal 7</a>
-							<div class='smallgrey'>Hits: 32,055</div>
+							<div class='smallgrey'>Hits: 32,057</div>
 						</div>
 						<div style='width:300px; height:75px; float:left; margin-right:20px;'>
 							<a href='/support/edu/drupal-7/working-with-content/creating-a-basic-page-in-drupal'>Creating a basic page in Drupal 7</a>
-							<div class='smallgrey'>Hits: 30,822</div>
+							<div class='smallgrey'>Hits: 30,824</div>
 						</div>
 						<div style='width:300px; height:75px; float:left; margin-right:20px;'>
 							<a href='/support/edu/drupal-7/configure-caching/clear-caching'>How to clear caching in Drupal 7</a>
@@ -637,7 +635,7 @@ var WRInitTime=(new Date()).getTime();
 					<div>This Drupal 7 article walks you through updating your Drupal 7 installation manually.</div>
 					<div class='smallgrey'>
 						Written by Scott Mitchell<br />
-						Hits: 5,853
+						Hits: 5,854
 					</div>
 				</td>
 			</tr>
@@ -661,7 +659,7 @@ var WRInitTime=(new Date()).getTime();
 					<div>This site will explain how to make a duplicate Drupal site on a subdomain.</div>
 					<div class='smallgrey'>
 						Written by James Richardson<br />
-						Hits: 13,027
+						Hits: 13,029
 					</div>
 				</td>
 			</tr>
@@ -697,7 +695,7 @@ var WRInitTime=(new Date()).getTime();
 					<div>This article will explain the cause of the "An unrecoverable error occurred. The uploaded file likely exceeded the maximum file size (32 MB) that this server supports" error in Drupal.</div>
 					<div class='smallgrey'>
 						Written by James Richardson<br />
-						Hits: 6,528
+						Hits: 6,530
 					</div>
 				</td>
 			</tr>
@@ -721,7 +719,7 @@ var WRInitTime=(new Date()).getTime();
 					<div>Need to know your Drupal version and can't remember? Follow the instructions here to find out how in the admin area.</div>
 					<div class='smallgrey'>
 						Written by Scott Mitchell<br />
-						Hits: 3,528
+						Hits: 3,529
 					</div>
 				</td>
 			</tr>

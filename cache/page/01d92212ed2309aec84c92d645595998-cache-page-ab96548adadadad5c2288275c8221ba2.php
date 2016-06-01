@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:46042:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:45913:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -218,11 +218,11 @@ window.setInterval(function(){var r;try{r=window.XMLHttpRequest?new XMLHttpReque
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-19']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '71.82.241.150']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '99.226.118.123']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '71.82.241.150']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '99.226.118.123']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -335,8 +335,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -467,7 +465,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/website-design/using-php-and-mysql/how-to-create-a-custom-php-contact-form'>How to create a custom PHP contact form with validation</a>
 					<div>Looking for a custom PHP mail form? We have one that you can just copy and paste from within this article.</div>
-					<div class='smallgrey'>Hits: 151,242</div>
+					<div class='smallgrey'>Hits: 151,265</div>
 				</td>
 			</tr>
 			<tr>
@@ -476,7 +474,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/website-design/using-php-and-mysql/database-setup'>Setting up a database to handle form data from a website</a>
 					<div>In this article, we'll walk you through creating a table in a database that will be used in a future tutorial to store data gathered from a form on a website.</div>
-					<div class='smallgrey'>Hits: 81,450</div>
+					<div class='smallgrey'>Hits: 81,465</div>
 				</td>
 			</tr>
 			<tr>
@@ -486,7 +484,7 @@ var WRInitTime=(new Date()).getTime();
 					<a href='/support/edu/website-design/using-php-and-mysql/create-html-form'>Creating a simple HTML Form to get user comments</a>
 					<div>Make your website interactive by creating a simple HTML form. Learn PHP and gather important from your users.
 </div>
-					<div class='smallgrey'>Hits: 212,287</div>
+					<div class='smallgrey'>Hits: 212,326</div>
 				</td>
 			</tr>
 			<tr>
@@ -495,7 +493,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/website-design/using-php-and-mysql/using-php-include-function'>Using the php include function to reuse code</a>
 					<div>When you're reusing code in many different places, it helps to have the code live in one location and to include it where needed. This can be done using php's include function, and in this tutorial we'll give you an example on how to use.</div>
-					<div class='smallgrey'>Hits: 45,220</div>
+					<div class='smallgrey'>Hits: 45,227</div>
 				</td>
 			</tr>
 			<tr>
@@ -504,7 +502,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/website-design/using-php-and-mysql/php-insert-database'>Using PHP to INSERT data into a database</a>
 					<div>Looking to use PHP to insert data to your database? Learn how with this easy to follow article.</div>
-					<div class='smallgrey'>Hits: 333,061</div>
+					<div class='smallgrey'>Hits: 333,119</div>
 				</td>
 			</tr>
 			<tr>
@@ -513,7 +511,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/website-design/using-php-and-mysql/stepping-through-our-php-code'>Reviewing sample PHP code that interacts with a MySQL Database</a>
 					<div>In this article, we'll test the commenting system that we've built using php and MySQL in previous articles</div>
-					<div class='smallgrey'>Hits: 26,739</div>
+					<div class='smallgrey'>Hits: 26,743</div>
 				</td>
 			</tr>
 			<tr>
@@ -522,7 +520,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/website-design/using-php-and-mysql/grab-all-comments-from-database'>How to use PHP to connect to and retrieve data from MySQL</a>
 					<div>In this lesson, we will continue building our fictitious website by using PHP to select all user comments from a database and display them in our article.</div>
-					<div class='smallgrey'>Hits: 186,394</div>
+					<div class='smallgrey'>Hits: 186,429</div>
 				</td>
 			</tr>
 			</table>
@@ -588,7 +586,7 @@ var WRInitTime=(new Date()).getTime();
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZjYXRpZD0xNjAmaWQ9MTYwJnZpZXc9Y2F0ZWdvcnkmSXRlbWlkPTEwMQ==" />
-		<input type="hidden" name="11771d8b443abe045dcd400c7fc999af" value="1" />	</div>
+		<input type="hidden" name="36cac6603c2d820e0f4cfb1fd15ed29a" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -975,11 +973,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-19']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '71.82.241.150']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '99.226.118.123']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '71.82.241.150']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '99.226.118.123']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

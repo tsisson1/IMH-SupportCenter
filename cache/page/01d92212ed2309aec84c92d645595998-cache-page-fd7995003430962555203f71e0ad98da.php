@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:49799:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:49666:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -339,8 +339,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -504,11 +502,11 @@ var WRInitTime=(new Date()).getTime();
                         </tr>
           <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/restricting-bots/how-to-stop-search-engines-from-crawling-your-website'>How to stop Search Engines from crawling your Website</a></td>
-                                <td>166,007</td>
+                                <td>166,047</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/restricting-bots/public-private-key-google-recaptcha'>How to get the public and private keys for Google reCAPTCHA</a></td>
-                                <td>56,491</td>
+                                <td>56,498</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/restricting-bots/using-a-meta-tag-to-block-bots-from-indexing-a-webpage'>Using a META tag to block bots from indexing a webpage</a></td>
@@ -516,7 +514,7 @@ var WRInitTime=(new Date()).getTime();
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/restricting-bots/what-is-a-spambot'>What is a SpamBot?</a></td>
-                                <td>3,630</td>
+                                <td>3,631</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/restricting-bots/search-engine-crawlers-automated-robots-not-being-controlled'>Search engine crawler and automated robot activity not being controlled</a></td>

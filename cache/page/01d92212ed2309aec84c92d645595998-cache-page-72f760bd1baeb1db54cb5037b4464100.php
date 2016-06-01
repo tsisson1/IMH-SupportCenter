@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:98842:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:98705:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -222,11 +222,11 @@ window.setInterval(function(){var r;try{r=window.XMLHttpRequest?new XMLHttpReque
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-23']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '111.88.23.127']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '24.39.84.246']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '111.88.23.127']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '24.39.84.246']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -339,8 +339,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -441,9 +439,9 @@ var WRInitTime=(new Date()).getTime();
 			</div>
 		</li><li class='bc_arrow'>&gt;&gt;</li><li class='bc_with_dd' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'><a href='/support/email/roundcube-webmail' itemprop='url'><span itemprop='title'>RoundCube Webmail<span></a>
 			<div class='dropdown_3columns' style='width:900px; margin-left:-250px;'>
-				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/roundcube-webmail/create-signature'>How to create an email signature in RoundCube</a> (103,761 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/roundcube-webmail/import-email-contact-list'>How to import a contact list in your Roundcube mail client</a> (15,967 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/roundcube-webmail/managing-your-address-book-in-roundcube'>Managing your Address Book in RoundCube</a> (4,225 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/roundcube-webmail/marking-messages-in-roundcube'>Marking messages in roundcube</a> (3,146 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/roundcube-webmail/html-signature-image'>How to Add an Image to Your RoundCube HTML Signature</a> (67 hits)</div></div>
-				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/roundcube-webmail/roundcube-login'>How to log into your Roundcube email client</a> (51,463 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/roundcube-webmail/managing-folders-in-roundcube'>Managing folders in RoundCube</a> (6,742 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/roundcube-webmail/configuring-preferences-in-roundcube'>Configuring preferences in RoundCube</a> (3,772 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/roundcube-webmail/read-new-message'>How to Read a new Email message in Roundcube</a> (400 hits)</div></div>
-				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/roundcube-webmail/export-contact-list'>How to export contacts in the Roundcube email client</a> (16,175 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/roundcube-webmail/managing-identities-in-roundcube'>Managing identities in Roundcube</a> (4,780 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/roundcube-webmail/creating-a-draft-email-message-in-roundcube'>Creating a draft email message in Roundcube</a> (3,463 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/roundcube-webmail/how-to-compose'>How to Compose an email in Roundcube</a> (190 hits)</div></div>
+				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/roundcube-webmail/create-signature'>How to create an email signature in RoundCube</a> (103,782 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/roundcube-webmail/import-email-contact-list'>How to import a contact list in your Roundcube mail client</a> (15,967 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/roundcube-webmail/managing-your-address-book-in-roundcube'>Managing your Address Book in RoundCube</a> (4,225 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/roundcube-webmail/marking-messages-in-roundcube'>Marking messages in roundcube</a> (3,146 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/roundcube-webmail/html-signature-image'>How to Add an Image to Your RoundCube HTML Signature</a> (67 hits)</div></div>
+				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/roundcube-webmail/roundcube-login'>How to log into your Roundcube email client</a> (51,483 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/roundcube-webmail/managing-folders-in-roundcube'>Managing folders in RoundCube</a> (6,743 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/roundcube-webmail/configuring-preferences-in-roundcube'>Configuring preferences in RoundCube</a> (3,772 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/roundcube-webmail/read-new-message'>How to Read a new Email message in Roundcube</a> (400 hits)</div></div>
+				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/roundcube-webmail/export-contact-list'>How to export contacts in the Roundcube email client</a> (16,179 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/roundcube-webmail/managing-identities-in-roundcube'>Managing identities in Roundcube</a> (4,780 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/roundcube-webmail/creating-a-draft-email-message-in-roundcube'>Creating a draft email message in Roundcube</a> (3,463 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/roundcube-webmail/how-to-compose'>How to Compose an email in Roundcube</a> (190 hits)</div></div>
 			</div>
 		</li><li class='bc_arrow'>&gt;&gt;</li><li class='bc_no_dd' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'><span itemprop='title'>How to log into your Roundcube email client</span></li>			</ul>
 		</div>
@@ -479,7 +477,7 @@ var WRInitTime=(new Date()).getTime();
 				
 					<div style='font-size:12px; color:#aaa; margin-bottom:-10px; padding-top:5px;'>
 							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Written by </span><a href='https://plus.google.com/u/0/103891980085974966828/?rel=author'>Scott Mitchell</a></div>
-							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Views:</span> <span name='page_views' id='page_views'>51,463</span></div>
+							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Views:</span> <span name='page_views' id='page_views'>51,483</span></div>
 							<div style='float:left; margin-right:20px;' title='Originally published: Mar 4, 2013'><span style='color:#606060;'>Published:</span> Feb 17, 2014</div>
 							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Comments:</span> <a href='#comments'>21</a></div>
 							<div style='clear:both;'></div>
@@ -602,7 +600,7 @@ var WRInitTime=(new Date()).getTime();
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZjYXRpZD03NSZpZD04MTgmdmlldz1hcnRpY2xlJkl0ZW1pZD0xMDE=" />
-		<input type="hidden" name="aaba9f8cf82a1b793b91f3c790958b41" value="1" />	</div>
+		<input type="hidden" name="f53a354390eff8ed6adcb9513225096f" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -717,7 +715,7 @@ var WRInitTime=(new Date()).getTime();
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -770,7 +768,7 @@ Scott M</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -1038,7 +1036,7 @@ Arnel C.</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -1089,7 +1087,7 @@ Scott M</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -1219,7 +1217,7 @@ Arnel C.</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/christopherm'>christopherm</a></div>
 						<div><a href='https://myaccount.google.com/?utm_source=OGB' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>3,380 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>3,390 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -1676,11 +1674,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-23']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '111.88.23.127']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '24.39.84.246']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '111.88.23.127']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '24.39.84.246']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

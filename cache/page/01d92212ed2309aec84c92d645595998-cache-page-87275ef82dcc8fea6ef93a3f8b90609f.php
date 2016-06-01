@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:47503:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:47370:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -335,8 +335,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -468,7 +466,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/wordpress/wordpress-plugins-widgets/what-are-plugins-and-widgets'>What are Plugins and Widgets?</a>
 					<div>Widgets and plugins are used to customize your website.</div>
-					<div class='smallgrey'>Hits: 100,033</div>
+					<div class='smallgrey'>Hits: 100,034</div>
 				</td>
 			</tr>
 			<tr>
@@ -513,7 +511,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/wordpress/wordpress-plugins-widgets/add-remove-sidbar-widgets'>Deactivating widgets from the sidebar in WordPress</a>
 					<div>This tutorial will discuss how to customize the WordPress sidebar/footer widgets.</div>
-					<div class='smallgrey'>Hits: 5,748</div>
+					<div class='smallgrey'>Hits: 5,752</div>
 				</td>
 			</tr>
 			<tr>
@@ -522,7 +520,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/wordpress/wordpress-plugins-widgets/remove-sidebar-links-completely'>Completely disabling the sidebar links/widgets in WordPress</a>
 					<div>This article will explain how to completely remove the sidebar links and widgets from the birdsite theme through the Widget editor and through the Appearance editor. </div>
-					<div class='smallgrey'>Hits: 18,879</div>
+					<div class='smallgrey'>Hits: 18,886</div>
 				</td>
 			</tr>
 			<tr>
@@ -531,7 +529,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/wordpress/wordpress-plugins-widgets/completely-remove-comments'>Completely disabling Comments from WordPress in the code</a>
 					<div>This article will explain how to remove the Comments completely from a WordPress template.</div>
-					<div class='smallgrey'>Hits: 6,290</div>
+					<div class='smallgrey'>Hits: 6,291</div>
 				</td>
 			</tr>
 			<tr>
@@ -540,7 +538,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/wordpress/wordpress-plugins-widgets/disable-blog-features'>How to disable blogging features in WordPress </a>
 					<div>This tutorial will explain how to remove the blogging features from a WordPress theme with the Hide Comments plugin and through the code.</div>
-					<div class='smallgrey'>Hits: 12,922</div>
+					<div class='smallgrey'>Hits: 12,925</div>
 				</td>
 			</tr>
 			</table>

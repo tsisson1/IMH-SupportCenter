@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:55227:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:55078:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -217,11 +217,11 @@ window.setInterval(function(){var r;try{r=window.XMLHttpRequest?new XMLHttpReque
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-25']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '162.248.113.158']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '80.78.78.39']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '162.248.113.158']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '80.78.78.39']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -334,8 +334,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -503,7 +501,7 @@ var WRInitTime=(new Date()).getTime();
 <h2>Questions</h2><table>
 <tr style='border-bottom:1px solid #ddd;'>
 	<td style='width:100px; padding-top:15px;' valign='top'>
-		<div>115,075 Views</div>
+		<div>115,095 Views</div>
 		<div>1 Answer</div>
 	</td>
 	<td style='padding-bottom:15px; padding-top:15px;'>
@@ -517,7 +515,7 @@ var WRInitTime=(new Date()).getTime();
 			
 <tr style='border-bottom:1px solid #ddd;'>
 	<td style='width:100px; padding-top:15px;' valign='top'>
-		<div>66,983 Views</div>
+		<div>67,001 Views</div>
 		<div>2 Answers</div>
 	</td>
 	<td style='padding-bottom:15px; padding-top:15px;'>
@@ -533,7 +531,7 @@ I can still s...</div>
 			
 <tr style='border-bottom:1px solid #ddd;'>
 	<td style='width:100px; padding-top:15px;' valign='top'>
-		<div>22,634 Views</div>
+		<div>22,640 Views</div>
 		<div>2 Answers</div>
 	</td>
 	<td style='padding-bottom:15px; padding-top:15px;'>
@@ -547,7 +545,7 @@ I can still s...</div>
 			
 <tr style='border-bottom:1px solid #ddd;'>
 	<td style='width:100px; padding-top:15px;' valign='top'>
-		<div>21,029 Views</div>
+		<div>21,030 Views</div>
 		<div>1 Answer</div>
 	</td>
 	<td style='padding-bottom:15px; padding-top:15px;'>
@@ -576,7 +574,7 @@ I have the account setup as an IMAP.</div>
 			
 <tr style='border-bottom:1px solid #ddd;'>
 	<td style='width:100px; padding-top:15px;' valign='top'>
-		<div>12,959 Views</div>
+		<div>12,963 Views</div>
 		<div>1 Answer</div>
 	</td>
 	<td style='padding-bottom:15px; padding-top:15px;'>
@@ -590,7 +588,7 @@ I have the account setup as an IMAP.</div>
 			
 <tr style='border-bottom:1px solid #ddd;'>
 	<td style='width:100px; padding-top:15px;' valign='top'>
-		<div>11,261 Views</div>
+		<div>11,262 Views</div>
 		<div>1 Answer</div>
 	</td>
 	<td style='padding-bottom:15px; padding-top:15px;'>
@@ -620,7 +618,7 @@ I tried to add a CNAME for my mail.domain.com but the system said it is Reserved
 			
 <tr style='border-bottom:1px solid #ddd;'>
 	<td style='width:100px; padding-top:15px;' valign='top'>
-		<div>5,328 Views</div>
+		<div>5,329 Views</div>
 		<div>1 Answer</div>
 	</td>
 	<td style='padding-bottom:15px; padding-top:15px;'>
@@ -692,7 +690,7 @@ First it asks me for a username &amp; Password.  This is not the same as my emai
 			
 <tr style='border-bottom:1px solid #ddd;'>
 	<td style='width:100px; padding-top:15px;' valign='top'>
-		<div>1,929 Views</div>
+		<div>1,930 Views</div>
 		<div>1 Answer</div>
 	</td>
 	<td style='padding-bottom:15px; padding-top:15px;'>
@@ -790,7 +788,7 @@ First it asks me for a username &amp; Password.  This is not the same as my emai
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP0l0ZW1pZD0xMDAwMg==" />
-		<input type="hidden" name="f9588bb6a00e43e6e9742eaf651d1323" value="1" />	</div>
+		<input type="hidden" name="61185bce5dcf32d805b6d0cabb99271a" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -1177,11 +1175,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-25']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '162.248.113.158']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '80.78.78.39']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '162.248.113.158']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '80.78.78.39']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

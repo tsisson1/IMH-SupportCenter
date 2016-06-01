@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:55683:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:55550:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -331,8 +331,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -489,19 +487,19 @@ var WRInitTime=(new Date()).getTime();
 	<h2>Most Popular Articles</h2>
 		<div style='width:300px; height:75px; float:left; margin-right:20px;'>
 							<a href='/support/edu/opencart/managing-customers/configuring-email-settings-in-opencart'>Configuring Email Settings in OpenCart</a>
-							<div class='smallgrey'>Hits: 63,898</div>
+							<div class='smallgrey'>Hits: 63,913</div>
 						</div>
 						<div style='width:300px; height:75px; float:left; margin-right:20px;'>
 							<a href='/support/edu/opencart/customizing-store-look-and-feel/edit-opencart-template'>Edit OpenCart template</a>
-							<div class='smallgrey'>Hits: 60,845</div>
+							<div class='smallgrey'>Hits: 60,859</div>
 						</div>
 						<div style='width:300px; height:75px; float:left; margin-right:20px;'>
 							<a href='/support/edu/opencart/customizing-store-look-and-feel/installing-an-opencart-theme'>Installing an OpenCart Theme</a>
-							<div class='smallgrey'>Hits: 60,053</div>
+							<div class='smallgrey'>Hits: 60,061</div>
 						</div>
 						<div style='width:300px; height:75px; float:left; margin-right:20px;'>
 							<a href='/support/edu/opencart/setting-up-payment-gateways/how-to-enable-ssl-connection-in-opencart'>How to enable SSL connection in OpenCart</a>
-							<div class='smallgrey'>Hits: 58,911</div>
+							<div class='smallgrey'>Hits: 58,923</div>
 						</div>
 						<div style='width:300px; height:75px; float:left; margin-right:20px;'>
 							<a href='/support/edu/opencart/customizing-store-look-and-feel/adding-your-store-logo-to-your-opencart-website'>Adding your store logo to your OpenCart website</a>
@@ -509,7 +507,7 @@ var WRInitTime=(new Date()).getTime();
 						</div>
 						<div style='width:300px; height:75px; float:left; margin-right:20px;'>
 							<a href='/support/edu/opencart/installing-opencart-and-adding-products/editing-footer-info'>Editing the Information Pages in the Footer of OpenCart</a>
-							<div class='smallgrey'>Hits: 36,880</div>
+							<div class='smallgrey'>Hits: 36,884</div>
 						</div>
 						<div style='clear:both;'></div>
 </div>
@@ -564,7 +562,7 @@ var WRInitTime=(new Date()).getTime();
 					<div>Learn how to add your Google analytics code to your OpenCart shopping cart website.</div>
 					<div class='smallgrey'>
 						Written by Tim Sisson<br />
-						Hits: 33,829
+						Hits: 33,831
 					</div>
 				</td>
 			</tr>
@@ -576,7 +574,7 @@ var WRInitTime=(new Date()).getTime();
 					<div>Learn how to set up coupon codes to be used on your OpenCart website. </div>
 					<div class='smallgrey'>
 						Written by Tim Sisson<br />
-						Hits: 12,979
+						Hits: 12,980
 					</div>
 				</td>
 			</tr>
@@ -588,7 +586,7 @@ var WRInitTime=(new Date()).getTime();
 					<div>Learn how to add a digital product to your OpenCart catalog so you can sell downloadable merchandise.</div>
 					<div class='smallgrey'>
 						Written by Tim Sisson<br />
-						Hits: 34,635
+						Hits: 34,636
 					</div>
 				</td>
 			</tr>
@@ -624,7 +622,7 @@ var WRInitTime=(new Date()).getTime();
 					<div>In this short tutorial, we'll show you how to determine what version of OpenCart you are using.</div>
 					<div class='smallgrey'>
 						Written by Tim Sisson<br />
-						Hits: 13,743
+						Hits: 13,745
 					</div>
 				</td>
 			</tr>
@@ -660,7 +658,7 @@ var WRInitTime=(new Date()).getTime();
 					<div>In this tutorial, we'll show you how to enable GZIP compression in your OpenCart dashboard.</div>
 					<div class='smallgrey'>
 						Written by Tim Sisson<br />
-						Hits: 14,153
+						Hits: 14,155
 					</div>
 				</td>
 			</tr>
@@ -672,7 +670,7 @@ var WRInitTime=(new Date()).getTime();
 					<div>In this tutorial, we will show you how to install a bulk import/ Export extension for Opencart that allows you to add multiple products and categories using an Excel spreadsheet. </div>
 					<div class='smallgrey'>
 						Written by Tim Sisson<br />
-						Hits: 50,560
+						Hits: 50,570
 					</div>
 				</td>
 			</tr>
@@ -684,7 +682,7 @@ var WRInitTime=(new Date()).getTime();
 					<div>Learn how to use the Export/ Import extension in OpenCart to add bulk products to your shopping cart.</div>
 					<div class='smallgrey'>
 						Written by Tim Sisson<br />
-						Hits: 33,125
+						Hits: 33,126
 					</div>
 				</td>
 			</tr>
@@ -696,7 +694,7 @@ var WRInitTime=(new Date()).getTime();
 					<div>In this tutorial, we'll show you how to edit the footer of your OpenCart website and remove the Powered By link. </div>
 					<div class='smallgrey'>
 						Written by Tim Sisson<br />
-						Hits: 25,680
+						Hits: 25,682
 					</div>
 				</td>
 			</tr>
@@ -708,7 +706,7 @@ var WRInitTime=(new Date()).getTime();
 					<div>In this OpenCart tutorial, we'll show you how to reset your admin password using phpmyadmin.</div>
 					<div class='smallgrey'>
 						Written by Tim Sisson<br />
-						Hits: 69,714
+						Hits: 69,723
 					</div>
 				</td>
 			</tr>
@@ -720,7 +718,7 @@ var WRInitTime=(new Date()).getTime();
 					<div>Need to find the database name for your OpenCart application? Learn how in this short tutorial.</div>
 					<div class='smallgrey'>
 						Written by Scott Mitchell<br />
-						Hits: 15,352
+						Hits: 15,357
 					</div>
 				</td>
 			</tr>
@@ -732,7 +730,7 @@ var WRInitTime=(new Date()).getTime();
 					<div>Learn how to create discounts and specials with this OpenCart tutorial.</div>
 					<div class='smallgrey'>
 						Written by Scott Mitchell<br />
-						Hits: 14,961
+						Hits: 14,963
 					</div>
 				</td>
 			</tr>

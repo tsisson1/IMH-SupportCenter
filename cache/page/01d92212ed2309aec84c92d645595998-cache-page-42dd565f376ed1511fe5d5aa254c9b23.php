@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:56725:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:56604:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -214,11 +214,11 @@ jQuery(document).ready(function(){
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-19']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '70.195.7.12']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '67.162.134.125']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '70.195.7.12']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '67.162.134.125']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -331,8 +331,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -490,27 +488,27 @@ var WRInitTime=(new Date()).getTime();
 	<h2>Most Popular Articles</h2>
 		<div style='width:300px; height:75px; float:left; margin-right:20px;'>
 							<a href='/support/edu/wordpress/recommended-wordpress-plugins/clearing-cache-in-wordpress'>Clearing cache in WordPress</a>
-							<div class='smallgrey'>Hits: 266,707</div>
+							<div class='smallgrey'>Hits: 266,751</div>
 						</div>
 						<div style='width:300px; height:75px; float:left; margin-right:20px;'>
 							<a href='/support/edu/wordpress/wordpress-introduction/logging-into-wordpress-dashboard'>How to Log in to your WordPress Dashboard</a>
-							<div class='smallgrey'>Hits: 128,339</div>
+							<div class='smallgrey'>Hits: 128,374</div>
 						</div>
 						<div style='width:300px; height:75px; float:left; margin-right:20px;'>
 							<a href='/support/edu/wordpress/wordpress-plugins-widgets/what-are-plugins-and-widgets'>What are Plugins and Widgets?</a>
-							<div class='smallgrey'>Hits: 100,033</div>
+							<div class='smallgrey'>Hits: 100,034</div>
 						</div>
 						<div style='width:300px; height:75px; float:left; margin-right:20px;'>
 							<a href='/support/edu/wordpress/wordpress-introduction/adding-html-wordpress'>Adding HTML to a Wordpress Page/Post</a>
-							<div class='smallgrey'>Hits: 75,660</div>
+							<div class='smallgrey'>Hits: 75,677</div>
 						</div>
 						<div style='width:300px; height:75px; float:left; margin-right:20px;'>
 							<a href='/support/edu/wordpress/wordpress-introduction/install-wordpress'>Getting Started: How to install Wordpress</a>
-							<div class='smallgrey'>Hits: 59,629</div>
+							<div class='smallgrey'>Hits: 59,632</div>
 						</div>
 						<div style='width:300px; height:75px; float:left; margin-right:20px;'>
 							<a href='/support/edu/wordpress/recommended-wordpress-plugins/optimizing-wordpress-with-w3-total-cache'>How to Optimize WordPress with W3 Total Cache</a>
-							<div class='smallgrey'>Hits: 53,050</div>
+							<div class='smallgrey'>Hits: 53,060</div>
 						</div>
 						<div style='clear:both;'></div>
 </div>
@@ -565,7 +563,7 @@ var WRInitTime=(new Date()).getTime();
 					<div>WordPress ecommerce plugin not saving products to cart? This article will tell you how to fix it.</div>
 					<div class='smallgrey'>
 						Written by James Richardson<br />
-						Hits: 8,311
+						Hits: 8,313
 					</div>
 				</td>
 			</tr>
@@ -625,7 +623,7 @@ var WRInitTime=(new Date()).getTime();
 					<div>While it is rare, if you need to delete a WordPress, we'll show you how to do it in this article.</div>
 					<div class='smallgrey'>
 						Written by Brad Markle<br />
-						Hits: 8,718
+						Hits: 8,719
 					</div>
 				</td>
 			</tr>
@@ -649,7 +647,7 @@ var WRInitTime=(new Date()).getTime();
 					<div>Looking to make a static WordPress site? Want to remove the blog post page? Learn how in this WordPress tutorial.</div>
 					<div class='smallgrey'>
 						Written by Scott Mitchell<br />
-						Hits: 21,656
+						Hits: 21,661
 					</div>
 				</td>
 			</tr>
@@ -661,7 +659,7 @@ var WRInitTime=(new Date()).getTime();
 					<div>Looking to move your Wordpress installation from a subfolder to your root directory? Learn how with thisWordpress article.</div>
 					<div class='smallgrey'>
 						Written by Scott Mitchell<br />
-						Hits: 80,516
+						Hits: 80,524
 					</div>
 				</td>
 			</tr>
@@ -673,7 +671,7 @@ var WRInitTime=(new Date()).getTime();
 					<div>If disaster strikes and you cannot access your admin interface, you may need to insert a new admin account into your database directly. Learn how with this WordPress article.</div>
 					<div class='smallgrey'>
 						Written by Scott Mitchell<br />
-						Hits: 35,874
+						Hits: 35,894
 					</div>
 				</td>
 			</tr>
@@ -685,7 +683,7 @@ var WRInitTime=(new Date()).getTime();
 					<div>Are getting the "Error establishing database connection" when visiting your website? Find out what it is and how to fix it with this WordPress article.</div>
 					<div class='smallgrey'>
 						Written by Scott Mitchell<br />
-						Hits: 29,193
+						Hits: 29,194
 					</div>
 				</td>
 			</tr>
@@ -697,7 +695,7 @@ var WRInitTime=(new Date()).getTime();
 					<div>Learn how to change your theme via the database. Perfect if you do not have access to your admin area.</div>
 					<div class='smallgrey'>
 						Written by Scott Mitchell<br />
-						Hits: 43,923
+						Hits: 43,934
 					</div>
 				</td>
 			</tr>
@@ -709,7 +707,7 @@ var WRInitTime=(new Date()).getTime();
 					<div>WordPress version 4.1.1 users may see 500 internal server errors due to the PHP version used by WordPress.  This issue is also often caused by file/folder permission issues.  This article provides an easy to understand guide to fixing the 500 internal server error.</div>
 					<div class='smallgrey'>
 						Written by Arnel Custodio<br />
-						Hits: 11,448
+						Hits: 11,451
 					</div>
 				</td>
 			</tr>
@@ -721,7 +719,7 @@ var WRInitTime=(new Date()).getTime();
 					<div>In this tutorial we'll show you how to regain access to your WordPress Dashboard if you've been blocked out.</div>
 					<div class='smallgrey'>
 						Written by Brad Markle<br />
-						Hits: 26,500
+						Hits: 26,508
 					</div>
 				</td>
 			</tr>
@@ -733,7 +731,7 @@ var WRInitTime=(new Date()).getTime();
 					<div>There has been a recent large scale WordPress wp-login.php brute force attack coming from a large amount of IP addresses spread across the world.</div>
 					<div class='smallgrey'>
 						Written by Jacob Nicholson<br />
-						Hits: 305,758
+						Hits: 305,798
 					</div>
 				</td>
 			</tr>
@@ -816,7 +814,7 @@ var WRInitTime=(new Date()).getTime();
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZjYXRpZD03MSZpZD03MSZ2aWV3PWNhdGVnb3J5Jkl0ZW1pZD0xMDE=" />
-		<input type="hidden" name="2c7d361f2bba35c4988a9d66f8de3221" value="1" />	</div>
+		<input type="hidden" name="218e00df5d85a4dcb85bd01830ba5322" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -1221,11 +1219,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-19']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '70.195.7.12']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '67.162.134.125']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '70.195.7.12']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '67.162.134.125']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

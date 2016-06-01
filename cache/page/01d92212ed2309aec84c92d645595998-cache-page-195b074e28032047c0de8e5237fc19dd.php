@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:50221:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:50088:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -339,8 +339,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -504,15 +502,15 @@ var WRInitTime=(new Date()).getTime();
                         </tr>
           <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/slow-websites/why-is-my-server-slow-how-do-i-run-a-ping-and-tracert-test'>Why is my server slow / how do I run a ping and tracert test?</a></td>
-                                <td>89,571</td>
+                                <td>89,585</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/slow-websites/dynamic-website-vs-static-website'>Dynamic website vs Static website</a></td>
-                                <td>15,256</td>
+                                <td>15,257</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/slow-websites/images-loading-slowly'>Images Loading Slowly</a></td>
-                                <td>7,628</td>
+                                <td>7,630</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/slow-websites/why-is-my-website-slow'>Why is my website running slow?</a></td>
@@ -528,7 +526,7 @@ var WRInitTime=(new Date()).getTime();
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/slow-websites/use-pingplotter-to-troubleshoot-network-slowdowns'>Use PingPlotter to troubleshoot network slowdowns</a></td>
-                                <td>2,661</td>
+                                <td>2,662</td>
                         </tr>
                   </table>
 	</form>
@@ -593,7 +591,7 @@ var WRInitTime=(new Date()).getTime();
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZjYXRpZD00NTcmaWQ9NDU3JnZpZXc9Y2F0ZWdvcnkmSXRlbWlkPTEwMQ==" />
-		<input type="hidden" name="4bfda9b52c9ba19ed2ff02ffa48f626b" value="1" />	</div>
+		<input type="hidden" name="b17444efb76264cd2fd42201a883b950" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>

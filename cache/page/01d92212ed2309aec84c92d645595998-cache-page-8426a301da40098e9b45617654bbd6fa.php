@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:45142:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:45017:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -217,11 +217,11 @@ window.setInterval(function(){var r;try{r=window.XMLHttpRequest?new XMLHttpReque
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-19']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '91.36.145.48']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '72.220.134.240']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '91.36.145.48']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '72.220.134.240']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -334,8 +334,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -478,7 +476,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/magento/getting-started-tutorial/how-to-log-into-magento-admin-panel'>How to log into Magento 1.6 Admin Panel</a>
 					<div>This Magento tutorial will show you how to log into your Magento Admin Panel for the first time after you've completed the initial installation process.</div>
-					<div class='smallgrey'>Hits: 78,578</div>
+					<div class='smallgrey'>Hits: 78,582</div>
 				</td>
 			</tr>
 			<tr>
@@ -487,7 +485,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/magento/getting-started-tutorial/what-version-of-magento-am-i-using'>What Version of Magento am I using?</a>
 					<div>This short tutorial is aimed at showing you how to quickly find what version of Magento you are using.</div>
-					<div class='smallgrey'>Hits: 16,585</div>
+					<div class='smallgrey'>Hits: 16,587</div>
 				</td>
 			</tr>
 			</table>
@@ -553,7 +551,7 @@ var WRInitTime=(new Date()).getTime();
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZjYXRpZD0xNjImaWQ9MTYyJnZpZXc9Y2F0ZWdvcnkmSXRlbWlkPTEwMQ==" />
-		<input type="hidden" name="b25c95aa7db0ada6931024ee40830aa4" value="1" />	</div>
+		<input type="hidden" name="b4ae50c8973c8f15d240b5abddd07466" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -940,11 +938,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-19']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '91.36.145.48']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '72.220.134.240']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '91.36.145.48']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '72.220.134.240']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

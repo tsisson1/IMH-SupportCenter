@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:74332:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:74191:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -222,11 +222,11 @@ window.setInterval(function(){var r;try{r=window.XMLHttpRequest?new XMLHttpReque
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-25']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '112.198.103.36']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '79.107.28.96']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '112.198.103.36']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '79.107.28.96']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -339,8 +339,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -436,9 +434,9 @@ var WRInitTime=(new Date()).getTime();
 </div>
 </div></li><li class='bc_arrow'>&gt;&gt;</li><li class='bc_with_dd' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'><a href='/support/domain-names' itemprop='url'><span itemprop='title'>Domain Names<span></a><div class='dropdown_2columns'><div class='col_2'><div><a href='/support/domain-names/3rd-party-registrars'>3rd Party Registrars</a> (13)</div><div><a href='/support/domain-names/dns-nameserver-changes'>DNS and Nameserver Changes</a> (18)</div><div><a href='/support/domain-names/general-information'>General Information</a> (9)</div><div><a href='/support/domain-names/registrations-and-transfers'>Registrations and Transfers</a> (5)</div></div></div></li><li class='bc_arrow'>&gt;&gt;</li><li class='bc_with_dd' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'><a href='/support/domain-names/dns-nameserver-changes' itemprop='url'><span itemprop='title'>DNS and Nameserver Changes<span></a>
 			<div class='dropdown_3columns' style='width:900px; margin-left:-250px;'>
-				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/domain-names/dns-nameserver-changes/domain-names-dns-changes'>Domain Names - How long do DNS changes take?</a> (244,030 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/domain-names/dns-nameserver-changes/how-do-i-clear-my-local-dns-cache'>How do I clear my local DNS cache?</a> (56,528 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/domain-names/dns-nameserver-changes/godaddy'>Making DNS Nameserver Changes at GoDaddy.com</a> (43,392 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/domain-names/dns-nameserver-changes/change-domain-nameservers-amp'>How to change your Domain Nameservers in AMP</a> (35,713 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/domain-names/dns-nameserver-changes/change-dns-records-to-use-3rd-party-services'>Change DNS records to use 3rd party services</a> (14,807 hits)</div></div>
-				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/domain-names/dns-nameserver-changes/updating-your-domains-nameservers'>Updating Your Domain's DNS / Nameservers</a> (175,479 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/domain-names/dns-nameserver-changes/how-do-i-make-custom-dns-records'>How do I make custom DNS records?</a> (51,864 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/domain-names/dns-nameserver-changes/domain-names-registrar-transfer-versus-nameserver-change'>Domain Names - Registrar Transfer versus NameServer Change</a> (37,930 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/domain-names/dns-nameserver-changes/using-custom-name-servers'>Using custom name servers</a> (28,856 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/domain-names/dns-nameserver-changes/opensrs-domain-maintenance'>OpenSRS Domain Maintenance</a> (3,827 hits)</div></div>
-				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/domain-names/dns-nameserver-changes/what-is-a-name-server'>What is a name server?</a> (125,250 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/domain-names/dns-nameserver-changes/a-record-change'>Adding an A Record</a> (48,684 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/domain-names/dns-nameserver-changes/add-cname-record'>Adding a CNAME Record</a> (37,555 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/domain-names/dns-nameserver-changes/vanity-nameservers-what-are-they-and-how-do-i-set-them-up'>Vanity Nameservers: What are they and how do I set them up?</a> (23,324 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/domain-names/dns-nameserver-changes/change-google-domain-nameservers'>How to Change Name Servers in Google Domains (2)</a> (453 hits)</div></div>
+				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/domain-names/dns-nameserver-changes/domain-names-dns-changes'>Domain Names - How long do DNS changes take?</a> (244,055 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/domain-names/dns-nameserver-changes/how-do-i-clear-my-local-dns-cache'>How do I clear my local DNS cache?</a> (56,535 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/domain-names/dns-nameserver-changes/godaddy'>Making DNS Nameserver Changes at GoDaddy.com</a> (43,398 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/domain-names/dns-nameserver-changes/change-domain-nameservers-amp'>How to change your Domain Nameservers in AMP</a> (35,721 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/domain-names/dns-nameserver-changes/change-dns-records-to-use-3rd-party-services'>Change DNS records to use 3rd party services</a> (14,809 hits)</div></div>
+				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/domain-names/dns-nameserver-changes/updating-your-domains-nameservers'>Updating Your Domain's DNS / Nameservers</a> (175,496 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/domain-names/dns-nameserver-changes/how-do-i-make-custom-dns-records'>How do I make custom DNS records?</a> (51,866 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/domain-names/dns-nameserver-changes/domain-names-registrar-transfer-versus-nameserver-change'>Domain Names - Registrar Transfer versus NameServer Change</a> (37,936 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/domain-names/dns-nameserver-changes/using-custom-name-servers'>Using custom name servers</a> (28,860 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/domain-names/dns-nameserver-changes/opensrs-domain-maintenance'>OpenSRS Domain Maintenance</a> (3,827 hits)</div></div>
+				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/domain-names/dns-nameserver-changes/what-is-a-name-server'>What is a name server?</a> (125,266 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/domain-names/dns-nameserver-changes/a-record-change'>Adding an A Record</a> (48,688 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/domain-names/dns-nameserver-changes/add-cname-record'>Adding a CNAME Record</a> (37,561 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/domain-names/dns-nameserver-changes/vanity-nameservers-what-are-they-and-how-do-i-set-them-up'>Vanity Nameservers: What are they and how do I set them up?</a> (23,330 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/domain-names/dns-nameserver-changes/change-google-domain-nameservers'>How to Change Name Servers in Google Domains (2)</a> (453 hits)</div></div>
 			</div>
 		</li><li class='bc_arrow'>&gt;&gt;</li><li class='bc_no_dd' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'><span itemprop='title'>How do I clear my local DNS cache?</span></li>			</ul>
 		</div>
@@ -474,7 +472,7 @@ var WRInitTime=(new Date()).getTime();
 				
 					<div style='font-size:12px; color:#aaa; margin-bottom:-10px; padding-top:5px;'>
 							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Written by </span><a href='https://plus.google.com/115637383139876284145?rel=author'>Tim Sisson</a></div>
-							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Views:</span> <span name='page_views' id='page_views'>56,528</span></div>
+							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Views:</span> <span name='page_views' id='page_views'>56,535</span></div>
 							<div style='float:left; margin-right:20px;' title='Originally published: Nov 23, 2011'><span style='color:#606060;'>Published:</span> Aug 6, 2015</div>
 							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Comments:</span> <a href='#comments'>9</a></div>
 							<div style='clear:both;'></div>
@@ -660,7 +658,7 @@ var WRInitTime=(new Date()).getTime();
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZjYXRpZD02OCZpZD04NTgmdmlldz1hcnRpY2xlJkl0ZW1pZD0xMDE=" />
-		<input type="hidden" name="168d7478f0f0f191c19cc29b8306e6eb" value="1" />	</div>
+		<input type="hidden" name="769d38d5220de4e48f3d51f906c307b5" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -1423,11 +1421,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-25']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '112.198.103.36']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '79.107.28.96']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '112.198.103.36']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '79.107.28.96']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

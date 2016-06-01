@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:45740:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:45607:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -335,8 +335,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -467,7 +465,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/cpanel/cpanel-manage-domains/adding-addon-domains-in-cpanel'>Adding an Add-on Domain in cPanel</a>
 					<div>Learn how to add an add-on domain to cPanel.</div>
-					<div class='smallgrey'>Hits: 40,944</div>
+					<div class='smallgrey'>Hits: 40,961</div>
 				</td>
 			</tr>
 			<tr>
@@ -476,7 +474,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/cpanel/cpanel-manage-domains/park'>How to Park a Domain in cPanel</a>
 					<div>Learn how to add a parked domain to your cpanel account. </div>
-					<div class='smallgrey'>Hits: 14,009</div>
+					<div class='smallgrey'>Hits: 14,010</div>
 				</td>
 			</tr>
 			<tr>
@@ -485,7 +483,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/cpanel/cpanel-manage-domains/delete-addon-domain'>Deleting an Addon Domain</a>
 					<div>This tutorial discusses the steps to delete an addon domain.  It also includes information on possible conflicts that would cause problems to the removal.  </div>
-					<div class='smallgrey'>Hits: 3,583</div>
+					<div class='smallgrey'>Hits: 3,584</div>
 				</td>
 			</tr>
 			<tr>
@@ -494,7 +492,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/cpanel/cpanel-manage-domains/creating-a-subdomain'>Creating a Subdomain in cPanel</a>
 					<div>Learn how to add a subdomain in cPanel.</div>
-					<div class='smallgrey'>Hits: 58,908</div>
+					<div class='smallgrey'>Hits: 58,927</div>
 				</td>
 			</tr>
 			<tr>
@@ -503,7 +501,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/cpanel/cpanel-manage-domains/setting-up-redirect-cpanel'>Setting up a Redirect for a Domain in your cPanel</a>
 					<div>Learn how to set up a basic re-direct in cPanel.</div>
-					<div class='smallgrey'>Hits: 96,883</div>
+					<div class='smallgrey'>Hits: 96,917</div>
 				</td>
 			</tr>
 			<tr>
@@ -512,7 +510,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/cpanel/cpanel-manage-domains/wildcard-subdomains-and-dns'>Wildcard Subdomains and DNS</a>
 					<div> Learn how to set up a wildcard subdomain</div>
-					<div class='smallgrey'>Hits: 12,817</div>
+					<div class='smallgrey'>Hits: 12,819</div>
 				</td>
 			</tr>
 			<tr>
@@ -530,7 +528,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/cpanel/cpanel-manage-domains/advanced-dns-editor-cpanel'>How to use the Advanced DNS Editor in cPanel.</a>
 					<div>This cPanel tutorial guides you in using the Advanced DNS Editor.</div>
-					<div class='smallgrey'>Hits: 18,976</div>
+					<div class='smallgrey'>Hits: 18,979</div>
 				</td>
 			</tr>
 			</table>
@@ -596,7 +594,7 @@ var WRInitTime=(new Date()).getTime();
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZjYXRpZD0xMzYmaWQ9MTM2JnZpZXc9Y2F0ZWdvcnkmSXRlbWlkPTEwMQ==" />
-		<input type="hidden" name="86e06c40d46d42462b0abe525f332b4f" value="1" />	</div>
+		<input type="hidden" name="b17444efb76264cd2fd42201a883b950" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>

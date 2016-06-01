@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:53292:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:53155:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -217,11 +217,11 @@ window.setInterval(function(){var r;try{r=window.XMLHttpRequest?new XMLHttpReque
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-19']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '41.190.239.113']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '188.71.201.41']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '41.190.239.113']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '188.71.201.41']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -334,8 +334,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -466,7 +464,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/prestashop-15/managing-customers/manually-delete-a-customer'>How to manually delete a customer in PrestaShop 1.5</a>
 					<div>There may be times you need to delete customers in the PrestaShop 1.5 back office. This tutorial guides you through the process.</div>
-					<div class='smallgrey'>Hits: 2,246</div>
+					<div class='smallgrey'>Hits: 2,247</div>
 				</td>
 			</tr>
 		<tr><td colspan='3' style='padding-top:20px;'><h2>Other Customer Settings</h2><div>Manage other settings for specific customers</div></td></tr>	<tr>
@@ -556,7 +554,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/prestashop-15/managing-customers/changing-regenerate-password'>Changing the regenerate password minimum time in Prestashop 1.5</a>
 					<div>Setting the minimum time between password regenerations in PrestaShop 1.5 for security.</div>
-					<div class='smallgrey'>Hits: 1,915</div>
+					<div class='smallgrey'>Hits: 1,916</div>
 				</td>
 			</tr>
 			<tr>
@@ -592,7 +590,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/prestashop-15/managing-customers/set-new-customer-notification'>How to enable/disable the new customer notification in PrestaShop 1.5</a>
 					<div>This article guides you through enabling or disabling the new order notification in the PrestaShop 1.5 back office dashboard panel.</div>
-					<div class='smallgrey'>Hits: 4,849</div>
+					<div class='smallgrey'>Hits: 4,850</div>
 				</td>
 			</tr>
 			</table>
@@ -658,7 +656,7 @@ var WRInitTime=(new Date()).getTime();
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZjYXRpZD0yMzgmaWQ9MjM4JnZpZXc9Y2F0ZWdvcnkmSXRlbWlkPTEwMQ==" />
-		<input type="hidden" name="1d542df08eed6f5a16f72ad45783e051" value="1" />	</div>
+		<input type="hidden" name="6f530e837a7d47873589b2a74bf06a11" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -1045,11 +1043,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-19']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '41.190.239.113']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '188.71.201.41']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '41.190.239.113']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '188.71.201.41']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

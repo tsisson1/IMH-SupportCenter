@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:46057:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:45924:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -335,8 +335,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -467,7 +465,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/wordpress/migrating-wordpress-inmotion-hosting/migrating-your-wordpress-site-data'>Intro to Migrating your WordPress Site Data</a>
 					<div>In this article we will discuss how to migrate your WordPress Site Data to InMotion Hosting. </div>
-					<div class='smallgrey'>Hits: 12,623</div>
+					<div class='smallgrey'>Hits: 12,625</div>
 				</td>
 			</tr>
 			<tr>
@@ -476,7 +474,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/wordpress/migrating-wordpress-inmotion-hosting/migrating-your-wordpress-database'>Migrating your WordPress Database</a>
 					<div>Learn how to migrate a WordPress Database. </div>
-					<div class='smallgrey'>Hits: 12,007</div>
+					<div class='smallgrey'>Hits: 12,010</div>
 				</td>
 			</tr>
 			<tr>
@@ -494,7 +492,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/wordpress/migrating-wordpress-inmotion-hosting/configuring-wordpress-after-a-migration'>Configuring WordPress After a Migration</a>
 					<div>Learn how to configure your WordPress website after you have migrated it to your InMotion Hosting account. </div>
-					<div class='smallgrey'>Hits: 21,715</div>
+					<div class='smallgrey'>Hits: 21,718</div>
 				</td>
 			</tr>
 			<tr>
@@ -503,7 +501,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/wordpress/migrating-wordpress-inmotion-hosting/correct-image-links'>Correcting image links after a WordPress migration</a>
 					<div>This article walks you through correcting links for items, such as images, that are in your posts and pages after a migration.</div>
-					<div class='smallgrey'>Hits: 42,938</div>
+					<div class='smallgrey'>Hits: 42,955</div>
 				</td>
 			</tr>
 			<tr>
@@ -512,7 +510,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/wordpress/migrating-wordpress-inmotion-hosting/testing-wordpress-after-migration'>Testing your WordPress website after Migration</a>
 					<div>Now, you are ready to test your WordPress website. Learn how to test your website site after your server migration. </div>
-					<div class='smallgrey'>Hits: 6,352</div>
+					<div class='smallgrey'>Hits: 6,353</div>
 				</td>
 			</tr>
 			</table>

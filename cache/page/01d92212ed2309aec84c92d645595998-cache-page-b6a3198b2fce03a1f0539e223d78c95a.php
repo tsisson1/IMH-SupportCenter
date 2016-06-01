@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:52854:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:52717:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -225,11 +225,11 @@ jQuery(function($) {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-19']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '85.158.152.174']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '209.112.21.26']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '85.158.152.174']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '209.112.21.26']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -342,8 +342,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -506,51 +504,51 @@ var WRInitTime=(new Date()).getTime();
                         </tr>
           <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/how-to/setting-a-404-error-page-via-htaccess'>Setting a 404 error page via .htaccess</a></td>
-                                <td>147,336</td>
+                                <td>147,360</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/how-to/how-to-edit-your-hosts-file-on-a-mac'>How to edit your hosts file on a mac</a></td>
-                                <td>118,416</td>
+                                <td>118,456</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/how-to/modifying-your-hosts-file'>Modifying Your Hosts File</a></td>
-                                <td>112,512</td>
+                                <td>112,535</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/how-to/using-your-temporary-url'>Testing your website using your Temporary URL</a></td>
-                                <td>68,103</td>
+                                <td>68,110</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/how-to/read-traceroute'>How to read a traceroute</a></td>
-                                <td>63,932</td>
+                                <td>63,956</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/how-to/how-to-add-a-pdf-file-to-your-website'>How to add a PDF file to your website</a></td>
-                                <td>57,979</td>
+                                <td>57,991</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/how-to/clear-browser-cache'>How to Clear your Browser cache</a></td>
-                                <td>41,312</td>
+                                <td>41,315</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/how-to/how-do-i-restart-my-server'>How do I restart my server?</a></td>
-                                <td>26,966</td>
+                                <td>26,972</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/how-to/creating-a-custom-404-error-page'>Creating a custom 404 error page</a></td>
-                                <td>26,180</td>
+                                <td>26,182</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/how-to/how-to-create-a-favicon-for-your-website'>How to add a Favicon for your Website</a></td>
-                                <td>24,845</td>
+                                <td>24,846</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/how-to/add-calendar'>Calendar options for your website</a></td>
-                                <td>23,635</td>
+                                <td>23,638</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/how-to/enable-telnet'>Enabling telnet on a Windows computer</a></td>
-                                <td>14,052</td>
+                                <td>14,056</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/how-to/find-config-files'>How to find program configuration files</a></td>
@@ -633,7 +631,7 @@ var WRInitTime=(new Date()).getTime();
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZjYXRpZD0zNSZpZD0zNSZ2aWV3PWNhdGVnb3J5Jkl0ZW1pZD0xMDE=" />
-		<input type="hidden" name="2fb0f7e5ed0cf3ed6b5109d8e8ec475e" value="1" />	</div>
+		<input type="hidden" name="1ffca565c3e4cc984fd601d86bd501e7" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -1020,11 +1018,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-19']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '85.158.152.174']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '209.112.21.26']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '85.158.152.174']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '209.112.21.26']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:51739:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:51606:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -334,8 +334,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -471,7 +469,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/joomla-3/create-template/starting-template'>A very basic template soon to be a Joomla 3.1 template</a>
 					<div>In our first tutorial on creating Joomla 3.0 Templates, we will show you what the basic template that we're working with looks like.</div>
-					<div class='smallgrey'>Hits: 95,843</div>
+					<div class='smallgrey'>Hits: 95,848</div>
 				</td>
 			</tr>
 			<tr>
@@ -480,7 +478,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/joomla-3/create-template/add-module-positions'>How to add module positions to a Joomla 3.1 template</a>
 					<div>In this Joomla 3.0 tutorial, we will show you how to add new module positions to a Joomla 3.0 template.</div>
-					<div class='smallgrey'>Hits: 93,962</div>
+					<div class='smallgrey'>Hits: 93,964</div>
 				</td>
 			</tr>
 			<tr>
@@ -489,7 +487,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/joomla-3/create-template/template-details-xml'>Adding a templateDetails.xml file to a Joomla 3.1 Template</a>
 					<div>In this article, we will show you the templateDetails.xml file that we are including within the Joomla 3.0 template that we are creating.</div>
-					<div class='smallgrey'>Hits: 50,024</div>
+					<div class='smallgrey'>Hits: 50,026</div>
 				</td>
 			</tr>
 			<tr>
@@ -516,7 +514,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/joomla-3/create-template/switch-site-template'>How to change your Joomla 3.1 Site Template</a>
 					<div>After installing a Joomla 3.0 template, your next step is to activate your new template.</div>
-					<div class='smallgrey'>Hits: 47,556</div>
+					<div class='smallgrey'>Hits: 47,557</div>
 				</td>
 			</tr>
 			<tr>
@@ -525,7 +523,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/joomla-3/create-template/add-css-and-js'>How to add CSS and JavaScript files to a Joomla 3.1 Template</a>
 					<div>In this article, we will show you how to use $doc-addStyleSheet and $doc-addScript to add css and javascript files to a Joomla 3.0 template.</div>
-					<div class='smallgrey'>Hits: 62,200</div>
+					<div class='smallgrey'>Hits: 62,203</div>
 				</td>
 			</tr>
 			<tr>
@@ -534,7 +532,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/joomla-3/create-template/add-bootstrap'>How to add Bootstrap to a Joomla 3.1 Template</a>
 					<div>In this tutorial, we'll show you how to add the bootstrap javascript and css files to a Joomla 3.0 template.</div>
-					<div class='smallgrey'>Hits: 79,267</div>
+					<div class='smallgrey'>Hits: 79,269</div>
 				</td>
 			</tr>
 			<tr>
@@ -543,7 +541,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/joomla-3/create-template/make-responsive'>How to make a Joomla 3.1 Template Responsive</a>
 					<div>In this tutorial, we'll cover the changes we made to our Joomla 3.0 template's index.php file to make it fully responsive.</div>
-					<div class='smallgrey'>Hits: 63,388</div>
+					<div class='smallgrey'>Hits: 63,391</div>
 				</td>
 			</tr>
 			<tr>
@@ -561,7 +559,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/joomla-3/create-template/css-login-form'>Adding CSS to the Login Form in a Joomla 3.1 template</a>
 					<div>Now that we've created our basic template, we will begin adding CSS to our css/style.css file to help make modules stand out. We will first update the login form.</div>
-					<div class='smallgrey'>Hits: 23,876</div>
+					<div class='smallgrey'>Hits: 23,877</div>
 				</td>
 			</tr>
 			<tr>

@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:47405:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:47272:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -334,8 +334,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -504,15 +502,15 @@ var WRInitTime=(new Date()).getTime();
 						</div>
 						<div style='width:300px; height:75px; float:left; margin-right:20px;'>
 							<a href='/support/edu/moodle/new-to-moodle/moodle-password-reset-phpmyadmin'>Changing the Moodle admin password through PhpMyAdmin</a>
-							<div class='smallgrey'>Hits: 32,206</div>
+							<div class='smallgrey'>Hits: 32,210</div>
 						</div>
 						<div style='width:300px; height:75px; float:left; margin-right:20px;'>
 							<a href='/support/edu/moodle/new-to-moodle/moodle-login-administrator'>How to log into the Moodle Administrator Dashboard</a>
-							<div class='smallgrey'>Hits: 31,641</div>
+							<div class='smallgrey'>Hits: 31,642</div>
 						</div>
 						<div style='width:300px; height:75px; float:left; margin-right:20px;'>
 							<a href='/support/edu/moodle/moodle-plugins/messaging-email-plugin'>Setting up an SMTP connection in Moodle</a>
-							<div class='smallgrey'>Hits: 27,221</div>
+							<div class='smallgrey'>Hits: 27,225</div>
 						</div>
 						<div style='clear:both;'></div>
 </div>
@@ -579,7 +577,7 @@ var WRInitTime=(new Date()).getTime();
 					<div>In order to have an image slider in your Moodle you will have to use the jQuery plugin. This explains how to use the Simple jQuery plugin in Moodle.</div>
 					<div class='smallgrey'>
 						Written by James Richardson<br />
-						Hits: 9,449
+						Hits: 9,450
 					</div>
 				</td>
 			</tr>

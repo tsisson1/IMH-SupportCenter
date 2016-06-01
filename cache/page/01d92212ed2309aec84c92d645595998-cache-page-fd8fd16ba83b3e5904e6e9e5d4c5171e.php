@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:52942:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:52817:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -224,11 +224,11 @@ jQuery(function($) {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-25']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '82.153.28.88']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '189.123.242.62']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '82.153.28.88']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '189.123.242.62']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -341,8 +341,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -505,39 +503,39 @@ Learn more information on <a href="http://www.inmotionhosting.com/ssh-hosting">S
                         </tr>
           <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/ssh/how-to-login-ssh'>How to log in to your VPS via SSH</a></td>
-                                <td>165,467</td>
+                                <td>165,481</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/ssh/add-ip-to-firewall'>How to add your IP Address to the Firewall (for ssh access)</a></td>
-                                <td>51,063</td>
+                                <td>51,068</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/ssh/shared-reseller-ssh'>Logging into your Shared/Reseller server with SSH</a></td>
-                                <td>43,063</td>
+                                <td>43,073</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/ssh/changing-permissions-and-ownership'>How to change file permissions and ownership settings while in SSH</a></td>
-                                <td>40,280</td>
+                                <td>40,290</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/ssh/navigate-command-line'>Navigate command line structure in SSH</a></td>
-                                <td>26,483</td>
+                                <td>26,487</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/ssh/what-is-shell-access'>What is Shell Access?</a></td>
-                                <td>24,763</td>
+                                <td>24,766</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/ssh/do-you-provide-ssh-access'>Do you provide SSH access?</a></td>
-                                <td>17,746</td>
+                                <td>17,747</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/ssh/speed-up-grep-searches-with-lc-all'>Speed up grep searches with LC_ALL=C</a></td>
-                                <td>17,230</td>
+                                <td>17,235</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/ssh/how-to-edit-files-using-nano'>How to edit files while in ssh using nano</a></td>
-                                <td>16,047</td>
+                                <td>16,048</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/ssh/managing-shell-access'>How to give (or remove) shell access to cPanel accounts</a></td>
@@ -545,19 +543,19 @@ Learn more information on <a href="http://www.inmotionhosting.com/ssh-hosting">S
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/ssh/using-the-linux-sar-command'>Using the Linux sar command</a></td>
-                                <td>6,512</td>
+                                <td>6,513</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/ssh/what-to-do-with-root-access'>What to do with root access</a></td>
-                                <td>6,191</td>
+                                <td>6,192</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/ssh/shared-server-ssh-mac'>Connecting to a Shared Server SSH with a Mac</a></td>
-                                <td>5,116</td>
+                                <td>5,120</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/ssh/using-a-secondary-hard-drive-on-a-dedicated-server'>Using a Secondary Hard Drive on a Dedicated Hosting Server</a></td>
-                                <td>5,115</td>
+                                <td>5,116</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/ssh/using-the-linux-cat-command'>Using the Linux cat command</a></td>
@@ -632,7 +630,7 @@ Learn more information on <a href="http://www.inmotionhosting.com/ssh-hosting">S
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZjYXRpZD00MTEmaWQ9NDExJnZpZXc9Y2F0ZWdvcnkmSXRlbWlkPTEwMQ==" />
-		<input type="hidden" name="d261bf79a690578e2e1227166a2fd5fc" value="1" />	</div>
+		<input type="hidden" name="94eaf23471ca0123c43dfa7369ff60fb" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -1019,11 +1017,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-25']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '82.153.28.88']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '189.123.242.62']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '82.153.28.88']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '189.123.242.62']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:164000:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:164013:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -222,11 +222,11 @@ window.setInterval(function(){var r;try{r=window.XMLHttpRequest?new XMLHttpReque
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-19']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '86.136.118.188']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '4.15.125.104']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '86.136.118.188']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '4.15.125.104']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -252,7 +252,7 @@ var WRInitTime=(new Date()).getTime();
 <header role="banner">
         <div class="container">
             <div class="row">
-                <a href="/" class="span3"><img class='imhLogo' src="//cdn.inmotionhosting.com/img/logo-imh.png" alt="InMotion Hosting" /></a>
+                <a href="/" class="span3"><img class='imhLogo' src="//imh01-inmotionhosting1.netdna-ssl.com/img/logo-imh.png" alt="InMotion Hosting" /></a>
 		<div class="span6 offset3">
 			<ul class="nav nav-pills nav-pills-contact pull-right contactListHeader">
 				<li class="pull-right sales-label">Questions? Contact Support:</li>
@@ -317,7 +317,7 @@ var WRInitTime=(new Date()).getTime();
   
     <div id="main" class="main-container" role="main" style='background:#f9f9f9;'>
 
-	<div style="background:url('//cdn.inmotionhosting.com/img/rednoise.gif');">
+	<div style="background:url('//imh01-inmotionhosting1.netdna-ssl.com/img/rednoise.gif');">
 		<div class='container'>
 			<img src='/support/templates/supportcentertemplate/images/logo.png.old?v=201507291301' class='MainLogo' usemap='#sclogo' />
 			<map name='sclogo'><area shape='rect' coords='130,25,430,60' href='/support' alt='InMotion Hosting Support Center'></map>
@@ -339,8 +339,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -468,7 +466,7 @@ var WRInitTime=(new Date()).getTime();
 				
 					<div style='font-size:12px; color:#aaa; margin-bottom:-10px; padding-top:5px;'>
 							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Written by </span><a href='https://plus.google.com/102670474114655224886?rel=author'>Brad Markle</a></div>
-							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Views:</span> <span name='page_views' id='page_views'>71,818</span></div>
+							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Views:</span> <span name='page_views' id='page_views'>71,831</span></div>
 							<div style='float:left; margin-right:20px;' title='Originally published: Sep 6, 2011'><span style='color:#606060;'>Published:</span> Jun 3, 2014</div>
 							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Comments:</span> <a href='#comments'>46</a></div>
 							<div style='clear:both;'></div>
@@ -564,13 +562,13 @@ var WRInitTime=(new Date()).getTime();
 <h2>Changing your Domain's MX Record</h2>
 <ol class="article_list">
   <li>The first step is to log into your cPanel account.<div style="clear:both;"></div></li>
-  <li><a class="std_ss" href="//cdn.inmotionhosting.com/support/images/stories/email/mx-record.jpg"><img  style="float:right; margin:0px 0px 15px 15px;" alt="click  MX entry in cpanel" src="//cdn.inmotionhosting.com/support/images/stories/email/mx-record.jpg" title="Click here to view the larger image" width="200" /></a>Once logged into cPanel, find the icon "<strong>Mx Entry</strong>" in the Mail section:</p><div style="clear:both;"></div>
+  <li><a class="std_ss" href="//imh01-inmotionhosting1.netdna-ssl.com/support/images/stories/email/mx-record.jpg"><img  style="float:right; margin:0px 0px 15px 15px;" alt="click  MX entry in cpanel" src="//imh01-inmotionhosting1.netdna-ssl.com/support/images/stories/email/mx-record.jpg" title="Click here to view the larger image" width="200" /></a>Once logged into cPanel, find the icon "<strong>Mx Entry</strong>" in the Mail section:</p><div style="clear:both;"></div>
     
     <p class="alert"><strong>Important!</strong> If you still need to receive your email on our server while the Google MX records are propagating, <strong>DO NOT remove the original MX record</strong>. Update the original MX record to priority 100 to prevent email from bouncing, instead of removing the 0 priority MX record. Once the Google MX records are propagated, you can then remove the original MX record.<div style="clear:both;"></div></li>
     
-  <li><a class="std_ss" href="//cdn.inmotionhosting.com/support/images/stories/email/add-mx-record.jpg"><img  style="float:right; margin:0px 0px 15px 15px;" alt="Add a new record" src="//cdn.inmotionhosting.com/support/images/stories/email/add-mx-record.jpg" title="Click here to view the larger image" width="200" /></a>If you want to remove the existing records, click on the delete link next to each record. In this example, We will use the same records as above, as if we were going to use Google Apps.<div style="clear:both;"></div></li>
+  <li><a class="std_ss" href="//imh01-inmotionhosting1.netdna-ssl.com/support/images/stories/email/add-mx-record.jpg"><img  style="float:right; margin:0px 0px 15px 15px;" alt="Add a new record" src="//imh01-inmotionhosting1.netdna-ssl.com/support/images/stories/email/add-mx-record.jpg" title="Click here to view the larger image" width="200" /></a>If you want to remove the existing records, click on the delete link next to each record. In this example, We will use the same records as above, as if we were going to use Google Apps.<div style="clear:both;"></div></li>
   
-  <li><a class="std_ss" href="//cdn.inmotionhosting.com/support/images/stories/email/mx-record-added.jpg"><img  style="float:right; margin:0px 0px 15px 15px;" alt="Add a new record" src="//cdn.inmotionhosting.com/support/images/stories/email/mx-record-added.jpg" title="Click here to view the larger image" width="200" /></a>Once you have entered in the record correctly, simply click "<strong>Add New Record</strong>" and now you can verify the record was created correctly. Follow this same process for each record you need to create.
+  <li><a class="std_ss" href="//imh01-inmotionhosting1.netdna-ssl.com/support/images/stories/email/mx-record-added.jpg"><img  style="float:right; margin:0px 0px 15px 15px;" alt="Add a new record" src="//imh01-inmotionhosting1.netdna-ssl.com/support/images/stories/email/mx-record-added.jpg" title="Click here to view the larger image" width="200" /></a>Once you have entered in the record correctly, simply click "<strong>Add New Record</strong>" and now you can verify the record was created correctly. Follow this same process for each record you need to create.
   <div style="clear:both;"></div></li>
 </ol>
   
@@ -692,7 +690,7 @@ var WRInitTime=(new Date()).getTime();
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZjYXRpZD0xMzQmaWQ9OTc5JnZpZXc9YXJ0aWNsZSZJdGVtaWQ9MTAx" />
-		<input type="hidden" name="039d63daf79f8ed20947adba18a894aa" value="1" />	</div>
+		<input type="hidden" name="af6861d8fb0bac3bf9164f1ba4425474" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -1194,7 +1192,7 @@ Arnel C.</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -1407,7 +1405,7 @@ Arnel C.</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -1466,7 +1464,7 @@ Scott M</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -1517,7 +1515,7 @@ Scott M</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -1563,7 +1561,7 @@ Scott M</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -1618,7 +1616,7 @@ Scott M<br />
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -1670,7 +1668,7 @@ Scott M</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -1878,7 +1876,7 @@ Making changes to your MX records will allow you to host your website with us an
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -1987,7 +1985,7 @@ Tim S</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/christopherm'>christopherm</a></div>
 						<div><a href='https://myaccount.google.com/?utm_source=OGB' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>3,380 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>3,390 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -2094,7 +2092,7 @@ John-Paul</div>
 					<th>Comment:</th>
 					<td>
 						
-						<script type='text/javascript' src='//cdn.inmotionhosting.com/support/components/com_pup/tinymce/js/tinymce/tinymce.min.js'></script>
+						<script type='text/javascript' src='//imh01-inmotionhosting1.netdna-ssl.com/support/components/com_pup/tinymce/js/tinymce/tinymce.min.js'></script>
 						<script type='text/javascript'>
 							tinymce.init({
 							    selector: 'textarea.acomment_comment',
@@ -2155,7 +2153,7 @@ John-Paul</div>
 
 
 
-	<div style="background:url('//cdn.inmotionhosting.com/img/pattern.gif');padding-top:20px;">
+	<div style="background:url('//imh01-inmotionhosting1.netdna-ssl.com/img/pattern.gif');padding-top:20px;">
 		<div style=' margin:0px; padding:10px 0px 10px 0px; margin-left:auto; margin-right:auto;'>
 			<h2 style='text-align:center;margin-bottom:10px;'>Need more Help?</h2>
 
@@ -2513,7 +2511,7 @@ $(document).ready(function() {
 
 
 
-<script src="//cdn.inmotionhosting.com/support/templates/supportcentertemplate/js/combined.js?v=2016052509" type="text/javascript"></script>
+<script src="//imh01-inmotionhosting1.netdna-ssl.com/support/templates/supportcentertemplate/js/combined.js?v=2016052509" type="text/javascript"></script>
 
 <!-- <div name='853_overlay_join_community' id='853_overlay_join_community'></div> -->
 
@@ -2525,11 +2523,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-19']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '86.136.118.188']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '4.15.125.104']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '86.136.118.188']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '4.15.125.104']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

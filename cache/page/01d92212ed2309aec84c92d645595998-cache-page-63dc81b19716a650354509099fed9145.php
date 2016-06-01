@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:49756:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:49623:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -342,8 +342,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -507,23 +505,23 @@ var WRInitTime=(new Date()).getTime();
                         </tr>
           <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/database-connections/connect-database-remotely-mysql-workbench'>Connecting to a database with MySQL Workbench 5.2</a></td>
-                                <td>114,217</td>
+                                <td>114,233</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/database-connections/connecting-to-a-database-using-php'>Connecting to a Database using PHP</a></td>
-                                <td>28,557</td>
+                                <td>28,559</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/database-connections/connect-database-navicat'>Connect to MySQL with Navicat</a></td>
-                                <td>25,426</td>
+                                <td>25,430</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/database-connections/connecting-heidi-sql-database'>Connect to Mysql with Heidi SQL</a></td>
-                                <td>25,026</td>
+                                <td>25,036</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/database-connections/is-mysql-available'>Database connection error</a></td>
-                                <td>13,775</td>
+                                <td>13,776</td>
                         </tr>
                   </table>
 	</form>

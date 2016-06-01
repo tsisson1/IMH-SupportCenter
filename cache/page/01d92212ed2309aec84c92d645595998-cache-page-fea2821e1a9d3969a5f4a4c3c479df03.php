@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:98415:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:98282:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -222,11 +222,11 @@ window.setInterval(function(){var r;try{r=window.XMLHttpRequest?new XMLHttpReque
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-22']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '113.199.231.232']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '115.186.155.209']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '113.199.231.232']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '115.186.155.209']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -339,8 +339,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -441,9 +439,9 @@ var WRInitTime=(new Date()).getTime();
 			</div>
 		</li><li class='bc_arrow'>&gt;&gt;</li><li class='bc_with_dd' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'><a href='/support/website/backup-and-restore' itemprop='url'><span itemprop='title'>Backup and Restore<span></a>
 			<div class='dropdown_3columns' style='width:900px; margin-left:-250px;'>
-				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/backup-and-restore/restore-website-files-in-cpanel'>How to Restore a Home Directory Backup in cPanel</a> (47,318 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/backup-and-restore/restore-your-database-in-cpanel'>How to Restore a Database Backup in cPanel</a> (35,586 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/backup-and-restore/googles-cache-to-restore-web-page'>How to use Google's cache to restore a web page</a> (13,027 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/backup-and-restore/backup-database-ssh'>Backup / Export a Database from SSH</a> (5,085 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/backup-and-restore/backup-files'>Backup files</a> (3,418 hits)</div></div>
-				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/backup-and-restore/backup-your-database-in-cpanel'>Backup your database in cPanel</a> (42,199 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/backup-and-restore/restoring-a-backup'>Restoring a Backup</a> (33,421 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/backup-and-restore/automatic-remote-backup-service'>Automatic remote backup service</a> (7,878 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/backup-and-restore/configure-local-backups-in-whm'>Configure local backups in WHM</a> (4,649 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/backup-and-restore/email-alert-backup-limit-exceeded'>Send email alert when backup limit exceeded</a> (1,836 hits)</div></div>
-				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/backup-and-restore/backup-website-files-in-cpanel'>How to Backup your website files in cPanel</a> (39,243 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/backup-and-restore/do-you-run-backups-of-your-servers'>Do you run backups of your servers?</a> (16,575 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/backup-and-restore/backing-up-your-database'>Backing up your Database</a> (6,830 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/backup-and-restore/backup-a-file-before-editing'>Backup a file before editing</a> (3,437 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/backup-and-restore/restore-files'>Restore files</a> (1,015 hits)</div></div>
+				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/backup-and-restore/restore-website-files-in-cpanel'>How to Restore a Home Directory Backup in cPanel</a> (47,331 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/backup-and-restore/restore-your-database-in-cpanel'>How to Restore a Database Backup in cPanel</a> (35,587 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/backup-and-restore/googles-cache-to-restore-web-page'>How to use Google's cache to restore a web page</a> (13,028 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/backup-and-restore/backup-database-ssh'>Backup / Export a Database from SSH</a> (5,085 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/backup-and-restore/backup-files'>Backup files</a> (3,418 hits)</div></div>
+				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/backup-and-restore/backup-your-database-in-cpanel'>Backup your database in cPanel</a> (42,202 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/backup-and-restore/restoring-a-backup'>Restoring a Backup</a> (33,424 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/backup-and-restore/automatic-remote-backup-service'>Automatic remote backup service</a> (7,880 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/backup-and-restore/configure-local-backups-in-whm'>Configure local backups in WHM</a> (4,651 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/backup-and-restore/email-alert-backup-limit-exceeded'>Send email alert when backup limit exceeded</a> (1,837 hits)</div></div>
+				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/backup-and-restore/backup-website-files-in-cpanel'>How to Backup your website files in cPanel</a> (39,248 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/backup-and-restore/do-you-run-backups-of-your-servers'>Do you run backups of your servers?</a> (16,576 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/backup-and-restore/backing-up-your-database'>Backing up your Database</a> (6,830 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/backup-and-restore/backup-a-file-before-editing'>Backup a file before editing</a> (3,437 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/backup-and-restore/restore-files'>Restore files</a> (1,015 hits)</div></div>
 			</div>
 		</li><li class='bc_arrow'>&gt;&gt;</li><li class='bc_no_dd' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'><span itemprop='title'>Backup your database in cPanel</span></li>			</ul>
 		</div>
@@ -479,7 +477,7 @@ var WRInitTime=(new Date()).getTime();
 				
 					<div style='font-size:12px; color:#aaa; margin-bottom:-10px; padding-top:5px;'>
 							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Written by Jacob Nicholson</div>
-							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Views:</span> <span name='page_views' id='page_views'>42,199</span></div>
+							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Views:</span> <span name='page_views' id='page_views'>42,202</span></div>
 							<div style='float:left; margin-right:20px;' title='Originally published: Jan 30, 2013'><span style='color:#606060;'>Published:</span> Mar 19, 2014</div>
 							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Comments:</span> <a href='#comments'>21</a></div>
 							<div style='clear:both;'></div>
@@ -602,7 +600,7 @@ var WRInitTime=(new Date()).getTime();
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZjYXRpZD00MjImaWQ9NTM1JnZpZXc9YXJ0aWNsZSZJdGVtaWQ9MTAx" />
-		<input type="hidden" name="23a7cc99632f3f001920ba78920ebfe9" value="1" />	</div>
+		<input type="hidden" name="de302b66105a67bd67c694c7638e1bf6" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -948,7 +946,7 @@ John-Paul</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,990 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -1001,7 +999,7 @@ Scott M</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,990 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -1075,7 +1073,7 @@ Scott M</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,990 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -1126,7 +1124,7 @@ Scott M</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/christopherm'>christopherm</a></div>
 						<div><a href='https://myaccount.google.com/?utm_source=OGB' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>3,380 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>3,390 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -1600,11 +1598,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-22']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '113.199.231.232']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '115.186.155.209']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '113.199.231.232']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '115.186.155.209']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

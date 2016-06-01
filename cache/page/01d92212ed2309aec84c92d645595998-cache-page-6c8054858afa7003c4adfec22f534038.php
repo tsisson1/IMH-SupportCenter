@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:46508:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:46375:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -217,11 +217,11 @@ window.setInterval(function(){var r;try{r=window.XMLHttpRequest?new XMLHttpReque
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-19']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '95.180.115.77']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '24.156.37.162']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '95.180.115.77']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '24.156.37.162']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -334,8 +334,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -475,7 +473,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/whm/creating-and-managing-accounts/change-cpanel-username'>How to change your cPanel username for VPS/Dedicated accounts</a>
 					<div>Learn how to change a cPanel username using your WHM (Web Host Manager).</div>
-					<div class='smallgrey'>Hits: 4,553</div>
+					<div class='smallgrey'>Hits: 4,554</div>
 				</td>
 			</tr>
 			<tr>
@@ -484,7 +482,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/whm/creating-and-managing-accounts/log-into-whm'>How to log into your Web Host Manager (WHM)</a>
 					<div>In our previous articles, we gave you an introduction to web hosting in general, and the differences between cPanel and WHM. We think now is finally a good time to show you how to log into your own WHM!</div>
-					<div class='smallgrey'>Hits: 60,716</div>
+					<div class='smallgrey'>Hits: 60,721</div>
 				</td>
 			</tr>
 			<tr>
@@ -493,7 +491,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/whm/creating-and-managing-accounts/how-to-create-a-cpanel-account'>How to create a cPanel account within WHM</a>
 					<div>Creating your own cPanel accounts to resell (or use yourself) is an important feature within WHM. In this tutorial, we'll show you how to create a new cPanel account.</div>
-					<div class='smallgrey'>Hits: 77,302</div>
+					<div class='smallgrey'>Hits: 77,318</div>
 				</td>
 			</tr>
 			<tr>
@@ -502,7 +500,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/whm/creating-and-managing-accounts/create-a-package-within-whm'>How to Create a Package within WHM</a>
 					<div>Similar to how InMotion Hosting has a Power plan that offers 26 parked domains, you can create cPanel packages to make it easier to create and manage cPanel accounts.</div>
-					<div class='smallgrey'>Hits: 13,820</div>
+					<div class='smallgrey'>Hits: 13,824</div>
 				</td>
 			</tr>
 			<tr>
@@ -520,7 +518,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/whm/creating-and-managing-accounts/suspend-unsuspend-accounts'>How to Suspend / Unsuspend cPanel accounts within WHM</a>
 					<div>Accounts that you create in WHM can be suspending / unsuspended. This is usually done if an account is delinquent.</div>
-					<div class='smallgrey'>Hits: 22,291</div>
+					<div class='smallgrey'>Hits: 22,292</div>
 				</td>
 			</tr>
 			<tr>
@@ -538,7 +536,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/whm/creating-and-managing-accounts/upgrade-downgrade-an-account'>How to Upgrade / Downgrade a cPanel account using WHM</a>
 					<div>As with most services offered, upgrading and downgrading plans is a necessity. In this tutorial, we'll show you how you can upgrade or downgrade the packages that cPanel accounts are assigned to.</div>
-					<div class='smallgrey'>Hits: 3,991</div>
+					<div class='smallgrey'>Hits: 3,992</div>
 				</td>
 			</tr>
 			<tr>
@@ -613,7 +611,7 @@ var WRInitTime=(new Date()).getTime();
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZjYXRpZD0xNDkmaWQ9MTQ5JnZpZXc9Y2F0ZWdvcnkmSXRlbWlkPTEwMQ==" />
-		<input type="hidden" name="ce91a729337df0e336da93bcf4caa417" value="1" />	</div>
+		<input type="hidden" name="53a56b262ccf221b44cda9c6835956b1" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -1000,11 +998,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-19']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '95.180.115.77']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '24.156.37.162']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '95.180.115.77']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '24.156.37.162']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:47652:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:47515:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -217,11 +217,11 @@ window.setInterval(function(){var r;try{r=window.XMLHttpRequest?new XMLHttpReque
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-19']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '125.16.167.60']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '154.70.159.2']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '125.16.167.60']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '154.70.159.2']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -334,8 +334,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -466,7 +464,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/drupal-7/working-with-content/content-types'>Content Types in Drupal 7</a>
 					<div>Before you begin to add content to your new Drupal 7 website, you'll first need to learn the difference between Articles and Basic Pages.</div>
-					<div class='smallgrey'>Hits: 7,193</div>
+					<div class='smallgrey'>Hits: 7,194</div>
 				</td>
 			</tr>
 			<tr>
@@ -475,7 +473,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/drupal-7/working-with-content/creating-a-basic-page-in-drupal'>Creating a basic page in Drupal 7</a>
 					<div>Learn to work with Basic Pages in Drupal 7. You will learn to create, add content, and configure the various settings for basic pages.</div>
-					<div class='smallgrey'>Hits: 30,822</div>
+					<div class='smallgrey'>Hits: 30,824</div>
 				</td>
 			</tr>
 			<tr>
@@ -529,7 +527,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/drupal-7/working-with-content/enable-image-alt-text'>How to enable alt text for images in Drupal 7</a>
 					<div>This article will teach you how to enable the alt text field so you can give images an alt label when adding to content pages.</div>
-					<div class='smallgrey'>Hits: 11,163</div>
+					<div class='smallgrey'>Hits: 11,166</div>
 				</td>
 			</tr>
 			</table>
@@ -595,7 +593,7 @@ var WRInitTime=(new Date()).getTime();
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZjYXRpZD0yMDImaWQ9MjAyJnZpZXc9Y2F0ZWdvcnkmSXRlbWlkPTEwMQ==" />
-		<input type="hidden" name="e1578fcd381a5673d8d31120fa992c69" value="1" />	</div>
+		<input type="hidden" name="db35e5143410b5e0ff44c5dfed636495" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -1000,11 +998,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-19']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '125.16.167.60']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '154.70.159.2']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '125.16.167.60']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '154.70.159.2']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

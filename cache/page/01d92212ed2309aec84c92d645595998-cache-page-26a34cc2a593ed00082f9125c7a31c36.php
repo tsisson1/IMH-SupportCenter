@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:106538:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:106393:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -222,11 +222,11 @@ window.setInterval(function(){var r;try{r=window.XMLHttpRequest?new XMLHttpReque
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-37']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '184.151.127.189']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '92.99.175.89']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '184.151.127.189']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '92.99.175.89']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -339,8 +339,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -441,9 +439,9 @@ var WRInitTime=(new Date()).getTime();
 			</div>
 		</li><li class='bc_arrow'>&gt;&gt;</li><li class='bc_with_dd' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'><a href='/support/email/general-information' itemprop='url'><span itemprop='title'>How To and General Information<span></a>
 			<div class='dropdown_3columns' style='width:900px; margin-left:-250px;'>
-				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/general-information/getting-started-guide-email'>Getting Started Guide: Email</a> (229,181 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/general-information/what-is-the-path-to-sendmail'>What is the path to sendmail?</a> (16,558 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/general-information/third-party-mx'>Changing MX records to point to InMotion servers from third party DNS</a> (11,468 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/general-information/how-do-i-create-a-pop-email-account-in-my-control-panel-cpanel'>How do I create a POP email account in my control panel (cpanel)?</a> (5,812 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/general-information/updating-your-mx-records-if-you-use-a-third-party-filtering-service'>Updating your MX records if you use a Third Party Filtering Service</a> (4,491 hits)</div></div>
-				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/general-information/transferring-emails-from-your-old-host-to-inmotion-hosting'>Transferring Emails from your old host to InMotion Hosting</a> (45,636 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/general-information/webmail-how-to-send-receive-email-with-your-web-browser'>Webmail - sending and receiving email with your web browser</a> (12,933 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/general-information/default-catch-all-address'>Default / Catch-All Address</a> (7,281 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/general-information/ip-address-change-info'>My IP address has changed, what do I do?</a> (5,784 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/general-information/copy-all-mail-to-a-email-address-in-exim'>Copy all mail to a email address in Exim</a> (3,653 hits)</div></div>
-				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/general-information/host-my-email-different-email-server'>What should I do if I host my email with a different email server</a> (18,448 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/general-information/microsoft-exchange-server'>Microsoft Exchange Servers and your cPanel Hosting Account</a> (11,877 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/general-information/use-archivemail-to-archive-old-emails'>Can I use archivemail to archive my old emails?</a> (6,404 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/general-information/configure-yahoo-to-access-email'>How to configure Yahoo to access your email</a> (5,627 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/general-information/using-the-under-construction-page-imh'>Using the Under Construction Page provided by InMotion Hosting</a> (2,719 hits)</div></div>
+				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/general-information/getting-started-guide-email'>Getting Started Guide: Email</a> (229,229 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/general-information/what-is-the-path-to-sendmail'>What is the path to sendmail?</a> (16,558 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/general-information/third-party-mx'>Changing MX records to point to InMotion servers from third party DNS</a> (11,474 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/general-information/how-do-i-create-a-pop-email-account-in-my-control-panel-cpanel'>How do I create a POP email account in my control panel (cpanel)?</a> (5,812 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/general-information/updating-your-mx-records-if-you-use-a-third-party-filtering-service'>Updating your MX records if you use a Third Party Filtering Service</a> (4,492 hits)</div></div>
+				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/general-information/transferring-emails-from-your-old-host-to-inmotion-hosting'>Transferring Emails from your old host to InMotion Hosting</a> (45,644 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/general-information/webmail-how-to-send-receive-email-with-your-web-browser'>Webmail - sending and receiving email with your web browser</a> (12,934 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/general-information/default-catch-all-address'>Default / Catch-All Address</a> (7,281 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/general-information/ip-address-change-info'>My IP address has changed, what do I do?</a> (5,784 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/general-information/copy-all-mail-to-a-email-address-in-exim'>Copy all mail to a email address in Exim</a> (3,653 hits)</div></div>
+				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/general-information/host-my-email-different-email-server'>What should I do if I host my email with a different email server</a> (18,451 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/general-information/microsoft-exchange-server'>Microsoft Exchange Servers and your cPanel Hosting Account</a> (11,878 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/general-information/use-archivemail-to-archive-old-emails'>Can I use archivemail to archive my old emails?</a> (6,404 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/general-information/configure-yahoo-to-access-email'>How to configure Yahoo to access your email</a> (5,627 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/general-information/using-the-under-construction-page-imh'>Using the Under Construction Page provided by InMotion Hosting</a> (2,719 hits)</div></div>
 			</div>
 		</li><li class='bc_arrow'>&gt;&gt;</li><li class='bc_no_dd' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'><span itemprop='title'>Transferring Emails from your old host to InMotion Hosti...</span></li>			</ul>
 		</div>
@@ -479,7 +477,7 @@ var WRInitTime=(new Date()).getTime();
 				
 					<div style='font-size:12px; color:#aaa; margin-bottom:-10px; padding-top:5px;'>
 							<div style='float:left; margin-right:20px;'><span style='color:#606060;'></div>
-							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Views:</span> <span name='page_views' id='page_views'>45,636</span></div>
+							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Views:</span> <span name='page_views' id='page_views'>45,644</span></div>
 							<div style='float:left; margin-right:20px;' title='Originally published: Sep 21, 2011'><span style='color:#606060;'>Published:</span> May 2, 2016</div>
 							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Comments:</span> <a href='#comments'>23</a></div>
 							<div style='clear:both;'></div>
@@ -612,7 +610,7 @@ var WRInitTime=(new Date()).getTime();
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZjYXRpZD0yNiZpZD02NzAmdmlldz1hcnRpY2xlJkl0ZW1pZD0xMDE=" />
-		<input type="hidden" name="532d6dcdb9f6e6c3d94203919caaa4f9" value="1" />	</div>
+		<input type="hidden" name="b890baf6f5a934aca6d4cad72d68a164" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -766,7 +764,7 @@ var WRInitTime=(new Date()).getTime();
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -893,7 +891,7 @@ John-Paul</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -996,7 +994,7 @@ TJ Edens</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -1155,7 +1153,7 @@ Arnel C.</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/christopherm'>christopherm</a></div>
 						<div><a href='https://myaccount.google.com/?utm_source=OGB' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>3,380 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>3,390 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -1257,7 +1255,7 @@ Arnel C.</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/christopherm'>christopherm</a></div>
 						<div><a href='https://myaccount.google.com/?utm_source=OGB' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>3,380 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>3,390 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -1714,11 +1712,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-37']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '184.151.127.189']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '92.99.175.89']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '184.151.127.189']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '92.99.175.89']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

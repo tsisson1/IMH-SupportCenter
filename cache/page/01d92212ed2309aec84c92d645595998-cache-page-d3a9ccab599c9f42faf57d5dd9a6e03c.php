@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:46745:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:46612:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -218,11 +218,11 @@ window.setInterval(function(){var r;try{r=window.XMLHttpRequest?new XMLHttpReque
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-25']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '114.76.37.228']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '76.114.140.50']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '114.76.37.228']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '76.114.140.50']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -335,8 +335,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -467,7 +465,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/boldgrid/installing-boldgrid/manually'>How to Manually Install BoldGrid</a>
 					<div>Learn how to manually install BoldGrid in this tutorial.</div>
-					<div class='smallgrey'>Hits: 3,821</div>
+					<div class='smallgrey'>Hits: 3,822</div>
 				</td>
 			</tr>
 			<tr>
@@ -476,7 +474,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/boldgrid/installing-boldgrid/what-is-boldgrid-advanced'>What is BoldGrid (Advanced Users)</a>
 					<div>Are you and advanced WordPresss user Looking for information on BoldGrid? Check out this article to learn more!</div>
-					<div class='smallgrey'>Hits: 1,454</div>
+					<div class='smallgrey'>Hits: 1,455</div>
 				</td>
 			</tr>
 			<tr>
@@ -485,7 +483,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/boldgrid/installing-boldgrid/introduction'>Introduction to BoldGrid Powered by WordPress</a>
 					<div>Learn about the BoldGrid website Builder, powered by WordPress.</div>
-					<div class='smallgrey'>Hits: 5,444</div>
+					<div class='smallgrey'>Hits: 5,449</div>
 				</td>
 			</tr>
 			<tr>
@@ -503,7 +501,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/boldgrid/installing-boldgrid/view-connect-key'>How to get to Your BoldGrid Connect Key</a>
 					<div>Your Boldgrid connect key is needed to activating different features. Learn how to locate it in your AMP in this tutorial.</div>
-					<div class='smallgrey'>Hits: 1,989</div>
+					<div class='smallgrey'>Hits: 1,991</div>
 				</td>
 			</tr>
 			<tr>
@@ -623,7 +621,7 @@ var WRInitTime=(new Date()).getTime();
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZjYXRpZD01MzYmaWQ9NTM2JnZpZXc9Y2F0ZWdvcnkmSXRlbWlkPTEwMQ==" />
-		<input type="hidden" name="c1f32f1519267dff16177fbdca98ce4d" value="1" />	</div>
+		<input type="hidden" name="eebeabc52a8853195a165d1132c9c8b0" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -1010,11 +1008,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-25']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '114.76.37.228']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '76.114.140.50']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '114.76.37.228']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '76.114.140.50']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

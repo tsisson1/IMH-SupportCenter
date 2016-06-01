@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:60551:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:60422:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -226,11 +226,11 @@ jQuery(function($) {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-19']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '76.29.1.224']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '150.70.173.7']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '76.29.1.224']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '150.70.173.7']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -343,8 +343,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -606,39 +604,39 @@ var WRInitTime=(new Date()).getTime();
                         </tr>
           <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/file-management/compress-file'>Compress Files Using 7-Zip</a></td>
-                                <td>86,205</td>
+                                <td>86,218</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/file-management/create-backup-using-ftp'>How to create a backup using FTP</a></td>
-                                <td>49,282</td>
+                                <td>49,288</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/file-management/how-to-enable-ssh-through-whm'>How to enable SSH through WHM</a></td>
-                                <td>43,189</td>
+                                <td>43,194</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/file-management/resolve-ftp-eainodata-error'>Resolve FTP EAI_NODATA error</a></td>
-                                <td>41,569</td>
+                                <td>41,572</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/file-management/how-to-upload-a-file-using-file-manager-in-cpanel'>How to upload a file using File Manager in cPanel</a></td>
-                                <td>34,885</td>
+                                <td>34,893</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/file-management/corrupt-file-ftp-transfer'>File corruption during ftp transfer ASCII vs. BINARY</a></td>
-                                <td>32,485</td>
+                                <td>32,491</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/file-management/changing-the-document-root-with-root-access'>Changing the document root for your domain</a></td>
-                                <td>20,860</td>
+                                <td>20,866</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/file-management/using-lftp-mirror-to-copy-your-website-files'>Using lftp mirror to copy your website files</a></td>
-                                <td>17,578</td>
+                                <td>17,579</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/file-management/zip-unzip-win7'>Zip and Unzip Files using Windows 7</a></td>
-                                <td>9,918</td>
+                                <td>9,922</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/file-management/use-rsync-to-transfer-files'>Use rsync to transfer files</a></td>
@@ -646,7 +644,7 @@ var WRInitTime=(new Date()).getTime();
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/file-management/upload-files-to-server-without-domain-pointing'>Upload files to server without domain name pointing there</a></td>
-                                <td>7,175</td>
+                                <td>7,177</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/file-management/an-introduction-to-webdav-web-disk'>An introduction to webdav / web disk</a></td>
@@ -727,7 +725,7 @@ var WRInitTime=(new Date()).getTime();
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZjYXRpZD0yMyZpZD0yMyZ2aWV3PWNhdGVnb3J5Jkl0ZW1pZD0xMDE=" />
-		<input type="hidden" name="a79c479d534022796c41836c553a63c6" value="1" />	</div>
+		<input type="hidden" name="64aa3a10b14caece0726b07dc9ead92a" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -1114,11 +1112,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-19']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '76.29.1.224']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '150.70.173.7']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '76.29.1.224']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '150.70.173.7']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

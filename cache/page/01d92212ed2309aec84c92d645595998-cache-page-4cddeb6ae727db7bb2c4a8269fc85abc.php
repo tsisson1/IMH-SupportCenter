@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:51309:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:51176:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -339,8 +339,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -504,11 +502,11 @@ var WRInitTime=(new Date()).getTime();
                         </tr>
           <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/security/block-unwanted-users-from-your-site-using-htaccess'>Block unwanted users from your site using .htaccess</a></td>
-                                <td>62,317</td>
+                                <td>62,325</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/security/ssl-lock-display'>My SSL Lock is not displaying properly</a></td>
-                                <td>16,511</td>
+                                <td>16,519</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/security/protect-against-ssl-tls-cbc-vulnerability'>Protect against SSL/TLS CBC vulnerability</a></td>

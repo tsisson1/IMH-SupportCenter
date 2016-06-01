@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:57356:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:56585:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -227,11 +227,11 @@ window.setInterval(function(){var r;try{r=window.XMLHttpRequest?new XMLHttpReque
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-25']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '192.228.180.92']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '173.247.243.211']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '192.228.180.92']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '173.247.243.211']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -344,8 +344,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -518,29 +516,30 @@ var WRInitTime=(new Date()).getTime();
 	
 </div>
 
-<div class="white_box" style='float:left; width:45%;margin-bottom:15px'>
-        <h2 class='hp_bg'>BoldGrid</h2>
-        <p>BoldGrid will help you create a beautfiul website that looks great and is powered by WordPress.</p>
-        <ul>
-            <li><a href="http://www.inmotionhosting.com/support/edu/boldgrid/installing-boldgrid/introduction">Introduction to BoldGrid</a></li>
-            <li><a href="http://www.inmotionhosting.com/support/edu/boldgrid/installing-boldgrid/how-to-install">Installing BoldGrid via AMP</a></li>
-            <li><a href="http://www.inmotionhosting.com/support/edu/boldgrid/getting-started">Getting started with BoldGrid</a></li>
-            <li><a href="http://www.inmotionhosting.com/support/edu/boldgrid/installing-boldgrid/what-is-boldgrid-advanced">BoldGrid for Advanced Users</a></li>
-        </ul>
-      <a style='display:block; text-align:right;' href='/support/edu/boldgrid'>More BoldGrid Support</a>
-    </div>
 
+<div class='white_box' style='margin-bottom:15px; float:left; width: 45%;'>
+
+            <h2 class='hp_dn'>Domain Names</h2>
+        <p>We offer registration of new domain names, and we can help transfer your current domain name too.</p>
+        <ul>
+            <li><a href='/support/domain-names/registrations-and-transfers/registering-a-new-domain-name'>Register a new Domain</a></li>
+            <li><a href='/support/domain-names/registrations-and-transfers/transfer-domain-name-to-inmotion-hosting'>Transfer a current Domain</a></li>
+            <li><a href='/support/domain-names/registrations-and-transfers/add-another-domain-name-account'>Configuring a new Domain within your cPanel</a></li>
+            <li><a href='/support/domain-names/dns-nameserver-changes'>Updating your nameservers</a></li>
+        </ul>
+        <a style='display:block; text-align:right;' href='/support/domain-names'>More Domain Name Support</a>
+    </div>
 
 
     <div class="white_box" style='float:right; width:45%;'>
           <h2 style="background:url('http://cdn.inmotionhosting.com/support/templates/supportcentertemplate/images/red_icons/two_pages.png') no-repeat; padding-left: 30px; font-size:21px; ">Product Guides</h2>
-<p>Learn how to get started to use our hosting products and buld your online presence.</p>
+<p>Learn how to get started with our hosting products and build your online presence.</p>
         <ul>
 
             <li><a href="http://www.inmotionhosting.com/support/product-guides/reseller-hosting">Reseller Hosting</a></li>
             <li><a href="http://www.inmotionhosting.com/support/product-guides/dedicated-hosting">Dedicated Hosting</a></li>
-            <li>Shared Hosting (Coming Soon!)</li>
-            <li>VPS Hosting (Coming Soon!)</li>
+            <li><a href="http://www.inmotionhosting.com/support/website">Business Hosting</a> (Coming Soon!)</li>
+            <li><a href="http://www.inmotionhosting.com/support/getting-started/InMotion_Managing_Your_VPS.pdf">VPS Hosting</a> (Coming Soon!)</li>
         </ul>
 <br>    </div>
 
@@ -631,40 +630,6 @@ var WRInitTime=(new Date()).getTime();
 </div>
 
 <div class='white_box' style='margin-bottom:15px;'>
-
-	<div style='float:left; width:45%;'>
-        	<h2 class='hp_dn'>Domain Names</h2>
-		<p>We offer registration of new domain names, and we can help transfer your current domain name too.</p>
-		<ul>
-			<li><a href='/support/domain-names/registrations-and-transfers/registering-a-new-domain-name'>Register a new Domain</a></li>
-			<li><a href='/support/domain-names/registrations-and-transfers/transfer-domain-name-to-inmotion-hosting'>Transfer a current Domain</a></li>
-			<li><a href='/support/domain-names/registrations-and-transfers/add-another-domain-name-account'>Configuring a new Domain within your cPanel</a></li>
-			<li><a href='/support/domain-names/dns-nameserver-changes'>Updating your nameservers</a></li>
-		</ul>
-		<a style='display:block; text-align:right;' href='/support/domain-names'>More Domain Name Support</a>
-	</div>
-
-
-<div style='float:right; width:45%;'>
-            <h2 class='hp_cs'>Community Support</h2>
-        <p>Ask questions and receive help from the community.</>
-        <ul>
-            <li><a href='/support/community-support'>Browse Questions</a></li>
-            <li><a href='/support/community-support/ask-a-question'>Ask a Question</a></li>
-        </ul>
-        <a style='display:block; text-align:right;' href='/support/community-support'>Community Support Homepage</a>
-<h2 style="background:url('//cdn.inmotionhosting.com/support/templates/supportcentertemplate/images/red_icons/youtube-icon.png') no-repeat; padding-left:40px; font-weight:500; font-size:21px;" />Youtube Channel</h2>
-        <p>We regularly record video tutorials to help with web hosting questions. Subscribe to our <a href='https://www.youtube.com/subscription_center?add_user=InMotionSupport'>YouTube Channel</a>.</p>
-
-</div>
-
-
-
-	<div style='clear:both;'></div>
-
-</div>
-
-<div class='white_box' style='margin-bottom:15px;'>
 	<h2 class='hp_ec'>Education Channels</h2>
 	<p>Work step by step and get things done right the first time! Browse our Education Channels and view ground level courses to more advanced topics.</p>
 	<ul style='width:175px; float:left; margin-right:15px;'>
@@ -739,6 +704,28 @@ var WRInitTime=(new Date()).getTime();
 
 </div>
 
+<div class='white_box' style='margin-bottom:15px;'>
+
+    <div style='float:right; width:45%;'>
+             <h2 class='hp_cs'>Community Support</h2>
+        <p>Ask questions and receive help from the community.</>
+        <ul>
+            <li><a href='/support/community-support'>Browse Questions</a></li>
+            <li><a href='/support/community-support/ask-a-question'>Ask a Question</a></li>
+        </ul>
+        <a style='display:block; text-align:right;' href='/support/community-support'>Community Support Homepage</a>
+</div>
+
+
+<div style='float:left; width:45%;'>
+<h2 style="background:url('//cdn.inmotionhosting.com/support/templates/supportcentertemplate/images/red_icons/youtube-icon.png') no-repeat; padding-left:40px; font-weight:500; font-size:21px;" />Youtube Channel</h2>
+        <p>We regularly record video tutorials to help with web hosting questions. Subscribe to our <a href='https://www.youtube.com/subscription_center?add_user=InMotionSupport'>YouTube Channel</a>.</p>
+
+</div>
+  <div style='clear:both;'></div>
+
+</div>
+
 
 
 
@@ -807,7 +794,7 @@ var WRInitTime=(new Date()).getTime();
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP0l0ZW1pZD0xMDE=" />
-		<input type="hidden" name="8b868c3945155fa0bd0fbe494e134dd9" value="1" />	</div>
+		<input type="hidden" name="d5da7e2a089ebe050e748b1d40c17bae" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -1194,11 +1181,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-25']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '192.228.180.92']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '173.247.243.211']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '192.228.180.92']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '173.247.243.211']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

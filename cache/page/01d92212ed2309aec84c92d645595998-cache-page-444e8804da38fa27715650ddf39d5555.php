@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:53940:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:53807:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -334,8 +334,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -503,7 +501,7 @@ var WRInitTime=(new Date()).getTime();
 <h2>Questions</h2><table>
 <tr style='border-bottom:1px solid #ddd;'>
 	<td style='width:100px; padding-top:15px;' valign='top'>
-		<div>28,887 Views</div>
+		<div>28,889 Views</div>
 		<div>1 Answer</div>
 	</td>
 	<td style='padding-bottom:15px; padding-top:15px;'>
@@ -517,7 +515,7 @@ var WRInitTime=(new Date()).getTime();
 			
 <tr style='border-bottom:1px solid #ddd;'>
 	<td style='width:100px; padding-top:15px;' valign='top'>
-		<div>26,382 Views</div>
+		<div>26,384 Views</div>
 		<div>2 Answers</div>
 	</td>
 	<td style='padding-bottom:15px; padding-top:15px;'>
@@ -531,7 +529,7 @@ var WRInitTime=(new Date()).getTime();
 			
 <tr style='border-bottom:1px solid #ddd;'>
 	<td style='width:100px; padding-top:15px;' valign='top'>
-		<div>16,945 Views</div>
+		<div>16,946 Views</div>
 		<div>1 Answer</div>
 	</td>
 	<td style='padding-bottom:15px; padding-top:15px;'>
@@ -547,7 +545,7 @@ Right now, if I put PHP into my HTML ...</div>
 			
 <tr style='border-bottom:1px solid #ddd;'>
 	<td style='width:100px; padding-top:15px;' valign='top'>
-		<div>16,064 Views</div>
+		<div>16,065 Views</div>
 		<div>1 Answer</div>
 	</td>
 	<td style='padding-bottom:15px; padding-top:15px;'>
@@ -575,7 +573,7 @@ Right now, if I put PHP into my HTML ...</div>
 			
 <tr style='border-bottom:1px solid #ddd;'>
 	<td style='width:100px; padding-top:15px;' valign='top'>
-		<div>14,735 Views</div>
+		<div>14,738 Views</div>
 		<div>1 Answer</div>
 	</td>
 	<td style='padding-bottom:15px; padding-top:15px;'>
@@ -633,7 +631,7 @@ I used the c-panel option, and can...</div>
 			
 <tr style='border-bottom:1px solid #ddd;'>
 	<td style='width:100px; padding-top:15px;' valign='top'>
-		<div>9,530 Views</div>
+		<div>9,531 Views</div>
 		<div>2 Answers</div>
 	</td>
 	<td style='padding-bottom:15px; padding-top:15px;'>
@@ -647,7 +645,7 @@ I used the c-panel option, and can...</div>
 			
 <tr style='border-bottom:1px solid #ddd;'>
 	<td style='width:100px; padding-top:15px;' valign='top'>
-		<div>9,401 Views</div>
+		<div>9,402 Views</div>
 		<div>1 Answer</div>
 	</td>
 	<td style='padding-bottom:15px; padding-top:15px;'>

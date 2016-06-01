@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:52784:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:52651:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -343,8 +343,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -507,31 +505,31 @@ var WRInitTime=(new Date()).getTime();
                         </tr>
           <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/general-server-setup/edit-mysql-my-cnf'>How to edit the MySQL my.cnf file</a></td>
-                                <td>97,597</td>
+                                <td>97,612</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/general-server-setup/check-disk-space-through-shell'>How to find what is using the most disk space on my server</a></td>
-                                <td>58,159</td>
+                                <td>58,169</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/general-server-setup/install-mbstring-easy-apache'>Installing the mbstring extension with Easy Apache</a></td>
-                                <td>23,973</td>
+                                <td>23,978</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/general-server-setup/uid-smaller-than-min-uid'>SoftException UID is smaller than min_uid</a></td>
-                                <td>23,169</td>
+                                <td>23,170</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/general-server-setup/view-bandwidth-and-disk-usage'>How to Monitor Disk Space and Bandwidth Usage</a></td>
-                                <td>20,843</td>
+                                <td>20,845</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/general-server-setup/how-to-open-a-port-in-your-firewall'>How to open a port in your firewall</a></td>
-                                <td>13,612</td>
+                                <td>13,619</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/general-server-setup/incrrease-file-display-limit'>How to increase the FTP visible file limits via command line</a></td>
-                                <td>11,822</td>
+                                <td>11,826</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/general-server-setup/different-version-of-phpmysql'>I need a different version of PHP/MySQL</a></td>
@@ -563,7 +561,7 @@ var WRInitTime=(new Date()).getTime();
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/general-server-setup/how-to-run-exim-on-an-additional-port'>How to run Exim on an additional port</a></td>
-                                <td>2,334</td>
+                                <td>2,335</td>
                         </tr>
                   </table>
 	</form>

@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:50152:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:50031:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -225,11 +225,11 @@ jQuery(function($) {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-25']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '77.95.178.78']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '203.241.227.164']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '77.95.178.78']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '203.241.227.164']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -342,8 +342,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -507,15 +505,15 @@ var WRInitTime=(new Date()).getTime();
                         </tr>
           <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/database-troubleshooting/error-1064'>MySQL Error 1064: You have an error in your SQL syntax</a></td>
-                                <td>535,785</td>
+                                <td>535,889</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/database-troubleshooting/mysql-1044-access-denied-error-message'>MySQL - 1044 Access Denied Error Message</a></td>
-                                <td>98,052</td>
+                                <td>98,066</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/database-troubleshooting/error-1052'>Error 1052  Column in where clause is ambiguous</a></td>
-                                <td>8,513</td>
+                                <td>8,514</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/database-troubleshooting/why-do-i-get-a-maxuserconnections-error'>Why do I get a max_user_connections error?</a></td>
@@ -592,7 +590,7 @@ var WRInitTime=(new Date()).getTime();
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZjYXRpZD00MDQmaWQ9NDA0JnZpZXc9Y2F0ZWdvcnkmSXRlbWlkPTEwMQ==" />
-		<input type="hidden" name="f4008302ed2ef658730d14f2d6f4842f" value="1" />	</div>
+		<input type="hidden" name="51aea998cf1437e60ab509278e85ae17" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -979,11 +977,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-25']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '77.95.178.78']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '203.241.227.164']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '77.95.178.78']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '203.241.227.164']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

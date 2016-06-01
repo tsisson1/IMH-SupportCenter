@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:107938:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:107805:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -339,8 +339,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -439,7 +437,7 @@ var WRInitTime=(new Date()).getTime();
 				<div class='col_2'><div><a href='/support/email/blackberry'>Blackberry</a> (1)</div><div><a href='/support/email/bounceback-errors'>Bounceback Errors</a> (18)</div><div><a href='/support/email/email-client-setup'>Email Client Setup</a> (13)</div><div><a href='/support/email/email-troubleshooting'>Email Troubleshooting</a> (22)</div><div><a href='/support/email/exim'>Exim</a> (8)</div><div><a href='/support/email/fighting-spam'>Fighting Spam</a> (23)</div><div><a href='/support/email/horde-webmail'>Horde Webmail</a> (18)</div><div><a href='/support/email/general-information'>How To and General Information</a> (18)</div><div><a href='/support/email/ipad'>ipad</a> (1)</div></div>
 				<div class='col_2'><div><a href='/support/email/iphone'>iPhone</a> (3)</div><div><a href='/support/email/mac-mail'>Mac Mail</a> (7)</div><div><a href='/support/email/mailing-lists'>Mailing Lists</a> (9)</div><div><a href='/support/email/outlook'>Outlook</a> (17)</div><div><a href='/support/email/outlook-2010'>Outlook 2010</a> (2)</div><div><a href='/support/email/roundcube-webmail'>RoundCube Webmail</a> (15)</div><div><a href='/support/email/send-email-from-a-page'>Sending Email From a Webpage</a> (5)</div><div><a href='/support/email/squirrelmail-webmail'>SquirrelMail Webmail</a> (23)</div><div><a href='/support/email/thunderbird'>Thunderbird</a> (7)</div><div><a href='/support/email/webmail'>Webmail</a> (2)</div></div>
 			</div>
-		</li><li class='bc_arrow'>&gt;&gt;</li><li class='bc_with_dd' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'><a href='/support/email/send-email-from-a-page' itemprop='url'><span itemprop='title'>Sending Email From a Webpage<span></a><div class='dropdown_3columns'><div class='col_3'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/send-email-from-a-page/using-phpmailer-to-send-mail-through-php'>Using phpMailer to Send Mail through PHP</a> (296418 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/send-email-from-a-page/how-to-send-email-from-a-web-page'>How to send email from a web page</a> (39155 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/send-email-from-a-page/how-to-set-up-formmail'>How to set up FormMail</a> (37296 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/send-email-from-a-page/why-wont-my-php-app-send-mail'>Why won't my PHP app send mail?</a> (9614 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/send-email-from-a-page/download-phpmailer'>Download PHPMailer</a> (8999 hits)</div></div></div></li><li class='bc_arrow'>&gt;&gt;</li><li class='bc_no_dd' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'><span itemprop='title'>How to set up FormMail</span></li>			</ul>
+		</li><li class='bc_arrow'>&gt;&gt;</li><li class='bc_with_dd' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'><a href='/support/email/send-email-from-a-page' itemprop='url'><span itemprop='title'>Sending Email From a Webpage<span></a><div class='dropdown_3columns'><div class='col_3'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/send-email-from-a-page/using-phpmailer-to-send-mail-through-php'>Using phpMailer to Send Mail through PHP</a> (296486 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/send-email-from-a-page/how-to-send-email-from-a-web-page'>How to send email from a web page</a> (39163 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/send-email-from-a-page/how-to-set-up-formmail'>How to set up FormMail</a> (37299 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/send-email-from-a-page/why-wont-my-php-app-send-mail'>Why won't my PHP app send mail?</a> (9614 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/send-email-from-a-page/download-phpmailer'>Download PHPMailer</a> (8999 hits)</div></div></div></li><li class='bc_arrow'>&gt;&gt;</li><li class='bc_no_dd' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'><span itemprop='title'>How to set up FormMail</span></li>			</ul>
 		</div>
 	</div>
 </div>
@@ -473,7 +471,7 @@ var WRInitTime=(new Date()).getTime();
 				
 					<div style='font-size:12px; color:#aaa; margin-bottom:-10px; padding-top:5px;'>
 							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Written by </span><a href='https://plus.google.com/102670474114655224886?rel=author'>Brad Markle</a></div>
-							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Views:</span> <span name='page_views' id='page_views'>37,296</span></div>
+							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Views:</span> <span name='page_views' id='page_views'>37,299</span></div>
 							<div style='float:left; margin-right:20px;' title='Originally published: Aug 26, 2011'><span style='color:#606060;'>Published:</span> May 2, 2016</div>
 							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Comments:</span> <a href='#comments'>26</a></div>
 							<div style='clear:both;'></div>
@@ -615,7 +613,7 @@ var WRInitTime=(new Date()).getTime();
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZjYXRpZD00OCZpZD02Nzcmdmlldz1hcnRpY2xlJkl0ZW1pZD0xMDE=" />
-		<input type="hidden" name="80393cc3b6d3570e47602628cf19ed51" value="1" />	</div>
+		<input type="hidden" name="8858a2f43839eefd5125acaf900b66bf" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -1154,7 +1152,7 @@ Arnel C.</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>

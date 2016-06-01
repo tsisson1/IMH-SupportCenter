@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:298124:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:297995:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -222,11 +222,11 @@ window.setInterval(function(){var r;try{r=window.XMLHttpRequest?new XMLHttpReque
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-25']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '111.40.197.15']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '213.219.151.55']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '111.40.197.15']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '213.219.151.55']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -339,8 +339,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -441,9 +439,9 @@ var WRInitTime=(new Date()).getTime();
 			</div>
 		</li><li class='bc_arrow'>&gt;&gt;</li><li class='bc_with_dd' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'><a href='/support/website/wordpress' itemprop='url'><span itemprop='title'>WordPress<span></a>
 			<div class='dropdown_3columns' style='width:900px; margin-left:-250px;'>
-				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress/wordpress-changing-the-site-url-and-home-settings'>WordPress - Changing the Site URL and Home Settings</a> (185,550 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress/disabling-the-wp-cronphp-in-wordpress'>Disabling the wp-cron.php in WordPress</a> (112,001 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress/resetting-your-wordpress-admin-password'>Resetting your WordPress Admin Password</a> (68,588 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress/how-to-optimize-wordpress'>How to optimize Wordpress</a> (29,543 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress/disable-xml-rpc-requests'>Disable WordPress XML-RPC requests</a> (25,293 hits)</div></div>
-				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress/lock-down-wordpress-admin-login-with-htaccess'>Lock down WordPress admin login with .htaccess</a> (135,767 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress/duplicate-wordpress-site-for-testing'>Making a duplicate Wordpress site for development and testing</a> (96,468 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress/change-wordpress-admin-username-for-security'>Change WordPress admin username for security</a> (42,826 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress/limit-or-disable-wordpress-revisions'>Limit or disable WordPress revisions</a> (28,258 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress/show-author-avatar'>How to show an author's avatar within WordPress</a> (24,913 hits)</div></div>
-				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress/prevent-unauthorized-wp-admin-wp-login-php-attempts'>Prevent unauthorized WordPress wp-admin and wp-login.php attempts</a> (129,777 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress/heartbeat-ajax-php-usage'>WordPress Heartbeat and heavy admin-ajax.php usage</a> (88,366 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress/reinstall-wordpress-after-a-hack'>How to Re-Install WordPress after a Hack </a> (32,244 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress/fix-download-failed-errors-on-update'>Fix WordPress Download failed errors on update</a> (27,632 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress/wordpress-security-preventing-brute-force-attacks-on-admin-login'>Wordpress Security - Preventing Brute Force Attacks on Admin Login</a> (24,430 hits)</div></div>
+				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress/wordpress-changing-the-site-url-and-home-settings'>WordPress - Changing the Site URL and Home Settings</a> (185,605 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress/disabling-the-wp-cronphp-in-wordpress'>Disabling the wp-cron.php in WordPress</a> (112,013 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress/resetting-your-wordpress-admin-password'>Resetting your WordPress Admin Password</a> (68,596 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress/how-to-optimize-wordpress'>How to optimize Wordpress</a> (29,544 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress/disable-xml-rpc-requests'>Disable WordPress XML-RPC requests</a> (25,296 hits)</div></div>
+				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress/lock-down-wordpress-admin-login-with-htaccess'>Lock down WordPress admin login with .htaccess</a> (135,784 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress/duplicate-wordpress-site-for-testing'>Making a duplicate Wordpress site for development and testing</a> (96,491 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress/change-wordpress-admin-username-for-security'>Change WordPress admin username for security</a> (42,828 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress/limit-or-disable-wordpress-revisions'>Limit or disable WordPress revisions</a> (28,259 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress/show-author-avatar'>How to show an author's avatar within WordPress</a> (24,918 hits)</div></div>
+				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress/prevent-unauthorized-wp-admin-wp-login-php-attempts'>Prevent unauthorized WordPress wp-admin and wp-login.php attempts</a> (129,785 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress/heartbeat-ajax-php-usage'>WordPress Heartbeat and heavy admin-ajax.php usage</a> (88,388 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress/reinstall-wordpress-after-a-hack'>How to Re-Install WordPress after a Hack </a> (32,247 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress/fix-download-failed-errors-on-update'>Fix WordPress Download failed errors on update</a> (27,633 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/wordpress/wordpress-security-preventing-brute-force-attacks-on-admin-login'>Wordpress Security - Preventing Brute Force Attacks on Admin Login</a> (24,433 hits)</div></div>
 			</div>
 		</li><li class='bc_arrow'>&gt;&gt;</li><li class='bc_no_dd' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'><span itemprop='title'>Lock down WordPress admin login with .htaccess</span></li>			</ul>
 		</div>
@@ -479,7 +477,7 @@ var WRInitTime=(new Date()).getTime();
 				
 					<div style='font-size:12px; color:#aaa; margin-bottom:-10px; padding-top:5px;'>
 							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Written by </span><a href='https://plus.google.com/115637383139876284145?rel=author'>Tim Sisson</a></div>
-							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Views:</span> <span name='page_views' id='page_views'>135,767</span></div>
+							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Views:</span> <span name='page_views' id='page_views'>135,784</span></div>
 							<div style='float:left; margin-right:20px;' title='Originally published: Apr 15, 2013'><span style='color:#606060;'>Published:</span> Dec 11, 2015</div>
 							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Comments:</span> <a href='#comments'>108</a></div>
 							<div style='clear:both;'></div>
@@ -722,7 +720,7 @@ WordPress version 4.4 has been released! Click here for more information on the 
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZjYXRpZD02MyZpZD0yNjEzJnZpZXc9YXJ0aWNsZSZJdGVtaWQ9MTAx" />
-		<input type="hidden" name="77968e47c919de1331e66787c5ed5533" value="1" />	</div>
+		<input type="hidden" name="769d38d5220de4e48f3d51f906c307b5" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -2648,7 +2646,7 @@ Arnel C.</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -2897,7 +2895,7 @@ John-Paul</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -2950,7 +2948,7 @@ Can you advise please?</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -3343,7 +3341,7 @@ John-Paul</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -3395,7 +3393,7 @@ Scott M</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -3536,7 +3534,7 @@ TJ Edens</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -4150,11 +4148,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-25']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '111.40.197.15']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '213.219.151.55']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '111.40.197.15']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '213.219.151.55']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:111090:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:110949:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -222,11 +222,11 @@ window.setInterval(function(){var r;try{r=window.XMLHttpRequest?new XMLHttpReque
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-22']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '198.55.120.236']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '84.54.132.58']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '198.55.120.236']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '84.54.132.58']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -339,8 +339,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -441,9 +439,9 @@ var WRInitTime=(new Date()).getTime();
 			</div>
 		</li><li class='bc_arrow'>&gt;&gt;</li><li class='bc_with_dd' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'><a href='/support/website/getting-started-guides' itemprop='url'><span itemprop='title'>Getting Started Guides<span></a>
 			<div class='dropdown_3columns' style='width:900px; margin-left:-250px;'>
-				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/getting-started-guides/where-to-upload-files'>How to find the Document Root for your website / What directory should I put my files in?</a> (152,902 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/getting-started-guides/e-commerce-choose-shopping-cart'>E-Commerce: Step 1 - Choose which Shopping Cart Software to use</a> (17,784 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/getting-started-guides/unlimited-disk-space-and-bandwidth'>Unlimited Disk Space and Bandwidth</a> (8,404 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/getting-started-guides/getting-started-fantastico'>Getting Started Guide: Fantastico</a> (7,417 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/getting-started-guides/opencart-getting-started-guide'>InMotion Websites - OpenCart Getting Started Guide</a> (3,210 hits)</div></div>
-				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/getting-started-guides/cpanel-logs-for-access-apache-email-error-ftp-mysql-whm'>cPanel logs for access, Apache, email, error, ftp, mysql, and WHM</a> (122,841 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/getting-started-guides/manual-installation-of-php-software'>Manual Installation of PHP Software</a> (9,604 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/getting-started-guides/perform-your-own-website-transfer'>Perform your own website transfer</a> (8,301 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/getting-started-guides/welcome-to-inmotion-hosting'>Welcome to InMotion Hosting!</a> (4,390 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/getting-started-guides/using-a-templatemonster-theme-or-template'>Using a TemplateMonster Theme or Template</a> (2,582 hits)</div></div>
-				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/getting-started-guides/submitting-and-checking-on-status-of-tickets'>Submitting a Ticket Request</a> (49,907 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/getting-started-guides/awstats-statistics-website-traffic'>AWStats: View Statistics about your Website Traffic</a> (8,862 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/getting-started-guides/online-forum-bulletin-board'>Getting Started Guide Online Forum  Bulletin Board</a> (7,597 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/getting-started-guides/nodejs'>Node.js</a> (4,249 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/getting-started-guides/how-to-remove-the-inmotion-coming-soon-page'>How to remove the InMotion Coming Soon page</a> (1,509 hits)</div></div>
+				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/getting-started-guides/where-to-upload-files'>How to find the Document Root for your website / What directory should I put my files in?</a> (152,960 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/getting-started-guides/e-commerce-choose-shopping-cart'>E-Commerce: Step 1 - Choose which Shopping Cart Software to use</a> (17,784 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/getting-started-guides/unlimited-disk-space-and-bandwidth'>Unlimited Disk Space and Bandwidth</a> (8,405 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/getting-started-guides/getting-started-fantastico'>Getting Started Guide: Fantastico</a> (7,417 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/getting-started-guides/opencart-getting-started-guide'>InMotion Websites - OpenCart Getting Started Guide</a> (3,210 hits)</div></div>
+				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/getting-started-guides/cpanel-logs-for-access-apache-email-error-ftp-mysql-whm'>cPanel logs for access, Apache, email, error, ftp, mysql, and WHM</a> (122,876 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/getting-started-guides/manual-installation-of-php-software'>Manual Installation of PHP Software</a> (9,604 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/getting-started-guides/perform-your-own-website-transfer'>Perform your own website transfer</a> (8,302 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/getting-started-guides/welcome-to-inmotion-hosting'>Welcome to InMotion Hosting!</a> (4,390 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/getting-started-guides/using-a-templatemonster-theme-or-template'>Using a TemplateMonster Theme or Template</a> (2,582 hits)</div></div>
+				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/getting-started-guides/submitting-and-checking-on-status-of-tickets'>Submitting a Ticket Request</a> (49,915 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/getting-started-guides/awstats-statistics-website-traffic'>AWStats: View Statistics about your Website Traffic</a> (8,865 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/getting-started-guides/online-forum-bulletin-board'>Getting Started Guide Online Forum  Bulletin Board</a> (7,597 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/getting-started-guides/nodejs'>Node.js</a> (4,249 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/getting-started-guides/how-to-remove-the-inmotion-coming-soon-page'>How to remove the InMotion Coming Soon page</a> (1,509 hits)</div></div>
 			</div>
 		</li><li class='bc_arrow'>&gt;&gt;</li><li class='bc_no_dd' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'><span itemprop='title'>cPanel logs for access, Apache, email, error, ftp, mysql, and ...</span></li>			</ul>
 		</div>
@@ -479,7 +477,7 @@ var WRInitTime=(new Date()).getTime();
 				
 					<div style='font-size:12px; color:#aaa; margin-bottom:-10px; padding-top:5px;'>
 							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Written by Jacob Nicholson</div>
-							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Views:</span> <span name='page_views' id='page_views'>122,841</span></div>
+							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Views:</span> <span name='page_views' id='page_views'>122,876</span></div>
 							<div style='float:left; margin-right:20px;' title='Originally published: Apr 4, 2013'><span style='color:#606060;'>Published:</span> Feb 4, 2016</div>
 							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Comments:</span> <a href='#comments'>23</a></div>
 							<div style='clear:both;'></div>
@@ -815,7 +813,7 @@ var WRInitTime=(new Date()).getTime();
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZjYXRpZD00MiZpZD0yNTg3JnZpZXc9YXJ0aWNsZSZJdGVtaWQ9MTAx" />
-		<input type="hidden" name="5437d3211cf4cf79a8ac2f065d2f70f8" value="1" />	</div>
+		<input type="hidden" name="b1f50c2e63ecd4ad713366e505141768" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -1142,7 +1140,7 @@ Kenny</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -1916,11 +1914,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-22']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '198.55.120.236']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '84.54.132.58']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '198.55.120.236']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '84.54.132.58']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

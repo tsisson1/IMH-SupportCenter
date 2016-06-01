@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:49137:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:49008:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -218,11 +218,11 @@ window.setInterval(function(){var r;try{r=window.XMLHttpRequest?new XMLHttpReque
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-19']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '59.93.251.229']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '107.158.252.10']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '59.93.251.229']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '107.158.252.10']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -335,8 +335,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -493,27 +491,27 @@ var WRInitTime=(new Date()).getTime();
 	<h2>Most Popular Articles</h2>
 		<div style='width:300px; height:75px; float:left; margin-right:20px;'>
 							<a href='/support/edu/website-design/insert-images-website/align-float-images-css'>Align and float images with CSS</a>
-							<div class='smallgrey'>Hits: 498,543</div>
+							<div class='smallgrey'>Hits: 498,634</div>
 						</div>
 						<div style='width:300px; height:75px; float:left; margin-right:20px;'>
 							<a href='/support/edu/website-design/using-php-and-mysql/php-insert-database'>Using PHP to INSERT data into a database</a>
-							<div class='smallgrey'>Hits: 333,065</div>
+							<div class='smallgrey'>Hits: 333,120</div>
 						</div>
 						<div style='width:300px; height:75px; float:left; margin-right:20px;'>
 							<a href='/support/edu/website-design/using-css/simple-css-drop-down-menu'>Simple CSS Drop Down Menu</a>
-							<div class='smallgrey'>Hits: 318,193</div>
+							<div class='smallgrey'>Hits: 318,244</div>
 						</div>
 						<div style='width:300px; height:75px; float:left; margin-right:20px;'>
 							<a href='/support/edu/website-design/using-php-and-mysql/create-html-form'>Creating a simple HTML Form to get user comments</a>
-							<div class='smallgrey'>Hits: 212,288</div>
+							<div class='smallgrey'>Hits: 212,327</div>
 						</div>
 						<div style='width:300px; height:75px; float:left; margin-right:20px;'>
 							<a href='/support/edu/website-design/using-php-and-mysql/grab-all-comments-from-database'>How to use PHP to connect to and retrieve data from MySQL</a>
-							<div class='smallgrey'>Hits: 186,395</div>
+							<div class='smallgrey'>Hits: 186,430</div>
 						</div>
 						<div style='width:300px; height:75px; float:left; margin-right:20px;'>
 							<a href='/support/edu/website-design/using-php-and-mysql/how-to-create-a-custom-php-contact-form'>How to create a custom PHP contact form with validation</a>
-							<div class='smallgrey'>Hits: 151,242</div>
+							<div class='smallgrey'>Hits: 151,266</div>
 						</div>
 						<div style='clear:both;'></div>
 </div>
@@ -705,7 +703,7 @@ var WRInitTime=(new Date()).getTime();
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZjYXRpZD01NCZpZD01NCZ2aWV3PWNhdGVnb3J5Jkl0ZW1pZD0xMDE=" />
-		<input type="hidden" name="0c63114513cc6caf82ac89482f74c4ef" value="1" />	</div>
+		<input type="hidden" name="138d9e86c6c724257c76fff62d923508" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -1092,11 +1090,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-19']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '59.93.251.229']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '107.158.252.10']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '59.93.251.229']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '107.158.252.10']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

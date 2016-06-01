@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:44797:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:44664:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -218,11 +218,11 @@ window.setInterval(function(){var r;try{r=window.XMLHttpRequest?new XMLHttpReque
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-19']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '50.155.70.157']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '167.56.47.225']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '50.155.70.157']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '167.56.47.225']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -335,8 +335,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -467,7 +465,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/phplist/getting-started/install-phplist-with-softaculous'>Install phpList with Softaculous</a>
 					<div>In this article we'll cover how to install phpList with Softaculous.</div>
-					<div class='smallgrey'>Hits: 3,256</div>
+					<div class='smallgrey'>Hits: 3,258</div>
 				</td>
 			</tr>
 			<tr>
@@ -476,7 +474,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/phplist/getting-started/install-phplist-manually'>Install phpList manually</a>
 					<div>In this article we'll discuss installing the phpList software manually onto your website.</div>
-					<div class='smallgrey'>Hits: 9,750</div>
+					<div class='smallgrey'>Hits: 9,751</div>
 				</td>
 			</tr>
 			<tr>
@@ -512,7 +510,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/phplist/getting-started/how-to-reset-my-phplist-admin-password'>How to reset my phpList admin password</a>
 					<div>In this article we'll cover how you can reset your phpList admin password, in case you've forgotten it, and for some reason don't have access to the phpList admin email account.</div>
-					<div class='smallgrey'>Hits: 7,040</div>
+					<div class='smallgrey'>Hits: 7,041</div>
 				</td>
 			</tr>
 			<tr>
@@ -521,7 +519,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/phplist/getting-started/how-to-log-into-phplist-admin-dashboard'>How to log into phpList admin dashboard</a>
 					<div>In this article we'll briefly review how to login to the phpList admin dashboard, so that you can administer your phpList installation.</div>
-					<div class='smallgrey'>Hits: 3,502</div>
+					<div class='smallgrey'>Hits: 3,503</div>
 				</td>
 			</tr>
 			</table>
@@ -587,7 +585,7 @@ var WRInitTime=(new Date()).getTime();
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZjYXRpZD0zMDcmaWQ9MzA3JnZpZXc9Y2F0ZWdvcnkmSXRlbWlkPTEwMQ==" />
-		<input type="hidden" name="ca926d3abdc39a1ac15f4d502716bbf4" value="1" />	</div>
+		<input type="hidden" name="4df6c4aae4db9b97049e49cde94f2ede" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -974,11 +972,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-19']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '50.155.70.157']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '167.56.47.225']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '50.155.70.157']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '167.56.47.225']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

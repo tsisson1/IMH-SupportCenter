@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:59006:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:58877:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -224,11 +224,11 @@ jQuery(function($) {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-25']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '180.150.157.47']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '199.241.201.119']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '180.150.157.47']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '199.241.201.119']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -341,8 +341,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -595,7 +593,7 @@ Reduce clicks to your most accessed features.<br>
                         </tr>
           <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/amp/how-to-log-into-amp'>How to log into AMP</a></td>
-                                <td>181,862</td>
+                                <td>181,883</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/amp/how-to-check-your-server-information-on-a-vps-or-dedicated-server'>How to check your Server Information on a VPS or Dedicated hosting account</a></td>
@@ -607,31 +605,31 @@ Reduce clicks to your most accessed features.<br>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/amp/cancel-hosting'>How can I cancel my hosting account?</a></td>
-                                <td>57,455</td>
+                                <td>57,463</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/amp/amp-vs-cpanel'>AMP vs. cPanel</a></td>
-                                <td>54,734</td>
+                                <td>54,740</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/amp/what-is-my-username-and-password'>What is my username and password (I forgot)?</a></td>
-                                <td>52,210</td>
+                                <td>52,216</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/amp/what-is-my-hostname'>What is my hostname ?</a></td>
-                                <td>35,046</td>
+                                <td>35,054</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/amp/upgrade-downgrade-hosting-plan'>How to Upgrade/Downgrade your Hosting Plan in AMP</a></td>
-                                <td>31,514</td>
+                                <td>31,517</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/amp/finding-login-information'>New Users: Finding your login information </a></td>
-                                <td>15,938</td>
+                                <td>15,939</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/amp/locate-primary-domain-name'>How to find your Primary Domain name</a></td>
-                                <td>13,533</td>
+                                <td>13,534</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/amp/change-amp-password'>How to change your AMP Password</a></td>
@@ -651,7 +649,7 @@ Reduce clicks to your most accessed features.<br>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/amp/change-hosting-term-subscription'>How to change the Term of your Hosting Subscription</a></td>
-                                <td>1,810</td>
+                                <td>1,812</td>
                         </tr>
                   </table>
 		<div class="pagination">
@@ -722,7 +720,7 @@ Reduce clicks to your most accessed features.<br>
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZjYXRpZD00MjcmaWQ9NDI3JnZpZXc9Y2F0ZWdvcnkmSXRlbWlkPTEwMQ==" />
-		<input type="hidden" name="b3bb1b8f56486be6fb069e2a63669bcb" value="1" />	</div>
+		<input type="hidden" name="fae01e0a8823231b9abcf4a499227cb4" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -1109,11 +1107,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-25']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '180.150.157.47']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '199.241.201.119']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '180.150.157.47']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '199.241.201.119']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

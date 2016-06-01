@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:99718:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:99581:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -222,11 +222,11 @@ window.setInterval(function(){var r;try{r=window.XMLHttpRequest?new XMLHttpReque
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-21']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '162.95.148.250']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '68.48.170.130']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '162.95.148.250']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '68.48.170.130']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -339,8 +339,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -441,9 +439,9 @@ var WRInitTime=(new Date()).getTime();
 			</div>
 		</li><li class='bc_arrow'>&gt;&gt;</li><li class='bc_with_dd' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'><a href='/support/website/file-management' itemprop='url'><span itemprop='title'>File Management<span></a>
 			<div class='dropdown_3columns' style='width:900px; margin-left:-250px;'>
-				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/file-management/compress-file'>Compress Files Using 7-Zip</a> (86,205 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/file-management/resolve-ftp-eainodata-error'>Resolve FTP EAI_NODATA error</a> (41,569 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/file-management/changing-the-document-root-with-root-access'>Changing the document root for your domain</a> (20,860 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/file-management/use-rsync-to-transfer-files'>Use rsync to transfer files</a> (7,920 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/file-management/how-to-restore-a-file-from-your-own-backup'>How to Restore a File from your own Backup</a> (5,935 hits)</div></div>
-				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/file-management/create-backup-using-ftp'>How to create a backup using FTP</a> (49,282 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/file-management/how-to-upload-a-file-using-file-manager-in-cpanel'>How to upload a file using File Manager in cPanel</a> (34,883 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/file-management/using-lftp-mirror-to-copy-your-website-files'>Using lftp mirror to copy your website files</a> (17,578 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/file-management/upload-files-to-server-without-domain-pointing'>Upload files to server without domain name pointing there</a> (7,175 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/file-management/view-ftp-uploads-with-archived-raw-logs'>View FTP uploads with archived raw logs</a> (3,208 hits)</div></div>
-				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/file-management/how-to-enable-ssh-through-whm'>How to enable SSH through WHM</a> (43,187 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/file-management/corrupt-file-ftp-transfer'>File corruption during ftp transfer ASCII vs. BINARY</a> (32,482 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/file-management/zip-unzip-win7'>Zip and Unzip Files using Windows 7</a> (9,918 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/file-management/an-introduction-to-webdav-web-disk'>An introduction to webdav / web disk</a> (6,449 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/file-management/best-practice-for-naming-files-in-linux'>Best practice for naming files in Linux</a> (1,663 hits)</div></div>
+				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/file-management/compress-file'>Compress Files Using 7-Zip</a> (86,218 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/file-management/resolve-ftp-eainodata-error'>Resolve FTP EAI_NODATA error</a> (41,572 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/file-management/changing-the-document-root-with-root-access'>Changing the document root for your domain</a> (20,866 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/file-management/use-rsync-to-transfer-files'>Use rsync to transfer files</a> (7,920 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/file-management/how-to-restore-a-file-from-your-own-backup'>How to Restore a File from your own Backup</a> (5,935 hits)</div></div>
+				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/file-management/create-backup-using-ftp'>How to create a backup using FTP</a> (49,288 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/file-management/how-to-upload-a-file-using-file-manager-in-cpanel'>How to upload a file using File Manager in cPanel</a> (34,893 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/file-management/using-lftp-mirror-to-copy-your-website-files'>Using lftp mirror to copy your website files</a> (17,579 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/file-management/upload-files-to-server-without-domain-pointing'>Upload files to server without domain name pointing there</a> (7,177 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/file-management/view-ftp-uploads-with-archived-raw-logs'>View FTP uploads with archived raw logs</a> (3,208 hits)</div></div>
+				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/file-management/how-to-enable-ssh-through-whm'>How to enable SSH through WHM</a> (43,194 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/file-management/corrupt-file-ftp-transfer'>File corruption during ftp transfer ASCII vs. BINARY</a> (32,491 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/file-management/zip-unzip-win7'>Zip and Unzip Files using Windows 7</a> (9,922 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/file-management/an-introduction-to-webdav-web-disk'>An introduction to webdav / web disk</a> (6,449 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/file-management/best-practice-for-naming-files-in-linux'>Best practice for naming files in Linux</a> (1,663 hits)</div></div>
 			</div>
 		</li><li class='bc_arrow'>&gt;&gt;</li><li class='bc_no_dd' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'><span itemprop='title'>File corruption during ftp transfer ASCII vs. BINARY</span></li>			</ul>
 		</div>
@@ -479,7 +477,7 @@ var WRInitTime=(new Date()).getTime();
 				
 					<div style='font-size:12px; color:#aaa; margin-bottom:-10px; padding-top:5px;'>
 							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Written by James Richardson</div>
-							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Views:</span> <span name='page_views' id='page_views'>32,482</span></div>
+							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Views:</span> <span name='page_views' id='page_views'>32,491</span></div>
 							<div style='float:left; margin-right:20px;' title='Originally published: Jan 14, 2013'><span style='color:#606060;'>Published:</span> Jan 18, 2013</div>
 							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Comments:</span> <a href='#comments'>17</a></div>
 							<div style='clear:both;'></div>
@@ -606,7 +604,7 @@ var WRInitTime=(new Date()).getTime();
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZjYXRpZD0yMyZpZD01MDQmdmlldz1hcnRpY2xlJkl0ZW1pZD0xMDE=" />
-		<input type="hidden" name="ea4029918395841a8ecd3f7dae73cb24" value="1" />	</div>
+		<input type="hidden" name="bed1f3e8bb8aecae83f768b8859c3ed9" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -857,7 +855,7 @@ John-Paul</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -913,7 +911,7 @@ Scott M</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -1627,11 +1625,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-21']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '162.95.148.250']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '68.48.170.130']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '162.95.148.250']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '68.48.170.130']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

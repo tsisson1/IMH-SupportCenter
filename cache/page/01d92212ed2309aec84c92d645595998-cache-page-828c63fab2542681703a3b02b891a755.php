@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:61953:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:61820:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -342,8 +342,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -609,7 +607,7 @@ Written by <a href='https://plus.google.com/114847242487896512921'>Jacob Nichols
                         </tr>
           <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/server-usage/view-level-of-traffic-with-apache-access-log'>View level of traffic with Apache access log</a></td>
-                                <td>44,707</td>
+                                <td>44,722</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/server-usage/how-can-i-view-my-accounts-resource-usage'>How can I view my accounts resource usage?</a></td>
@@ -617,27 +615,27 @@ Written by <a href='https://plus.google.com/114847242487896512921'>Jacob Nichols
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/server-usage/what-is-high-system-resource-usage'>What is high system resource usage?</a></td>
-                                <td>20,931</td>
+                                <td>20,933</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/server-usage/create-server-load-monitoring-bash-script'>Create server load monitoring bash script</a></td>
-                                <td>20,539</td>
+                                <td>20,540</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/server-usage/using-the-linux-top-command-in-batch-mode'>Using the Linux top command in batch mode</a></td>
-                                <td>15,406</td>
+                                <td>15,408</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/server-usage/identify-and-block-bad-robots-from-website'>Identify and block bad robots from website</a></td>
-                                <td>13,965</td>
+                                <td>13,970</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/server-usage/edit-main-phpini'>Editing your main php.ini on VPS and Dedicated accounts</a></td>
-                                <td>10,880</td>
+                                <td>10,883</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/server-usage/linux-check-memory-usage'>Linux Memory Usage</a></td>
-                                <td>10,377</td>
+                                <td>10,378</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/server-usage/advanced-server-load-monitoring'>Advanced server load monitoring</a></td>
@@ -645,15 +643,15 @@ Written by <a href='https://plus.google.com/114847242487896512921'>Jacob Nichols
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/server-usage/when-should-i-restart-my-vps'>When should I restart my VPS?</a></td>
-                                <td>8,369</td>
+                                <td>8,370</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/server-usage/create-mysql-query-monitoring-bash-script'>Create MySQL query monitoring bash script</a></td>
-                                <td>8,224</td>
+                                <td>8,226</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/server-usage/what-should-i-do-if-my-account-uses-excessive-resources'>What should I do if my account uses excessive resources?</a></td>
-                                <td>7,128</td>
+                                <td>7,129</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/server-usage/understanding-server-loads'>Understanding Server Loads</a></td>
@@ -661,7 +659,7 @@ Written by <a href='https://plus.google.com/114847242487896512921'>Jacob Nichols
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/server-usage/server-load-monitoring'>Server load monitoring</a></td>
-                                <td>6,650</td>
+                                <td>6,651</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/server-usage/common-causes-of-accounts-that-use-excessive-resources'>Common causes of accounts that use excessive resources</a></td>

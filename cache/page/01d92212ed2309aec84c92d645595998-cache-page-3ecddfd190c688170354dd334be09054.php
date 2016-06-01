@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:44706:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:44573:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -226,11 +226,11 @@ jQuery(function($) {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-19']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '217.75.203.21']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '161.62.252.34']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '217.75.203.21']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '161.62.252.34']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -343,8 +343,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -507,15 +505,15 @@ var WRInitTime=(new Date()).getTime();
                         </tr>
           <tr>
                                 <td style='padding-right:20px;'><a href='/support/email/send-email-from-a-page/using-phpmailer-to-send-mail-through-php'>Using phpMailer to Send Mail through PHP</a></td>
-                                <td>296,418</td>
+                                <td>296,486</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/email/send-email-from-a-page/how-to-send-email-from-a-web-page'>How to send email from a web page</a></td>
-                                <td>39,155</td>
+                                <td>39,163</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/email/send-email-from-a-page/how-to-set-up-formmail'>How to set up FormMail</a></td>
-                                <td>37,296</td>
+                                <td>37,299</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/email/send-email-from-a-page/why-wont-my-php-app-send-mail'>Why won't my PHP app send mail?</a></td>
@@ -588,7 +586,7 @@ var WRInitTime=(new Date()).getTime();
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZjYXRpZD00OCZpZD00OCZ2aWV3PWNhdGVnb3J5Jkl0ZW1pZD0xMDE=" />
-		<input type="hidden" name="9d2f3c4ee0d05febfcd29f06de584ea1" value="1" />	</div>
+		<input type="hidden" name="8d0bec3d89b499ca39a6db482d10b9c3" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -975,11 +973,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-19']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '217.75.203.21']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '161.62.252.34']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '217.75.203.21']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '161.62.252.34']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

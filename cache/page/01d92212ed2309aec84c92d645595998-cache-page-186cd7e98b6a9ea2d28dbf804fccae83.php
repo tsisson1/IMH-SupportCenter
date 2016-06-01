@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:106816:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:106683:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -222,11 +222,11 @@ window.setInterval(function(){var r;try{r=window.XMLHttpRequest?new XMLHttpReque
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-20']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '67.52.214.50']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '96.242.22.68']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '67.52.214.50']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '96.242.22.68']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -339,8 +339,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -441,9 +439,9 @@ var WRInitTime=(new Date()).getTime();
 			</div>
 		</li><li class='bc_arrow'>&gt;&gt;</li><li class='bc_with_dd' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'><a href='/support/email/fighting-spam' itemprop='url'><span itemprop='title'>Fighting Spam<span></a>
 			<div class='dropdown_3columns' style='width:900px; margin-left:-250px;'>
-				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/fighting-spam/stop-emails-being-labeled-spam'>How do I stop my emails from being labeled as spam?</a> (143,518 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/fighting-spam/fight-spam-with-box-trapper'>How can I use BoxTrapper to help prevent Spam</a> (16,744 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/fighting-spam/why-spamassassin-label-email-spam'>Why does SpamAssassin Label my Email as Spam?</a> (10,352 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/fighting-spam/change-spamassassin-settings'>How to change settings in SpamAssassin</a> (7,611 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/fighting-spam/create-spf-cpanel'>Creating a basic SPF Record in cPanel</a> (4,911 hits)</div></div>
-				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/fighting-spam/spamcop-net-how-to-stop-spam'>Getting too much Spam? How to Permanently stop spam with SpamCop</a> (122,943 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/fighting-spam/block-ips-from-sending-you-email'>Block IPs from sending you email</a> (16,003 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/fighting-spam/dmarc-setup'>How to Setup DMARC records in cPanel</a> (9,735 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/fighting-spam/spamassassin-enabled-and-still-getting-spam'>SpamAssassin enabled and still getting spam</a> (7,356 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/fighting-spam/what-is-graylisting-'>What is Graylisting? </a> (3,939 hits)</div></div>
-				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/fighting-spam/blacklist-whitelist'>Blacklist/Whitelist an Email Address in SpamAssassin</a> (16,755 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/fighting-spam/create-custom-spf'>Creating custom SPF records</a> (11,617 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/fighting-spam/create-spf-record-whm'>Creating a basic SPF Record in WHM</a> (7,836 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/fighting-spam/what-is-captcha'>What is Captcha?</a> (7,023 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/fighting-spam/spf-records-guide'>Guide to SPF Records</a> (3,668 hits)</div></div>
+				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/fighting-spam/stop-emails-being-labeled-spam'>How do I stop my emails from being labeled as spam?</a> (143,579 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/fighting-spam/fight-spam-with-box-trapper'>How can I use BoxTrapper to help prevent Spam</a> (16,746 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/fighting-spam/why-spamassassin-label-email-spam'>Why does SpamAssassin Label my Email as Spam?</a> (10,354 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/fighting-spam/change-spamassassin-settings'>How to change settings in SpamAssassin</a> (7,612 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/fighting-spam/create-spf-cpanel'>Creating a basic SPF Record in cPanel</a> (4,914 hits)</div></div>
+				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/fighting-spam/spamcop-net-how-to-stop-spam'>Getting too much Spam? How to Permanently stop spam with SpamCop</a> (123,046 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/fighting-spam/block-ips-from-sending-you-email'>Block IPs from sending you email</a> (16,003 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/fighting-spam/dmarc-setup'>How to Setup DMARC records in cPanel</a> (9,744 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/fighting-spam/spamassassin-enabled-and-still-getting-spam'>SpamAssassin enabled and still getting spam</a> (7,359 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/fighting-spam/what-is-graylisting-'>What is Graylisting? </a> (3,939 hits)</div></div>
+				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/fighting-spam/blacklist-whitelist'>Blacklist/Whitelist an Email Address in SpamAssassin</a> (16,760 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/fighting-spam/create-custom-spf'>Creating custom SPF records</a> (11,621 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/fighting-spam/create-spf-record-whm'>Creating a basic SPF Record in WHM</a> (7,837 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/fighting-spam/what-is-captcha'>What is Captcha?</a> (7,023 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/email/fighting-spam/spf-records-guide'>Guide to SPF Records</a> (3,668 hits)</div></div>
 			</div>
 		</li><li class='bc_arrow'>&gt;&gt;</li><li class='bc_no_dd' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'><span itemprop='title'>How do I stop my emails from being labeled as spam?</span></li>			</ul>
 		</div>
@@ -479,7 +477,7 @@ var WRInitTime=(new Date()).getTime();
 				
 					<div style='font-size:12px; color:#aaa; margin-bottom:-10px; padding-top:5px;'>
 							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Written by </span><a href='https://plus.google.com/u/3/113040903535329496534?rel=author'>Arnel Custodio</a></div>
-							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Views:</span> <span name='page_views' id='page_views'>143,518</span></div>
+							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Views:</span> <span name='page_views' id='page_views'>143,579</span></div>
 							<div style='float:left; margin-right:20px;' title='Originally published: Apr 2, 2013'><span style='color:#606060;'>Published:</span> Jan 27, 2016</div>
 							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Comments:</span> <a href='#comments'>22</a></div>
 							<div style='clear:both;'></div>
@@ -622,7 +620,7 @@ var WRInitTime=(new Date()).getTime();
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZjYXRpZD00NiZpZD0yNTc0JnZpZXc9YXJ0aWNsZSZJdGVtaWQ9MTAx" />
-		<input type="hidden" name="76d8ab4d2b31a886b867b14478c552fb" value="1" />	</div>
+		<input type="hidden" name="cb1b2526b942c0a62b7d9a0cf4254d47" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -730,7 +728,7 @@ var WRInitTime=(new Date()).getTime();
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -1267,7 +1265,7 @@ Arnel C.</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,987 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -1724,11 +1722,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-20']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '67.52.214.50']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '96.242.22.68']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '67.52.214.50']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '96.242.22.68']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

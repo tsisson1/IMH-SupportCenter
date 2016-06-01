@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:50636:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:50503:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -342,8 +342,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -507,15 +505,15 @@ var WRInitTime=(new Date()).getTime();
                         </tr>
           <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/what-is/speed-up-php-with-apc'>Speed up PHP with APC - Alternative PHP Cache</a></td>
-                                <td>50,451</td>
+                                <td>50,454</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/what-is/how-to-enable-gzip-moddeflate'>An introduction to gzip / mod_deflate</a></td>
-                                <td>48,620</td>
+                                <td>48,626</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/what-is/what-are-core-dumps'>What are Core Dumps?</a></td>
-                                <td>12,944</td>
+                                <td>12,947</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/what-is/what-is-a-ddos-attack'>What is a DDOS Attack?</a></td>
@@ -523,7 +521,7 @@ var WRInitTime=(new Date()).getTime();
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/what-is/introduction-memcached-server-side-caching'>Introduction to Memcached: server side data caching</a></td>
-                                <td>8,508</td>
+                                <td>8,510</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/what-is/what-is-ioncube'>What is IonCube?</a></td>

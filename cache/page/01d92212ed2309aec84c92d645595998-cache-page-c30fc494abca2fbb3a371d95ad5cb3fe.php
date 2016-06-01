@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:45312:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:45175:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -222,11 +222,11 @@ jQuery(function($) {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-38']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '2.83.233.244']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '67.22.103.4']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '2.83.233.244']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '67.22.103.4']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -339,8 +339,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -504,23 +502,23 @@ var WRInitTime=(new Date()).getTime();
                         </tr>
           <tr>
                                 <td style='padding-right:20px;'><a href='/support/email/exim/find-spam-script-location-with-exim'>Find spam script location with Exim</a></td>
-                                <td>79,822</td>
+                                <td>79,838</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/email/exim/view-summary-of-mail-from-exim-mail-log'>View full summary of mail activity from the Exim mail log</a></td>
-                                <td>17,270</td>
+                                <td>17,274</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/email/exim/manage-the-exim-mail-queue-via-ssh'>Manage the Exim mail queue via SSH</a></td>
-                                <td>16,884</td>
+                                <td>16,887</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/email/exim/locate-spam-activity-by-subject-with-exim'>Locate spam activity by subject with Exim</a></td>
-                                <td>14,712</td>
+                                <td>14,716</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/email/exim/find-email-delivery-failures-in-exim'>Find email delivery failures in Exim</a></td>
-                                <td>9,535</td>
+                                <td>9,538</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/email/exim/manage-the-exim-mail-queue-in-whm'>Manage the Exim mail queue in WHM</a></td>
@@ -597,7 +595,7 @@ var WRInitTime=(new Date()).getTime();
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZjYXRpZD00NjMmaWQ9NDYzJnZpZXc9Y2F0ZWdvcnkmSXRlbWlkPTEwMQ==" />
-		<input type="hidden" name="f8b0a5f321a0e4fe9f72c7fe738e46f2" value="1" />	</div>
+		<input type="hidden" name="386ef2121170f6a602127908321bb2ff" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -984,11 +982,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-38']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '2.83.233.244']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '67.22.103.4']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '2.83.233.244']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '67.22.103.4']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

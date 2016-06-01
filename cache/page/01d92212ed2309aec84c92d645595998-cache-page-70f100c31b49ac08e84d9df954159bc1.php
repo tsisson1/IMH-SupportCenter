@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:61164:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:61031:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -330,8 +330,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -526,11 +524,11 @@ var WRInitTime=(new Date()).getTime();
 	<h2>Most Popular Articles</h2>
 		<div style='width:300px; height:75px; float:left; margin-right:20px;'>
 							<a href='/support/edu/prestashop-15/prestashop-themes/links-to-10-free-prestashop-template-websites'>Links to 10 Free Prestashop template websites</a>
-							<div class='smallgrey'>Hits: 109,224</div>
+							<div class='smallgrey'>Hits: 109,228</div>
 						</div>
 						<div style='width:300px; height:75px; float:left; margin-right:20px;'>
 							<a href='/support/edu/prestashop-15/working-with-info-pages/change-default-footer-contact-info'>How to change Contact Us info in the PrestaShop 1.5 footer</a>
-							<div class='smallgrey'>Hits: 51,813</div>
+							<div class='smallgrey'>Hits: 51,815</div>
 						</div>
 						<div style='width:300px; height:75px; float:left; margin-right:20px;'>
 							<a href='/support/edu/prestashop-15/prestashop-themes/install-new-theme'>How to install a new theme in Prestashop 1.5 </a>
@@ -538,15 +536,15 @@ var WRInitTime=(new Date()).getTime();
 						</div>
 						<div style='width:300px; height:75px; float:left; margin-right:20px;'>
 							<a href='/support/edu/prestashop-15/getting-started/login-to-dashboard'>How to log into PrestaShop 1.5 Dashboard</a>
-							<div class='smallgrey'>Hits: 33,487</div>
+							<div class='smallgrey'>Hits: 33,489</div>
 						</div>
 						<div style='width:300px; height:75px; float:left; margin-right:20px;'>
 							<a href='/support/edu/prestashop-15/set-configure-catalog-modes/enable-error-reporting'>How to turn on error reporting in PrestaShop 1.5</a>
-							<div class='smallgrey'>Hits: 31,577</div>
+							<div class='smallgrey'>Hits: 31,579</div>
 						</div>
 						<div style='width:300px; height:75px; float:left; margin-right:20px;'>
 							<a href='/support/edu/prestashop-15/working-with-info-pages/edit-information-pages'>How to edit Information pages in PrestaShop 1.5</a>
-							<div class='smallgrey'>Hits: 30,944</div>
+							<div class='smallgrey'>Hits: 30,946</div>
 						</div>
 						<div style='clear:both;'></div>
 </div>
@@ -601,7 +599,7 @@ var WRInitTime=(new Date()).getTime();
 					<div>Database errors can be pesky and stop your site dead in its tracks. This article shows you how to troubleshoot a database connection error in PrestaShop 1.5</div>
 					<div class='smallgrey'>
 						Written by Scott Mitchell<br />
-						Hits: 17,028
+						Hits: 17,029
 					</div>
 				</td>
 			</tr>
@@ -625,7 +623,7 @@ var WRInitTime=(new Date()).getTime();
 					<div>This PrestaShop 1.5 article will explain how to change your admin password via the database.</div>
 					<div class='smallgrey'>
 						Written by Scott Mitchell<br />
-						Hits: 58,011
+						Hits: 58,017
 					</div>
 				</td>
 			</tr>
@@ -685,7 +683,7 @@ var WRInitTime=(new Date()).getTime();
 					<div>This PrestaShop 1.5 article demonstrates how to install and set up the CronTab module.</div>
 					<div class='smallgrey'>
 						Written by Scott Mitchell<br />
-						Hits: 12,487
+						Hits: 12,489
 					</div>
 				</td>
 			</tr>
@@ -697,7 +695,7 @@ var WRInitTime=(new Date()).getTime();
 					<div>Learn to change your shop URL in this PrestaShop 1.5 tutorial</div>
 					<div class='smallgrey'>
 						Written by Scott Mitchell<br />
-						Hits: 17,239
+						Hits: 17,242
 					</div>
 				</td>
 			</tr>
@@ -709,7 +707,7 @@ var WRInitTime=(new Date()).getTime();
 					<div>Have too much information in your PrestaShop footer? Learn to remove the different blocks of information in this tutorial.</div>
 					<div class='smallgrey'>
 						Written by Scott Mitchell<br />
-						Hits: 23,400
+						Hits: 23,401
 					</div>
 				</td>
 			</tr>
@@ -721,7 +719,7 @@ var WRInitTime=(new Date()).getTime();
 					<div>If you are looking for a way to make a price adjustment to all your product prices at once, this article will show you how to do it in your phpMyAdmin tool.</div>
 					<div class='smallgrey'>
 						Written by Scott Mitchell<br />
-						Hits: 13,753
+						Hits: 13,756
 					</div>
 				</td>
 			</tr>
@@ -733,7 +731,7 @@ var WRInitTime=(new Date()).getTime();
 					<div>Need to find the database name for your PrestaShop 1.5 store? Learn how with this tutorial.</div>
 					<div class='smallgrey'>
 						Written by Scott Mitchell<br />
-						Hits: 12,166
+						Hits: 12,168
 					</div>
 				</td>
 			</tr>
@@ -745,7 +743,7 @@ var WRInitTime=(new Date()).getTime();
 					<div>Occasionally, it may be necessary to change the URL for a PrestaShop 1.5.  This can be done directly in the database using the cPanel phpMyAdmin program.  The following article explains how to make this change and other factors that may affect the change.</div>
 					<div class='smallgrey'>
 						Written by Arnel Custodio<br />
-						Hits: 36,172
+						Hits: 36,178
 					</div>
 				</td>
 			</tr>
@@ -769,7 +767,7 @@ var WRInitTime=(new Date()).getTime();
 					<div>The following article shows you how to reset or recover your administrator password for the PrestaShop back end.</div>
 					<div class='smallgrey'>
 						Written by Arnel Custodio<br />
-						Hits: 31,426
+						Hits: 31,427
 					</div>
 				</td>
 			</tr>

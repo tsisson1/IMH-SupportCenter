@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:52302:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:52173:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -225,11 +225,11 @@ jQuery(function($) {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-25']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '82.1.108.224']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '78.171.105.15']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '82.1.108.224']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '78.171.105.15']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -342,8 +342,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -507,35 +505,35 @@ var WRInitTime=(new Date()).getTime();
                         </tr>
           <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/php/setting-the-timezone-for-php-in-the-phpini-file'>Setting the Timezone for PHP in the php.ini file</a></td>
-                                <td>213,636</td>
+                                <td>213,676</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/php/update-local-php-settings'>How to Change PHP settings in your hosting account</a></td>
-                                <td>149,082</td>
+                                <td>149,111</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/php/create-phpinfo-page-to-see-php-settings'>How can I view my php settings using a phpinfo page ?</a></td>
-                                <td>147,207</td>
+                                <td>147,247</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/php/how-to-change-the-php-version-your-account-uses'>How to Change your PHP Version in cPanel</a></td>
-                                <td>114,103</td>
+                                <td>114,120</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/php/recursive-php-ini'>How can I make my php.ini file recursive ?</a></td>
-                                <td>63,263</td>
+                                <td>63,272</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/php/increase-the-max-file-upload-size-in-php-ini'>Changing the maximum upload size in php.ini</a></td>
-                                <td>57,499</td>
+                                <td>57,507</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/php/choosing-the-best-php-handler'>Choosing the best PHP handler</a></td>
-                                <td>45,068</td>
+                                <td>45,077</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/php/custom-php-ini-with-fastcgi'>Custom php.ini file with FastCGI</a></td>
-                                <td>23,664</td>
+                                <td>23,665</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/php/what-is-suphp'>What is suPHP?</a></td>
@@ -543,15 +541,15 @@ var WRInitTime=(new Date()).getTime();
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/php/turn-magic-quotes-gpc-off'>How to turn magic_quotes_gpc off</a></td>
-                                <td>15,524</td>
+                                <td>15,525</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/php/strict-standards-fix'>Fixing the strict standards error in php.ini</a></td>
-                                <td>14,030</td>
+                                <td>14,034</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/php/how-to-install-a-pear-module'>How to install a PEAR module</a></td>
-                                <td>10,717</td>
+                                <td>10,718</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/php/php-code-in-html-file'>How to enable html files to display php code</a></td>
@@ -563,7 +561,7 @@ var WRInitTime=(new Date()).getTime();
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/php/command-line-settings'>Setting your PHP Settings in Command Line</a></td>
-                                <td>4,136</td>
+                                <td>4,141</td>
                         </tr>
                   </table>
 	</form>
@@ -628,7 +626,7 @@ var WRInitTime=(new Date()).getTime();
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZjYXRpZD00MTImaWQ9NDEyJnZpZXc9Y2F0ZWdvcnkmSXRlbWlkPTEwMQ==" />
-		<input type="hidden" name="61beb5e06cf4c11f36cb825c77e4806d" value="1" />	</div>
+		<input type="hidden" name="5d2b1cc6004531682e8028c2bf6d6517" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -1015,11 +1013,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-25']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '82.1.108.224']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '78.171.105.15']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '82.1.108.224']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '78.171.105.15']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

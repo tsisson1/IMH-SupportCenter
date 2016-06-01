@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:46475:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:46342:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -335,8 +335,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -467,7 +465,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/cpanel/getting-started-cpanel/switch-your-cpanel-theme-to-paper-lantern'>How to switch your cPanel Theme to Paper Lantern</a>
 					<div>How to change your cPanel to Paper Lantern.</div>
-					<div class='smallgrey'>Hits: 2,998</div>
+					<div class='smallgrey'>Hits: 3,001</div>
 				</td>
 			</tr>
 			<tr>
@@ -476,7 +474,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/cpanel/getting-started-cpanel/what-is-cpanel'>What is cPanel?</a>
 					<div>Learn what cPanel is and some of the features cPanel includes with your InMotion Hosting account.</div>
-					<div class='smallgrey'>Hits: 12,160</div>
+					<div class='smallgrey'>Hits: 12,165</div>
 				</td>
 			</tr>
 			<tr>
@@ -485,7 +483,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/cpanel/getting-started-cpanel/how-to-log-into-cpanel'>cPanel Login</a>
 					<div>Learn how to login to cPanel, troubleshoot various issues with logging in and where to login to cPanel.</div>
-					<div class='smallgrey'>Hits: 604,904</div>
+					<div class='smallgrey'>Hits: 604,981</div>
 				</td>
 			</tr>
 			<tr>
@@ -503,7 +501,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/cpanel/getting-started-cpanel/change-password'>How to Change your cPanel Password</a>
 					<div>Learn how to change your cpanel password once you are logged into cPanel.</div>
-					<div class='smallgrey'>Hits: 64,208</div>
+					<div class='smallgrey'>Hits: 64,217</div>
 				</td>
 			</tr>
 			<tr>
@@ -512,7 +510,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/cpanel/getting-started-cpanel/how-to-find-server-specifications-in-cpanel-stats'>How to View your Server Specifications in cPanel Stats</a>
 					<div>Learn how to get your server specifications by viewing your cPanel stats.</div>
-					<div class='smallgrey'>Hits: 15,482</div>
+					<div class='smallgrey'>Hits: 15,485</div>
 				</td>
 			</tr>
 			<tr>
@@ -521,7 +519,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/cpanel/getting-started-cpanel/how-to-view-your-php-version-in-cpanel'>How to View Your PHP Version in cPanel</a>
 					<div>This guide shows you how to view the version of PHP in cPanel for your server.</div>
-					<div class='smallgrey'>Hits: 25,863</div>
+					<div class='smallgrey'>Hits: 25,867</div>
 				</td>
 			</tr>
 			<tr>

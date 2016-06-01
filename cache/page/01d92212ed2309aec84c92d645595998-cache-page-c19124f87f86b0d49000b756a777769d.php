@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:53721:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:53596:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -225,11 +225,11 @@ jQuery(function($) {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-19']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '190.47.10.21']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '104.55.240.149']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '190.47.10.21']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '104.55.240.149']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -342,8 +342,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -593,55 +591,55 @@ var WRInitTime=(new Date()).getTime();
                         </tr>
           <tr>
                                 <td style='padding-right:20px;'><a href='/support/domain-names/dns-nameserver-changes/domain-names-dns-changes'>Domain Names - How long do DNS changes take?</a></td>
-                                <td>244,020</td>
+                                <td>244,054</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/domain-names/dns-nameserver-changes/updating-your-domains-nameservers'>Updating Your Domain's DNS / Nameservers</a></td>
-                                <td>175,463</td>
+                                <td>175,496</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/domain-names/dns-nameserver-changes/what-is-a-name-server'>What is a name server?</a></td>
-                                <td>125,246</td>
+                                <td>125,266</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/domain-names/dns-nameserver-changes/how-do-i-clear-my-local-dns-cache'>How do I clear my local DNS cache?</a></td>
-                                <td>56,528</td>
+                                <td>56,535</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/domain-names/dns-nameserver-changes/how-do-i-make-custom-dns-records'>How do I make custom DNS records?</a></td>
-                                <td>51,863</td>
+                                <td>51,866</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/domain-names/dns-nameserver-changes/a-record-change'>Adding an A Record</a></td>
-                                <td>48,678</td>
+                                <td>48,688</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/domain-names/dns-nameserver-changes/godaddy'>Making DNS Nameserver Changes at GoDaddy.com</a></td>
-                                <td>43,388</td>
+                                <td>43,398</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/domain-names/dns-nameserver-changes/domain-names-registrar-transfer-versus-nameserver-change'>Domain Names - Registrar Transfer versus NameServer Change</a></td>
-                                <td>37,928</td>
+                                <td>37,936</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/domain-names/dns-nameserver-changes/add-cname-record'>Adding a CNAME Record</a></td>
-                                <td>37,553</td>
+                                <td>37,561</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/domain-names/dns-nameserver-changes/change-domain-nameservers-amp'>How to change your Domain Nameservers in AMP</a></td>
-                                <td>35,712</td>
+                                <td>35,721</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/domain-names/dns-nameserver-changes/using-custom-name-servers'>Using custom name servers</a></td>
-                                <td>28,856</td>
+                                <td>28,859</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/domain-names/dns-nameserver-changes/vanity-nameservers-what-are-they-and-how-do-i-set-them-up'>Vanity Nameservers: What are they and how do I set them up?</a></td>
-                                <td>23,320</td>
+                                <td>23,330</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/domain-names/dns-nameserver-changes/change-dns-records-to-use-3rd-party-services'>Change DNS records to use 3rd party services</a></td>
-                                <td>14,806</td>
+                                <td>14,809</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/domain-names/dns-nameserver-changes/opensrs-domain-maintenance'>OpenSRS Domain Maintenance</a></td>
@@ -720,7 +718,7 @@ var WRInitTime=(new Date()).getTime();
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZjYXRpZD02OCZpZD02OCZ2aWV3PWNhdGVnb3J5Jkl0ZW1pZD0xMDE=" />
-		<input type="hidden" name="0131a83ff390235ef7ec2558ff0fc8df" value="1" />	</div>
+		<input type="hidden" name="9fc5bf9fbaffa7bb6f60a9195685bdaa" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -1107,11 +1105,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-19']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '190.47.10.21']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '104.55.240.149']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '190.47.10.21']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '104.55.240.149']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

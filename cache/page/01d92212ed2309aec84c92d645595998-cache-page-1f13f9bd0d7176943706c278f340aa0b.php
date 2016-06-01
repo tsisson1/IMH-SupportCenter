@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:60258:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:60121:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -222,11 +222,11 @@ window.setInterval(function(){var r;try{r=window.XMLHttpRequest?new XMLHttpReque
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-23']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '199.21.99.212']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '66.96.230.44']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '199.21.99.212']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '66.96.230.44']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -339,8 +339,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -441,9 +439,9 @@ var WRInitTime=(new Date()).getTime();
 			</div>
 		</li><li class='bc_arrow'>&gt;&gt;</li><li class='bc_with_dd' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'><a href='/support/website/databases' itemprop='url'><span itemprop='title'>Working with Databases<span></a>
 			<div class='dropdown_3columns' style='width:900px; margin-left:-250px;'>
-				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/databases/setting-up-a-remote-mysql-connection-in-cpanel'>Setting up a Remote MySQL connection in cPanel</a> (80,265 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/databases/check-repair-database'>How to Check and Repair a Database</a> (26,552 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/databases/mysql-command-line'>How to access MySQL via command line</a> (19,414 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/databases/storage-engines-innodb-and-myisam'>MySQL Storage Engines - InnoDB and MyISAM</a> (8,060 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/databases/import-database-through-shell'>How to import a database through shell</a> (3,565 hits)</div></div>
-				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/databases/how-to-change-mysql-server-time-zone'>How to change MySQL server time zone</a> (71,837 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/databases/creating-importing-and-exporting-mysql-databases'>Creating, Importing, and Exporting MySQL Databases</a> (22,152 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/databases/create-db-user'>How to create and attach a database user in cPanel</a> (14,328 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/databases/mysql-datatypes'>Learning the different data types in MySQL</a> (4,993 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/databases/how-to-convert-mysql-time'>How to convert MySQL time</a> (3,266 hits)</div></div>
-				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/databases/reset-database-password'>How to reset your database password within cPanel</a> (28,155 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/databases/how-to-convert-a-database-to-utf-8'>How to Convert a Database to UTF-8</a> (19,947 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/databases/find-mysql-version'>How to determine your MySQL version number</a> (8,542 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/databases/monitor-mysql-performance'>Monitoring MySQL performance</a> (4,240 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/databases/check-and-repair-databases-in-cpanel'>Check and repair databases in cPanel</a> (1,192 hits)</div></div>
+				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/databases/setting-up-a-remote-mysql-connection-in-cpanel'>Setting up a Remote MySQL connection in cPanel</a> (80,276 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/databases/check-repair-database'>How to Check and Repair a Database</a> (26,553 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/databases/mysql-command-line'>How to access MySQL via command line</a> (19,418 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/databases/storage-engines-innodb-and-myisam'>MySQL Storage Engines - InnoDB and MyISAM</a> (8,061 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/databases/import-database-through-shell'>How to import a database through shell</a> (3,566 hits)</div></div>
+				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/databases/how-to-change-mysql-server-time-zone'>How to change MySQL server time zone</a> (71,842 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/databases/creating-importing-and-exporting-mysql-databases'>Creating, Importing, and Exporting MySQL Databases</a> (22,154 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/databases/create-db-user'>How to create and attach a database user in cPanel</a> (14,328 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/databases/mysql-datatypes'>Learning the different data types in MySQL</a> (4,993 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/databases/how-to-convert-mysql-time'>How to convert MySQL time</a> (3,266 hits)</div></div>
+				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/databases/reset-database-password'>How to reset your database password within cPanel</a> (28,156 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/databases/how-to-convert-a-database-to-utf-8'>How to Convert a Database to UTF-8</a> (19,951 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/databases/find-mysql-version'>How to determine your MySQL version number</a> (8,544 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/databases/monitor-mysql-performance'>Monitoring MySQL performance</a> (4,240 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/databases/check-and-repair-databases-in-cpanel'>Check and repair databases in cPanel</a> (1,192 hits)</div></div>
 			</div>
 		</li><li class='bc_arrow'>&gt;&gt;</li><li class='bc_no_dd' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'><span itemprop='title'>How to determine your MySQL version number</span></li>			</ul>
 		</div>
@@ -479,7 +477,7 @@ var WRInitTime=(new Date()).getTime();
 				
 					<div style='font-size:12px; color:#aaa; margin-bottom:-10px; padding-top:5px;'>
 							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Written by </span><a href='https://plus.google.com/u/0/103891980085974966828/?rel=author'>Scott Mitchell</a></div>
-							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Views:</span> <span name='page_views' id='page_views'>8,542</span></div>
+							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Views:</span> <span name='page_views' id='page_views'>8,544</span></div>
 							<div style='float:left; margin-right:20px;' title='Originally published: Apr 10, 2013'><span style='color:#606060;'>Published:</span> Feb 17, 2014</div>
 							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Comments:</span> <a href='#comments'>0</a></div>
 							<div style='clear:both;'></div>
@@ -604,7 +602,7 @@ var WRInitTime=(new Date()).getTime();
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZjYXRpZD0zMyZpZD0yNjAxJnZpZXc9YXJ0aWNsZSZJdGVtaWQ9MTAx" />
-		<input type="hidden" name="8c9c5b13154fc485e042afad216e28b1" value="1" />	</div>
+		<input type="hidden" name="c436214764550ef74f2ab2444c1e66c1" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -1122,11 +1120,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-23']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '199.21.99.212']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '66.96.230.44']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '199.21.99.212']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '66.96.230.44']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

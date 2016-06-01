@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:47181:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:47048:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -335,8 +335,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -485,7 +483,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/moodle/advanced-tutorials/post-max-size-error'>How to Fix the "uploaded file may exceed the post_max_size directive in php.ini" error in Moodle</a>
 					<div>How to fix the post_max_size directing in php.ini error.</div>
-					<div class='smallgrey'>Hits: 7,706</div>
+					<div class='smallgrey'>Hits: 7,708</div>
 				</td>
 			</tr>
 			<tr>
@@ -494,7 +492,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/moodle/advanced-tutorials/change-url'>How to change your URL in Moodle</a>
 					<div>This is a walk through guide on how to change your URL in Moodle.</div>
-					<div class='smallgrey'>Hits: 12,136</div>
+					<div class='smallgrey'>Hits: 12,141</div>
 				</td>
 			</tr>
 			<tr>
@@ -530,7 +528,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/moodle/advanced-tutorials/editing-the-libphp-file-in-moodle'>Editing the lib.php file in Moodle </a>
 					<div>Learn how to fix an error in Moodle 2.1 due to PHP 5.3 not being available. </div>
-					<div class='smallgrey'>Hits: 5,754</div>
+					<div class='smallgrey'>Hits: 5,755</div>
 				</td>
 			</tr>
 			<tr>

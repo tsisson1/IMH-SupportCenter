@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:46806:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:46677:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -226,11 +226,11 @@ jQuery(function($) {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-19']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '24.103.84.58']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '71.116.19.178']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '24.103.84.58']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '71.116.19.178']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -343,8 +343,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -507,31 +505,31 @@ var WRInitTime=(new Date()).getTime();
                         </tr>
           <tr>
                                 <td style='padding-right:20px;'><a href='/support/email/email-client-setup/galaxy'>How to set up email on a Galaxy S phone</a></td>
-                                <td>122,203</td>
+                                <td>122,230</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/email/email-client-setup/setting-up-gmail-for-pop3-and-smtp'>Setting up Gmail for POP3 and SMTP</a></td>
-                                <td>117,920</td>
+                                <td>117,946</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/email/email-client-setup/configure-iphone6-email'>Configuring your iPhone 6 for Email</a></td>
-                                <td>62,567</td>
+                                <td>62,606</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/email/email-client-setup/setting-up-an-android-device-to-send-a-receive-email'>Setting up an Android Device to Send & Receive Email</a></td>
-                                <td>45,155</td>
+                                <td>45,160</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/email/email-client-setup/subscribe-imap-email'>Subscribe IMAP Email folders in Mac Mail</a></td>
-                                <td>42,300</td>
+                                <td>42,308</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/email/email-client-setup/mac-mail-mavericks-os'>Updated: How to Set Up Mac Mail</a></td>
-                                <td>19,798</td>
+                                <td>19,803</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/email/email-client-setup/email-client-configuration-email-over-ssl'>Email Client Configuration - Email Over SSL</a></td>
-                                <td>17,710</td>
+                                <td>17,717</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/email/email-client-setup/outlook-2010-leaving-a-copy-of-the-message-on-the-server-using-pop3'>Outlook 2010: Leaving a copy of the message on the server using POP3</a></td>
@@ -539,7 +537,7 @@ var WRInitTime=(new Date()).getTime();
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/email/email-client-setup/setting-up-windows-live-mail'>Setting up Windows Live Mail</a></td>
-                                <td>9,915</td>
+                                <td>9,918</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/email/email-client-setup/thunderbird-leaving-a-copy-of-an-email-message-on-the-server-using-pop3'>Thunderbird: Leaving a copy of an email message on the server using POP3</a></td>
@@ -616,7 +614,7 @@ var WRInitTime=(new Date()).getTime();
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZjYXRpZD00NyZpZD00NyZ2aWV3PWNhdGVnb3J5Jkl0ZW1pZD0xMDE=" />
-		<input type="hidden" name="701f4f542c40a3ab7999b65cac181f10" value="1" />	</div>
+		<input type="hidden" name="4db2fede93941f9c72917eb8efaf2ec5" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -1003,11 +1001,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-19']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '24.103.84.58']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '71.116.19.178']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '24.103.84.58']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '71.116.19.178']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

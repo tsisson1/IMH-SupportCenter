@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:53443:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:53314:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -225,11 +225,11 @@ jQuery(function($) {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-19']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '202.69.98.132']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '86.121.226.252']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '202.69.98.132']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '86.121.226.252']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -342,8 +342,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -506,15 +504,15 @@ var WRInitTime=(new Date()).getTime();
                         </tr>
           <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/getting-started-guides/where-to-upload-files'>How to find the Document Root for your website / What directory should I put my files in?</a></td>
-                                <td>152,899</td>
+                                <td>152,960</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/getting-started-guides/cpanel-logs-for-access-apache-email-error-ftp-mysql-whm'>cPanel logs for access, Apache, email, error, ftp, mysql, and WHM</a></td>
-                                <td>122,841</td>
+                                <td>122,876</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/getting-started-guides/submitting-and-checking-on-status-of-tickets'>Submitting a Ticket Request</a></td>
-                                <td>49,907</td>
+                                <td>49,915</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/getting-started-guides/e-commerce-choose-shopping-cart'>E-Commerce: Step 1 - Choose which Shopping Cart Software to use</a></td>
@@ -526,15 +524,15 @@ var WRInitTime=(new Date()).getTime();
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/getting-started-guides/awstats-statistics-website-traffic'>AWStats: View Statistics about your Website Traffic</a></td>
-                                <td>8,862</td>
+                                <td>8,865</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/getting-started-guides/unlimited-disk-space-and-bandwidth'>Unlimited Disk Space and Bandwidth</a></td>
-                                <td>8,404</td>
+                                <td>8,405</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/getting-started-guides/perform-your-own-website-transfer'>Perform your own website transfer</a></td>
-                                <td>8,301</td>
+                                <td>8,302</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/website/getting-started-guides/online-forum-bulletin-board'>Getting Started Guide Online Forum  Bulletin Board</a></td>
@@ -633,7 +631,7 @@ var WRInitTime=(new Date()).getTime();
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZjYXRpZD00MiZpZD00MiZ2aWV3PWNhdGVnb3J5Jkl0ZW1pZD0xMDE=" />
-		<input type="hidden" name="1df2b39e1c7a423863be92170d158027" value="1" />	</div>
+		<input type="hidden" name="ec8c80632462533d34915c592c671bba" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -1020,11 +1018,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-19']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '202.69.98.132']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '86.121.226.252']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '202.69.98.132']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '86.121.226.252']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

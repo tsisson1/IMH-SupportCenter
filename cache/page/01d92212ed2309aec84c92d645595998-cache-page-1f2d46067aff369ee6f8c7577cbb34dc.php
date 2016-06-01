@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:88150:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:88021:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -222,11 +222,11 @@ window.setInterval(function(){var r;try{r=window.XMLHttpRequest?new XMLHttpReque
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-20']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '78.8.11.41']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '5.147.6.177']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '78.8.11.41']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '5.147.6.177']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -339,8 +339,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -441,9 +439,9 @@ var WRInitTime=(new Date()).getTime();
 			</div>
 		</li><li class='bc_arrow'>&gt;&gt;</li><li class='bc_with_dd' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'><a href='/support/website/php' itemprop='url'><span itemprop='title'>PHP<span></a>
 			<div class='dropdown_3columns' style='width:900px; margin-left:-250px;'>
-				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/php/setting-the-timezone-for-php-in-the-phpini-file'>Setting the Timezone for PHP in the php.ini file</a> (213,640 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/php/how-to-change-the-php-version-your-account-uses'>How to Change your PHP Version in cPanel</a> (114,107 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/php/choosing-the-best-php-handler'>Choosing the best PHP handler</a> (45,068 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/php/turn-magic-quotes-gpc-off'>How to turn magic_quotes_gpc off</a> (15,524 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/php/php-code-in-html-file'>How to enable html files to display php code</a> (10,471 hits)</div></div>
-				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/php/update-local-php-settings'>How to Change PHP settings in your hosting account</a> (149,083 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/php/recursive-php-ini'>How can I make my php.ini file recursive ?</a> (63,264 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/php/custom-php-ini-with-fastcgi'>Custom php.ini file with FastCGI</a> (23,664 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/php/strict-standards-fix'>Fixing the strict standards error in php.ini</a> (14,033 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/php/language-code-list'>Language code list for PHP programs</a> (5,201 hits)</div></div>
-				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/php/create-phpinfo-page-to-see-php-settings'>How can I view my php settings using a phpinfo page ?</a> (147,216 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/php/increase-the-max-file-upload-size-in-php-ini'>Changing the maximum upload size in php.ini</a> (57,499 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/php/what-is-suphp'>What is suPHP?</a> (19,531 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/php/how-to-install-a-pear-module'>How to install a PEAR module</a> (10,717 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/php/command-line-settings'>Setting your PHP Settings in Command Line</a> (4,139 hits)</div></div>
+				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/php/setting-the-timezone-for-php-in-the-phpini-file'>Setting the Timezone for PHP in the php.ini file</a> (213,677 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/php/how-to-change-the-php-version-your-account-uses'>How to Change your PHP Version in cPanel</a> (114,120 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/php/choosing-the-best-php-handler'>Choosing the best PHP handler</a> (45,077 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/php/turn-magic-quotes-gpc-off'>How to turn magic_quotes_gpc off</a> (15,525 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/php/php-code-in-html-file'>How to enable html files to display php code</a> (10,471 hits)</div></div>
+				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/php/update-local-php-settings'>How to Change PHP settings in your hosting account</a> (149,111 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/php/recursive-php-ini'>How can I make my php.ini file recursive ?</a> (63,272 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/php/custom-php-ini-with-fastcgi'>Custom php.ini file with FastCGI</a> (23,665 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/php/strict-standards-fix'>Fixing the strict standards error in php.ini</a> (14,034 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/php/language-code-list'>Language code list for PHP programs</a> (5,201 hits)</div></div>
+				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/php/create-phpinfo-page-to-see-php-settings'>How can I view my php settings using a phpinfo page ?</a> (147,247 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/php/increase-the-max-file-upload-size-in-php-ini'>Changing the maximum upload size in php.ini</a> (57,507 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/php/what-is-suphp'>What is suPHP?</a> (19,531 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/php/how-to-install-a-pear-module'>How to install a PEAR module</a> (10,718 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/php/command-line-settings'>Setting your PHP Settings in Command Line</a> (4,141 hits)</div></div>
 			</div>
 		</li><li class='bc_arrow'>&gt;&gt;</li><li class='bc_no_dd' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'><span itemprop='title'>Changing the maximum upload size in php.ini</span></li>			</ul>
 		</div>
@@ -479,7 +477,7 @@ var WRInitTime=(new Date()).getTime();
 				
 					<div style='font-size:12px; color:#aaa; margin-bottom:-10px; padding-top:5px;'>
 							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Written by </span><a href='https://plus.google.com/u/3/113040903535329496534?rel=author'>Arnel Custodio</a></div>
-							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Views:</span> <span name='page_views' id='page_views'>57,499</span></div>
+							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Views:</span> <span name='page_views' id='page_views'>57,507</span></div>
 							<div style='float:left; margin-right:20px;' title='Originally published: Apr 8, 2013'><span style='color:#606060;'>Published:</span> Oct 7, 2014</div>
 							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Comments:</span> <a href='#comments'>15</a></div>
 							<div style='clear:both;'></div>
@@ -610,7 +608,7 @@ var WRInitTime=(new Date()).getTime();
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZjYXRpZD00MTImaWQ9MjU5NSZ2aWV3PWFydGljbGUmSXRlbWlkPTEwMQ==" />
-		<input type="hidden" name="6c20b0ee9e8f69e2f351811544872ad1" value="1" />	</div>
+		<input type="hidden" name="ac571c2616a49080f942e86f0a371bbe" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -902,7 +900,7 @@ Arnel C.</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,993 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -1011,7 +1009,7 @@ Arnel C.</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,993 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -1470,11 +1468,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-20']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '78.8.11.41']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '5.147.6.177']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '78.8.11.41']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '5.147.6.177']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

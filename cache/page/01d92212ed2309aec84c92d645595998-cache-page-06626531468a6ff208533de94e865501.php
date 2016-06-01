@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:44701:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:44576:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -217,11 +217,11 @@ window.setInterval(function(){var r;try{r=window.XMLHttpRequest?new XMLHttpReque
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-19']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '67.53.93.14']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '154.118.35.53']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '67.53.93.14']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '154.118.35.53']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -334,8 +334,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -466,7 +464,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/opencart/customizing-store-look-and-feel/change-opencart-url'>Change OpenCart 1.5 URL - How To</a>
 					<div>This is a step-by-step guide on changing your OpenCart URL in the config.php files.</div>
-					<div class='smallgrey'>Hits: 33,640</div>
+					<div class='smallgrey'>Hits: 33,645</div>
 				</td>
 			</tr>
 			<tr>
@@ -484,7 +482,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/opencart/customizing-store-look-and-feel/installing-an-opencart-theme'>Installing an OpenCart Theme</a>
 					<div>In this tutorial, we'll instruct you on how to install a OpenCart theme you have downloaded to your local computer. </div>
-					<div class='smallgrey'>Hits: 60,053</div>
+					<div class='smallgrey'>Hits: 60,061</div>
 				</td>
 			</tr>
 			<tr>
@@ -502,7 +500,7 @@ var WRInitTime=(new Date()).getTime();
 				<td style='padding-bottom:10px;'>
 					<a href='/support/edu/opencart/customizing-store-look-and-feel/edit-opencart-template'>Edit OpenCart template</a>
 					<div>In this tutorial we will show you a quick example of how you can edit a OpenCart template to change the default layout that is used for your OpenCart site.</div>
-					<div class='smallgrey'>Hits: 60,845</div>
+					<div class='smallgrey'>Hits: 60,859</div>
 				</td>
 			</tr>
 			</table>
@@ -568,7 +566,7 @@ var WRInitTime=(new Date()).getTime();
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZjYXRpZD0xNTUmaWQ9MTU1JnZpZXc9Y2F0ZWdvcnkmSXRlbWlkPTEwMQ==" />
-		<input type="hidden" name="1185fbcc051f524083ecd318fc20e108" value="1" />	</div>
+		<input type="hidden" name="bcdefca1a9c8ebee81ae4401d01cac0a" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -955,11 +953,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-19']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '67.53.93.14']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '154.118.35.53']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '67.53.93.14']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '154.118.35.53']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

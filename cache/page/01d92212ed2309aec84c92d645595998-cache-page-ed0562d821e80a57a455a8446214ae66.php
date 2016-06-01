@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:54655:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:54510:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -217,11 +217,11 @@ window.setInterval(function(){var r;try{r=window.XMLHttpRequest?new XMLHttpReque
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-25']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '119.153.162.194']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '80.59.13.220']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '119.153.162.194']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '80.59.13.220']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -334,8 +334,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -503,7 +501,7 @@ var WRInitTime=(new Date()).getTime();
 <h2>Questions</h2><table>
 <tr style='border-bottom:1px solid #ddd;'>
 	<td style='width:100px; padding-top:15px;' valign='top'>
-		<div>49,171 Views</div>
+		<div>49,178 Views</div>
 		<div>1 Answer</div>
 	</td>
 	<td style='padding-bottom:15px; padding-top:15px;'>
@@ -517,7 +515,7 @@ var WRInitTime=(new Date()).getTime();
 			
 <tr style='border-bottom:1px solid #ddd;'>
 	<td style='width:100px; padding-top:15px;' valign='top'>
-		<div>42,194 Views</div>
+		<div>42,202 Views</div>
 		<div>1 Answer</div>
 	</td>
 	<td style='padding-bottom:15px; padding-top:15px;'>
@@ -547,7 +545,7 @@ var WRInitTime=(new Date()).getTime();
 			
 <tr style='border-bottom:1px solid #ddd;'>
 	<td style='width:100px; padding-top:15px;' valign='top'>
-		<div>15,767 Views</div>
+		<div>15,768 Views</div>
 		<div>1 Answer</div>
 	</td>
 	<td style='padding-bottom:15px; padding-top:15px;'>
@@ -647,7 +645,7 @@ I don&#039...</div>
 			
 <tr style='border-bottom:1px solid #ddd;'>
 	<td style='width:100px; padding-top:15px;' valign='top'>
-		<div>9,713 Views</div>
+		<div>9,714 Views</div>
 		<div>1 Answer</div>
 	</td>
 	<td style='padding-bottom:15px; padding-top:15px;'>
@@ -798,7 +796,7 @@ Warning: session_start() [function...</div>
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP0l0ZW1pZD0xMDAwMg==" />
-		<input type="hidden" name="083b95ab1cdfc0ad622861d4a4443ab5" value="1" />	</div>
+		<input type="hidden" name="b5b746de159ed03ff549d5b4f4619a11" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -1185,11 +1183,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-25']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '119.153.162.194']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '80.59.13.220']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '119.153.162.194']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '80.59.13.220']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

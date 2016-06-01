@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:92380:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:92255:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -222,11 +222,11 @@ window.setInterval(function(){var r;try{r=window.XMLHttpRequest?new XMLHttpReque
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-19']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '71.10.0.180']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '24.90.230.105']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '71.10.0.180']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '24.90.230.105']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -339,8 +339,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -441,9 +439,9 @@ var WRInitTime=(new Date()).getTime();
 			</div>
 		</li><li class='bc_arrow'>&gt;&gt;</li><li class='bc_with_dd' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'><a href='/support/website/ssh' itemprop='url'><span itemprop='title'>SSH and Root access<span></a>
 			<div class='dropdown_3columns' style='width:900px; margin-left:-250px;'>
-				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/ssh/how-to-login-ssh'>How to log in to your VPS via SSH</a> (165,469 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/ssh/changing-permissions-and-ownership'>How to change file permissions and ownership settings while in SSH</a> (40,280 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/ssh/do-you-provide-ssh-access'>Do you provide SSH access?</a> (17,746 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/ssh/managing-shell-access'>How to give (or remove) shell access to cPanel accounts</a> (7,274 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/ssh/shared-server-ssh-mac'>Connecting to a Shared Server SSH with a Mac</a> (5,116 hits)</div></div>
-				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/ssh/add-ip-to-firewall'>How to add your IP Address to the Firewall (for ssh access)</a> (51,063 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/ssh/navigate-command-line'>Navigate command line structure in SSH</a> (26,483 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/ssh/speed-up-grep-searches-with-lc-all'>Speed up grep searches with LC_ALL=C</a> (17,231 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/ssh/using-the-linux-sar-command'>Using the Linux sar command</a> (6,513 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/ssh/using-a-secondary-hard-drive-on-a-dedicated-server'>Using a Secondary Hard Drive on a Dedicated Hosting Server</a> (5,115 hits)</div></div>
-				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/ssh/shared-reseller-ssh'>Logging into your Shared/Reseller server with SSH</a> (43,064 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/ssh/what-is-shell-access'>What is Shell Access?</a> (24,763 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/ssh/how-to-edit-files-using-nano'>How to edit files while in ssh using nano</a> (16,047 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/ssh/what-to-do-with-root-access'>What to do with root access</a> (6,191 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/ssh/using-the-linux-cat-command'>Using the Linux cat command</a> (4,435 hits)</div></div>
+				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/ssh/how-to-login-ssh'>How to log in to your VPS via SSH</a> (165,481 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/ssh/changing-permissions-and-ownership'>How to change file permissions and ownership settings while in SSH</a> (40,290 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/ssh/do-you-provide-ssh-access'>Do you provide SSH access?</a> (17,747 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/ssh/managing-shell-access'>How to give (or remove) shell access to cPanel accounts</a> (7,274 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/ssh/shared-server-ssh-mac'>Connecting to a Shared Server SSH with a Mac</a> (5,120 hits)</div></div>
+				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/ssh/add-ip-to-firewall'>How to add your IP Address to the Firewall (for ssh access)</a> (51,068 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/ssh/navigate-command-line'>Navigate command line structure in SSH</a> (26,487 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/ssh/speed-up-grep-searches-with-lc-all'>Speed up grep searches with LC_ALL=C</a> (17,235 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/ssh/using-the-linux-sar-command'>Using the Linux sar command</a> (6,513 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/ssh/using-a-secondary-hard-drive-on-a-dedicated-server'>Using a Secondary Hard Drive on a Dedicated Hosting Server</a> (5,116 hits)</div></div>
+				<div class='col_1' style='width:290px;'><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/ssh/shared-reseller-ssh'>Logging into your Shared/Reseller server with SSH</a> (43,073 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/ssh/what-is-shell-access'>What is Shell Access?</a> (24,766 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/ssh/how-to-edit-files-using-nano'>How to edit files while in ssh using nano</a> (16,048 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/ssh/what-to-do-with-root-access'>What to do with root access</a> (6,192 hits)</div><div style='margin-bottom:10px;'><a style='display:inline;' href='/support/website/ssh/using-the-linux-cat-command'>Using the Linux cat command</a> (4,435 hits)</div></div>
 			</div>
 		</li><li class='bc_arrow'>&gt;&gt;</li><li class='bc_no_dd' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'><span itemprop='title'>How to add your IP Address to the Firewall (for ssh access)</span></li>			</ul>
 		</div>
@@ -479,7 +477,7 @@ var WRInitTime=(new Date()).getTime();
 				
 					<div style='font-size:12px; color:#aaa; margin-bottom:-10px; padding-top:5px;'>
 							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Written by </span><a href='https://plus.google.com/102670474114655224886?rel=author'>Brad Markle</a></div>
-							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Views:</span> <span name='page_views' id='page_views'>51,063</span></div>
+							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Views:</span> <span name='page_views' id='page_views'>51,068</span></div>
 							<div style='float:left; margin-right:20px;' title='Originally published: Dec 1, 2011'><span style='color:#606060;'>Published:</span> Oct 30, 2015</div>
 							<div style='float:left; margin-right:20px;'><span style='color:#606060;'>Comments:</span> <a href='#comments'>16</a></div>
 							<div style='clear:both;'></div>
@@ -609,7 +607,7 @@ var WRInitTime=(new Date()).getTime();
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZjYXRpZD00MTEmaWQ9MzE5JnZpZXc9YXJ0aWNsZSZJdGVtaWQ9MTAx" />
-		<input type="hidden" name="ec3463b95bdef9a4ef0b08a86f21f660" value="1" />	</div>
+		<input type="hidden" name="227bf4afd58451914930308e59e682d3" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -1022,7 +1020,7 @@ Arnel C.</div>
 						<div><a style='font-size:16px;' href='/support/community-support/users/scott'>scott</a></div>
 						<div><a href='https://plus.google.com/u/0/103891980085974966828/' target='_blank'><img src='//www.inmotionhosting.com/img/icon-google.png' style='width:20px;' /></a></div>
 						<div><div style='display:inline; padding-left:20px; background:url(/support/templates/supportcentertemplate/images/gold_star.png) no-repeat 0px 0px;background-size:15px 15px;'>Staff</div></div>
-						<div>36,990 <a href='/support/team/points' target='_blank'>Points</a></div>
+						<div>37,019 <a href='/support/team/points' target='_blank'>Points</a></div>
 						
 					</td>
 					<td valign='top' style='padding:5px; background:#fff; border-bottom-right-radius: 5px; border-top-right-radius: 5px;'>
@@ -1503,11 +1501,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-19']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '71.10.0.180']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '24.90.230.105']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '71.10.0.180']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '24.90.230.105']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

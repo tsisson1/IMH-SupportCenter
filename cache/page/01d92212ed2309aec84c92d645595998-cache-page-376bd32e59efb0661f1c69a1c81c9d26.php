@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:49969:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:49836:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -218,11 +218,11 @@ window.setInterval(function(){var r;try{r=window.XMLHttpRequest?new XMLHttpReque
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-19']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '173.14.113.122']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '173.25.153.173']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '173.14.113.122']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '173.25.153.173']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -335,8 +335,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -483,27 +481,27 @@ var WRInitTime=(new Date()).getTime();
 	<h2>Most Popular Articles</h2>
 		<div style='width:300px; height:75px; float:left; margin-right:20px;'>
 							<a href='/support/edu/cpanel/getting-started-cpanel/how-to-log-into-cpanel'>cPanel Login</a>
-							<div class='smallgrey'>Hits: 604,908</div>
+							<div class='smallgrey'>Hits: 604,980</div>
 						</div>
 						<div style='width:300px; height:75px; float:left; margin-right:20px;'>
 							<a href='/support/edu/cpanel/cpanel-email/logging-into-webmail'>How to log into Webmail</a>
-							<div class='smallgrey'>Hits: 309,533</div>
+							<div class='smallgrey'>Hits: 309,578</div>
 						</div>
 						<div style='width:300px; height:75px; float:left; margin-right:20px;'>
 							<a href='/support/edu/cpanel/cpanel-manage-domains/setting-up-redirect-cpanel'>Setting up a Redirect for a Domain in your cPanel</a>
-							<div class='smallgrey'>Hits: 96,883</div>
+							<div class='smallgrey'>Hits: 96,917</div>
 						</div>
 						<div style='width:300px; height:75px; float:left; margin-right:20px;'>
 							<a href='/support/edu/cpanel/cpanel-email/modfying-mx-records'>Modifying your MX records</a>
-							<div class='smallgrey'>Hits: 71,819</div>
+							<div class='smallgrey'>Hits: 71,831</div>
 						</div>
 						<div style='width:300px; height:75px; float:left; margin-right:20px;'>
 							<a href='/support/edu/cpanel/getting-started-cpanel/change-password'>How to Change your cPanel Password</a>
-							<div class='smallgrey'>Hits: 64,208</div>
+							<div class='smallgrey'>Hits: 64,217</div>
 						</div>
 						<div style='width:300px; height:75px; float:left; margin-right:20px;'>
 							<a href='/support/edu/cpanel/cpanel-manage-domains/creating-a-subdomain'>Creating a Subdomain in cPanel</a>
-							<div class='smallgrey'>Hits: 58,910</div>
+							<div class='smallgrey'>Hits: 58,927</div>
 						</div>
 						<div style='clear:both;'></div>
 </div>
@@ -558,7 +556,7 @@ var WRInitTime=(new Date()).getTime();
 					<div>In this tutorial we will explain how to run a Cron job.</div>
 					<div class='smallgrey'>
 						Written by Brad Markle<br />
-						Hits: 59,997
+						Hits: 59,999
 					</div>
 				</td>
 			</tr>
@@ -606,7 +604,7 @@ var WRInitTime=(new Date()).getTime();
 					<div>Tired of the Index Of listing in your subdirectories? Learn how to stop that with Index Manager in the cPanel.</div>
 					<div class='smallgrey'>
 						Written by Scott Mitchell<br />
-						Hits: 11,622
+						Hits: 11,623
 					</div>
 				</td>
 			</tr>
@@ -630,7 +628,7 @@ var WRInitTime=(new Date()).getTime();
 					<div>Learn how to use the Google Apps Wizard in cPanel to connect your Google Apps account to your domain.</div>
 					<div class='smallgrey'>
 						Written by Scott Mitchell<br />
-						Hits: 9,453
+						Hits: 9,461
 					</div>
 				</td>
 			</tr>
@@ -719,7 +717,7 @@ var WRInitTime=(new Date()).getTime();
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZjYXRpZD03MCZpZD03MCZ2aWV3PWNhdGVnb3J5Jkl0ZW1pZD0xMDE=" />
-		<input type="hidden" name="10e1438b61f2d7a59b79b4968262e903" value="1" />	</div>
+		<input type="hidden" name="1dc57762ff7e7e66e0531972083f5191" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -1123,11 +1121,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-19']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '173.14.113.122']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '173.25.153.173']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '173.14.113.122']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '173.25.153.173']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

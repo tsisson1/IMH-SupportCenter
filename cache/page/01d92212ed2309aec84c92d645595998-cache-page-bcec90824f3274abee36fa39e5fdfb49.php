@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:58327:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:58190:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -213,11 +213,11 @@ jQuery(document).ready(function(){
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-19']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '112.198.100.14']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '72.38.238.101']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '112.198.100.14']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '72.38.238.101']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -330,8 +330,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -500,27 +498,27 @@ var WRInitTime=(new Date()).getTime();
 	<h2>Most Popular Articles</h2>
 		<div style='width:300px; height:75px; float:left; margin-right:20px;'>
 							<a href='/support/edu/joomla-3/menu/horizontal-menu'>How to Create a Horizontal Menu in Joomla 3.1</a>
-							<div class='smallgrey'>Hits: 151,709</div>
+							<div class='smallgrey'>Hits: 151,724</div>
 						</div>
 						<div style='width:300px; height:75px; float:left; margin-right:20px;'>
 							<a href='/support/edu/joomla-3/extension/viewing-module-positions'>How to View Module Positions in Joomla 3</a>
-							<div class='smallgrey'>Hits: 121,107</div>
+							<div class='smallgrey'>Hits: 121,117</div>
 						</div>
 						<div style='width:300px; height:75px; float:left; margin-right:20px;'>
 							<a href='/support/edu/joomla-3/writing-articles/adding-iframes'>How to add an iframe in a Joomla 3 Article</a>
-							<div class='smallgrey'>Hits: 105,175</div>
+							<div class='smallgrey'>Hits: 105,190</div>
 						</div>
 						<div style='width:300px; height:75px; float:left; margin-right:20px;'>
 							<a href='/support/edu/joomla-3/create-template/starting-template'>A very basic template soon to be a Joomla 3.1 template</a>
-							<div class='smallgrey'>Hits: 95,843</div>
+							<div class='smallgrey'>Hits: 95,847</div>
 						</div>
 						<div style='width:300px; height:75px; float:left; margin-right:20px;'>
 							<a href='/support/edu/joomla-3/create-template/add-module-positions'>How to add module positions to a Joomla 3.1 template</a>
-							<div class='smallgrey'>Hits: 93,962</div>
+							<div class='smallgrey'>Hits: 93,963</div>
 						</div>
 						<div style='width:300px; height:75px; float:left; margin-right:20px;'>
 							<a href='/support/edu/joomla-3/using-bootstrap/what-is-bootstrap'>What is bootstrap?</a>
-							<div class='smallgrey'>Hits: 84,636</div>
+							<div class='smallgrey'>Hits: 84,637</div>
 						</div>
 						<div style='clear:both;'></div>
 </div>
@@ -587,7 +585,7 @@ var WRInitTime=(new Date()).getTime();
 					<div>When installing Joomla 3.0, you have the option to install 3 types of sample data sets: blog, brochure, and default. In this tutorial we'll explain the different setups you will have when you choose each of the different options.</div>
 					<div class='smallgrey'>
 						Written by Brad Markle<br />
-						Hits: 30,935
+						Hits: 30,938
 					</div>
 				</td>
 			</tr>
@@ -599,7 +597,7 @@ var WRInitTime=(new Date()).getTime();
 					<div>In this Joomla 3.0 tutorial, we'll show you how to setup the popular captcha plugin, ReCaptcha.</div>
 					<div class='smallgrey'>
 						Written by Brad Markle<br />
-						Hits: 28,808
+						Hits: 28,811
 					</div>
 				</td>
 			</tr>
@@ -611,7 +609,7 @@ var WRInitTime=(new Date()).getTime();
 					<div>If you're troubleshooting a joomla 3.0 database connection error, read this tutorial for more help resolving it.</div>
 					<div class='smallgrey'>
 						Written by Brad Markle<br />
-						Hits: 158,003
+						Hits: 158,018
 					</div>
 				</td>
 			</tr>
@@ -623,7 +621,7 @@ var WRInitTime=(new Date()).getTime();
 					<div>If you're having any trouble connecting Joomla 3.0 to a MySQL database, read this article for an overview on the steps needed to ensure you have Joomla setup correctly.</div>
 					<div class='smallgrey'>
 						Written by Brad Markle<br />
-						Hits: 26,573
+						Hits: 26,574
 					</div>
 				</td>
 			</tr>
@@ -635,7 +633,7 @@ var WRInitTime=(new Date()).getTime();
 					<div>In this Joomla 3.0 tutorial, we show you how to send email using SMTP to avoid the Could not instantiate mail function error.</div>
 					<div class='smallgrey'>
 						Written by Brad Markle<br />
-						Hits: 31,126
+						Hits: 31,131
 					</div>
 				</td>
 			</tr>
@@ -647,7 +645,7 @@ var WRInitTime=(new Date()).getTime();
 					<div>In this tutorial, we'll show you how to setup Joomla to show custom error pages, rather than having default server error pages show.</div>
 					<div class='smallgrey'>
 						Written by Brad Markle<br />
-						Hits: 7,077
+						Hits: 7,079
 					</div>
 				</td>
 			</tr>
@@ -659,7 +657,7 @@ var WRInitTime=(new Date()).getTime();
 					<div>Using the Redirect Manager in Joomla 3.0 is an easy way to monitor and manage 404 pages in your website.</div>
 					<div class='smallgrey'>
 						Written by Brad Markle<br />
-						Hits: 16,008
+						Hits: 16,009
 					</div>
 				</td>
 			</tr>
@@ -695,7 +693,7 @@ var WRInitTime=(new Date()).getTime();
 					<div>The Joomla Search Component allows you to both view statistics about what your users are searching for and customize various search settings available.</div>
 					<div class='smallgrey'>
 						Written by Brad Markle<br />
-						Hits: 14,303
+						Hits: 14,304
 					</div>
 				</td>
 			</tr>
@@ -719,7 +717,7 @@ var WRInitTime=(new Date()).getTime();
 					<div>In this Joomla tutorial, we'll show you how to use the Browser Page Title and Page Header menu item settings.</div>
 					<div class='smallgrey'>
 						Written by Brad Markle<br />
-						Hits: 10,403
+						Hits: 10,405
 					</div>
 				</td>
 			</tr>
@@ -731,7 +729,7 @@ var WRInitTime=(new Date()).getTime();
 					<div>This is a guide on how to replace the Joomla Favicon with a custom image.</div>
 					<div class='smallgrey'>
 						Written by John-Paul Briones<br />
-						Hits: 22,343
+						Hits: 22,347
 					</div>
 				</td>
 			</tr>
@@ -743,7 +741,7 @@ var WRInitTime=(new Date()).getTime();
 					<div>Using the template editor in Joomla 3 may be the most efficient way for you to edit your Joomla template files.</div>
 					<div class='smallgrey'>
 						Written by Brad Markle<br />
-						Hits: 46,976
+						Hits: 46,984
 					</div>
 				</td>
 			</tr>
@@ -840,7 +838,7 @@ var WRInitTime=(new Date()).getTime();
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZjYXRpZD0xMDEmaWQ9MTAxJnZpZXc9Y2F0ZWdvcnkmSXRlbWlkPTEwMQ==" />
-		<input type="hidden" name="e91956aa9619f22c6264c16afcfe1c6e" value="1" />	</div>
+		<input type="hidden" name="fb18a72b0370452ef7654682c068bd03" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -1245,11 +1243,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-19']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '112.198.100.14']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '72.38.238.101']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '112.198.100.14']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '72.38.238.101']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

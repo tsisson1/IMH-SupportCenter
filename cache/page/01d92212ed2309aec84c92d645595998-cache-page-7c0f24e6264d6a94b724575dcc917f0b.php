@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:51012:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:50879:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -342,8 +342,6 @@ var WRInitTime=(new Date()).getTime();
 <div class='col_1'>
     <a href='/support/product-guides'><h2>Product <br>Guides</h2></a>
     <ul>
-    <li><a href='/support/product-guides/'>Business Hosting</a></li>
-    <li><a href='/support/product-guides/'>VPS Hosting</a></li>
     <li><a href='/support/product-guides/dedicated-hosting'>Dedicated Hosting</a></li>
     <li><a href='/support/product-guides/reseller-hosting'>Reseller Hosting</a></li>
 </ul>
@@ -549,47 +547,47 @@ var WRInitTime=(new Date()).getTime();
                         </tr>
           <tr>
                                 <td style='padding-right:20px;'><a href='/support/email/outlook/2013'>How to Setup Outlook 2013 to Check Your Email</a></td>
-                                <td>133,420</td>
+                                <td>133,447</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/email/outlook/creating-an-email-account-in-outlook-2007'>Setting up Microsoft Outlook 2007 to check your email</a></td>
-                                <td>115,339</td>
+                                <td>115,369</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/email/outlook/how-to-set-up-outlook-2010'>How to Set Up your Email in Outlook 2010</a></td>
-                                <td>67,274</td>
+                                <td>67,286</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/email/outlook/create-signature-2007'>How to create an email signature in Outlook 2007</a></td>
-                                <td>42,729</td>
+                                <td>42,735</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/email/outlook/create-mac-signature-2011'>How to create an email signature for  Mac in Outlook 2011</a></td>
-                                <td>35,340</td>
+                                <td>35,353</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/email/outlook/outlook-2013-omapi32-wwlib-errors'>How to fix OLMAPI32.dll and WWLIB.dll error in Outlook 2013</a></td>
-                                <td>35,210</td>
+                                <td>35,213</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/email/outlook/create-signature-2010'>How to create an email signature in Outlook 2010</a></td>
-                                <td>31,575</td>
+                                <td>31,588</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/email/outlook/prevent-winmaildat'>Preventing Outlook from formatting mail as winmail.dat</a></td>
-                                <td>31,106</td>
+                                <td>31,116</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/email/outlook/how-to-set-up-outlook-2011'>How to Set Up your Email in Outlook 2011 for the Mac</a></td>
-                                <td>29,780</td>
+                                <td>29,783</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/email/outlook/email-signature-2003'>How to create an email signature in Outlook 2003</a></td>
-                                <td>26,460</td>
+                                <td>26,464</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/email/outlook/how-to-subscribe-to-specific-imap-folders-in-outlook-2010'>How to subscribe to specific IMAP folders in Outlook 2010</a></td>
-                                <td>25,496</td>
+                                <td>25,499</td>
                         </tr>
                   <tr>
                                 <td style='padding-right:20px;'><a href='/support/email/outlook/creating-an-email-account-in-outlook-2003'>Creating an email account in Outlook 2003 </a></td>
