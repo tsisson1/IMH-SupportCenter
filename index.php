@@ -171,7 +171,7 @@ $app->execute();
 // Return the response.
 	#echo $app;
 
-// print a message to show that we're on the dev server and not the Prod server
+// print a message to show that we're on the dev server and not the Prod
         $server_hostname = gethostname();
 if ($server_hostname == 'ash-cct-dev-test1.inmotionhosting.com'){
 
