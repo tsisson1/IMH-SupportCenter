@@ -171,9 +171,12 @@ $app->execute();
 // Return the response.
 	#echo $app;
 
-// print a message to show that we're on the dev server
-#        echo "<div style='position:fixed;top:45%;left:45%;width:10%;border:1px solid red;height:10%;'></div>";
+// print a message to show that we're on the dev server 
+        $server_hostname = gethostname();
+if ($server_hostname == 'ash-cct-dev-test1.inmotionhosting.com'){
 
+echo "<div style='position:fixed;top:45%;left:45%;width:10%;border:1px solid red;height:10%;'></div>";
+}
 
 
 

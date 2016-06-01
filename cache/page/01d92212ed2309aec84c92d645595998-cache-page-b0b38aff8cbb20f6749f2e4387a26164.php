@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:56585:" 
+<?php die("Access Denied"); ?>#x#a:3:{s:4:"body";s:56493:" 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -6,7 +6,6 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
  <script src="/support/templates/supportcentertemplate/js/main.js?v=201605261319" type="text/javascript"></script>
 <head>
-
 
 
 
@@ -20,7 +19,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <meta name="description" content="InMotion Hosting Support Center" />
   <title>Support Center | InMotion Hosting</title>
-  <link rel="stylesheet" href="https://www.inmotionhosting.com/support/templates/supportcentertemplate/css/temp.css?v=2016053108" type="text/css" />
+  <link rel="stylesheet" href="/support/templates/supportcentertemplate/css/temp.css?v=2016053108" type="text/css" />
   <link rel="stylesheet" href="/support/media/jui/css/bootstrap-responsive.css?v=2016011214" type="text/css" />
   <link rel="stylesheet" href="http://www.inmotionhosting.com/support/modules/mod_slogin/tmpl/compact/slogin.css" type="text/css" />
   <script src="/support/media/jui/js/jquery.min.js" type="text/javascript"></script>
@@ -227,11 +226,11 @@ window.setInterval(function(){var r;try{r=window.XMLHttpRequest?new XMLHttpReque
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-25']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '173.247.243.211']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '173.247.243.211']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>
@@ -794,7 +793,7 @@ var WRInitTime=(new Date()).getTime();
 				<input type="hidden" name="option" value="com_users" />
 		<input type="hidden" name="task" value="user.login" />
 		<input type="hidden" name="return" value="aW5kZXgucGhwP0l0ZW1pZD0xMDE=" />
-		<input type="hidden" name="d5da7e2a089ebe050e748b1d40c17bae" value="1" />	</div>
+		<input type="hidden" name="56ab145fba42c8f3741a55992bdcf9c6" value="1" />	</div>
 	</form>
 <!-- <br />
 <h3>Social Media Login</h3>
@@ -1181,11 +1180,11 @@ $(document).ready(function() {
                 window.open('https://www.inmotionhosting.com/support/launch-chat/?rdid=2324923566971164486&url=' + escape(document.location.href), 'Chat8718689652968401074', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=650');
 
                         _gaq.push(['_setAccount', 'UA-1501988-25']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '173.247.243.211']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '']);
 
                         _gaq.push(['_setAccount', 'UA-1501988-1']);
                         _gaq.push(['_trackEvent', 'chat', 'launch', 'support center']);
-                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '173.247.243.211']);
+                        _gaq.push(['_trackEvent', 'chat-by-ip', 'launch-by-ip', '']);
                         trackAnchorClickSC("trackAnchorClickChatSC");
             }
         </script>

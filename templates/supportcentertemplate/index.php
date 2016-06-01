@@ -39,7 +39,7 @@ error_reporting(-1);
 // Add Stylesheets
 if("minify" == "minify")
 {
-$doc->addStyleSheet("https://www.inmotionhosting.com/support/templates/supportcentertemplate/css/temp.css?v=2016053108");
+$doc->addStyleSheet("/support/templates/supportcentertemplate/css/temp.css?v=2016053108");
 //        $doc->addStyleSheet("//$cdn_subdomain/support/templates/supportcentertemplate/css/minified.a.css?v=201501161003");
 //	$doc->addStyleSheet("//$cdn_subdomain/support/templates/supportcentertemplate/css/minified.a.css?v=201409290926");
 	$doc->addStyleSheet($this->baseurl . '/media/jui/css/bootstrap-responsive.css?v=2016011214');
@@ -189,7 +189,7 @@ if( $_GET['chat_version'] == "boldchatsalestraining" )
 <head>
 
 
-
+<?php php_uname("n"); ?>
 
 
 

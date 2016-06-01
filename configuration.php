@@ -39,7 +39,7 @@ class JConfig {
 	public $smtphost = '173.247.247.200';
 	public $smtpsecure = 'none';
 	public $smtpport = '587';
-	public $caching = '1';
+	public $caching = '0';
 	public $cache_handler = 'file';
 	public $cachetime = '1440';
 	public $MetaDesc = 'InMotion Hosting Support Center';
