@@ -287,8 +287,8 @@ maxWidth: 600,
 });
 });
     </script>
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
 <body>
 
@@ -367,7 +367,7 @@ maxWidth: 600,
 			</p>
  <p>
                                 <div id='support_verification' class='field_title'>Account Verification: <br />
-                                <input type='text' name='vver' id='vver' onFocus="showNextButton();" />    <a style='font-size: 10px' class='tooltip'>What is my account verification <img src='http://unlockiphonevip.com/images/tooltip.gif' /></a>
+                                <input type='text' name='vver' id='vver' onFocus="showNextButton();" />    <a style='font-size: 10px' class='tooltip'>What is my account verification <img src='/support/images/tooltip.gif' /></a>
 </div>
                         </p>
 
