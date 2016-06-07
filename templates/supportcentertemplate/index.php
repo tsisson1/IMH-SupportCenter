@@ -39,7 +39,7 @@ error_reporting(-1);
 // Add Stylesheets
 if("minify" == "minify")
 {
-$doc->addStyleSheet("/support/templates/supportcentertemplate/css/temp.css?v=2016053108");
+$doc->addStyleSheet("https://inmotionhosting.com/support/templates/supportcentertemplate/css/temp.css?v=2016053108");
 //        $doc->addStyleSheet("//$cdn_subdomain/support/templates/supportcentertemplate/css/minified.a.css?v=201501161003");
 //	$doc->addStyleSheet("//$cdn_subdomain/support/templates/supportcentertemplate/css/minified.a.css?v=201409290926");
 	$doc->addStyleSheet($this->baseurl . '/media/jui/css/bootstrap-responsive.css?v=2016011214');
@@ -76,7 +76,6 @@ else
 //$doc->addScript('/support/templates/' . $this->template . '/js/combined_201303154pm.js', 'text/javascript');
     $doc->addScript('/support/templates/' . $this->template . '/js/fancybox.js', 'text/javascript');
     $doc->addScript('/support/templates/' . $this->template . '/js/combined.js.old', 'text/javascript');
-
 }
 
 
@@ -187,6 +186,7 @@ if( $_GET['chat_version'] == "boldchatsalestraining" )
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
  <script src="/support/templates/supportcentertemplate/js/main.js?v=201605261319" type="text/javascript"></script>
 <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
 
 <?php php_uname("n"); ?>
@@ -454,7 +454,6 @@ if( $_GET['chat_version'] == "boldchatsalestraining" )
   })();
 </script>
 
-<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 
 <link rel="stylesheet" href="/support/templates/supportcentertemplate/js/fancyBox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
 <script type="text/javascript" src="/support/templates/supportcentertemplate/js/fancyBox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
