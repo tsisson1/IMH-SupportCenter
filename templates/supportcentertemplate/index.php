@@ -26,7 +26,9 @@ include('includes/block_users_by_ip.php');
 
 
 
-
+if ( isset($_SERVER['HTTPS']) || $_SERVER['HTTPS'] == 'on' ) {
+    header("Location: http://www.inmotionhosting.com/support/");
+}
 
 $cdn_subdomain = return_cdn_subdomain();
 
